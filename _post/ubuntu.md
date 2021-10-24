@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "关于 Ubuntu, 我所知道的一切"
 date: 2021-01-19T18:11:54+08:00
 category: posts
