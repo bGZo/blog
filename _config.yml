@@ -1,6 +1,7 @@
 highlighter: rouge
 plugins:
   - jekyll-feed
-title: bGZoCg's Blog | bGZoCg 的蚁居
-description: 
+title: bGZoCg Blog
+description: the Whole Words I Wanna Talk With You.
 author: bGZoCg
+permalink: /:title
