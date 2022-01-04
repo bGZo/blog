@@ -1,6 +1,6 @@
 highlighter: rouge
-# plugins:
-#   - jekyll-feed
+plugins:
+  - jekyll-feed
 title: bGZoCg Blog
 description: the Whole Words I Wanna Talk With You.
 author: bGZoCg
