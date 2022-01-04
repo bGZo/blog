@@ -16,4 +16,4 @@ title: Home
   {% endfor %}
 </ul>
 
-[See all posts](/posts)
+[See all posts](/blog/posts)
