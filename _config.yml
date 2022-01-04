@@ -4,4 +4,4 @@ plugins:
 title: bGZoCg Blog
 description: the Whole Words I Wanna Talk With You.
 author: bGZoCg
-permalink: /blog/:title
+permalink: ./:title
