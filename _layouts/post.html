@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | Dzhavat Ushev</title>
+
+    <meta name="google-site-verification" content="myIv9g0szZwjZ8dYBtedNqm58wtN50DR2xIBVdFRcro" />
+
+    <link href="/assets/css/rouge-github.css" rel="stylesheet">
+    <link href="/assets/css/custom.css" rel="stylesheet">
+
+    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/feed.xml">
+
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+  </head>
+  <body class="single-post">
+    {% include header.html %}
+
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/posts">Posts</a></li>
+        <li><a href="/thoughts">Thoughts</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/uses">Uses</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <article>
+        <h2>{{ page.title }}</h2>
+        {% include published.html %}
+        {{ content }}
+        {% include share-on-twitter.html %}
+      </article>
+    </main>
+
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
