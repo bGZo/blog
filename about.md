@@ -11,17 +11,17 @@ title: About me
 </center>
 <!-- HTML END -->
 
-## Where's Here?
+## 🌈 Where's Here?
 
-It's hard to record pure knowledge without personal bias and nonsense broken words. In past several years I tried to separate life-feeling from here blog, in which put them in `yuque`/`notion`/`wizi`/`phone stick notes`/`logseq`/`github`. Apperently I failed.
+It's hard to record pure knowledge without personal bias and nonsense broken words. In past several years I tried to separate life-feeling from here, moving them to `onenote/yuque`/`notion`/`wizi`/`phone stick notes`/`logseq`/`github`. Apperently I failed. What's worse, info was broken to pieces that saving diff platform. Maybe throw them to trash is better...🤯
 
-Yet high net level required and unstable economical factor recently boreds me, I realized that the politics is powerful. I never know what's the truth. Now I still think *fully using their natural feature* is best measure. 
+Yet high net level required and unstable economical factor recently boreds me, I realized that the politics is powerful and seem like a huge elephant in the room. I never know what truth is. 🕵️‍♂️
 
-So blog is just for archiving where the progress you've last done, diff with journals be rendered by rich-text. So the mature thought is suitable. 
+Now I still think *fully using their natural feature* is best measure. Thus blog is just for archiving where the progress you've last done, diff with journals be rendered by rich-text. So the mature thought is suitable. 👻
 
-:)
+: )
 
-## Short ChangeLogs
+## 👩‍💻 Short ChangeLogs 
 
 - **220104**: Using template like [@dzhavat](https://github.com/dzhavat/dzhavat.github.io), it's really minimalist. Awesome!
 - **211023**: Stop using Hugo, convert to native jekyll. Github auto building is awesome. :)
