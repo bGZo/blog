@@ -4,50 +4,40 @@ title: About me
 ---
 
 <!-- HTML BEGIN -->
-
-<style>@font-face{font-weight:400;font-style:normal;font-family:Josefin Sans;src:url(//lib.baomitu.com/fonts/josefin-sans/josefin-sans-regular.eot);src:local("Josefin Sans"),local("JosefinSans-Normal"),url(//lib.baomitu.com/fonts/josefin-sans/josefin-sans-regular.eot#iefix) format("embedded-opentype"),url(//lib.baomitu.com/fonts/josefin-sans/josefin-sans-regular.woff2) format("woff2"),url(//lib.baomitu.com/fonts/josefin-sans/josefin-sans-regular.woff) format("woff"),url(//lib.baomitu.com/fonts/josefin-sans/josefin-sans-regular.ttf) format("truetype"),url(//lib.baomitu.com/fonts/josefin-sans/josefin-sans-regular.svg#JosefinSans) format("svg")}.color >ul> li > a{color: inherit; position: relative; text-decoration: none; white-space: nowrap; font-size:1.25em}.color >ul> li >a::before{ content: ""; display: block;position: absolute;height: 0.5em;bottom: 2px;left: 4px;
-width: 100%;    --bg-opacity: .75; background-color: #42b983;background-color: #9999ff;opacity: .3;}.color >ul>li > a:hover::before{background: #000000}</style>
-
-<center><div class="color">
-    <img id="avator" src="https://img.ams1.imgbed.xyz/2021/03/31/5VzRq.md.webp" style="max-width: 30%;max-height: 30%;border-radius: 50%"></img>
-</center>
-
 <center>
-    <font size=5 , style='font-family:"Josefin Sans"'><b>@bgzocg</b></font><br/>
-    <font size=3, style='font-family:"Josefin Sans"'>🏫 IMU / 💻 HP & WSL2 / 📱 OneUI / 🎧 AKG & Sony / 🛠️ VSCode & Jetbrain / 📝 Hugo / 🎮 Steam / 🚫 Politics / ❤️ Diversity is essential to happiness. </font>
-    <center style='margin-left:4em; margin-right:4em; font-family:"Josefin Sans'></center>
+   <img id="avator" src="https://img.ams1.imgbed.xyz/2021/03/31/5VzRq.md.webp" style="max-width: 30%;max-height: 30%;border-radius: 50%"><br/>
+  <font size='5'><b>@bgzocg</b></font><br/>
+  <font size='3'>🏫 IMU / 💻 HP & WSL2 / 📱 OneUI / 🎧 AKG & Sony / 🛠️ VSCode & Jetbrain / 📝 Hugo / 🎮 Steam / 🚫 Politics / ❤️ Diversity is essential to happiness.</font>
 </center>
-
 <!-- HTML END -->
 
-## About Me?
+## Where's Here?
 
-It's hard to record pure knowledge without personal perference and nonsense broken words. In past I tried to separate life feeling from blog. Then moving to yuque or notion. Yet high net level required and unstable economical factor recently boreds me. Now I still think *fully using their natural feature* is best measure. Blog is just for archiving where the progress you've last done, diff with journals be rendered by rich-text. Following are something personal I wrote.
+It's hard to record pure knowledge without personal bias and nonsense broken words. In past several years I tried to separate life-feeling from here blog, in which put them in `yuque`/`notion`/`wizi`/`phone stick notes`/`logseq`/`github`. Apperently I failed.
 
-抽离个人喜好和无谓碎语, 纯粹记录笔记(知识点)是很难得. 过去的几年时间里我尝试从博客中剥离自己的情感体验. 搬运到 语雀 或是 Notion. 碍于高需求的网络及近年不稳定的商业因素让我烦躁. 而我现在依然认为 *用尽其与生俱来的特点* 是最好的解决措施. 博客仅仅是自己工作进度存档的地方, 异于富文本记录的笔记.
+Yet high net level required and unstable economical factor recently boreds me, I realized that the politics is powerful. I never know what's the truth. Now I still think *fully using their natural feature* is best measure. 
 
-## Blog?
+So blog is just for archiving where the progress you've last done, diff with journals be rendered by rich-text. So the mature thought is suitable. 
 
-- <font color="#525288">**210613**</font>: All blog data is deleted cause the error of command of wsl. So theme change from [MemE](https://github.com/reuixiy/hugo-theme-meme) to [hugo-tailwind-journal](https://github.com/ianrodrigues/hugo-tailwind-journal/)
-- <font color="#525288">**210506**</font>: change `rel-icon` cause [Emojis as Favicons](https://css-tricks.com/emojis-as-favicons/).
-- <font color="#525288">**210112**</font>: logout record, move to Hugo
-- <font color="#525288">**200901**</font>：give up hexo, using github repoes.
-- <font color="#525288">**200613**</font>：change Wiki theme.
-- <font color="#525288">**200602**</font>: find other blog, but not available under GFW. 
-    - **Google Site**
-    - **Blogger**
-    - **Blogspot**
-- <font color="#525288">**200501**</font>: Some notes：
-  - No mood.
-  - No all things.
-  - Read book.
-- <font color="#525288">**200428**</font>：rewrite articles..
-- <font color="#525288">**200420**</font>: again record.
-- <font color="#525288">**200417**</font>: rewrite articles.
-- <font color="#525288">**200402**</font>：New theme -> [Ariclod](https://github.com/aircloud)，and comment system[disqus](https://lfhdfs.disqus.com/admin/install/platforms/universalcode/)！
-- <font color="#525288">**200219**</font>：first 404 page!!!
-- <font color="#525288">**200214**</font>：give up Coding Page
-- <font color="#525288">**200203**</font>：know a lot Html&CSS, edit theme，bug new domain and clash, vpn died a half yesterday. Hexo can't render long Markdown
-- <font color="#525288">**200113**</font>：computer power broken down，bug VPS-ESC, too many bugs...(upload failed，WordPress Server 429)，and record
+:)
+
+## Short ChangeLogs
+
+- **220104**: Using template like [@dzhavat](https://github.com/dzhavat/dzhavat.github.io), it's really minimalist. Awesome!
+- **211023**: Stop using Hugo, convert to native jekyll. Github auto building is awesome. :)
+- **210613**: All blog data is deleted cause the error of command of wsl. So theme change from [MemE](https://github.com/reuixiy/hugo-theme-meme) to [hugo-tailwind-journal](https://github.com/ianrodrigues/hugo-tailwind-journal/)
+- **210506**: change `rel-icon` cause [Emojis as Favicons](https://css-tricks.com/emojis-as-favicons/). 🌈 is beautiful. :)
+- **210112**: Stop record using [repo](https://github.com/bGZoCg/codelib), too much chaos, moving to Hugo.
+- **200901**: Give up hexo, using github [repo](https://github.com/bGZoCg/codelib).
+- **200613**: Change to Wiki theme.
+- **200602**: Find other blog, but not available in 🇨🇳. like **Google Site**, **Blogger**, **Blogspot[died]**.
+- **200501**: New Rules => 🚫Mood & 🚫All things & Reading books.
+- **200428**: Rewriting articles again...
+- **200420**: Again rewriting..
+- **200417**: Rewriting articles.
+- **200402**: Hexo new theme => [Ariclod](https://github.com/aircloud) & comment => disqus!
+- **200214**: Give up Coding Page(🇨🇳 network issue).
+- **200203**: Knowing a lot Html&CSS. Edit theme(hexo&wordpress). Bug new domain(dandelionflowers.cc) & Porxy. Almost proxies are died yesterday, convert to use SuYing. Founding that `hexo` couldn't render too long Markdown.
+- **200113**: Laptop power broken down... Build proxy in VPS-ESC failed. Begin to use the wordpress(too many 🐛🐛🐛, uploading failed. Meanwhile, wordpress offical site is blocked by 🇨🇳, like `WordPress Server 429`). registering at MIIT (as ICP) using following info.
   > 本网站是个人网站，不含有企业、单位等非个人网站的信息，不涉及企业及互联网金融内容，若在核实中发现网站中含有企业、单位等信息，本人愿接受以虚假信息进行备案，注销网站，并将主体和域名加入黑名单的处罚。我的网站内容是：记录自己学习服务器过程中遇到的问题与相应的解决办法，上传个人编写的文章，图片，内容基本为原创。
-- <font color=""><b>**191223**</b></font>：build blog，too many Bugs....(Hexo file broken down、themes.yml), only once again.
+- **191223**: Begin to build blog, too many 🐛🐛🐛. Fortunately, error is free, its working after I try several times. (Hexo file broken down -> themes.yml).
