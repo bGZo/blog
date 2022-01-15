@@ -6,6 +6,8 @@ category: posts
 ---
 
 
+- BTL vs NAt vs Host-Only
+  - ![test](https://user-images.githubusercontent.com/57313137/149607141-247cd054-66cc-41eb-b133-9419b48be621.png)
 - [Bochs](https://sourceforge.net/projects/bochs/files/bochs)
   - Install
     - From Source Code
