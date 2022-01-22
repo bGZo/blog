@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Compound Interest
-updated: 2022-01-13
+updated: 2022-01-22
 category: thoughts
 ---
 
