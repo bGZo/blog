@@ -3,24 +3,6 @@ layout: default
 title: About me
 ---
 
-<!-- HTML BEGIN -->
-<center>
-   <img id="avator" src="https://img.ams1.imgbed.xyz/2021/03/31/5VzRq.md.webp" style="max-width: 30%;max-height: 30%;border-radius: 50%"><br/>
-  <font size='5'><b>@bgzocg</b></font><br/>
-  <font size='3'>🏫 IMU / 💻 HP & WSL2 / 📱 OneUI / 🎧 AKG & Sony / 🛠️ VSCode & Jetbrain / 📝 Hugo / 🎮 Steam / 🚫 Politics / ❤️ Diversity is essential to happiness.</font>
-</center>
-<!-- HTML END -->
-
-## 🌈 Where's Here?
-
-It's hard to record pure knowledge without personal bias and nonsense broken words. In past several years I tried to separate life-feeling from here, moving them to `onenote/yuque`/`notion`/`wizi`/`phone stick notes`/`logseq`/`github`. Apperently I failed. What's worse, info was broken to pieces that saving diff platform. Maybe throw them to trash is better...🤯
-
-Yet high net level required and unstable economical factor recently boreds me, I realized that the politics is powerful and seem like a huge elephant in the room. I never know what truth is. 🕵️‍♂️
-
-Now I still think *fully using their natural feature* is best measure. Thus blog is just for archiving where the progress you've last done, diff with journals be rendered by rich-text. So the mature thought is suitable. 👻
-
-: )
-
 ## 👩‍💻 Short ChangeLogs 
 
 - **220104**: Using template like [@dzhavat](https://github.com/dzhavat/dzhavat.github.io), it's really minimalist. Awesome!
