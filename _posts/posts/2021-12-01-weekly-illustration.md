@@ -12,7 +12,7 @@ category: posts
 买了 **Pixel Studio**(JP 1170) 这款软件, 开启 Pad 像素画之旅, 契机呢? 是因为玩了 Freebird 今年国庆的续作 Impostor Factory, 拥有这个系列的几个特点鲜明的角色也成了我的希望. 这样, 我仿着作品中的老总, 创造了我的 ID.
 
 
-<img src="https://user-images.githubusercontent.com/57313137/152681682-a881c64d-4c29-4506-addd-21e6e9dd048e.png>
+<img src="https://user-images.githubusercontent.com/57313137/152681682-a881c64d-4c29-4506-addd-21e6e9dd048e.png">
 
 
 <!--![mySelf@1](https://user-images.githubusercontent.com/57313137/152681682-a881c64d-4c29-4506-addd-21e6e9dd048e.png)-->
