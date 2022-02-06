@@ -25,5 +25,4 @@ category: posts
 
 好久没有画画了, 又是准备四六级, 又是准备考试复习的, 今天实在是学不进去了, 上床直接画到凌晨1点多, 画了张 GIF. 因为自己很喜欢这个表情, 🥰, 所以就画了这个, 最后发现 emoji 果然不适合放在 `512*512` 的格子里画, 太丑了...
 
-![emoji](https://user-images.githubusercontent.com/57313137/152682317-1b35d503-b6ca-426a-b6b5-f0a5bdf5acbd.gif)
-
+<img src="https://user-images.githubusercontent.com/57313137/152682317-1b35d503-b6ca-426a-b6b5-f0a5bdf5acbd.gif" width="50%" alt="wmoji">
