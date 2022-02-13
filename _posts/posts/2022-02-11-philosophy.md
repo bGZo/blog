@@ -7,8 +7,6 @@ category: posts
 
 ## 🤯 简要提纲
 
-![image](https://user-images.githubusercontent.com/57313137/153757367-1d640b85-21f6-4eb7-99f3-8502da6cd0f7.png)
-
 - 西方哲学
   - 古希腊、罗马哲学
     - 柏拉图
