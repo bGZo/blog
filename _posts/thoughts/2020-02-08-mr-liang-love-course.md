@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mr.Liang Love Course
+title: 梁永安的爱情课
 updated: 2020-02-08
 category: thoughts
 ---
