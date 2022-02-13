@@ -2,7 +2,7 @@
 layout: post
 title: 插画周更企画 ✍️
 updated: 2022-02-06
-category: posts
+category: thoughts
 ---
 
 之所以叫企画是因为没有周更的勇气👻, 毕竟距离我第一次画像素画到实际落笔还是隔了长长的一年, 距离我写下这篇博客又隔了好几个月.

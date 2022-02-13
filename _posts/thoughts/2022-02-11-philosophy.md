@@ -2,7 +2,7 @@
 layout: post
 title: 哲学一斑 ✍️
 updated: 2022-02-13
-category: posts
+category: thoughts
 ---
 
 ## 🤯 西哲简要提纲
