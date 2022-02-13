@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Social Love Marry
+title: 社会学下的热恋与冷婚
 updated: 2020-02-25
 category: thoughts
 ---

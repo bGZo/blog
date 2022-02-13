@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Compound Interest
+title: 复利
 updated: 2022-01-22
 category: thoughts
 ---

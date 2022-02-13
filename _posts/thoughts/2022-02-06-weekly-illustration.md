@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Illustration 周更企画 ING...
+title: 插画周更企画 ✍️
 updated: 2022-02-06
 category: posts
 ---

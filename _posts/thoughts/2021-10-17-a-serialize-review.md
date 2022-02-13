@@ -1,11 +1,11 @@
 ---
 layout: post
-title: A Serialize Review
+title: 大学泡沫 ✍️
 updated: 2021-10-17
 category: thoughts
 ---
 
-2021年10月第三个周末看到 [february](https://sunhuiquan.github.io/) 的个人博客, 突然就有点心血来潮, 突然就开始想写一点东西了, 写博客三年了, 增删改基本没有断过, 频繁换着框架/主题/平台. 从 wordpress, typecho, cnblog, csdn, hexo, hugo, gitbook, yuque, youdao, wiz, notion, logseq..., 平台也从 windows 到 ubuntu 再到 wsl, 东西很多很多, 也很累. 零零星星的东西散落在不同的平台, 让我多少灰心到丧气. 很多很多的总结在一次次的迁移和修改中遗失了, 加上记忆的拼凑, 勉强挤出来些下面拙劣的文字.
+2021年10月第三个周末看到 [@february](https://sunhuiquan.github.io/) 的个人博客, 突然就有点心血来潮, 突然就开始想写一点东西了, 写博客三年了, 增删改基本没有断过, 频繁换着框架/主题/平台. 从 wordpress, typecho, cnblog, csdn, hexo, hugo, gitbook, yuque, youdao, wiz, notion, logseq..., 平台也从 windows 到 ubuntu 再到 wsl, 东西很多很多, 也很累. 零零星星的东西散落在不同的平台, 让我多少灰心到丧气. 很多很多的总结在一次次的迁移和修改中遗失了, 加上记忆的拼凑, 勉强挤出来些下面拙劣的文字.
 
 ## 2019年冬
 

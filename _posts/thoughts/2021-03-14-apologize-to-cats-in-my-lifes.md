@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Apologize To Cats
-updated: 2022-01-17
+title: 养猫之路 ✍️
+updated: 2022-02-13
 category: thoughts
 ---
 

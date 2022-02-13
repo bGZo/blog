@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 哲学一斑 ING...
+title: 哲学一斑 ✍️
 updated: 2022-02-13
 category: posts
 ---

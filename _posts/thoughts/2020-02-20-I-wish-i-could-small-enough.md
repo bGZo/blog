@@ -1,6 +1,6 @@
 ---
 layout: post
-title: I Wish I Could Small Enough
+title: 我希望我足够渺小
 updated: 2020-02-20
 category: thoughts
 ---

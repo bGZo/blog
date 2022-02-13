@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keeping Human Beings Alive Against 50 Cognitive Biases
+title: 对抗50种认知偏差
 updated: 2022-01-14
 category: thoughts
 ---
