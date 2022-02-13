@@ -26,13 +26,30 @@ body {
   padding: 1.2rem;
 }
 
+
 a {
-  color: #00e;
+  color: black;
+  position: relative;
+  text-decoration: none;
+  white-space: nowrap;
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0.5em;
+  bottom: 2px;
+  left: 4px;
+  width: 100%;    
+  --bg-opacity: .75;
+  background-color: #FEDFE1;
+  opacity: .5;
+}
+
+a:hover::before{
+  background: #000000
 }
 
 .container main {
@@ -214,134 +231,6 @@ article h2 {
 .post.published-recently.confetti-please .publish-date,
 .post.published-recently.confetti-please a {
   background-color: white;
-}
-
-.strava-card .strava-card-title {
-  color: var(--strava-brand-color);
-  margin-bottom: 1rem;
-  margin-top: 0;
-}
-
-.strava-card .latest-run {
-  border-radius: var(--border-radius);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  padding: 0.5rem;
-}
-
-.strava-card .latest-run.has-photo {
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  height: 220px;
-  justify-content: space-between;
-  transform: rotateZ(2deg);
-  transition: transform 0.25s;
-}
-
-.strava-card .latest-run.has-photo:hover {
-  transform: rotateZ(0);
-}
-
-.strava-card .latest-run.has-photo .activity-name a,
-.strava-card .latest-run.has-photo .label,
-.strava-card .latest-run.has-photo .label + div {
-  color: white;
-}
-
-.strava-card .activity-name {
-  margin-bottom: 1rem;
-}
-
-.strava-card .stats {
-  display: flex;
-  justify-content: space-between;
-}
-
-.strava-card .label {
-  color: #565656;
-  font-size: 0.75rem;
-}
-
-.strava-card .label + div {
-  font-size: 1.15rem;
-  line-height: 1.2;
-}
-
-.strava-card .strava-stats {
-  margin-top: 1rem;
-  position: relative;
-}
-
-.strava-card .strava-stats p {
-  margin: 0.25rem 0;
-}
-
-.strava-card .strava-stats p:last-of-type {
-  margin-bottom: 0.75rem;
-}
-
-.strava-card .goal-progress {
-  background-color: var(--strava-brand-color);
-  border-radius: var(--border-radius);
-  height: 8px;
-}
-
-.strava-card .goal-progress::after {
-  content: "";
-  background-color: rgba(128, 128, 128, 0.2);
-  bottom: 0;
-  border-radius: var(--border-radius);
-  height: 8px;
-  left: 0;
-  position: absolute;
-  right: 0;
-  z-index: -1;
-}
-
-.azure-function-message {
-  font-size: 0.6rem;
-}
-
-.btn {
-  border-radius: var(--border-radius);
-  color: white;
-  display: inline-block;
-  font-size: 0.75rem;
-  padding: 3px 9px 3px 9px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.btn:hover {
-  text-decoration: none;
-}
-
-.btn-twitter {
-  background-color: #1b95e0;
-}
-
-.btn-twitter:active,
-.btn-twitter:focus,
-.btn-twitter:hover {
-  background-color: #0c7abf;
-}
-
-.btn-github {
-  background-color: #24292e;
-}
-
-.btn-github:hover {
-  background-color: #515960;
-}
-
-.btn-rss {
-  background-color: #b9501f;
-}
-
-.btn-rss:hover {
-  background-color: #923507;
 }
 
 .follow-btns .btn + .btn {
