@@ -1,3 +1,1 @@
-# gitBlog
-
-🛠 separate frames and content.
+> ~~When a README has nothing surprising to say, it should say nothing~~.

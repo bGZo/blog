@@ -5,7 +5,7 @@ title: Thoughts
 
 ## Thoughts
 
-A place to share unpolished thoughts abouth everything.
+> 'Man Thinks, God Laughs.' --by _Milan Kundera_
 
 <ul class="posts">
   {% for thought in site.categories.thoughts %}
