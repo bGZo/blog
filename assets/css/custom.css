@@ -26,32 +26,6 @@ body {
   padding: 1.2rem;
 }
 
-
-a {
-  color: black;
-  position: relative;
-  text-decoration: none;
-  white-space: nowrap;
-  text-decoration: none;
-}
-
-a::before {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 0.5em;
-  bottom: 2px;
-  left: 4px;
-  width: 100%;    
-  --bg-opacity: .75;
-  background-color: #FEDFE1;
-  opacity: .5;
-}
-
-a:hover::before{
-  background: #000000
-}
-
 .container main {
   margin-bottom: 2rem;
 }
@@ -237,6 +211,78 @@ article h2 {
   margin-left: 0.5rem;
 }
 
+a {
+  color: black;
+  position: relative;
+  text-decoration: none;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0.5em;
+  bottom: 2px;
+  left: 4px;
+  width: 100%;    
+  --bg-opacity: .75;
+  background-color: #FEDFE1;
+  opacity: .5;
+}
+
+a:hover::before{
+  background: #D7C4BB;
+}
+
+table {
+  padding: 0;
+  word-break: initial;
+  border-collapse: collapse;
+}
+
+table tr {
+  border: 1px solid #dfe2e5;
+  margin: 0;
+  padding: 0;
+}
+
+table tr:nth-child(2n), 
+thead {
+  background-color: #f8f8f8;
+}
+
+table th {
+  background:#bec1c4;
+  font-weight: bold;
+  border: 1px solid #dfe2e5;
+  border-bottom: 0;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+table td {
+  border: 1px solid #dfe2e5;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+table th:first-child,
+table td:first-child {
+  margin-top: 0;
+}
+
+table th:last-child,
+table td:last-child {
+  margin-bottom: 0;
+}
+
+tr:nth-child(n):hover td {
+  background:#D7C4BB;
+}
+
+
 @media (min-width: 22em) {
   header h1 {
     font-size: 2rem;
@@ -246,10 +292,6 @@ article h2 {
 @media (min-width: 28em) {
   nav ul li {
     margin-bottom: 0;
-  }
-
-  .strava-card {
-    width: 400px;
   }
 }
 
@@ -284,10 +326,6 @@ article h2 {
     padding-right: 1rem;
     margin-bottom: 0;
   }
-
-  .strava-card {
-    width: 360px;
-  }
 }
 
 @media (min-width: 65em) {
@@ -310,13 +348,5 @@ article h2 {
 @media (min-width: 88em) {
   body {
     width: 60rem;
-  }
-
-  .strava-card {
-    width: 400px;
-  }
-
-  .strava-card .latest-run.has-photo {
-    height: 250px;
   }
 }
