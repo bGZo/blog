@@ -282,10 +282,20 @@ tr:nth-child(n):hover td {
   background:#D7C4BB;
 }
 
-.contents {
-  font-size: 18px;
+.contents{
+  font-size: 16px;
+  overflow: auto;
+  max-height: 400px;
+  max-width: 300px;
+  border: 1px solid #a2a9b1;
+  background-color: #f8f9fa;
+  padding: 10px;
 }
 
+.contents>ul{
+  list-style: none;
+  margin-left: -20px;
+}
 
 
 @media (min-width: 22em) {
