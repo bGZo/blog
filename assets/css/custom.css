@@ -282,6 +282,11 @@ tr:nth-child(n):hover td {
   background:#D7C4BB;
 }
 
+.contents {
+  font-size: 18px;
+}
+
+
 
 @media (min-width: 22em) {
   header h1 {

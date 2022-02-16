@@ -31,6 +31,10 @@
       <article>
         <h2>{{ page.title }}</h2>
         {% include published.html %}
+        <div class="contents">
+          <h3>Contents</h3>
+          {% include toc.html html=content %}
+        </div>
         {{ content }}
         {% include share-on-twitter.html %}
       </article>
