@@ -8,6 +8,10 @@ title: About me
 ## 👨‍💻 ChangeLogs
 
 ```diff
+@@ 我不要孩子了, 我想和你在这个操蛋的世界说点心里话.                    @@
+@@ I won't have a child, yet I sincerely want to tell you something @@
+@@ precious in this distressing life.                               @@
+
 + 220104: Build jekll blog imitating @dzhavat (Everything works well 😀).
 - 210613: New theme (hard ro lose data🤕).
 ! 210506: New rel-icon.
