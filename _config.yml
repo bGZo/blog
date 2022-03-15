@@ -8,7 +8,7 @@ plugins:
 
 highlighter: rouge
 
-markdown: redcarpet
+# markdown: redcarpet
 redcarpet:
     extensions: ["fenced_code_blocks", "tables", "highlight", "with_toc_data", "strikethrough", "underline"]
 # see more in https://github.com/vmg/redcarpet/blob/master/README.markdown
