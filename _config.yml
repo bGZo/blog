@@ -1,7 +1,7 @@
 title: bGZoCg Blog
 description: the Whole Words I Wanna Talk With You.
 author: bGZoCg
-permalink: /:title
+permalink: /:title.html
 
 plugins:
   - jekyll-feed
