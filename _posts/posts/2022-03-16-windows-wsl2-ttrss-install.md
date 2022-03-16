@@ -57,20 +57,22 @@ function Netsh-Lan ($cmdletname) {
     netsh interface portproxy show all
 }
 
+function Start-TTRSS { # main
+    Output-Lan-Ip-Bin
+    wsl /mnt/c/Users/usr/bin/wsl-ip.sh
 
-Output-Lan-Ip-Bin
-wsl /mnt/c/Users/usr/bin/wsl-ip.sh
+    #via https://docs.docker.com/compose/compose-file/compose-file-v2/
+    wsl docker-compose -f /home/bgzocg/ttrss/docker-compose.yml --env /home/bgzocg/ttrss/.env up -d
 
-#via https://docs.docker.com/compose/compose-file/compose-file-v2/
-wsl docker-compose -f /home/xxx/ttrss/docker-compose.yml --env  /home/xxx/ttrss/.env up -d
-
-Netsh-Lan
+    Netsh-Lan
+}
 ```
 
 ```shell
 #!/bin/sh
 # author: bGZo
 # update: 220316
+# store in: C:\Users\usr\bin\wsl-ip.sh
 
 # set env
 host_ip=$(cat /etc/resolv.conf |grep "nameserver" |cut -f 2 -d " ")

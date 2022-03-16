@@ -85,3 +85,36 @@ category: thoughts
 | 坚持无纸化办公, 用掉多余的废纸和笔                           | 频繁使用手机截图, 事后也不处理                               |
 | 坚持和他人搭话, 多说一点无用的废话                           | 看了陌生的人不打招呼, 默默走开                               |
 | - | **扩写**自己的废话 |
+
+## Things Worth To Wasting Time
+
+### Fav Animate
+
+| Name | bgm.tv |
+|------|-------|
+| Rick and Morty | [Jmp](https://bangumi.tv/subject/93377) |
+| Bojack Horseman | [Jmp](https://bangumi.tv/subject/124649) |
+| South Park | [Jmp](https://bangumi.tv/subject/25442) |
+| Futurama | [Jmp](https://bangumi.tv/subject/28065) |
+| To LOVEる -とらぶる- | [Jmp](https://bangumi.tv/subject/849) |
+| そらのおとしもの | [Jmp](https://bangumi.tv/subject/2617) |
+| 異種族レビュアーズ | [Jmp](https://bangumi.tv/subject/285482) |
+| 新世界より | [Jmp](https://bangumi.tv/subject/37785) |
+| 僕だけがいない街 | [Jmp](https://bangumi.tv/subject/137722) |
+| ID:INVADED イド：インヴェイデッド | [Jmp](https://bangumi.tv/subject/285776) |
+| かくしごと | [Jmp](https://bangumi.tv/subject/294713) |
+| Re:ゼロから始める異世界生活 | [Jmp](https://bangumi.tv/subject/140001) |
+| ひぐらしのなく頃に | [Jmp](https://bangumi.tv/subject/289) |
+| モブサイコ100 | [Jmp](https://bangumi.tv/subject/158316) |
+| 七つの大罪 | [Jmp](https://bangumi.tv/subject/101820) |
+| オーバーロード | [Jmp](https://bangumi.tv/subject/112146) |
+| ACCA13区監察課 | [Jmp](https://bangumi.tv/subject/183492) |
+| 呪術廻戦 | [Jmp](https://bangumi.tv/subject/294993) |
+| 鬼滅の刃 | [Jmp](https://bangumi.tv/subject/245665) |
+| 化物語 | [Jmp](https://bangumi.tv/subject/1671) |
+| 四畳半神話大系 | [Jmp](https://bangumi.tv/subject/4019) |
+| 進撃の巨人 | [Jmp](https://bangumi.tv/subject/55770) |
+| ソードアート・オンライン | [Jmp](https://bangumi.tv/subject/23686) |
+| ゴールデンカムイ | [Jmp](https://bangumi.tv/subject/221127) |
+| ドロヘドロ | [Jmp](https://bangumi.tv/subject/266301) |
+| オッドタクシー | [Jmp](https://bangumi.tv/subject/325285) |
