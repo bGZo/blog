@@ -130,7 +130,9 @@ $ docker run --rm --volumes-from a5b8c5847c8d -v /home/bgzocg/ttrss/backup:/back
 docker Failed to connect to 127.0.0.1 port 7890 after 0 ms: Connection refused
 ```
 
-<img src="https://user-images.githubusercontent.com/57313137/158712544-96fcd594-7628-41e8-a906-acdc672d5e22.png" width=45%><img src="https://user-images.githubusercontent.com/57313137/158712547-68a408d5-a46d-42ec-ab6b-35f1f8a3af55.png" width=45%>
+![](https://user-images.githubusercontent.com/57313137/158712544-96fcd594-7628-41e8-a906-acdc672d5e22.png)
+![](https://user-images.githubusercontent.com/57313137/158712547-68a408d5-a46d-42ec-ab6b-35f1f8a3af55.png)
+
 
 测试了 `wsl2` 和 `windows` 的 `IP` 依旧无用, 个人认为是连不上 `WSL` 端口, 还需要做一次端口转发, 遂放弃了😁. 两头复杂都一样欸.
 
