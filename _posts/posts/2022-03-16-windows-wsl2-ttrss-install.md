@@ -26,12 +26,10 @@ category: posts
   - 端口转发
 - ❌ `windows docker`
   - 依赖 `wsl2`
-    - 针对于 Win10 容器代理无法使用系统代理解决方案未知, 这个问题之前就存在(via: [Stackoverflow](https://stackoverflow.com/questions/48272933/docker-at-windows-10-proxy-propagation-to-containers-not-working))
-    - 使用使用的是 `--env `+ `env file` 部署方式报错
-    - `docker Failed to connect to 127.0.0.1 port 7890 after 0 ms: Connection refused`
-    - 测试了 `wsl2` 和 `windows` 的 `IP` 依旧无用, 个人认为是连不上 `WSL` 端口, 还需要做一次端口转发, 遂放弃了😁. 两头复杂都一样欸.
+    - 容器代理
+    - 内存占用等同于直接使用 `wsl2` 搭建.
   - 不依赖 `wsl2`
-    -  代理和内存占用目测要好一些.[未测试]
+    -  代理应该比 `wsl2` 要好一些, 未测试🐟
 
 ### In Wsl2
 
@@ -41,6 +39,8 @@ category: posts
 - [Tiny Tiny RSS：最速部署私有 RSS 服务器 - Spencer's Blog](https://spencerwoo.com/blog/tiny-tiny-rss#an-zhuang-docker-compose )
 
 搭建过程中遇到的的 动态IP 以及 端口转发 已经被我简化成了 `powershell` 的 `profile`了, 需要的朋友可以配合第二个需要在 `wsl2` 执行的脚本配合使用. 脚本因机器环境而异, 我 `windows` 用户名 15517 和 `wsl2` 用户名 `bgzocg`, 使用如下, 仅供参考.
+
+![WindowsTerminal_1ibNbTPfwq](https://user-images.githubusercontent.com/57313137/158712463-0f350cb8-e83b-41cf-a90b-6fa5a93b0113.png)
 
 ```shell
 function Output-Lan-Ip-Bin {
@@ -117,7 +117,17 @@ $ sudo docker-compose down
 $ docker run --rm --volumes-from a5b8c5847c8d -v /home/bgzocg/ttrss/backup:/backup ubuntu tar cvfP /backup/backup.tar /var/lib/postgresql/data/
 ```
 
-发现 `wsl2` 内存占用更高了(现大约3G左右, 对比之前的2G真是😅), 除此之外, 利用了 `wsl2` 的容器在 `windows` 下, 依旧没有办法使用 `proxy`, 这就受不了了, 因为你懂得😁. RSS 源国内可拉不下来得😏.
+发现 `wsl2` 内存占用更高了(现大约3G左右, 对比之前的2G真是😅), 除此之外, 利用了 `wsl2` 的容器在 `windows` 下, 依旧没有办法使用 `proxy`, 这就受不了了, 因为你懂得😁. RSS 源国内可拉不下来得😏. 解决方案未知, 这个问题之前就存在(via: [Stackoverflow](https://stackoverflow.com/questions/48272933/docker-at-windows-10-proxy-propagation-to-containers-not-working))
+
+我目前使用使用的是 `--env `+ `env file` 部署方式报错
+
+```shell
+docker Failed to connect to 127.0.0.1 port 7890 after 0 ms: Connection refused
+```
+
+<img src="https://user-images.githubusercontent.com/57313137/158712544-96fcd594-7628-41e8-a906-acdc672d5e22.png" width=45%><img src="https://user-images.githubusercontent.com/57313137/158712547-68a408d5-a46d-42ec-ab6b-35f1f8a3af55.png" width=45%>
+
+测试了 `wsl2` 和 `windows` 的 `IP` 依旧无用, 个人认为是连不上 `WSL` 端口, 还需要做一次端口转发, 遂放弃了😁. 两头复杂都一样欸.
 
 ## More References
 
