@@ -8,9 +8,9 @@ title: About me
 ## 👨‍💻 ChangeLogs
 
 ```diff
-@@ 我不要孩子了, 我想和你在这个操蛋的世界说点心里话.                    @@
-@@ I won't have a child, yet I sincerely want to tell you something @@
-@@ precious in this distressing life.                               @@
+@@ 我不会让我的孩子降临在这个操蛋的世界, 但我想和你说些心里话.      @@
+@@ I won't give a birth to my chile in this distressing life,       @@
+@@ yet I sincerely want to tell you something precious.             @@
 
 + 220104: Build jekll blog imitating @dzhavat (Everything works well 😀).
 - 210613: New theme (hard ro lose data🤕).
@@ -29,6 +29,10 @@ title: About me
 - 200203: Modify theme(hexo&wordpress, hard for hexo long page 🤕).
 ! 200113: Build my second blog(wordpress, hard WordPress Server 429 🤕)
 ! 191223: Build my first blog(hexo). (hard for `themes.yml` 🤕).
+
+@@ Available Domain: bgzo.cc                                        @@
+@@ Trash Domains: dandelionflowers.xyz; dandelionflowers.cc;        @@
+@@                dfslfh.cn; bgzocg.me                              @@
 ```
 
 Links Jmp:

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 大学泡沫 ✍️
+title: 大学泡沫
 updated: 2021-10-17
 category: thoughts
 ---
