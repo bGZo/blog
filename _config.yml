@@ -5,6 +5,7 @@ permalink: /:title.html
 
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 highlighter: rouge
 
