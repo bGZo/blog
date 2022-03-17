@@ -38,19 +38,24 @@ category: posts
 - [Awesome-TTRSS · HenryQW/Awesome-TTRSS](https://github.com/HenryQW/Awesome-TTRSS/blob/main/docs/zh/README.md )
 - [Tiny Tiny RSS：最速部署私有 RSS 服务器 - Spencer's Blog](https://spencerwoo.com/blog/tiny-tiny-rss#an-zhuang-docker-compose )
 
-搭建过程中遇到的的 动态IP 以及 端口转发 已经被我简化成了 `powershell` 的 `profile`了, 需要的朋友可以配合第二个需要在 `wsl2` 执行的脚本配合使用. 脚本因机器环境而异, 我 `windows` 用户名 15517 和 `wsl2` 用户名 `bgzocg`, 使用如下, 仅供参考.
+搭建过程中遇到的 动态IP 以及 端口转发 问题已经被我打包成了 `powershell` 的 `profile`(C:\Users\15517\Documents\PowerShell\Microsoft.PowerShell_profile.ps1), 需要两个脚本配合使用, 路径怎么配直接看代码吧, 能做到 ~~伪~~ 一键开启的方法. (脚本因机器环境而异, `windows` 用户名 15517 和 `wsl2` 用户名 `bgzocg`, `proxy` 端口 `7890`, `ttrss` 端口 `4040`).
 
-![WindowsTerminal_1ibNbTPfwq](https://user-images.githubusercontent.com/57313137/158712463-0f350cb8-e83b-41cf-a90b-6fa5a93b0113.png)
+使用如下, 仅供参考.
+
+![image](https://user-images.githubusercontent.com/57313137/158714518-c1dd51d1-c3b1-4b1d-b3dc-ac448e4dbebd.png)
 
 ```shell
 function Output-Lan-Ip-Bin {
     $Lan_Ip = ipconfig | findstr /i "ipv4" | select-object -Skip 1 | select-object -First 1 | Select-String -Pattern '([0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*)' | % { $($_.matches.groups[1]).Value}
-    # get the second line IP
+    # NOTES: get the second line IP. I have three IPs, you could modify
+    # select-object -Skip 1 | select-object -First 1
+    # to fit your machine. :)
 
     echo "URL_PATH=$Lan_Ip" > C:\Users\15517\bin\lan_ip
     # output sharing Lan IP path
 
-    echo "Output PC Lan Successfully."
+    echo "Your Server: http://${Lan_Ip}:4040"
+    echo "Output PC Lan IP Successfully."
 }
 
 function Netsh-Lan {
@@ -87,12 +92,12 @@ cat /mnt/c/Users/15517/bin/lan_ip >> /home/bgzocg/ttrss/.env
 # output shring IP
 ip addr show eth0 | grep 'inet ' | cut -f 6 -d ' ' | cut -f 1 -d '/' > /mnt/c/Users/15517/bin/wsl_ip
 
-echo "run successful."
+echo "Output WSL2 IP And Set Proxy Successfully."
 ```
 
 - 运行之前记得先把 `wsl2` 的 Docker 服务打开: `sudo dockerd.`
 
-当然也[有朋友](https://www.zhihu.com/question/387747506/answer/1820473311)之间用 `Hosts` 映射 `wsl2` 也是可以, 但只能在本机调试的时候用一下, 你如果手机也想看一下怎么办?😅
+当然也[有朋友](https://www.zhihu.com/question/387747506/answer/1820473311)直接用 `hosts` 映射 `wsl2` 调试很省事, 但你如果手机也想看一下怎么办?😅
 
 ### In Windows
 
@@ -103,7 +108,7 @@ $ docker run -d --name ttrssdb nornagon/postgres
 $ docker run -d --link ttrssdb:db -p <port>:80 -e SELF_URL_PATH=http://<ttrss_domain>:<port> fischerman/docker-ttrss
 ```
 
-但每次启动的时候要启动两次(顺序), 就同上了 `docker-compose`
+但每次启动的时候要启动两次(顺序), 就用上了 `docker-compose`
 
 ```shell
 $ sudo docker-compose up -d
