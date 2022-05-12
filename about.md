@@ -1,16 +1,14 @@
 ---
 layout: default
-title: About me
+title: Logs
 ---
 
-> Small is beautiful.
-
-## 👨‍💻 ChangeLogs
-
 ```diff
-@@ 我不会让我的孩子降临在这个操蛋的世界, 但我想和你说些心里话.      @@
-@@ I won't give a birth to my chile in this distressing life,       @@
-@@ yet I sincerely want to tell you something precious.             @@
+@@                                                                  @@
+@@                              @bGZo                               @@
+@@                            不婚主义                              @@
+@@ 精通 C++/ Java / Python 的拼写; 熟练配置各工具的 代理/镜像 地址  @@
+@@                                                                  @@
 
 + 220104: Build jekll blog imitating @dzhavat (Everything works well 😀).
 - 210613: New theme (hard ro lose data🤕).
@@ -30,9 +28,9 @@ title: About me
 ! 200113: Build my second blog(wordpress, hard WordPress Server 429 🤕)
 ! 191223: Build my first blog(hexo). (hard for `themes.yml` 🤕).
 
-@@ Available Domain: bgzo.cc                                        @@
-@@ Trash Domains: dandelionflowers.xyz; dandelionflowers.cc;        @@
-@@                dfslfh.cn; bgzocg.me                              @@
+@@                                                                  @@
+@@                          Small is beautiful.                     @@
+@@                                                                  @@
 ```
 
 Links Jmp:

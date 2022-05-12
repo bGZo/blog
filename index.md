@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-## Recent posts
+## Recent Posts
 
 <ul class="posts">
   {% for post in site.categories.posts limit:6 %}

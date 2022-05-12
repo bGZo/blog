@@ -5,7 +5,8 @@ title: Thoughts
 
 ## Thoughts
 
-> 'Man Thinks, God Laughs.' --by _Milan Kundera_
+> "Man Thinks, God Laughs."
+ <!-- --by _Milan Kundera_ -->
 
 <ul class="posts">
   {% for thought in site.categories.thoughts %}
