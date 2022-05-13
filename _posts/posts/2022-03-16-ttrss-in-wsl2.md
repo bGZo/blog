@@ -17,8 +17,15 @@ Keywords: `docker` / `wsl2` / `port forward`
 ## WSL2 Start Mothod
 
 ```shell
-sudo dockerd
-# sudo systemctl enable docker ????
+# Error Way:
+$systemctl start docker.service
+# System has not been booted with systemd as init system (PID 1). Can't operate.
+# Failed to connect to bus: Host is down
+
+# Right Way: (via: https://stackoverflow.com/questions/52197246/wsl-redis-encountered-system-has-not-been-booted-with-systemd-as-init-system-pi
+$sudo dockerd
+$sudo service docker start
+$sudo /etc/init.d/docker start
 ```
 
 ## Deploy TTRSS with Proxy 🤯
