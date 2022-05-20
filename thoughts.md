@@ -5,8 +5,7 @@ title: Thoughts
 
 ## Thoughts
 
-> "Man Thinks, God Laughs."
- <!-- --by _Milan Kundera_ -->
+> [Clichés](https://www.detailedpedia.com/wiki-Clich%C3%A9) Pointless, So Only Followings Reserved:
 
 <ul class="posts">
   {% for thought in site.categories.thoughts %}

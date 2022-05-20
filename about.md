@@ -5,7 +5,7 @@ title: Logs
 
 ```diff
 @@                                                                  @@
-@@                              @bGZo                               @@
+@@                              bGZo                                @@
 @@                            不婚主义                              @@
 @@ 精通 C++/ Java / Python 的拼写; 熟练配置各工具的 代理/镜像 地址  @@
 @@                                                                  @@
