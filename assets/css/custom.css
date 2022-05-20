@@ -362,6 +362,6 @@ tr:nth-child(n):hover td {
 
 @media (min-width: 88em) {
   body {
-    width: 60rem;
+    width: 44rem;
   }
 }
