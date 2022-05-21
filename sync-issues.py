@@ -35,11 +35,11 @@ def output_label_articles(_repo, _name, _label):
 
 if __name__ == '__main__':
     token = sys.argv[1]
-    repoUrl = 'bgzo/test'
+    repoUrl = 'bgzo/blog'
 
     g = Github(token)
     repo = g.get_repo(repoUrl)
     name = g.get_user().login
-    output_label_articles(repo,name,'post')
-    output_label_articles(repo,name,'thought')
+    output_label_articles(repo,name,'posts')
+    output_label_articles(repo,name,'thoughts')
 

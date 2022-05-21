@@ -24,16 +24,22 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
         if: steps.pip-cache.outputs.cache-hit != 'true'
-      
+
       - name: Run Script
         run: |
           python3 sync-issues.py ${{ secrets.G_T }}
-      - name: Commit and push
-        uses: github-actions-x/commit@v2.6
-        with:
-          github-token: ${{ secrets.G_T }}
-          commit-message: "Update Blog"
-          files: .
-          rebase: 'true'
-          name: bGZo
-          email: bgzocg@outlook.com
+
+      - name: Run Safe Dir
+        run: |
+          git config --global --add safe.directory /github/workspace
+      - name: Push README
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name bgzo
+            git config user.email lfh010618@gmail.com
+            git add .
+            git commit -m "Update Issue Dashboard"
+            git push
+          else
+            echo "no changes";
+          fi
