@@ -14,12 +14,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+
       - name: Set up Python
         uses: actions/setup-python@v1
         with:
           python-version: 3.8
 
-      - name: Install dependencies
+      - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
@@ -27,18 +28,20 @@ jobs:
 
       - name: Run Script
         run: |
+          rm -rf _posts/
           python3 sync-issues.py ${{ secrets.G_T }}
 
       - name: Run Safe Dir
         run: |
           git config --global --add safe.directory /github/workspace
-      - name: Push README
+
+      - name: Push Articles
         run: |
           if [ -n "$(git status --porcelain)" ]; then
             git config user.name bgzo
-            git config user.email lfh010618@gmail.com
+            git config user.email bgzocg@outlook.com
             git add .
-            git commit -m "Update Issue Dashboard"
+            git commit -m "Update Articles"
             git push
           else
             echo "no changes";
