@@ -6,6 +6,7 @@ title: Logs
 > Small is beautiful.
 
 ```diff
+! 220521: Hosted by github issues with github action.
 + 220104: Build my fourth blog(jekll), imitating @dzhavat.
 + 210613: New theme(hugo-tailwind-journal).
 - 210607: Delete my whole blog by accident.

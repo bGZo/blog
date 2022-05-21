@@ -8,11 +8,11 @@ I like working under [demo](http://github.com/bgzo/demo) repo, recently progress
 ## Practice
 
 - Git Blog
-  - > People Die, but Long Live GitHub. via: [@laike9m](https://laike9m.com/blog/people-die-but-long-live-github,122)
+  > People Die, but Long Live GitHub. via: [@laike9m](https://laike9m.com/blog/people-die-but-long-live-github,122)
   - Since 2021, inspired by [@yihong0618](https://github.com/yihong0618/gitblog/issues/177), I tried to record daily activities on github issues. 
   - [2021](http://bgzo.github.io/2021)
   - [2022](http://bgzo.github.io/2022)
-- [anyant-backup](https://github.com/bGZo/anyant-backup ): Backup fav articles links to `index.md`, also json file what you want to do.
+- [anyant-backup](https://github.com/bGZo/anyant-backup ): With github action, backup http://rss.anyant.com favs, and output contents & json file.
 
 ## Memos
 
