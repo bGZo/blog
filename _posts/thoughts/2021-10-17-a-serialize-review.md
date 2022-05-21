@@ -7,6 +7,39 @@ category: thoughts
 
 2021年10月第三个周末看到 [@february](https://sunhuiquan.github.io/) 的个人博客, 突然就有点心血来潮, 突然就开始想写一点东西了, 写博客三年了, 增删改基本没有断过, 频繁换着框架/主题/平台. 从 wordpress, typecho, cnblog, csdn, hexo, hugo, gitbook, yuque, youdao, wiz, notion, logseq..., 平台也从 windows 到 ubuntu 再到 wsl, 东西很多很多, 也很累. 零零星星的东西散落在不同的平台, 让我多少灰心到丧气. 很多很多的总结在一次次的迁移和修改中遗失了, 加上记忆的拼凑, 勉强挤出来些下面拙劣的文字.
 
+## 写总结的一些 Tricks
+
+### Not New Year Resolution, but Past Year Review(PYR)
+
+听了狗熊有话说[ep. 400](https://voice.beartalking.com/400) 推荐的 [@Tim Ferriss](https://tim.blog/2021/12/27/past-year-review/) 总结方法
+
+> 1. Grab a notepad and create two columns: POSITIVE and NEGATIVE.
+> 2. Go through your calendar from the last year, looking at every week.
+> 3. For each week, jot down on the pad any people or activities or commitments that triggered peak positive or negative emotions for that month. Put them in their respective columns.
+> 4. Once you’ve gone through the past year, look at your notepad list and ask, “What 20% of each column produced the most reliable or powerful peaks?”
+> 5. Based on the answers, take your “positive” leaders and schedule more of them in the new year. Get them on the calendar now! Book things with friends and prepay for activities/events/commitments that you know work. It’s not real until it’s in the calendar. That’s step one. Step two is to take your “negative” leaders, put “NOT-TO-DO LIST” at the top, and put them somewhere you can see them each morning for the first few weeks of 2022. These are the people and things you *know* make you miserable, so don’t put them on your calendar out of obligation, guilt, FOMO, or other nonsense.
+
+决定实践一下: 我个人也是因为今年换工具比较频繁(Productivity Pron), 没有好好的做出沉淀积累, 数据分散在大大小小的平台, 整理起来好不方便🤯. 如果你不知道从哪里追溯自己的轨迹, 可以尝试看看几项:
+
+- 手机照片
+- 课程 (线上/线下)
+- 浏览器历史记录
+- 日历本
+
+| Positive                                                     | Negative                                                     |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 感动的**线下**电影                                           | 美化手机桌面                                                 |
+| 哲学类, 教程类**书籍**                                       | 生产力色情                                                   |
+| Automatic Task \ Github Action \ Shell/py Scripts            | App "体验家"                                                 |
+| Logseq, the Second Brain                                     | 资源收集箱                                                   |
+| Source Code                                                  | 手工格式化作业过多                                           |
+| Music Maker \ Painting Pixel Pics                            | Too Much Social Media                                        |
+| 当下一段时间就可以做出来成果的教程, <br />坚持把教程做完, 再独立做一遍 | 思考<br />"要是当时我那样就好了"<br />"好喜欢他呀, 看看他的动态吧"<br />"怎么对这样的她做出些些许回应呢"<br />"找个漂亮/合适的背景和头像吧 -_- " |
+| 词根词缀, 每天背一点单词, 看一点 Youtube 视频                | 看了太多 动漫/漫画 了                                        |
+| 坚持无纸化办公, 用掉多余的废纸和笔                           | 频繁使用手机截图, 事后也不处理                               |
+| 坚持和他人搭话, 多说一点无用的废话                           | 看了陌生的人不打招呼, 默默走开                               |
+| -                                                            | **扩写**自己的废话                                           |
+
 ## 2019年冬
 
 前十八年对大学的幻想甚高, 一上来就是完全的理想主义之破碎, 辩论队参加是参加了, 但是我的身份是裁判; 社团参与是参与了, 谁知道手工社全社就三个男生; 课外活动诸如不明觉厉的讲座也参与了, 但完全是被叫过去充数的... 基本上和我对大学的幻想相形见绌. 多多少少让人郁闷.
@@ -57,64 +90,12 @@ category: thoughts
 
 再次回到校园也只是感觉时光被狗吃了罢了, 大三了, 考研还是就业又是这个无比艰深的问题还是不可避免地砸向了我. 
 
-这学期的课比较紧凑, 唯一做出来的东西就是 GithubAction, 并且很多书都没能坚持读下来, 一般只有前两个月的空闲时间是自己的, 两个月后期中考试, 大作业, 期末压力, 四六级考试接踵而至, 基本是没有什么喘口气的机会的, 如果那些大部头的书前两个月没有看完, 那么这个学期反正是没戏了.
+这学期的课比较紧凑, 唯一做出实践的东西就是 Github Action, 并且很多书都没能坚持读下来, 一般只有前两个月的空闲时间是自己的, 两个月后期中考试, 大作业, 期末压力, 四六级考试接踵而至, 基本是没有什么喘口气的机会的, 如果那些大部头的书前两个月没有看完, 那么这个学期反正是没戏了.
 
 留下了这个学期只看了开头章节的四部书《网络基本功系列》,《两周自制脚本语言》, 《操作系统真象还原》, 《深入理解计算机系统》. 唯一打卡连续一个月的是 10 月, 可能那个时候课比较少, 每天都能摸到电脑的缘故吧. 之后就因为复习功课还是什么的就隔开了. 总之这个寒假必须要继续解决这些遗留问题, 跳过也无所谓, 我要解决.
 
-## Not New Year Resolution, but Past Year Review(PYR)
+## 2022 春夏
 
-听了狗熊有话说的[这一期](https://voice.beartalking.com/400)对 [Tim Ferriss](https://tim.blog/2021/12/27/past-year-review/) 推荐方法后, 决定用后者的方法对过去做一点更具理论性的回顾.
+疫情这一次又搞突然袭击, 已经快要麻木了, 因为 3 月在看设计模式, Java, 算法, 学校课程相关的书而耽误了春招投简历的机会, 快到5月了才发现人已经好几面都结束了, 下个月已经开始准备实习工作了, 实在有些像打死自己的冲动; 因为开不了学, 就业指导课也没有提供太多有用的信息, 只知道大部分人都去外包了. 实在不是什么好消息.
 
-我个人也是因为今年换工具比较频繁, 没有好好的做出积累, 数据分散在大大小小的平台, 整理起来好不方便. 如果你不知道从哪里追溯自己的轨迹, 可以尝试看看几项,
-
-- 手机照片
-- 课程 (线上/线下)
-- 浏览器历史记录
-- 日历本
-
-| Positive                                                     | Negative                                                     |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 感动的**线下**电影                                           | 美化手机桌面                                                 |
-| 哲学类, 教程类**书籍**                                       | 生产力色情                                                   |
-| Automatic Task \ Github Action \ Shell/py Scripts            | App "体验家"                                                 |
-| Logseq, the Second Brain                                     | 资源收集箱                                                   |
-| Source Code                                                  | 手工格式化作业过多                                           |
-| Music Maker \ Painting Pixel Pics                            | Too Much Social Media                                        |
-| 当下一段时间就可以做出来成果的教程, <br />坚持把教程做完, 再独立做一遍 | 思考<br />"要是当时我那样就好了"<br />"好喜欢他呀, 看看他的动态吧"<br />"怎么对这样的她做出些些许回应呢"<br />"找个漂亮/合适的背景和头像吧 -_- " |
-| 词根词缀, 每天背一点单词, 看一点 Youtube 视频                | 看了太多 动漫/漫画 了                                        |
-| 坚持无纸化办公, 用掉多余的废纸和笔                           | 频繁使用手机截图, 事后也不处理                               |
-| 坚持和他人搭话, 多说一点无用的废话                           | 看了陌生的人不打招呼, 默默走开                               |
-| - | **扩写**自己的废话 |
-
-## Things Worth To Wasting Time
-
-### Fav Animate
-
-| Name | bgm.tv |
-|------|-------|
-| Rick and Morty | [Jmp](https://bangumi.tv/subject/93377) |
-| Bojack Horseman | [Jmp](https://bangumi.tv/subject/124649) |
-| South Park | [Jmp](https://bangumi.tv/subject/25442) |
-| Futurama | [Jmp](https://bangumi.tv/subject/28065) |
-| To LOVEる -とらぶる- | [Jmp](https://bangumi.tv/subject/849) |
-| そらのおとしもの | [Jmp](https://bangumi.tv/subject/2617) |
-| 異種族レビュアーズ | [Jmp](https://bangumi.tv/subject/285482) |
-| 新世界より | [Jmp](https://bangumi.tv/subject/37785) |
-| 僕だけがいない街 | [Jmp](https://bangumi.tv/subject/137722) |
-| ID:INVADED イド：インヴェイデッド | [Jmp](https://bangumi.tv/subject/285776) |
-| かくしごと | [Jmp](https://bangumi.tv/subject/294713) |
-| Re:ゼロから始める異世界生活 | [Jmp](https://bangumi.tv/subject/140001) |
-| ひぐらしのなく頃に | [Jmp](https://bangumi.tv/subject/289) |
-| モブサイコ100 | [Jmp](https://bangumi.tv/subject/158316) |
-| 七つの大罪 | [Jmp](https://bangumi.tv/subject/101820) |
-| オーバーロード | [Jmp](https://bangumi.tv/subject/112146) |
-| ACCA13区監察課 | [Jmp](https://bangumi.tv/subject/183492) |
-| 呪術廻戦 | [Jmp](https://bangumi.tv/subject/294993) |
-| 鬼滅の刃 | [Jmp](https://bangumi.tv/subject/245665) |
-| 化物語 | [Jmp](https://bangumi.tv/subject/1671) |
-| 四畳半神話大系 | [Jmp](https://bangumi.tv/subject/4019) |
-| 進撃の巨人 | [Jmp](https://bangumi.tv/subject/55770) |
-| ソードアート・オンライン | [Jmp](https://bangumi.tv/subject/23686) |
-| ゴールデンカムイ | [Jmp](https://bangumi.tv/subject/221127) |
-| ドロヘドロ | [Jmp](https://bangumi.tv/subject/266301) |
-| オッドタクシー | [Jmp](https://bangumi.tv/subject/325285) |
+期间现实生活中发生了很多魔幻的事情, 红头文件不断发, 各轮公司进行大裁员接连不断, 蛋糕在变小, 就业形势不断加剧, 现在能做的就是捂住耳朵往大厂卷, 往外企卷, 现在还不能躺. 你要想好自己可能遭遇的最糟糕得情况, 然后尽量未雨绸缪地去做准备.
