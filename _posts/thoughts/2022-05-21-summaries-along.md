@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Summaries Along
-updated: 2022-05-21
+updated: 2022-05-22
 category: thoughts
 comment_link: https://github.com/bGZo/blog/issues/5
 ---
 
 2021年10月第三个周末看到了 [@february](https://sunhuiquan.github.io/) 的写的个人博客, 心血来潮, 也想写一点自己的经历, 趁着自己表达欲还没有消失之前.
 
-2019年开始写博客, 因为拿不准每个平台, 所以只能一个一个换着用, onenote, youdao, wiz, yuque, cnblog, csdn, wordpress, typecho, hexo, gitbook, hugo, notion, atom, obsidian, logseq..., 最近决定沉淀在 [logseq](https://logseq.github.io/) 不动了. 也推荐给法家使用, 没有任何平台的数据是安全的, 排除陆内看脸的网络环境, 本地托管才是上策.
+2019年开始写博客, 因为拿不准每个平台, 所以只能一个一个换着用, onenote, youdao, wiz, yuque, cnblog, csdn, [wordpress](https://cn.wordpress.org), [typecho](http://typecho.org), [Bitcron](https://www.bitcron.com/), [hexo](https://hexo.io/zh-cn), gitbook, [mkdics](https://www.mkdocs.org), [blogger](https://www.blogger.com), [hugo](https://gohugo.io), notion, obsidian, logseq..., 最近决定沉淀在 [logseq](https://logseq.github.io) + [Jekyll](https://jekyllrb.com) 不动了. 也推荐给法家使用, 没有任何平台的数据是安全的, 排除陆内看脸的网络环境, 本地托管才是上策.
 
 这几年来文件管理做的不好, 犄角旮旯藏的都是自己的写的小 sticks; 从 Ubuntu 迁移到 Windows 更是丢了自己一年的历史数据🤯; 加上不正确的记忆, 东拼西凑, 勉强挤出些文字, 却是囿于自己的笔力浅薄, 删改不断, 写完回读, 又弗如远甚. 罢了, 凑合着看吧...
 
