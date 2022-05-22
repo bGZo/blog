@@ -5,7 +5,7 @@ title: Thoughts
 
 ## Thoughts
 
-> [Clichés](https://www.detailedpedia.com/wiki-Clich%C3%A9) Pointless, So Only Followings Reserved:
+> [Clichés](https://www.detailedpedia.com/wiki-Clich%C3%A9) pointless, therefore only the following are reserved: 
 
 <ul class="posts">
   {% for thought in site.categories.thoughts %}
