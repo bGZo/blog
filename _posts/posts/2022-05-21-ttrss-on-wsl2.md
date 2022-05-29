@@ -1,11 +1,10 @@
 ---
 layout: post
 title: TTRSS on WSL2
-updated: 2022-05-23
+updated: 2022-05-29
 category: posts
 comment_link: https://github.com/bGZo/blog/issues/3
 ---
-
 
 Keywords: `docker` / `wsl2` / `port forward`
 
@@ -122,9 +121,9 @@ via: [🎯 备份和迁移数据 - Docker 快速入门 - 易文档](https://dock
 
 使用如下, 仅供参考 (脚本因机器环境而异, `windows` 用户名 15517 和 `wsl2` 用户名 `bgzocg`, `proxy` 端口 `7890`, `ttrss` 端口 `4040`).
 
-![image](https://user-images.githubusercontent.com/57313137/158714518-c1dd51d1-c3b1-4b1d-b3dc-ac448e4dbebd.png)
+![image](https://user-images.githubusercontent.com/57313137/170861898-bfed1062-dbd2-478d-87aa-86591a270061.png)
 
-`C:\Users\15517\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`
+`C:\Users\15517\Documents\PowerShell\Microsoft.PowerShell_profile.ps1` 
 
 ```powershell
 function Output-Lan-Ip-Bin {
@@ -155,6 +154,8 @@ function Netsh-Lan {
 function Start-TTRSS { # main
     Output-Lan-Ip-Bin
     wsl /mnt/c/Users/15517/bin/wsl-ip.sh
+
+    wsl sudo service docker start
 
     #via https://docs.docker.com/compose/compose-file/compose-file-v2/
     wsl docker-compose -f /home/bgzocg/ttrss/docker-compose.yml --env /home/bgzocg/ttrss/.env up -d
