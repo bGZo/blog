@@ -1,11 +1,10 @@
 ---
 layout: post
 title: Thanks List
-updated: 2022-05-21
+updated: 2022-07-01
 category: thoughts
 comment_link: https://github.com/bGZo/blog/issues/4
 ---
-
 
 > 如果你想活得幸福, 那就开始感谢和赞美他人吧.🥰
 
@@ -15,8 +14,8 @@ comment_link: https://github.com/bGZo/blog/issues/4
 
 ## University
 
-- 谢谢 某帅 带我这个懒货打工, 让我也和这个社会也多了一些连接.
-- 谢谢 崔大佬 将国创计划书分享给我们小组, 对我们组的进展的确有很大的启发.
+- 谢谢 [@Sakura-zs](https://github.com/Sakura-zs) 带我这个懒货打工, 让我也和这个社会也多了一些连接.
+- 谢谢 [@jasonczc](https://github.com/jasonczc) 将国创计划书分享给我们小组, 对我们组的进展的确有很大的启发.
 - 谢谢 徐某 总是愿意把复习用的卷子和知识分享给同学, 多多少少把我也惯坏了
 - 谢谢 宵哥 和我一起打小抄. 哈哈哈😂
 - 谢谢 舍友们(L4WUDU, 老板 和 King) 容忍我这个喜欢吐脏话的人和夜猫子, 我会早睡的😂
@@ -27,6 +26,8 @@ comment_link: https://github.com/bGZo/blog/issues/4
 
 ## High School
 
+- 谢谢 同为 Trunk 的 [@lupinsofpetrichor](https://github.com/lupinsofpetrichor) 陪伴我走过整个三年高中课间打水,  如厕, 放学回家的蜿蜒小路, 那段沉陷 任某 的时间里给予了我很多勇气和情感的支持. 寡言但聊起来很幽默, 高考那段闭塞的日子一起聊了很多有意思的八卦. 🍻
+  - 王者带飞, 游戏带师🤣 现居住在 [Genshin Impact](https://ys.mihoyo.com) 中.
 - 谢谢 网易云 上为我留言的陌生人们 (我爱用女头发矫情文字🤡)
 - 谢谢 某陌生教师 在 图书馆 将她的座位让给站在书架中的我. (PS: 那个留给我的垫子也很舒服)
 - 谢谢 某伟, 某宇, 某磊 高中整个三年陪我一起补课的陪伴; 另外特别谢谢 某磊 时常替我要到的复习资料.
@@ -65,7 +66,7 @@ comment_link: https://github.com/bGZo/blog/issues/4
 - 谢谢 郭某, 刘某 陪伴我的小学六年
   - 我当时说过的很多话都伤到了你, 但当时真的不会照顾人的感情, 抱歉😖
 - 谢谢 王某 通知我作业的三年, 最后几年一直打电话问你作业哈哈哈.
-- 谢谢 尤老师, 倪老师 对我的照顾.
+- 谢谢 尤老师, 倪老师, 汪老师 对我的照顾.
 
 ## Always
 
@@ -74,4 +75,4 @@ comment_link: https://github.com/bGZo/blog/issues/4
   - 谢谢 老姐 还留心将认为对我有用的东西留给我. 真的很感谢. 即使大多不甚有用...
 - 谢谢出门也会为我留门的 陌生人们
 - 谢谢主动为骑自行车的我让路的 司机们
-- 谢谢中国互联网审查未出那几年为爱发电的 网友. 我经历过那个时间段的惨景.
+- 谢谢中国互联网审查未正式推广那几年为爱发电的 网友. 那是一个拙劣却真实, 和谐的理想乡.
