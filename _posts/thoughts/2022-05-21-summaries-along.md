@@ -21,8 +21,6 @@ comment_link: https://github.com/bGZo/blog/issues/5
 > 4. Once you’ve gone through the past year, look at your notepad list and ask, “What 20% of each column produced the most reliable or powerful peaks?”
 > 5. Based on the answers, take your “positive” leaders and schedule more of them in the new year. Get them on the calendar now! Book things with friends and prepay for activities/events/commitments that you know work. It’s not real until it’s in the calendar. That’s step one. Step two is to take your “negative” leaders, put “NOT-TO-DO LIST” at the top, and put them somewhere you can see them each morning for the first few weeks of 2022. These are the people and things you *know* make you miserable, so don’t put them on your calendar out of obligation, guilt, FOMO, or other nonsense.
 
-
-
 | Positive                                                   | Negative                                                     |
 | ---------------------------------------------------------- | ------------------------------------------------------------ |
 | 画像素画                                                   | 生产力色情                                                   |
@@ -31,11 +29,13 @@ comment_link: https://github.com/bGZo/blog/issues/5
 | 用 GA & Script 自动化繁琐的任务                            | 手工格式化作业过多                                           |
 | 笔记软件 Logseq                                            | 不断收集用不到的资源                                         |
 | 看了一些小玩具的源码                                       | 漫无目的 改写/扩写 自己的废话                                |
-| 短时间就能收获成果的教程, <br /> 坚持做完教程 + 独立做一遍 | 禁止思考如 <br /> "要是当时我当初xxx", <br /> "看看他的动态吧" <br /> "纠结如何回应" <br /> 找个酷酷的背景/头像 |
+| 短时间就能收获成果的教程, <br /> 坚持做完教程 + 独立做一遍 | "要是当时我xxx", <br /> "看看他的动态吧" <br /> "纠结如何回应..." <br /> 找个酷酷的背景/头像 |
 | 每天背单词, 看一点英文 Youtube 视频                        | 看了太多 动漫/漫画                                           |
 | 无纸化办公, 用掉多余的废纸和笔                             | 频繁使用手机截图, 事后也不处理                               |
 | 和他人搭话, 多说一点无用的废话                             | 看到陌生没有打招呼, 默默走开                                 |
 | 控制自己每日**摄入信息**                                   | 迁移无关紧要的数据                                           |
+
+
 ## 2019 Winter
 
   <!--前十八年对大学的幻想甚高, 一上来就是完全的理想主义之破碎: 辩论队参加是参加了, 但是我的身份是裁判; 社团参与是参与了, 谁知道手工社全社就三个男生; 课外活动诸如不明觉厉的讲座也参与了, 但完全是被叫过去充数的... 和曾在社交媒体上流传的讲课视频全然不同, 这和我对大学的幻想相形见绌. 多多少少让人郁闷.-->
