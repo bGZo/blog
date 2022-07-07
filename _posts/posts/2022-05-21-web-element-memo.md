@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Web Element Memos
-updated: 2022-06-11
+title: Web Element Memo
+updated: 2022-07-07
 category: posts
 comment_link: https://github.com/bGZo/blog/issues/6
 ---
