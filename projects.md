@@ -16,7 +16,7 @@ I like working under [demo](http://github.com/bgzo/demo) repo, recently progress
 
 ## Memos
 
-- [.v2proxy](https://gist.github.com/bGZo/82a76ecbebf81b556a1d20a91a6bd21a ): Useful roxy commands. (Develop Acceleration).🚀
+- [.v2proxy](https://gist.github.com/bGZo/82a76ecbebf81b556a1d20a91a6bd21a ): Useful proxy commands. (Develop Acceleration).🚀
 - [fill-wenjuan](https://gist.github.com/bGZo/868eeb5a374188be9aaf862468381aaf ): Script for https://www.wenjuan.com.
 - [cnblog-config](https://gist.github.com/bGZo/24030a2596ebee336428b7bb83724b32 ): Base Script for [CNBLOG](https://www.cnblogs.com/QGJHWm9DZwo/).
 - [oracle.sql](https://gist.github.com/bGZo/cc81fcceb8455e95a413a20cd0759cb7 )
