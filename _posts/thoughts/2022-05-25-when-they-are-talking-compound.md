@@ -1,7 +1,7 @@
 ---
 layout: post
 title: When They are Talking Compound
-updated: 2022-05-26
+updated: 2022-10-09
 category: thoughts
 comment_link: https://github.com/bGZo/blog/issues/7
 ---
@@ -87,5 +87,5 @@ $\begin{align} \sqrt[n]{ ( \frac{FV}{PV} ) } - 1 \tag{4} \end{align}$
 
 - [Compound interest - Wikipedia](https://en.wikipedia.org/wiki/Compound_interest )
 - [李永乐老师讲自然对数的底e - YouTube](https://www.youtube.com/watch?v=2a6gDHfWQGA )
-- [富人投資 | 复利效应並不會幫你致富？- YouTube](https://www.youtube.com/watch?v=uiYxUU-ejRc )
+- [富人投資, 复利效应並不會幫你致富？- YouTube](https://www.youtube.com/watch?v=uiYxUU-ejRc )
 - [复利的谎言-Wechat Offical Acount](https://mp.weixin.qq.com/s/1pJSuOSrNIj4KPB0F8O54A )
