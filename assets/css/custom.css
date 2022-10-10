@@ -107,10 +107,13 @@ figure {
 
 blockquote {
   position: relative;
+  color: #787D7B;
+  /* #sunezumi */
 }
 
 blockquote::before {
   background-color: #FEDFE1;
+  /* #sakura */
   border-radius: var(--border-radius);
   bottom: 0px;
   content: "";
@@ -138,6 +141,10 @@ pre.highlight {
 pre {
   font-size: 0.85rem;
   line-height: 1.5;
+  white-space: pre-wrap;
+  /* Auto Code Wrap
+  via: https://stackoverflow.com/questions/28015103
+  */
 }
 
 pre code {

@@ -3,13 +3,20 @@ description: Small is Beautiful, Less is More.
 author: bGZo
 permalink: /:title.html
 
+highlighter: rouge
+
+markdown: kramdown
+kramdown:
+    hard_wrap: true
+# More via: https://github.com/kramdown/parser-gfm
+
+#### Deprecated via: https://github.com/jekyll/jekyll/issues/7838
+#### Redcarpet support has been dropped in Jekyll 4.0
+# markdown: redcarpet
+# redcarpet:
+#     extensions: [no_intra_emphasis, tables, fenced_code_blocks, strikethrough, underline, highlight, autolink, hard_wrap, with_toc_data]
+# More via: https://github.com/vmg/redcarpet/blob/master/README.markdown
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-
-highlighter: rouge
-
-# markdown: redcarpet
-# redcarpet:
-#    extensions: ["fenced_code_blocks", "tables", "highlight", "with_toc_data", "strikethrough", "underline"]
-# see more in https://github.com/vmg/redcarpet/blob/master/README.markdown
