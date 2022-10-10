@@ -9,9 +9,9 @@ I like *coffee*, *open source*, *books(philosophy most)*, *musics(Instrumental E
 
 Last tonight I read a tweet thread written by [@SahilBloom](https://twitter.com/SahilBloom), which really sparked me.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Last year, I had a conversation that changed my life.<br>It caused me to upend everything and move across the country.<br>The lesson from it may change yours:</p>&mdash; Sahil Bloom (@SahilBloom) <a href="https://twitter.com/SahilBloom/status/1571137341997318147?ref_src=twsrc%5Etfw">September 17, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Last year, I had a conversation that changed my life.<br>It caused me to upend everything and move across the country.<br>The lesson from it may change yours:</p>&mdash; Sahil Bloom (@SahilBloom) <a href="https://twitter.com/SahilBloom/status/1571137341997318147">September 17, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Since Covid-19, little by little, I realized the precious nature of time with people we care most deeply about, which we always fail to recognize it until it's too late. The parents, firends, activities and cats more. Identify them. Prioritize them ruthlessly. As [@waitbutwhy](https://waitbutwhy.com/2015/12/the-tail-end.html) written about relationships with parents:
+Since Covid-19, little by little, I realized the precious nature of time with people we care most deeply about, which we always fail to recognize it until it's too late. The parents, firends, activities, cats and more. Identify them. Prioritize them ruthlessly. As [@waitbutwhy](https://waitbutwhy.com/2015/12/the-tail-end.html) written about relationships with parents:
 
 > It turns out that when I graduated from high school, I had already used up 93% of my in-person parent time. I’m now enjoying the last 5% of that time. We’re in the tail end.
 
