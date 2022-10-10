@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sorry for Cats in My First Half of Life
-updated: 2022-10-09
+updated: 2022-10-10
 category: thoughts
 comment_link: https://github.com/bGZo/blog/issues/9
 ---
@@ -15,8 +15,8 @@ comment_link: https://github.com/bGZo/blog/issues/9
 
 是啊, 你和初生的婴儿是那样相像, 就单单叫声, 有一种病名跟你也是那样相似:
 
-> 猫叫综合征（英语：Cri du chat syndrome），也称猫哭症、猫啼症、5号染色体短臂缺失综合征（chromosome 5p deletion syndrome），是一种由于第五号染色体短臂缺损而引起的罕见基因异常病症。患病婴儿的哭声特别，似猫啼，因而得名；其英文名称系借自法语cri du chat，意即“猫哭”或“猫叫”。 via: [猫哭症 
-维基百科，自由的百科全书](https://zh.wikipedia.org/zh-cn/%E8%B2%93%E5%93%AD%E7%97%87 )  
+> 猫叫综合征（英语：Cri du chat syndrome），也称猫哭症、猫啼症、5号染色体短臂缺失综合征（chromosome 5p deletion syndrome），是一种由于第五号染色体短臂缺损而引起的罕见基因异常病症。患病婴儿的哭声特别，似猫啼，因而得名；其英文名称系借自法语cri du chat，意即“猫哭”或“猫叫”。 
+> via: [Cri du chat syndrome - Wikipedia](https://en.wikipedia.org/wiki/Cri_du_chat_syndrome )
 
 如果真要让我对你的感情下个定义, 那可就太不浪漫, 太无趣了, 说实话, 我不喜欢上面 *Konrad Zacharias Lorenz* 的理论. 相比之下, 我更喜欢小王子 (*The Little Prince*) 里面的关系,  
 
