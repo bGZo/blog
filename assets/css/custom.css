@@ -154,14 +154,24 @@ h1, h2, h3, h4, h5, h6{
 
 blockquote {
   position: relative;
+<<<<<<< HEAD
   color: var(--ls-teryiary-font-color);
   background-color: var(--shironeri);
   position: relative;
   margin: 1rem 0 1rem 0;
   border-radius: var(--border-radius);
+=======
+  color: #787D7B;
+  /* #sunezumi */
+>>>>>>> a68f75deb011ccc557f8dfb2b5fddb7c473019b8
 }
 blockquote::before {
+<<<<<<< HEAD
   border-left: 0.2em solid var(--ls-color-font-color);
+=======
+  background-color: #FEDFE1;
+  /* #sakura */
+>>>>>>> a68f75deb011ccc557f8dfb2b5fddb7c473019b8
   border-radius: var(--border-radius);
   bottom: 0px;
   left: 0;
@@ -195,7 +205,10 @@ pre.highlight {
 pre {
   font-size: 0.85rem;
   line-height: 1.5;
+<<<<<<< HEAD
 
+=======
+>>>>>>> a68f75deb011ccc557f8dfb2b5fddb7c473019b8
   white-space: pre-wrap;
   /* Auto Code Wrap
   via: https://stackoverflow.com/questions/28015103
