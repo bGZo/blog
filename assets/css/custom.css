@@ -47,7 +47,7 @@ body {
   line-height: 1.7;
   color: var(--ls-primary-font-color);
   background-color: var(--ls-primary-background-color);
-  background-image: url(https://unpkg.com/npm/bgzo/img/texture.png);
+  background-image: url(https://unpkg.com/bgzo/img/texture.png);
   word-break: break-word;
   /* Wrap a long line via: https://stackoverflow.com/questions/53475824 */
 }
