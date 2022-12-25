@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Changelogs
-updated: 2022-12-24
+updated: 2022-12-25
 category: posts
 comment_link: https://github.com/bGZo/blog/issues/1
 ---
@@ -48,7 +48,7 @@ Since 20221223.
 - 20221222
   - [Style] Modify the style of theme to [solarized](https://ethanschoonover.com/solarized), mostly color of theme;
   - [Style] Add the table of contents and footnotes support;
-  - [Style] Change emoji icon to normal icon due to RSS issue;
+  - [Style] Change emoji icon to normal icon for compatibility, using [Favicon Generator](https://realfavicongenerator.net/)[^6];
   - [Feature] Add [UNPKG](https://unpkg.com) CDN Support;
   - [Feature] Add back to the top named `ikaros`[^5];
   - [Docs] Rewrite changelogs;
@@ -117,6 +117,7 @@ Since 20221223.
 
 [^1]: [Emojis as favicons](https://css-tricks.com/emojis-as-favicons);
 [^2]: [Platitude - Wikipedia](https://en.wikipedia.org/wiki/Platitude);
-[^3]: [Cliché - Wikipedia](https://en.wikipedia.org/wiki/Clich%c3%a9 )
-[^4]: [People Die, but Long Live GitHub - laike9m's blog](https://laike9m.com/blog/people-die-but-long-live-github,122/)
-[^5]: [Heaven's Lost Property - Wikipedia](https://en.wikipedia.org/wiki/Heaven%27s_Lost_Property )
+[^3]: [Cliché - Wikipedia](https://en.wikipedia.org/wiki/Clich%c3%a9 );
+[^4]: [People Die, but Long Live GitHub - laike9m's blog](https://laike9m.com/blog/people-die-but-long-live-github,122/);
+[^5]: [Heaven's Lost Property - Wikipedia](https://en.wikipedia.org/wiki/Heaven%27s_Lost_Property);
+[^6]: [全平台 Favicon 在线生成器 – RealFaviconGenerator.net – 镜态极研](https://kagamiz.com/real-favicon-generator/);
