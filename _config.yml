@@ -1,5 +1,5 @@
-title: bGZo's Blog
-description: Small is Beautiful, Less is More.
+title: bGZo's blog
+description: Small is beautiful, less is more.
 author: bGZo
 permalink: /:title.html
 
@@ -20,3 +20,4 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-seo-tag

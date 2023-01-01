@@ -23,13 +23,13 @@ jobs:
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r assets/requirements.txt
         if: steps.pip-cache.outputs.cache-hit != 'true'
 
       - name: Run Script
         run: |
           rm -rf _posts/
-          python3 sync-issues.py ${{ secrets.G_T }}
+          python3 assets/sync-issues.py ${{ secrets.G_T }}
 
       - name: Run Safe Dir
         run: |
@@ -39,9 +39,9 @@ jobs:
         run: |
           if [ -n "$(git status --porcelain)" ]; then
             git config user.name bgzo
-            git config user.email bgzocg@outlook.com
+            git config user.email bgzo@outlook.com
             git add .
-            git commit -m "Update Articles"
+            git commit -m "Sync article"
             git push
           else
             echo "no changes";
