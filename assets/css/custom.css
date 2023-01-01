@@ -251,6 +251,11 @@ header h1:hover span {
   margin-left: 0.5rem;
 }
 
+.task-list{
+  list-style-type: none;
+  padding-left: 1rem;
+}
+
 
 table {
   padding: 0;
