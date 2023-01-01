@@ -17,7 +17,7 @@ comment_link: https://github.com/bGZo/blog/issues/11
 
 ## Highlights
 
-- Every single page for quote; Page design parody for https://wordsofwisdom.app/, and detail is following:
+- [x] Every single page for quote; Detail[^1] is following:
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="wvxWKZb" data-user="bgzo" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/bgzo/pen/wvxWKZb">
@@ -26,11 +26,10 @@ comment_link: https://github.com/bGZo/blog/issues/11
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-- Generate quote by syncing Github issues with metadata;
-- Deploy with [Vercel](https://vercel.com)
-- Og SEO and twitter card supported.
-
-## TODO List
-
+- [x] Generate quote by syncing Github issues with metadata;
+- [x] Deploy with [Vercel](https://vercel.com)
+- [x] SEO supported by plugin.
 - [ ] More functions, like mobile views, share links, quote tags.
 - [ ] When the quotes increasing huge, how to generate page smartly? Is possible to make a API service?
+
+[^1]: Page design parody for [Words of Wisdom](https://wordsofwisdom.app/);
