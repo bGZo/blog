@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Changelogs
-updated: 2022-12-25
+updated: 2023-01-01
 category: posts
 comment_link: https://github.com/bGZo/blog/issues/1
 ---
@@ -45,12 +45,14 @@ Since 20221223.
 
 ## Reversed Log
 
+- 20230101
+  - [Feat] Plugin [jekyll-seo-tag](https://jekyll.github.io/jekyll-seo-tag/) supported.
 - 20221222
   - [Style] Modify the style of theme to [solarized](https://ethanschoonover.com/solarized), mostly color of theme;
   - [Style] Add the table of contents and footnotes support;
   - [Style] Change emoji icon to normal icon for compatibility, using [Favicon Generator](https://realfavicongenerator.net/)[^6];
-  - [Feature] Add [UNPKG](https://unpkg.com) CDN Support;
-  - [Feature] Add back to the top named `ikaros`[^5];
+  - [Feat] Add [UNPKG](https://unpkg.com) CDN Support;
+  - [Feat] Add back to the top named `ikaros`[^5];
   - [Docs] Rewrite changelogs;
 - 20220521
   - Hosted by github issues with github action;
