@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Thanks List
-updated: 2022-07-01
+title: Thank you guys
+updated: 2023-01-04
 category: thoughts
 comment_link: https://github.com/bGZo/blog/issues/4
 ---

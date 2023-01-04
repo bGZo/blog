@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Changelogs
-updated: 2023-01-01
+updated: 2023-01-04
 category: posts
 comment_link: https://github.com/bGZo/blog/issues/1
 ---

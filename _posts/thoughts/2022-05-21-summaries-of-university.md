@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Summaries Along
-updated: 2022-09-22
+title: Summaries of university
+updated: 2023-01-04
 category: thoughts
 comment_link: https://github.com/bGZo/blog/issues/5
 ---
