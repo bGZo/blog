@@ -28,7 +28,7 @@
   --ls-secondary-font-color: var(--base00);
   --ls-teryiary-font-color: var(--base0);
 
-  --ls-color-font-color: var(--cyan);
+  --ls-color-font-color: var(--orange);
 }
 
 html {
@@ -69,7 +69,6 @@ body {
 }
 
 main img {
-  box-shadow: 0px 0px 6px #aeaeae;
   border-radius: var(--border-radius);
   max-width: 100%;
   padding: 6px;
@@ -133,7 +132,7 @@ a::before {
   opacity: .5;
   transition: transform .3s ease;
 }
-a::before {  
+a::before {
   transform: scaleX(0);
   transform-origin: bottom right;
 }
@@ -173,7 +172,7 @@ blockquote::before {
 blockquote p{
   padding: inherit;
   margin: 0;
-  padding: 1.2rem 1rem 1.2rem 1rem;
+  padding: 1.2rem 1.5rem 1.2rem 1.5rem;
 }
 
 
@@ -414,7 +413,9 @@ tr:nth-child(n):hover td {
     margin-bottom: 0;
   }
   body {
-    width: 90%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 @media (min-width: 65em) {
