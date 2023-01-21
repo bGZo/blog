@@ -92,7 +92,7 @@ comment_link: https://github.com/bGZo/blog/issues/13
 
 <!-- ![1501235050355978240](https://user-images.githubusercontent.com/57313137/213840421-c7c4cc78-afc3-4608-a221-564c4365fa15.jpeg)[^404] -->
 
-[^WEICHAT_OUTLINK]: 现如今微信公众号已经可以插入超链接了, 但门槛是 `认证服务号` + `开通微信支付`, 受众群体并不包含大量的个人原创者, via: [微信公众号文章如何插入外部链接？ | 微信开放社区](https://developers.weixin.qq.com/community/develop/doc/000cc6c96f80403625ea530cd51000);
+[^WEICHAT_OUTLINK]: 现如今微信公众号已经可以插入超链接了, 但门槛是 `认证服务号` + `开通微信支付`, 受众群体并不包含大量的个人原创者, via: [微信公众号文章如何插入外部链接？ - 微信开放社区](https://developers.weixin.qq.com/community/develop/doc/000cc6c96f80403625ea530cd51000);
 [^CLEAN_LINK]: "外链能造成什么不良影响？一旦这些外链网站没使用了，域名未续费，就有可能被别人注册，做成非法（黄赌毒）网站，将对您的网站造成不良影响，或将注销ICP备案号、关停网站，主体也或将承担相应的责任。" via: [关于清查网站外链的重要告知-湖北大鹏网络公司-官网](https://www.dpwl.net/news/01/3885.html); Archived [here](https://web.archive.org/web/*/https://www.dpwl.net/news/01/3885.html);
 [^WWW]: 这里指代的万维网参考 Wikipedia 中文的定义: "一个透过互联网访问的，由许多互相链接的超文本组成的資訊系統", via: [万维网 - 维基百科，自由的百科全书](https://zh.wikipedia.org/zh/%E4%B8%87%E7%BB%B4%E7%BD%91); 阅读更多超链接相关的历史, 可以参考2021年书库出品的书籍: [超文本和超链接 (豆瓣)](https://book.douban.com/subject/35438602/);
 [^VPS_1]: Via: [2022 年了 ，备案还是这么繁琐 - V2EX](https://v2ex.com/t/853461);
