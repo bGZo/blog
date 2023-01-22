@@ -3,10 +3,10 @@
   --base02: #073642;
   --base01: #586e75;
   --base00: #657b83;
-  --base0:  #839496;
-  --base1:  #93a1a1;
-  --base2:  #eee8d5;
-  --base3:  #fdf6e3;
+  --base0: #839496;
+  --base1: #93a1a1;
+  --base2: #eee8d5;
+  --base3: #fdf6e3;
   --yellow: #b58900;
   --orange: #cb4b16;
   --red: #dc322f;
@@ -15,9 +15,9 @@
   --blue: #268bd2;
   --cyan: #2aa198;
   --green: #859900;
-  --sakura: #FEDFE1;
-  --cache:  #DDD6C1;
-  --shironeri:  #FCFAF2;
+  --sakura: #fedfe1;
+  --cache: #ddd6c1;
+  --shironeri: #fcfaf2;
 
   --border-radius: 8px;
   --ls-primary-background-color: var(--base3);
@@ -72,6 +72,10 @@ main img {
   border-radius: var(--border-radius);
   max-width: 100%;
   padding: 6px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 video {
@@ -112,7 +116,6 @@ nav ul li:not(:last-of-type) {
   font-size: 0.75rem;
 }
 
-
 a {
   color: var(--ls-color-font-color);
   position: relative;
@@ -127,10 +130,10 @@ a::before {
   bottom: 2px;
   left: 4px;
   width: 100%;
-  --bg-opacity: .75;
+  --bg-opacity: 0.75;
   background-color: var(--sakura);
-  opacity: .5;
-  transition: transform .3s ease;
+  opacity: 0.5;
+  transition: transform 0.3s ease;
 }
 a::before {
   transform: scaleX(0);
@@ -141,15 +144,18 @@ a:hover::before {
   transform-origin: bottom left;
 }
 
-
 p {
   display: block;
   margin: 0 0 1.5rem;
 }
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 1rem 0 1.5rem;
 }
-
 
 blockquote {
   position: relative;
@@ -169,12 +175,11 @@ blockquote::before {
   top: 0px;
   width: 4px;
 }
-blockquote p{
+blockquote p {
   padding: inherit;
   margin: 0;
   padding: 1.2rem 1.5rem 1.2rem 1.5rem;
 }
-
 
 .highlighter-rouge {
   margin-bottom: 1rem;
@@ -250,11 +255,10 @@ header h1:hover span {
   margin-left: 0.5rem;
 }
 
-.task-list{
+.task-list {
   list-style-type: none;
   padding-left: 1rem;
 }
-
 
 table {
   padding: 0;
@@ -295,70 +299,67 @@ tr:nth-child(n):hover td {
   background: var(--ls-tertiary-background-color);
 }
 
-
 .contents {
-  font-size: .9rem;
+  font-size: 0.9rem;
   overflow: auto;
   max-height: 400px;
   max-width: 300px;
   border: 1px solid var(--ls-tertiary-background-color);
   background-color: var(--ls-secondary-background-color);
-  padding: .1px;
+  padding: 0.1px;
   float: right;
   border-radius: var(--border-radius);
-  margin: .1rem .1rem 1rem 1rem;
+  margin: 0.1rem 0.1rem 1rem 1rem;
   word-break: break-word;
 }
 .contents::before {
   content: "Contents";
   color: var(--ls-teryiary-font-color);
   text-transform: uppercase;
-  font-size: .7rem;
-  letter-spacing: .1rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
   display: block;
-  margin: 1rem 1rem .5rem 0;
+  margin: 1rem 1rem 0.5rem 0;
   padding: 0 1rem 0 1rem;
 }
 .contents ul {
   list-style: none;
-  margin: 0 1rem .5rem -1rem;
+  margin: 0 1rem 0.5rem -1rem;
 }
 .contents ul ul {
   padding-left: 1.5rem;
 }
 .contents ul ul li::before {
   content: "⌞";
-  font-size: .7rem;
-  letter-spacing: .1rem;
-  margin: .1rem .1rem .1rem -.1rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  margin: 0.1rem 0.1rem 0.1rem -0.1rem;
 }
-.contents a{
+.contents a {
   color: var(--ls-secondary-font-color) !important;
 }
-.contents a::before{
-  all:initial;
+.contents a::before {
+  all: initial;
 }
-
 
 .footnotes {
   all: initial;
   color: var(--ls-teryiary-font-color) !important;
-  font-size: .8rem;
+  font-size: 0.8rem;
   margin: 2rem 0 0.5rem;
 }
 .footnotes::before {
   content: "Footnotes";
   color: var(--ls-teryiary-font-color);
   text-transform: uppercase;
-  font-size: .7rem;
-  letter-spacing: .1rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
   display: block;
   margin: 2rem 0 0.5rem;
 }
 .footnotes p {
   margin: 0 0 5px;
 }
-
 
 #ikaros {
   position: fixed;
@@ -371,10 +372,9 @@ tr:nth-child(n):hover td {
   display: none;
   z-index: 100;
 }
-#ikaros:hover{
+#ikaros:hover {
   transform: translate(15px, -10px);
 }
-
 
 @media (min-width: 22em) {
   header h1 {
