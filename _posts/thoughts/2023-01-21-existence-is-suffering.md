@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Existence is suffering
-updated: 2023-01-21
+updated: 2023-01-22
 category: thoughts
 comment_link: https://github.com/bGZo/blog/issues/14
 ---
@@ -45,14 +45,19 @@ Scenario A 是一个存在的 X, 我们认为X感到痛苦 (Pain) 的存在是�
 
 > However, the important question, when the absence ofpleasure involves no deprivation for anybody, is whether it is also ‘not bad’ or whether it is ‘bad’. The answer, I suggest, is that it is ‘not good, but not bad either’ rather than ‘not good, but bad’. Because ‘not bad’ is a more informative evaluation than ‘not good’, that is the one I prefer. However, even those who wish to stick with ‘not good’ will not thereby succeed in restoring symmetry. If pain is bad and pleasure is good, but the absence of pain is good and the absence of pleasure not good, then there is no symmetry between pleasure and pain.
 
-尽管听了很多讨论, 其实我还是不知道这个问题的答案, 我的恋人, 你知道吗? 我知道可能只是我自己厌世的情绪作祟, 有的时候我会像 South Park 说的那样想, 若我只是干在我母亲胸脯上的精斑就好了[^SOUTH_PARK], 甚至我会埋怨父母把我生出来这件事情, 这违背了我现在的意志
+尽管听了很多讨论, 其实我还是不知道这个问题的答案, 我的恋人, 你知道吗? 我知道可能只是我自己厌世的情绪作祟, 有的时候我会像 South Park 说的那样想, 若我只是干在我母亲胸脯上的精斑就好了[^SOUTH_PARK].
 
 ![E07_1674275739482_0](https://user-images.githubusercontent.com/57313137/213860278-96782427-0598-4c85-a6be-9c3ee4b32865.jpg)
+
+我会埋怨父母把我生出来这件事情, 我会想象和父亲的某次对谈.
+
+"爸, 下辈子记得带套".
+
 ![](https://pbs.twimg.com/media/FjBgnClX0AAFWE5.jpg)[^DAD_TWITTER_QUOTE]
 
 ## 你是在偷懒, 逃避问题吗?
 
-抛开更多的社会层面的因素不谈, 如上述的《何以为家》, 回到个人, 埋怨父母可能只是种偷懒的做法, 这不只是他们两个人的错, 你以为把人生的课题还给父母, 就就你什么事了, 可实际上, 你只是藉此来逃避, 因为你可能根本就没想过解决问题, 或许是你的本能, 你所做的可能只是不切实际地想象, "如果这些问题从一开始就不存在就好了", "为什么我会存在这个世界"...
+抛开更多沉重的社会层面因素不谈, 如上述的《何以为家》, 回到个人, 埋怨父母可能只是种偷懒的做法, 这不只是他们两个人的错, 你以为把人生的课题还给父母, 就没你什么事了, 可实际上, 你只是藉此来逃避, 因为你可能根本就没想过解决问题, 或许是你的本能, 你所做的可能只是不切实际地想象, "如果这些问题从一开始就不存在就好了", "为什么我会存在这个世界"...
 
 当我们迷茫, 不知道怎么走下一步的时候, 想这些形而上学的东西很正常, 社交媒体上几乎每天都有人在质问这些东西, 我从一开始的每条都看, 到后来的见惯不惯, 已经习以为常了. 可只是单一的归因给父母这一做法, 实在是偷懒, 省事, 一刀切的做法. 就像我们常常抱怨政府出台的很多一刀切政策一样, 本质是相同的. 可笑的是, 我们常常也这样想.
 

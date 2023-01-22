@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Killing external links sucks
-updated: 2023-01-21
+updated: 2023-01-22
 category: thoughts
 comment_link: https://github.com/bGZo/blog/issues/13
 ---
 
 ## 被抹杀的外链
 
-这周用 [SteamPY CDKey](https://steampy.com/) 在电脑端也入了死亡细胞 ([Dead Cells](https://dead-cells.com/)), 虽然手机也可以用手柄, 但搓起来的手感还是差好多, 因非常沉迷这款游戏, 由此对 `ROGUE` 这个标签起了兴趣, 顺藤摸瓜就找到了这篇文章 —— [触乐夜话：到底是“类Rogue”还是“轻度Rogue”](http://www.chuapp.com/?c=Article&id=288658), 文章比较权衡了`Roguelike` 和 `Roguelite` 的适用范围, 写得很棒, 是很少能在国内媒体看到的东西, 高兴之余, 也有两点担忧:
+这周用 CDKEY 兑换了 Dead Cells, 虽然 Play 也买了, 但搓起来的手感还是差好多, 突然对 `ROGUE` 这个标签起了兴趣, 顺藤摸瓜就找到了这篇文章 —— [触乐夜话：到底是“类Rogue”还是“轻度Rogue”](http://www.chuapp.com/?c=Article&id=288658), 文章比较权衡了`Roguelike` 和 `Roguelite` 的适用范围, 写得很棒, 是很少能在国内媒体看到的东西, 高兴之余, 也有两点担忧:
 
 1. 网站使用的是动态链接 (`category` & `id` required), 并且在 `HTML Head` 中并没有 SEO 相关的内容, 我不知道他是怎么被 Google 拿到第一页的, 最重要的是, 他隶属于门户网站, 是社区内容, 即注定被埋没, 不会被大多数人知道的内容, 换 Baidu 是搜不出来的; 
 2. 文章称述了诸多史料, 也提及了 Steam Going Rogue 主题特卖, 引用了一些 steam 官网的图片, 可是, 居然连一个链接都没有, 全文都是纯文本(Plain Text), 它不是传统意义上的万维网[^WWW];
