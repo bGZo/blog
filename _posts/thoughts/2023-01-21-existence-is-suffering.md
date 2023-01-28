@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Existence is suffering
-updated: 2023-01-22
+updated: 2023-01-28
 category: thoughts
 comment_link: https://github.com/bGZo/blog/issues/14
 ---
@@ -24,36 +24,26 @@ Rick and Morty 衍生漫画 20210303 的一期 *Rick and Morty Presents: Jerrybo
 “如果我不运用我的智慧，少生几个不幸的人，那上帝何必赋予我智慧呢？”
 “面对这样一些不幸的孩子，我将永远觉得有罪，”她说，“如果没有他们，也就不会有他们的不幸；他们如果不幸，那都是我一个人的罪过。”
 
-如果你不考虑孩子的未来是否不幸, 只是为了自己的一己私欲把孩子生下来 (养儿防老), 那么我只有一个问题, 你是恶魔吗? 像电影 *何以为家* 对世界的控诉:
+冥冥之中, 我总是很反感自己的存在, 随着父母年迈, 他们把养儿防老挂在嘴边的频率越来越高, 我好像就不是一个独立的个体, 只是他们拿来抵抗老无所依的工具, 而他们不知道的是, 每当他们对孩子说出这种功利, 异化, 伤感的话时, 他们彼此感情就会薄一分, **如果他们从不考虑孩子的未来是否不幸, 只是为了自己的一己私欲, 就把孩子生下来, Go Fucking Hell**, 像电影 *何以为家* 对世界的控诉:
 
 > "赞恩, 这里在直播, 你想说什么?"
 "我希望大人们能听我说, 我希望养不起孩子的大人不要生孩子, 关于童年我日后能记住的只有暴力, 辱骂, 殴打, 链子水管皮带打在身上的感觉, 他们说过最好听的话是 '兔患子滚出去', '让开废物'"
 "生活根本就全是虱子, 破鞋都比它华美, 我活在地狱里, 不过是生活里煎熬的一块烂肉"
 "生活是个千人骑万人乘的泼货, 我以为我们会成为好人, 被人爱戴, 可上帝根本不希望我们能被人爱. 他希望我们是别人家的脏抹布."
 
-也像我听说的一期播客 [EP19 人生若痛苦大于快乐，我还要带一个新的生命来这世上吗？ by 悲观生活指南 MORE THAN A FARCE](https://anchor.fm/wei48/episodes/EP19-e13h6ir )
+像是播客 [EP19 人生若痛苦大于快乐，我还要带一个新的生命来这世上吗？ by 悲观生活指南 MORE THAN A FARCE](https://anchor.fm/wei48/episodes/EP19-e13h6ir) 中提到的 *Better Never to Have Been*[^BNTHB] 一书中, 论述的那样:
 
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/3ppTHYES5dxhnOBFiwgrrh?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
-这样的讨论数不胜数, 如同 *Better Never to Have Been*[^BNTHB] 里面论述的:
-
 ![ApplicationFrameHost_81_1674282758820_0](https://user-images.githubusercontent.com/57313137/213860248-d3a85ce2-84f4-41e9-a850-672f97abcc3c.png)
 
-Scenario A 是一个存在的 X, 我们认为X感到痛苦 (Pain) 的存在是坏的(Bad), 感到愉悦 (Presence) 的存在是好的(Good); 右边是与之对称的象限, Scenario B是一个不存在的X, 我们知道, 当一个人痛苦的时候, 消解他的存在从而让他不在感到痛苦, 像是把一个经历痛苦的人解放出来, 是好的(Good), 往下看, 对于剥夺一个人的快乐, 我们常常认为是罪恶的, 这也是我们很多人生孩子的理由, 我想也让他在这个世界上幸福地活着, 但是注意, 作者强调, 这是一个不存在的人, 你不对世界上任何人产生剥夺, 它是一个糟糕(bad) 和不那么糟糕(not bad)的问题, 这个时候你又会发现, 如果苦痛糟糕, 愉悦喜闻乐见, 苦痛的缺失很好, 但是愉悦的缺失却不那么糟糕, 也不那么坏, 它落在了两者的灰色地带, 快乐和苦痛之间并没有对称性(symmetry).
-
-可能我最后还是没有讲太清楚, 让你看得不知所云, 这里是部分原文, 请君定夺:
+Scenario A 是一个存在的 X, 我们认为X感到痛苦 (Pain) 的存在是坏的(Bad), 感到愉悦 (Presence) 的存在是好的(Good); 右边是与之对称的象限, Scenario B是一个不存在的X, 我们知道, 当一个人痛苦的时候, 消解他的存在从而让他不在感到痛苦, 像是把一个经历痛苦的人解放出来, 是好的(Good), 往下看, 对于剥夺一个人的快乐, 我们常常认为是罪恶的, 这也是我们很多人生孩子的理由, 我想也让他在这个世界上幸福地活着, 但是注意, 作者强调, 这是一个不存在的人, 你不对世界上任何人产生剥夺, 它是一个糟糕(bad) 和不那么糟糕(not bad)的问题, 这个时候你又会发现, 如果苦痛糟糕, 愉悦喜闻乐见, 苦痛的缺失很好, 但是愉悦的缺失却不那么糟糕, 也不那么坏, 它落在了两者的灰色地带, 快乐和苦痛之间并没有对称性(symmetry). 可能还是不太清楚, 附上部分原文, 请君定夺:
 
 > However, the important question, when the absence ofpleasure involves no deprivation for anybody, is whether it is also ‘not bad’ or whether it is ‘bad’. The answer, I suggest, is that it is ‘not good, but not bad either’ rather than ‘not good, but bad’. Because ‘not bad’ is a more informative evaluation than ‘not good’, that is the one I prefer. However, even those who wish to stick with ‘not good’ will not thereby succeed in restoring symmetry. If pain is bad and pleasure is good, but the absence of pain is good and the absence of pleasure not good, then there is no symmetry between pleasure and pain.
 
 尽管听了很多讨论, 其实我还是不知道这个问题的答案, 我的恋人, 你知道吗? 我知道可能只是我自己厌世的情绪作祟, 有的时候我会像 South Park 说的那样想, 若我只是干在我母亲胸脯上的精斑就好了[^SOUTH_PARK].
 
 ![E07_1674275739482_0](https://user-images.githubusercontent.com/57313137/213860278-96782427-0598-4c85-a6be-9c3ee4b32865.jpg)
-
-我会埋怨父母把我生出来这件事情, 我会想象和父亲的某次对谈.
-
-"爸, 下辈子记得带套".
-
-![](https://pbs.twimg.com/media/FjBgnClX0AAFWE5.jpg)[^DAD_TWITTER_QUOTE]
 
 ## 你是在偷懒, 逃避问题吗?
 
@@ -64,7 +54,7 @@ Scenario A 是一个存在的 X, 我们认为X感到痛苦 (Pain) 的存在是�
 当我们解决不了那些问题的时候, 就开始意淫般地想抹除这个问题的根源. 这样不断溯因, 以为所有的因都可以消解此时的果, 这样的思维, 才是我们需要警惕的. 说实话, 这种下意识的逻辑潜藏在我脑海很久了, 几乎每次受委屈都会重复这个回路, 如果我们不把这种潜意识转化为意识, 并加以控制, 那么我们只能像提线木偶一样被自己的潜意识操控, 并毫无知觉, 正如心理学家卡尔·荣格说的那样:
 
 > Until you make the unconscious conscious, it will direct your life and you will call it fate.
-―― Carl Jung
+―― [Carl Jung](https://en.wikipedia.org/wiki/Carl_Jung)
 
 想法见仁见智, 于我而言, 当我以某种叙事回顾父母被我和姊妹绑架的一生, 我会感到无尽的悲哀, 希望的幻灭, 重塑, 再幻灭, 再重塑, 就像不断在绝望的低谷和希望的微光之间坐过山车. 在这场注定会输的, 和命令的拉扯中, 我会钦佩的二舅和福贵[^ERJIU][^FUGUI], 如若换做是我, 可能撑不了多久就会砰然倒塌吧. 因为生活并不应该如此, 所以我不会选择上一辈的人生, 寄自我实现的愿望于下一代, 我愿意花费我一生的时间在自我实现上, 做一个挨饿的理想主义者. 而不是去过早的, 以一个残缺的人格去抚育下一代.
 
@@ -106,5 +96,3 @@ Scenario A 是一个存在的 X, 我们认为X感到痛苦 (Pain) 的存在是�
 [^SOFT_PRON]: 图片出自 `DASS-076`, 是从 Siyu_mia 的 [推文](https://twitter.com/Siyu_mia/status/1583506366706380800) 中发现;
 
 [^NOW_PRON]: 关于 Pron Video 的讨论, 可以参考 Ran Gavrieli 的 TED 演讲 [Why I stopped watching porn - TEDxJaffa - YouTube](https://www.youtube.com/watch?v=gRJ_QfP2mhU), 演讲者强调 Pron Video 的侵入性远比我们想象中的强大, 并识图劝谏我们建立更加健康的两性关系;
-
-[^DAD_TWITTER_QUOTE]: via: [immusoul on Twitter: 窝里斗、忘恩负义和好了伤疤忘了疼是中华文化的三大优良传统](https://twitter.com/ayuan1000/status/1598884093990932481 )
