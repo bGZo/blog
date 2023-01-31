@@ -18,13 +18,13 @@ Rick and Morty 衍生漫画 20210303 的一期 *Rick and Morty Presents: Jerrybo
 ![RCO029_1663878017_1674027159655_0](https://user-images.githubusercontent.com/57313137/213860187-c48a0cf0-873b-4162-a80d-128c2757b89e.jpg)
 ![RCO030_1663878017_1674027346395_0](https://user-images.githubusercontent.com/57313137/213860191-42ec8b0c-3fe4-4ece-8523-c1a0ace70c75.jpg)
 
-这种思路非常像 *安娜·卡列尼娜。中安娜和她嫂子多莉的争论[^FAMILY_UNHAPPY]:
+这种思路非常像 *安娜·卡列尼娜* 中安娜和她嫂子多莉的争论[^FAMILY_UNHAPPY]:
 
 > “你忘记我的处境了。我怎么能希望再有孩子呢？倒不是说痛苦，痛苦我不怕。请你想想，我的孩子将成为什么样的人呢？将成为用别人姓的不幸孩子。就因为他们的身份，他们不得不在父母和出生这些问题上蒙受耻辱。”
 “如果我不运用我的智慧，少生几个不幸的人，那上帝何必赋予我智慧呢？”
 “面对这样一些不幸的孩子，我将永远觉得有罪，”她说，“如果没有他们，也就不会有他们的不幸；他们如果不幸，那都是我一个人的罪过。”
 
-冥冥之中，我总是很反感自己的存在，随着父母年迈，他们把养儿防老挂在嘴边的频率越来越高，我好像就不是一个独立的个体，只是他们拿来抵抗老无所依的工具，而他们不知道的是，每当他们对孩子说出这种功利，异化，伤感的话时，他们彼此感情就会薄一分, **如果他们从不考虑孩子的未来是否不幸，只是为了自己的一己私欲，就把孩子生下来, Go Fucking Hell**, 像电影 *何以为家。对世界的控诉:
+冥冥之中，我总是很反感自己的存在，随着父母年迈，他们把养儿防老挂在嘴边的频率越来越高，我好像就不是一个独立的个体，只是他们拿来抵抗老无所依的工具，而他们不知道的是，每当他们对孩子说出这种功利，异化，伤感的话时，他们彼此感情就会薄一分, **如果他们从不考虑孩子的未来是否不幸，只是为了自己的一己私欲，就把孩子生下来, Go Fucking Hell**, 像电影 *何以为家* 对世界的控诉:
 
 > "赞恩，这里在直播，你想说什么?"
 "我希望大人们能听我说，我希望养不起孩子的大人不要生孩子，关于童年我日后能记住的只有暴力，辱骂，殴打，链子水管皮带打在身上的感觉，他们说过最好听的话是 '兔患子滚出去', '让开废物'"
@@ -41,7 +41,7 @@ Scenario A 是一个存在的 X, 我们认为X感到痛苦 (Pain) 的存在是�
 
 > However, the important question, when the absence ofpleasure involves no deprivation for anybody, is whether it is also ‘not bad’ or whether it is ‘bad’. The answer, I suggest, is that it is ‘not good, but not bad either’ rather than ‘not good, but bad’. Because ‘not bad’ is a more informative evaluation than ‘not good’, that is the one I prefer. However, even those who wish to stick with ‘not good’ will not thereby succeed in restoring symmetry. If pain is bad and pleasure is good, but the absence of pain is good and the absence of pleasure not good, then there is no symmetry between pleasure and pain.
 
-尽管听了很多讨论，其实我还是不知道这个问题的答案，我的恋人，你知道吗。我知道可能只是我自己厌世的情绪作祟，有的时候我会像 South Park 说的那样想，若我只是干在我母亲胸脯上的精斑就好了[^SOUTH_PARK].
+尽管听了很多讨论，其实我还是不知道这个问题的答案，我的恋人，你知道吗? 我知道可能只是我自己厌世的情绪作祟，有的时候我会像 South Park 说的那样想，若我只是干在我母亲胸脯上的精斑就好了[^SOUTH_PARK].
 
 ![E07_1674275739482_0](https://user-images.githubusercontent.com/57313137/213860278-96782427-0598-4c85-a6be-9c3ee4b32865.jpg)
 
@@ -85,9 +85,9 @@ Scenario A 是一个存在的 X, 我们认为X感到痛苦 (Pain) 的存在是�
 
 > It is even less likely that many people will stop having children. By contrast, it is quite likely that my views either will be ignored or will be dismissed.
 
-不管怎么说，不被祝福的孩子还是会诞生于世，利用阶级优势获得女性的初夜权[^FIRST_NIGHT], [战争时期的性暴力](https://zh.wikipedia.org/zh/%E6%88%98%E4%BA%89%E6%97%B6%E6%9C%9F%E7%9A%84%E6%80%A7%E6%9A%B4%E5%8A%9B ), 纵观历史，女性们不被允许以一个鲜活的人，而被视作容器与男人交媾，我们一路走来，从未听得她们说一个 "不。字，每当失去希望而自尽的一瞬间，遥远的山村，一个女孩还是会呱呱坠地，稀里糊涂地开始下一场轮回。请问她们做错了什么吗。我不明白
+不管怎么说，不被祝福的孩子还是会诞生于世，利用阶级优势获得女性的初夜权[^FIRST_NIGHT], [战争时期的性暴力](https://zh.wikipedia.org/zh/%E6%88%98%E4%BA%89%E6%97%B6%E6%9C%9F%E7%9A%84%E6%80%A7%E6%9A%B4%E5%8A%9B ), 纵观历史，女性们不被允许以一个鲜活的人，而被视作容器与男人交媾，我们一路走来，从未听得她们说一个 "不" 字，每当失去希望而自尽的一瞬间，遥远的山村，一个女孩还是会呱呱坠地，稀里糊涂地开始下一场轮回。请问她们做错了什么吗? 我不明白
 
-就算是现在，两性关系依旧非常畸形，存在着太多的剥削，如精神控制，言语辱骂，打压自尊，甚至是家庭暴力，甚至有一部分人以此授业为生。明明活了几千年，却还是像原始社会那样崇尚粗鲁，暴力，似乎从来不会停下来进行沟通，只有单方面的妥协和讨好。丰县的铁链女如此，唐山性骚扰群殴事件也是如此，可这只是社会曝光的冰山一角，多的是我们不知道的事.
+就算是现在，两性关系依旧非常畸形，存在着太多的剥削，如精神控制，言语辱骂，打压自尊，甚至是家庭暴力，甚至有一部分人以此授业为生。明明活了几千年，却还是像原始社会那样崇尚粗鲁，暴力，似乎从来不会停下来进行沟通，只有单方面的妥协和讨好; 丰县的铁链女如此，唐山性骚扰群殴事件也是如此，可这只是社会曝光的冰山一角，多的是我们不知道的事.
 
 只要你看过色情网站，就会明白，清一色置顶，标红的标题，传达的尽是男性对女性的统治(Domination), 宣告单方面的从属关系，我们可以轻易的找到强奸，乱伦，犯罪类别的影片，即便是最温和的影片，也很少有对两性互动的描写，如爱抚，对话或是其他，手部的描写就更少了[^NOW_PRON]. 幸运的是，这部分描写在女同类别中得到了放大[^SOFT_PRON].
 
@@ -108,7 +108,7 @@ Scenario A 是一个存在的 X, 我们认为X感到痛苦 (Pain) 的存在是�
 
 [^BNTHB]: 如果英文看不下去，你可以看豆瓣书评[为什么出生即是伤害？](https://book.douban.com/review/10159082/ )和 Youtube 视频 [David Benatar REVIEW](https://www.youtube.com/watch?v=Ltdngo86GdY );
 
-[^ERJIU]: 二舅出自视频[回村三天，二舅治好了我的精神内耗](https://www.bilibili.com/video/BV1MN4y177PB), 但之后官媒，企业家等开始铺天盖地地宣传这种吃苦精神，像王小波 _人性的逆转。中说的, "人是一种会自己骗自己的动物。我们吃了很多无益的苦，虚掷了不少年华，所以有人就想说，这种经历是崇高的。这种想法可以使他自己好过一些，所以它有些好作用。很不幸的是它还有些坏作用：有些人就据此认为，人必须吃一些无益的苦、虚掷一些年华，用这种方法来达到崇高。这种想法不仅有害，而且是有病。";
+[^ERJIU]: 二舅出自视频[回村三天，二舅治好了我的精神内耗](https://www.bilibili.com/video/BV1MN4y177PB), 但之后官媒，企业家等开始铺天盖地地宣传这种吃苦精神，像王小波 _人性的逆转_ 中说的, "人是一种会自己骗自己的动物。我们吃了很多无益的苦，虚掷了不少年华，所以有人就想说，这种经历是崇高的。这种想法可以使他自己好过一些，所以它有些好作用。很不幸的是它还有些坏作用：有些人就据此认为，人必须吃一些无益的苦、虚掷一些年华，用这种方法来达到崇高。这种想法不仅有害，而且是有病。";
 
 [^FUGUI]: 福贵则出自余华的作品 [活着](https://book.douban.com/subject/4913064/), 小说记述了农村人福贵悲惨的人生，同时也有[电影](https://movie.douban.com/subject/1292365/)改编，推荐去看;
 

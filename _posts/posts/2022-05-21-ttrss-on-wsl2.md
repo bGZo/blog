@@ -65,7 +65,7 @@ URL_PATH=192.168.2.2
 
 部署的时候因为用到了两个不确定的 IP, 而 WSL2 IP 无法[固定](https://github.com/microsoft/WSL/issues/4210), 当然后者可以通过路由器的静态IP分配解决，而针对 WSL2 解决静态IP的场景有很多解决方案，如:
 
-- windows hosts 映射，每次启动向 hosts 文件追加一条映射(via: [zhihu](https://www.zhihu.com/question/387747506/answer/1820473311)). 就可以固定一条预设的域名访问 WSL2. 但是 Lan 问题怎么解决。而且这条 hosts 日渐增多还会有安全隐患.
+- windows hosts 映射，每次启动向 hosts 文件追加一条映射(via: [zhihu](https://www.zhihu.com/question/387747506/answer/1820473311)). 就可以固定一条预设的域名访问 WSL2. 但是 Lan 问题怎么解决? 而且这条 hosts 日渐增多还会有安全隐患.
 - 文件传递，我挑了两个文件分别存 `windows` / `wsl` 的两个IP, 这样两者就都能拿到各自的 IP 了.
   - `C:\Users\15517\bin\lan_ip`
     - ```powershell
