@@ -3,7 +3,7 @@ layout: post
 title: TTRSS on WSL2
 updated: 2022-07-31
 category: posts
-comment_link: <https://github.com/bGZo/blog/issues/3>
+comment_link: https://github.com/bGZo/blog/issues/3
 ---
 
 Keywords: `docker` / `wsl2` / `port forward`
@@ -23,7 +23,7 @@ $systemctl start docker.service
 # System has not been booted with systemd as init system (PID 1). Can't operate.
 # Failed to connect to bus: Host is down
 
-# Right Way: (via: <https://stackoverflow.com/questions/52197246/wsl-redis-encountered-system-has-not-been-booted-with-systemd-as-init-system-pi>
+# Right Way: (via: https://stackoverflow.com/questions/52197246/wsl-redis-encountered-system-has-not-been-booted-with-systemd-as-init-system-pi
 $sudo dockerd
 $sudo service docker start
 $sudo /etc/init.d/docker start
@@ -128,7 +128,7 @@ via: [🎯 备份和迁移数据 - Docker 快速入门 - 易文档](https://dock
 ```powershell
 function Output-Lan-Ip-Bin {
     $Lan_Ip = netsh interface ip show address "WLAN" | findstr "IP Address" | Select-String -Pattern '([0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*)' | %{ $_.matches.Value }
-    #ipconfig | findstr /i "ipv4" | select-object -Skip 1 | select-object -First 1 | Select-String -Pattern '([0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*)' - % { $($_.matches.groups[^1]).Value}
+    #ipconfig | findstr /i "ipv4" | select-object -Skip 1 | select-object -First 1 | Select-String -Pattern '([0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*)' - % { $($_.matches.group[^1]).Value}
     # NOTES: get the second line IP. I have three IPs, you could modify
     # select-object -Skip 1 | select-object -First 1
     # to fit your machine. :)
@@ -157,7 +157,7 @@ function Start-TTRSS { # main
 
     wsl sudo service docker start
 
-    #via <https://docs.docker.com/compose/compose-file/compose-file-v2/>
+    #via https://docs.docker.com/compose/compose-file/compose-file-v2/
     wsl docker-compose -f /home/bgzocg/ttrss/docker-compose.yml --env /home/bgzocg/ttrss/.env up -d
 
     Netsh-Lan

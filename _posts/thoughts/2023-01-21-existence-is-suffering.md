@@ -3,7 +3,7 @@ layout: post
 title: Existence is suffering
 updated: 2023-01-31
 category: thoughts
-comment_link: <https://github.com/bGZo/blog/issues/14>
+comment_link: https://github.com/bGZo/blog/issues/14
 ---
 
 ## 出生即伤害，存在即痛苦
@@ -15,8 +15,8 @@ Rick and Morty 衍生漫画 20210303 的一期 *Rick and Morty Presents: Jerrybo
 身为杰瑞，注定要一生承受无尽的苦痛和惩罚
 我将不会让我的孩子继续承受下去
 
-![^RCO029_1663878017_1674027159655_0](https://user-images.githubusercontent.com/57313137/213860187-c48a0cf0-873b-4162-a80d-128c2757b89e.jpg)
-![^RCO030_1663878017_1674027346395_0](https://user-images.githubusercontent.com/57313137/213860191-42ec8b0c-3fe4-4ece-8523-c1a0ace70c75.jpg)
+![RCO029_1663878017_1674027159655_0](https://user-images.githubusercontent.com/57313137/213860187-c48a0cf0-873b-4162-a80d-128c2757b89e.jpg)
+![RCO030_1663878017_1674027346395_0](https://user-images.githubusercontent.com/57313137/213860191-42ec8b0c-3fe4-4ece-8523-c1a0ace70c75.jpg)
 
 这种思路非常像 *安娜·卡列尼娜。中安娜和她嫂子多莉的争论[^FAMILY_UNHAPPY]:
 
@@ -33,7 +33,7 @@ Rick and Morty 衍生漫画 20210303 的一期 *Rick and Morty Presents: Jerrybo
 
 像是播客 [EP19 人生若痛苦大于快乐，我还要带一个新的生命来这世上吗？ by 悲观生活指南 MORE THAN A FARCE](https://anchor.fm/wei48/episodes/EP19-e13h6ir) 中提到的 *Better Never to Have Been*[^BNTHB] 一书中，论述的那样:
 
-<iframe style="border-radius:12px" src="<https://open.spotify.com/embed/episode/3ppTHYES5dxhnOBFiwgrrh?utm_source=generator>" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/3ppTHYES5dxhnOBFiwgrrh?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 ![ApplicationFrameHost_81_1674282758820_0](https://user-images.githubusercontent.com/57313137/213860248-d3a85ce2-84f4-41e9-a850-672f97abcc3c.png)
 
@@ -43,7 +43,7 @@ Scenario A 是一个存在的 X, 我们认为X感到痛苦 (Pain) 的存在是�
 
 尽管听了很多讨论，其实我还是不知道这个问题的答案，我的恋人，你知道吗。我知道可能只是我自己厌世的情绪作祟，有的时候我会像 South Park 说的那样想，若我只是干在我母亲胸脯上的精斑就好了[^SOUTH_PARK].
 
-![^E07_1674275739482_0](https://user-images.githubusercontent.com/57313137/213860278-96782427-0598-4c85-a6be-9c3ee4b32865.jpg)
+![E07_1674275739482_0](https://user-images.githubusercontent.com/57313137/213860278-96782427-0598-4c85-a6be-9c3ee4b32865.jpg)
 
 ## 你是在偷懒，逃避问题吗?
 

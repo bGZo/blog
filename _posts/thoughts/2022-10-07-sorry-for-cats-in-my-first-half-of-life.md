@@ -3,15 +3,15 @@ layout: post
 title: Sorry for cats in my first half of life
 updated: 2022-12-23
 category: thoughts
-comment_link: <https://github.com/bGZo/blog/issues/9>
+comment_link: https://github.com/bGZo/blog/issues/9
 ---
 
 ## 养猫这档事
 
 猫猫 (Felis catus), 隶属动物界脊索动物门哺乳纲**食肉目猫科猫属**; 智人 (Homo sapiens), 隶属动物界脊索动物门哺乳纲**灵长目人科人属**, 两个种族怎么就能产生这样神奇的羁绊。如果真的要用科学解释这一个现象:
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Actually, Konrad Zacharias Lorenz&#39;s baby scheme had destoryed immediate pleasure to me. <a href="<https://t.co/03KaS3VqDT>">pic.twitter.com/03KaS3VqDT</a></p>&mdash; 👋 (@imbGZo) <a href="<https://twitter.com/imbGZo/status/1362223528360091648?ref_src=twsrc%5Etfw>">February 18, 2021</a></blockquote>
-<script async src="<https://platform.twitter.com/widgets.js>" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Actually, Konrad Zacharias Lorenz&#39;s baby scheme had destoryed immediate pleasure to me. <a href="https://t.co/03KaS3VqDT">pic.twitter.com/03KaS3VqDT</a></p>&mdash; 👋 (@imbGZo) <a href="https://twitter.com/imbGZo/status/1362223528360091648?ref_src=twsrc%5Etfw">February 18, 2021</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 是啊，你和初生的婴儿是那样相像，就单单叫声，有一种病名跟你也是那样相似:
 
@@ -39,7 +39,7 @@ comment_link: <https://github.com/bGZo/blog/issues/9>
 > "你知道 …… 我的花儿 …… 我对她负有责任！她是那么柔弱！她是那么天真。**她只有四根微不足道的刺，用来抵御整个世界**…… "
 > via: *The Little Prince* Ch26
 
-<iframe style="border-radius:12px" src="<https://open.spotify.com/embed/track/1PXNw8arAoqenQlAyW0teR?utm_source=generator>" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1PXNw8arAoqenQlAyW0teR?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
  
 
 > 而我卻一錯再錯
@@ -84,7 +84,7 @@ comment_link: <https://github.com/bGZo/blog/issues/9>
 
 不管怎么说，这相似的重逢让我开心也让我难过，熬过青春期的我明白爱不是一个随便说说的东西，它意味着无条件的付出，责任，情感以及不讨好。所以我总是权衡在上面付诸情感的分量，我知道最后的结局无非是失去，我没有多少精力可以去抚养它，虽说总把"穷是原罪"当作接口，但总还是忘不掉着过去那些糟糕的回忆，并且内心深处深深地害怕自己畸形的"爱"会再度伤害到小猫，对今年家中的小猫来说，我很克制自己触碰的力道(虽然她总是咬我)以及接触的时间，但我第一次有意识去渴望理解猫猫仅有的[叫声和肢体语言](https://www.zhihu.com/question/23816740), 我终于开始渴望学会倾听，理解和包容.
 
-![^20220119_175518](https://user-images.githubusercontent.com/57313137/150110893-f6194cb0-a601-4128-920d-71938e907cc3.jpg)
+![20220119_175518](https://user-images.githubusercontent.com/57313137/150110893-f6194cb0-a601-4128-920d-71938e907cc3.jpg)
 
 210926, 我再一次永远地失去了你，愿天堂没有汽车, R.I.P. 
 
@@ -98,7 +98,7 @@ comment_link: <https://github.com/bGZo/blog/issues/9>
 
 之后公母相继发情，考虑是时候去做绝育了吧，但又要疫苗，又要术后恢复治疗的，当真麻烦的不行，控制不住的吼叫，里应外合，也让人心神意乱，就算是家猫也还是会随地喷尿。味道不言自明。后来那只长毛黑猫在我熟睡的时候被父亲莫名其妙扔出去了，然后就再也没有回来，可能被哪个爱猫人士捡走了吧，希望在别的地方过得更加舒服🙏.
 
-![^20220119_175346](https://user-images.githubusercontent.com/57313137/150112384-ea3d4df0-449c-4ade-9421-117c45c879f2.jpg)
+![20220119_175346](https://user-images.githubusercontent.com/57313137/150112384-ea3d4df0-449c-4ade-9421-117c45c879f2.jpg)
 
  
 ### 05
@@ -128,7 +128,7 @@ comment_link: <https://github.com/bGZo/blog/issues/9>
 
 我本以为未来能对你好，谁曾想，你我没有未来
 
-![^20220801_224139](https://user-images.githubusercontent.com/57313137/182275216-868ac09f-aa43-4433-964a-85142b902101.jpg)
+![20220801_224139](https://user-images.githubusercontent.com/57313137/182275216-868ac09f-aa43-4433-964a-85142b902101.jpg)
 
 ## If You Want to Tame a Cat
 

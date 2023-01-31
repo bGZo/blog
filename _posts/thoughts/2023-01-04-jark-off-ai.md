@@ -3,7 +3,7 @@ layout: post
 title: Jark off AI
 updated: 2023-01-14
 category: thoughts
-comment_link: <https://github.com/bGZo/blog/issues/12>
+comment_link: https://github.com/bGZo/blog/issues/12
 ---
 
 男孩父母带着他跑到城市打工，因为听说那里的教育很不一样，读过书的最后都能找个不错的营生，不必像在村里，整日就知道丢石头，长大了还得面朝黄土背朝天，再受一次这一辈的罪，一年到头挣几个幸苦钱.
@@ -36,7 +36,7 @@ comment_link: <https://github.com/bGZo/blog/issues/12>
 看着我坠啊坠啊坠落到云里. ⛅
 by 陈粒 via [虚拟](https://music.163.com/outchain/player?type=2&id=421423808&auto=1&height=66)
 
-<iframe style="border-radius:12px" src="<https://open.spotify.com/embed/track/5l9sg05BhpfsdLfRvjGsAf?utm_source=generator>" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5l9sg05BhpfsdLfRvjGsAf?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 这么多年过去，他最喜欢逛的网站还是那么几个:
 
@@ -82,7 +82,7 @@ Mark Hanna: **Mm-hmm. Why? I want to. That’s not why I do it. I do it because 
 
 他，好像被这个时代抛弃了。一个有品位，但毫无用处的自慰 AI.
 
-Related reading: [[^NSFW] 孤独，渴望，爱与沉沦 – Telegraph](https://telegra.ph/%E5%86%99%E4%BA%8E%E7%96%AB%E6%83%85%E5%B1%85%E5%AE%B6%E9%9A%94%E7%A6%BB%E8%B4%A4%E8%80%85%E6%A8%A1%E5%BC%8F%E5%90%8E-11-09 )
+Related reading: [^NSFW] 孤独，渴望，爱与沉沦 – Telegraph](https://telegra.ph/%E5%86%99%E4%BA%8E%E7%96%AB%E6%83%85%E5%B1%85%E5%AE%B6%E9%9A%94%E7%A6%BB%E8%B4%A4%E8%80%85%E6%A8%A1%E5%BC%8F%E5%90%8E-11-09 )
 
 
 [^1]: 伯特兰·罗素所著的《幸福之路》中 *第四章:无聊与兴奋。写道: "忍受或多或少的单调生活的能力，应该从小培养。现代父母在这方面实在难辞其咎，他们给孩子提供了太多太消极的娱乐，如电影、美食之类，他们没有意识到日复一日的平淡生活之于儿童的重要性，而那些不同的日子只是偶尔才有。孩子们的欢愉应该主要通过自己的努力和创造从自己身边的环境中获得。诸如观剧这种具有兴奋性的同时不含身体运动的活动，应该少之又少。令人兴奋的事情其实是一种麻醉剂，人们对它的需求会不断升高，而身体在兴奋时的消极反应也是违反本能的。让孩子像一株幼苗一样在自己的土地上自由生长，他们会发育得最好。过多的旅行，五光十色的印象对于孩子并非好事，会使他们长大后难以忍受那种富含创造性的单调。我并不是说单调本身有什么好处，我只是说某些美好的东西离了一定程度的单调是不可能的。以华兹华斯的《序曲》为例，凡是读过的人都会意识到，一个精明世故的都市青年是无法领会华兹华斯在思想与情感上的价值的。年轻人若是胸怀严肃的、富有建设性的目的，那么一旦需要，他们便能自甘承受众多烦恼。但若过的是漫不经心、放纵不羁的生活，年轻人心中就很难形成一个富有建设性的目标，因为在这种生活里，他的所思所想总是当下的玩乐，而不是将来的成就。综上所述，不能忍受无聊的一代将是无所作为的一代，是过分脱离了自然的缓慢进程的一代，是勃勃生机渐渐枯萎的一代，犹如瓶中被剪下的花。" 读者可以直接跳转[微信读书](https://weread.qq.com/web/bookDetail/11e3277072206ec011ec1fa )阅读
