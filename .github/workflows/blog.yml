@@ -29,7 +29,8 @@ jobs:
       - name: Run Script
         run: |
           rm -rf _posts/
-          python3 assets/sync-issues.py ${{ secrets.G_T }}
+          python3 assets/sync.py ${{ secrets.G_T }}
+          python3 assets/proof.py
 
       - name: Run Safe Dir
         run: |
