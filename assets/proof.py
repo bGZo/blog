@@ -13,8 +13,6 @@ def proof(path):
       # Half width characters
       line = re.sub(r'([\u4e00-\u9fa5]), ([\u4e00-\u9fa5])', '\g<1>，\g<2>', line)
       line = re.sub(r'([\u4e00-\u9fa5]). ([\u4e00-\u9fa5])', '\g<1>。\g<2>', line)
-      line = re.sub(r'([\u4e00-\u9fa5]); ([\u4e00-\u9fa5])', '\g<1>；\g<2>', line)
-      line = re.sub(r'([\u4e00-\u9fa5]) "([\u4e00-\u9fa5]+)" ', '\g<1>“\g<2>”', line)
 
       # Logseq
       line = re.sub(r'  \n', '\n', line)
