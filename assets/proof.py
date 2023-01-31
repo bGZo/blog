@@ -16,7 +16,6 @@ def proof(path):
 
       # Logseq
       line = re.sub(r'  \n', '\n', line)
-      line = re.sub(r'[^!]\[([A-Z0-9_]+)\]', '[^\g<1>]', line)
 
       # URL via: https://stackoverflow.com/questions/3809401
       line = re.sub(r'( )(https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)([;, ])', '\g<1><\g<2>>\g<3>\g<4>', line)
