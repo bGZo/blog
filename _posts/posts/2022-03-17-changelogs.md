@@ -36,7 +36,7 @@ You have to read old articles to find the mistakes one by one, even word alterna
   - [Style] Modify the style of theme to [solarized](https://ethanschoonover.com/solarized), mostly color of theme;
   - [Style] Add the table of contents and footnotes support;
   - [Style] Change emoji icon to normal icon for compatibility, using [Favicon Generator](https://realfavicongenerator.net/)[^6];
-  - [Feat] Add[^UNPKG](https://unpkg.com) CDN Support;
+  - [Feat] Add [UNPKG](https://unpkg.com) CDN Support;
   - [Feat] Add back to the top named `ikaros`[^5];
   - [Docs] Rewrite changelogs;
 - 20220521
