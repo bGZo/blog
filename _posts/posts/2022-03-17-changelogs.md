@@ -3,7 +3,7 @@ layout: post
 title: Changelogs
 updated: 2023-01-09
 category: posts
-comment_link: https://github.com/bGZo/blog/issues/1
+comment_link: <https://github.com/bGZo/blog/issues/1>
 ---
 
 ## 📌 Thinking
@@ -36,7 +36,7 @@ You have to read old articles to find the mistakes one by one, even word alterna
   - [Style] Modify the style of theme to [solarized](https://ethanschoonover.com/solarized), mostly color of theme;
   - [Style] Add the table of contents and footnotes support;
   - [Style] Change emoji icon to normal icon for compatibility, using [Favicon Generator](https://realfavicongenerator.net/)[^6];
-  - [Feat] Add [UNPKG](https://unpkg.com) CDN Support;
+  - [Feat] Add [^UNPKG](https://unpkg.com) CDN Support;
   - [Feat] Add back to the top named `ikaros`[^5];
   - [Docs] Rewrite changelogs;
 - 20220521
@@ -90,17 +90,17 @@ You have to read old articles to find the mistakes one by one, even word alterna
 ### Back tp top
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="gOjpJOo" data-user="bgzo" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/bgzo/pen/gOjpJOo">
-  Untitled</a> by bGZo (<a href="https://codepen.io/bgzo">@bgzo</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
+  <span>See the Pen <a href="<https://codepen.io/bgzo/pen/gOjpJOo>">
+  Untitled</a> by bGZo (<a href="<https://codepen.io/bgzo>">@bgzo</a>)
+  on <a href="<https://codepen.io>">CodePen</a>.</span>
 </p>
 
 ### Hyperlink
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="KKBpLpE" data-user="bgzo" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/bgzo/pen/KKBpLpE">
-  Hyperlink</a> by bGZo (<a href="https://codepen.io/bgzo">@bgzo</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
+  <span>See the Pen <a href="<https://codepen.io/bgzo/pen/KKBpLpE>">
+  Hyperlink</a> by bGZo (<a href="<https://codepen.io/bgzo>">@bgzo</a>)
+  on <a href="<https://codepen.io>">CodePen</a>.</span>
 </p>
 
 [^1]: [Emojis as favicons](https://css-tricks.com/emojis-as-favicons);
@@ -111,4 +111,4 @@ You have to read old articles to find the mistakes one by one, even word alterna
 [^7]: See sense via: [BoJack Learns How Hard It Is to Write - BoJack Horseman - YouTube](https://www.youtube.com/watch?v=tOxB_Dlb-rA). "I feel like we can beat this font. Ah, Copperplate, a font for the truly modern man. Ha. No. There you are, Verdana. Oh, Comic Sans, you drunk, go home. 3:10? I just spent six hours playing with fonts? Holy shit!" Generally, every decision is hard and diversity but not matters. Since 20210607;
 [^8]: "一个很自然的便捷度区分出现了：备案或白名单网站只需要点击一次就可以查看；非备案或非白名单网站（如很多国际网站）需要多点击一次。仅仅这一点，恐怕就可以让很多人放弃访问这个页面（因为便捷度弹性高）。何况这个跳转页面有意无意间说到了「风险」两个字，无疑又会阻止一部分人。", via: [软墙 - 郝海龍](https://haohailong.net/2021/soft-wall )
 
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<script async src="<https://cpwebassets.codepen.io/assets/embed/ei.js>"></script>

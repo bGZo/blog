@@ -3,13 +3,13 @@ layout: post
 title: Look back to your loved ones
 updated: 2022-12-23
 category: thoughts
-comment_link: https://github.com/bGZo/blog/issues/10
+comment_link: <https://github.com/bGZo/blog/issues/10>
 ---
 
 Last tonight I read a tweet thread written by SahilBloom, which really sparked me.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Last year, I had a conversation that changed my life.<br>It caused me to upend everything and move across the country.<br>The lesson from it may change yours:</p>&mdash; <a href="https://twitter.com/SahilBloom/status/1571137341997318147">Sahil Bloom (@SahilBloom) September 17, 2022</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Last year, I had a conversation that changed my life.<br>It caused me to upend everything and move across the country.<br>The lesson from it may change yours:</p>&mdash; <a href="<https://twitter.com/SahilBloom/status/1571137341997318147>">Sahil Bloom (@SahilBloom) September 17, 2022</a></blockquote>
+<script async src="<https://platform.twitter.com/widgets.js>" charset="utf-8"></script>
 
 Since Covid-19, little by little, I realized the precious nature of time with people I care most deeply about. When I look back, I always fail to recognize it until it's too late, almost everything, the parents, friends, events which missing is gone forever.
 
@@ -28,7 +28,7 @@ I am not special, the dream of child maybe not come true. I cannot figure out, w
 I am living in a end period of growing fast society, whose economy increasing by the demographic dividend. The multinational companies are more willing to use cheap labor in China, which would bring the economy increasing is very fast. The More simple word is: exchange the technology using huge people labor force.
 
 > 天道酬勤
-> 越努力, 越幸运
+> 越努力，越幸运
 > 熬一个春夏秋冬，享一生荣华富贵!
 > 不苦不累，高三无味。不拼不搏，高三白活!
 
@@ -38,7 +38,7 @@ Those bullshit and lies sucks. They told us a certainty of our future, which eve
 
 In a tradition China, there is a proverb for a rural farmer:
 
-> 三十亩地一头牛, 老婆孩子热炕头
+> 三十亩地一头牛，老婆孩子热炕头
 
 It describe a common sense: you have 30 acres of land and one cow(productive forces) for living, you have a loved wife, children and a warm house. It is normal but compared the foreign countries, it's more difficult and complex in China nowadays.
 
@@ -59,5 +59,5 @@ Small is Beautiful, Less is More!
 October 9, 2022
 
 [^1]: Dec. 11, 2015 by Tim Urban [The Tail End — Wait But Why](https://waitbutwhy.com/2015/12/the-tail-end.html)
-[^2]: Nov. 27 2011, Jamie Zawinski, The Netscape Dorm [Startups Are Hard. So Work More, Cry Less, And Quit All The Whining « Uncrunched](https://web.archive.org/web/20111128190028/http://uncrunched.com:80/2011/11/27/startups-are-hard-so-work-more-cry-less-and-quit-all-the-whining/)
+[^2]: Nov. 27 2011, Jamie Zawinski, The Netscape Dorm [Startups Are Hard. So Work More, Cry Less, And Quit All The Whining « Uncrunched](https://web.archive.org/web/20111128190028/<http://uncrunched.com:80/2011/11/27/startups-are-hard-so-work-more-cry-less-and-quit-all-the-whining/)>
 [^3]: April 2012, Paul Graham [The Top of My Todo List](http://www.paulgraham.com/todo.html)
