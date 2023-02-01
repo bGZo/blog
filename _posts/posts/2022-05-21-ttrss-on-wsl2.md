@@ -128,7 +128,7 @@ via: [🎯 备份和迁移数据 - Docker 快速入门 - 易文档](https://dock
 ```powershell
 function Output-Lan-Ip-Bin {
     $Lan_Ip = netsh interface ip show address "WLAN" | findstr "IP Address" | Select-String -Pattern '([0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*)' | %{ $_.matches.Value }
-    #ipconfig | findstr /i "ipv4" | select-object -Skip 1 | select-object -First 1 | Select-String -Pattern '([0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*)' - % { $($_.matches.groups[1]).Value}
+    #ipconfig | findstr /i "ipv4" | select-object -Skip 1 | select-object -First 1 | Select-String -Pattern '([0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*)' | % { $($_.matches.groups[1]).Value}
     # NOTES: get the second line IP. I have three IPs, you could modify
     # select-object -Skip 1 | select-object -First 1
     # to fit your machine. :)
