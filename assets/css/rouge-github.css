@@ -205,5 +205,5 @@
   color: #bbbbbb;
 }
 .highlight {
-  background-color: #eee8d5;
+  background-color: var(--ls-secondary-background-color);
 }
