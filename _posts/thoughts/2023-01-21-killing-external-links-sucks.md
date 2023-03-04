@@ -3,7 +3,8 @@ layout: post
 title: Killing external links sucks
 updated: 2023-01-28
 category: thoughts
-comment_link: https://github.com/bGZo/blog/issues/13
+source: https://github.com/bGZo/blog/issues/13
+number: 13
 ---
 
 ### External links been killed

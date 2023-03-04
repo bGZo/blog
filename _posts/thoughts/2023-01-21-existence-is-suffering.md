@@ -3,7 +3,8 @@ layout: post
 title: Existence is suffering
 updated: 2023-01-31
 category: thoughts
-comment_link: https://github.com/bGZo/blog/issues/14
+source: https://github.com/bGZo/blog/issues/14
+number: 14
 ---
 
 ## 出生即伤害，存在即痛苦

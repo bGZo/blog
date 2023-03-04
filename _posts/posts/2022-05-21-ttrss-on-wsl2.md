@@ -3,7 +3,8 @@ layout: post
 title: TTRSS on WSL2
 updated: 2022-07-31
 category: posts
-comment_link: https://github.com/bGZo/blog/issues/3
+source: https://github.com/bGZo/blog/issues/3
+number: 3
 ---
 
 Keywords: `docker` / `wsl2` / `port forward`

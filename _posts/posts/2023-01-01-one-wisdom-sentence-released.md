@@ -3,7 +3,8 @@ layout: post
 title: One wisdom sentence released
 updated: 2023-01-02
 category: posts
-comment_link: https://github.com/bGZo/blog/issues/11
+source: https://github.com/bGZo/blog/issues/11
+number: 11
 ---
 
 2023 新年伊始，整理 2022 的陈年笔记时发现有很多不知名，但是又舍不得丢弃的句子，想着干脆把他们做成引用得了。连着建仓库，设计页面，写脚本一套下来也没花太多时间，一个简单的静态自动部署的网站就建好了: [One](https://one.bgzo.cc/)[^2].

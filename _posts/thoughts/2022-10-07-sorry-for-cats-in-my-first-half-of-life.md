@@ -3,7 +3,8 @@ layout: post
 title: Sorry for cats in my first half of life
 updated: 2022-12-23
 category: thoughts
-comment_link: https://github.com/bGZo/blog/issues/9
+source: https://github.com/bGZo/blog/issues/9
+number: 9
 ---
 
 ## 养猫这档事

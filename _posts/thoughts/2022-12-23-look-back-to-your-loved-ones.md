@@ -3,7 +3,8 @@ layout: post
 title: Look back to your loved ones
 updated: 2022-12-23
 category: thoughts
-comment_link: https://github.com/bGZo/blog/issues/10
+source: https://github.com/bGZo/blog/issues/10
+number: 10
 ---
 
 Last tonight I read a tweet thread written by SahilBloom, which really sparked me.

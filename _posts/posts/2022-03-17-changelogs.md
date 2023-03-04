@@ -3,7 +3,8 @@ layout: post
 title: Changelogs
 updated: 2023-01-09
 category: posts
-comment_link: https://github.com/bGZo/blog/issues/1
+source: https://github.com/bGZo/blog/issues/1
+number: 1
 ---
 
 ## 📌 Thinking

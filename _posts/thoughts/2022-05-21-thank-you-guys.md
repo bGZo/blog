@@ -3,7 +3,8 @@ layout: post
 title: Thank you guys
 updated: 2023-01-04
 category: thoughts
-comment_link: https://github.com/bGZo/blog/issues/4
+source: https://github.com/bGZo/blog/issues/4
+number: 4
 ---
 
 > 如果你想活得幸福，那就开始感谢和赞美他人吧.🥰
