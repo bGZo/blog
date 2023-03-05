@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jark off AI
+title: "Jark off AI"
 updated: 2023-02-01
 category: thoughts
 source: https://github.com/bGZo/blog/issues/12

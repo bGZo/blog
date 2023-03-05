@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Summaries of university
+title: "Summaries of university"
 updated: 2023-01-04
 category: thoughts
 source: https://github.com/bGZo/blog/issues/5

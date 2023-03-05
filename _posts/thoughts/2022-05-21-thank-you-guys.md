@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Thank you guys
+title: "Thank you guys"
 updated: 2023-01-04
 category: thoughts
 source: https://github.com/bGZo/blog/issues/4
