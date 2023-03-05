@@ -24,7 +24,7 @@ def output_label_articles(_repo, _name, _label):
             print('ok')
             f.write('---\n')
             f.write('layout: post\n')
-            f.write('title: ' + issue.title+'\n')
+            f.write('title: "' + issue.title+'"\n')
             f.write('updated: ' + issue.updated_at.strftime("%Y-%m-%d") + '\n')
             f.write('category: ' + _label + '\n')
             f.write('source: ' + 'https://github.com/bGZo/blog/issues/' + str(issue.number) + '\n')
