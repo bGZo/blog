@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Killing external links sucks"
-updated: 2023-01-28
+updated: 2023-04-08
 category: thoughts
 source: https://github.com/bGZo/blog/issues/13
 number: 13

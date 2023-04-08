@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Jark off AI"
-updated: 2023-02-01
+title: "自慰 AI"
+updated: 2023-04-08
 category: thoughts
 source: https://github.com/bGZo/blog/issues/12
 number: 12
 ---
+
+
 
 男孩父母带着他跑到城市打工，因为听说那里的教育很不一样，读过书的最后都能找个不错的营生，不必像在村里，整日就知道丢石头，长大了还得面朝黄土背朝天，再受一次这一辈的罪，一年到头挣几个幸苦钱.
 

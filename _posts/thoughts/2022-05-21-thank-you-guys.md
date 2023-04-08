@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Thank you guys"
-updated: 2023-01-04
+title: "我的旧友，我爱你们"
+updated: 2023-04-08
 category: thoughts
 source: https://github.com/bGZo/blog/issues/4
 number: 4
 ---
+
+
 
 > 如果你想活得幸福，那就开始感谢和赞美他人吧.🥰
 

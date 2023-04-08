@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "One wisdom sentence released"
-updated: 2023-01-02
+updated: 2023-04-08
 category: posts
 source: https://github.com/bGZo/blog/issues/11
 number: 11

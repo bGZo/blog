@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "My university"
-updated: 2023-03-12
+title: "我的大学"
+updated: 2023-04-08
 category: thoughts
 source: https://github.com/bGZo/blog/issues/5
 number: 5
 ---
+
+
 
 21年10月第三个周末看到了 [@february](https://sunhuiquan.github.io/) 的 blog, 感慨博主在学校做出如此的成就之外，自己也心血来潮，想赶在表达欲消失之前，简单记录下个人编程，数字，读书相关的经历.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Changelogs"
-updated: 2023-01-09
+updated: 2023-04-08
 category: posts
 source: https://github.com/bGZo/blog/issues/1
 number: 1

@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Sorry for cats in my first half of life"
-updated: 2022-12-23
+title: "路过我前半生的猫"
+updated: 2023-04-08
 category: thoughts
 source: https://github.com/bGZo/blog/issues/9
 number: 9
 ---
+
+
 
 ## 养猫这档事
 
