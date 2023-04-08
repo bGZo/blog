@@ -25,7 +25,7 @@ def output_label_articles(_repo, _name, _label):
         post_property += '---\n'
         post_property += 'layout: post\n'
 
-        pattern = r"<!--title:\s*\"([^\"]+)\"\s*-->\n"
+        pattern = r"<!--title:\s*\"([^\"]+)\"\s*-->"
         match = re.search(pattern, post_body)
         if match:
             post_title = match.group(1)

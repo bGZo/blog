@@ -3,7 +3,7 @@ layout: default
 title: Letters
 ---
 
-## 来信
+## Letters
 
 <ul class="posts">
   {% for letter in site.categories.letters %}
