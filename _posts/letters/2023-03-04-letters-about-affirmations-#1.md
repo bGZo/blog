@@ -36,8 +36,7 @@ number: 16
 
 在這方面，除了 [推特翻譯](https://o3o.ca/@twitter_translate@m.cmx.im) 外，我首推 [沒關係Bot](https://o3o.ca/@dontworry@toot.mantyke.icu) 這個賬號，有的時候我們真的需要這些有的沒的鼓勵，放過自己，睡個好覺，好開始下一天；
 
-<iframe src="https://toot.mantyke.icu/@dontworry/109415853665818992" class="mastodon-embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe>
-<script src="https://o3o.ca/embed.js" async="async"></script>
+<iframe src="https://toot.mantyke.icu/@dontworry/109415853665818992/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe>
 
 人生苦短，記得多誇誇自己，現實已經如此不幸，至少我們的內心要幸福；
 
