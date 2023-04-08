@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Summaries of university
-updated: 2023-01-04
+title: "My university"
+updated: 2023-03-12
 category: thoughts
 source: https://github.com/bGZo/blog/issues/5
 number: 5

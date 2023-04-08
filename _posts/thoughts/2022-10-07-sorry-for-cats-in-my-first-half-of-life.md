@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sorry for cats in my first half of life
+title: "Sorry for cats in my first half of life"
 updated: 2022-12-23
 category: thoughts
 source: https://github.com/bGZo/blog/issues/9

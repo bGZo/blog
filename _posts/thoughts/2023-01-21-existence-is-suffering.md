@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Existence is suffering
+title: "Existence is suffering"
 updated: 2023-01-31
 category: thoughts
 source: https://github.com/bGZo/blog/issues/14

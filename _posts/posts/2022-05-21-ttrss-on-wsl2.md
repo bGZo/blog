@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TTRSS on WSL2
+title: "TTRSS on WSL2"
 updated: 2022-07-31
 category: posts
 source: https://github.com/bGZo/blog/issues/3

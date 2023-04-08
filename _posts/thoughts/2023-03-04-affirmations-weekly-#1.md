@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Affirmations week #1
-updated: 2023-03-04
+title: "Affirmations weekly #1"
+updated: 2023-03-05
 category: thoughts
 source: https://github.com/bGZo/blog/issues/16
 number: 16
@@ -9,30 +9,37 @@ number: 16
 
 這裡是誇誇週報第一期，截至目前，人生趟過了 7878 天，第 1125 周也接近尾聲，二月的最後一週又陷入了一種自我懷疑的狀態，開始不斷地苛責自己，面對著很多人生中懸而未決的問題，發怵，顫抖，迷茫，如履薄冰；抱著簽約的態度去面 BYD，最後還是失敗了，就算我再怎麼安慰是環境的問題，就像面試官最後陶侃我的，問題我都知道，只是裝作視而不見，不願去面對罷了。
 
-## # 敘事 ([Storytelling](https://en.wikipedia.org/wiki/Storytelling))
+## 敘事
 
-我年邁的老師之前總是喜歡給別人講大道理，他常掛在嘴邊的一句話就是：“態度決定一切。”
+這期的話題是「敘事」([Storytelling](https://en.wikipedia.org/wiki/Storytelling))，白話就是講故事，人類的文明根植於敘事結構，彌合文化，語言和年齡之間的鴻溝。敘事作爲社會生活中傳遞知識的一種工具，往往有三大組成部分，「Setup」，「Confrontation」，「Resolution」。我們生活，思考，表達，永遠都離不開一種旋律，仿佛在每個一垂直領域，也各有一套獨特的敘事。
 
-我折服於那位先生的閱歷，所以有段時間我無意識地從心底裡催眠自己，每次走進教室之前都會勸諫自己，自己一定要從乾癟的課堂中挖掘出什麼。回想起來，那是我為數不多，充滿元氣和希望的日子，快樂嗎？我忘記了，我只知道這樣的想法讓我每天都過得非常充實，來不及思考其他的東西。
+「敘事」常出現在童話，民間故事，神話，傳說，寓言等中，這樣的敘事方式一脈相承，已經延展到了現在歷史、個人敘述、政治評論和其他的文化形式中去。我樂觀的認爲，未來還會有更加新穎的敘事出現，我們能做的，就是有意識地識別，剝離，然後批判性地選擇拒絕，或是接受。
+
+我有一位喜歡講大道理的老師，他常掛在嘴邊的一句話就是：“態度決定一切。”
+
+乍一聽是不是又是陳詞濫調？但我因折服於那位先生的閱歷，所以課後無意識地踐行了這句建議，比如每次走進教室之前都會鼓勵自己說，世界上沒有無用的知識，自己一定能從乾癟的課堂中挖掘出什麼東西來，以此來擺正心態。現在回想起來，那是我為數不多，充滿元氣和希望的日子，快樂嗎？我忘記了，我只知道這樣的行爲習慣讓我每天都過得非常充實，來不及思考其他的東西。
 
 後來，這種狀態鬆懈了，我忘記是遇到了什麼，開始隨波逐流，思想開始遲鈍，整個人變得憤世嫉俗，每日對整個世界抱有敵意，不再相信理想和虛無縹緲的畫餅，整個人被那時中文互聯網 “喪” 文化所浸染，比如《馬男波傑克》就是其中具有代表性的文藝作品；這樣的自怨自艾，不願意和別人建立鏈接的日子持續了很長一段時間，在今年 2 月中旬，我決心改變這種狀態，意圖挖掘自己每週的閃光點，然後 Post 出來，來避免頻繁的自責。
 
 <iframe src="https://o3o.ca/@bgzo/109881079714311302/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe>
 <script src="https://o3o.ca/embed.js" async="async"></script>
 
-某種角度上，我要改變的是自己的敘事方式，規避掉自我過高的預期，關注自我內心健康（[Self-care - Wikipedia](https://en.wikipedia.org/wiki/Self-care)），引導自己往積極的方面去想，去實踐，更多的去自我肯定 ([Affirmations](https://en.wikipedia.org/wiki/Affirmations_(New_Age)))，比如下面這段話就是我日常自己對自己說的一段話：
+某種角度上，我要改變的其實是自己的敘事結構，以此來規避掉自我過高的預期，關注自我內心健康（[Self-care - Wikipedia](https://en.wikipedia.org/wiki/Self-care)），引導自己往積極的方面去想，去實踐，更多的去自我肯定 ([Affirmations](https://en.wikipedia.org/wiki/Affirmations_(New_Age)))，比如下面這段話就是我日常自己對自己說的一段話：
 
-> 1. 挑戰能幫助我學習和成長。
-> 2. 我不需要和別人比，我只需要和自己比。
-> 3. 我相信我自己能行。
-> 4. 向別人尋求幫助是可以的。
-> 5. 我可以從失誤中學習到新的知識。
+> 挑戰能幫助我學習和成長。
+  我不需要和別人比，我只需要和自己比。
+  我相信我自己能行。
+  向別人尋求幫助是可以的。
+  我可以從失誤中學習到新的知識。
 
 在這方面，除了 [推特翻譯](https://o3o.ca/@twitter_translate@m.cmx.im) 外，我首推 [沒關係Bot](https://o3o.ca/@dontworry@toot.mantyke.icu) 這個賬號，有的時候我們真的需要這些有的沒的鼓勵，放過自己，睡個好覺，好開始下一天；
 
+<iframe src="https://toot.mantyke.icu/@dontworry/109415853665818992" class="mastodon-embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe>
+<script src="https://o3o.ca/embed.js" async="async"></script>
+
 人生苦短，記得多誇誇自己，現實已經如此不幸，至少我們的內心要幸福；
 
-## # 沒關係，已經很厲害了👍
+## 沒關係，已經很厲害了
 
 - 二月第三星期大概抽了兩天晚上的時間看了 50 多家企業，有效比大概 50%，提到一些知名度高的企業也就直接放棄，就算投出去反應也是寥寥。羸弱的簡歷上，學校竟成為了為數不多的亮點，初篩大多能過，但因為項目經歷大多隻是課設，甚至只是些不值一提的玩具(demo)，很少能走到面試這關。我當然有聽過來人的勸說，多多參與項目，可是自己在這方面的手段和規劃的能力實在欠缺，走了很多彎路，半路走火入魔，前功盡棄的項目倒是不少，有時間真應該回頭補補，就算是這樣一無是處的求職廢物，也一天天堅持下來了，看招聘信息，然後一遍一遍的註冊，新建簡歷，投遞後還要衝破內心無限的自我懷疑，硬著臉皮去面試，已經很厲害了👍；
 - 二月最後一週剛開始給自己打雞血，硬著頭皮網申了十多家，因為感覺大部分都會打水漂，我能做的，就是逼自己往前走，相比於以前的原地踏步，已經很厲害了👍；而且這周星期三整整一天兩面 BYD，只有 JAVA 入門的程度的我，和二面面試官侃了半個多小時，雖然面試官也是沒有條理地問來問去，反反覆覆，但我能做的，能提前準備的，都用上了，已經夠可以的了，已經很厲害了👍；反正技術面試就只是背誦八股的樂色流程就是了，背得不好下來抽空多做幾個項目就是了😆；
@@ -44,7 +51,7 @@ number: 16
 - 除此之外，我也保持著極度節儉的狀態，非常厲害 👍；
 - 雖然做的不太好，但是也有斷斷續續地學習英文，已經很棒了 👍；
 
-## # 最近發生了點啥
+## 最近發生了點啥
 
 - 微軟宣佈限制Bing AI聊天機器人 —— 端傳媒 Initium Media [20230220](https://twitter.com/initiumnews/status/1627568478277472256)
 - [人社部：個人養老金每年繳費上限1.2萬元，以後會適時調整_中國政庫_澎湃新聞-The Paper](https://www.thepaper.cn/newsDetail_forward_22138269)
@@ -53,9 +60,9 @@ number: 16
 - [新週刊｜粉色頭髮女孩去世了，網暴者無人負責](https://chinadigitaltimes.net/chinese/693160.html)
 - 脫口秀演員 "池子 " 被封殺 —— Inty [20230220](https://twitter.com/__inty__/status/1627577539551166464)
 
-## # 窺探聯邦宇宙
+## 窺探聯邦宇宙
 
-> 每年兩會，北京快遞業都要接受洗禮，這期間不要買充氣娃娃、飛機杯、跳蛋按摩棒，因為你“所謂的隱私”是不存在的。因為各家快遞公司都會貼上一個「已安檢」的標籤。今天我甚至還看到一個報道，對進京郵件快件實行投遞前“二次安檢”。一直以來，我都想做T恤，特別想設計一件已安檢的T恤，可惜我不會設計
+- > 每年兩會，北京快遞業都要接受洗禮，這期間不要買充氣娃娃、飛機杯、跳蛋按摩棒，因為你“所謂的隱私”是不存在的。因為各家快遞公司都會貼上一個「已安檢」的標籤。今天我甚至還看到一個報道，對進京郵件快件實行投遞前“二次安檢”。一直以來，我都想做T恤，特別想設計一件已安檢的T恤，可惜我不會設計
   —— 這夜派對就要散場(@vangogh26@o3o.ca) [20230227](https://o3o.ca/@vangogh26/109937298868571824)
 - [最近比較重要的發現是，意識跟大腦是兩種不同的存在，能感覺到大 - 即刻App](https://m.okjike.com/originalPosts/63fb739263afa9a88a3b9cb2)
   - 疲勞的時候就不要讀書看書，不要為了完成所謂的每天讀十分鐘這種形式手段而去做，而是洗個澡，放鬆好再去閱讀，知道學習才是最終目的，這樣才是有效的積累;
@@ -69,9 +76,9 @@ number: 16
   ![3708177261_4875199479286361_0_1](https://user-images.githubusercontent.com/57313137/222904240-d096e35e-6669-4564-9c14-48fb0d13d890.jpg)
 
 
-## # 閱讀
+## 閱讀
 
-> “Seven times I have despised my soul:
+- > “Seven times I have despised my soul:
 The first time when I saw her being meek that she might attain height.
 The second time when I saw her limping before the crippled.
 The third time when she was given to choose between the hard and the easy, and she chose the easy.
@@ -80,7 +87,6 @@ The fifth time when she forbode for weakness, and attributed her patience to str
 The sixth time when she despised the ugliness of a face, and knew not that it was one of her own masks.
 And the seventh time when she sang a song of praise, and deemed it a virtue.”
 —— [Quote by Kahlil Gibran](https://www.goodreads.com/quotes/153424-seven-times-i-have-despised-my-soul-the-first-time)
-
 - [愛人同志 [♫] - 「ONE · 一個」](http://m.wufazhuce.com/article/5826)
   > 在岌岌可危的日子裡，我是不願意愛上一個人的。我們愛一個人，就是交給這個與我們對峙的世界一個人質，世界便從此得知了我的痛處，若它要以此對付我，我毫無辦法。我抗拒這種無力感。可是，仔細想想，我對這世界實在太多戾氣，如今，因為有人和我比肩而立，我感到沒那麼孤單，戾氣被消磨了一些，倒也真真是美事一樁。世界沒那麼好，我也沒那麼好，但是因為愛他，我看到了變好的可能，甚至對這個世界多了些許寬容跟期待
 - [潮汐圖 (豆瓣)](https://book.douban.com/subject/35653884)
@@ -106,6 +112,6 @@ And the seventh time when she sang a song of praise, and deemed it a virtue.”
 - [科技愛好者週刊（第 244 期）：大數據已死 - 阮一峰的網絡日誌](http://www.ruanyifeng.com/blog/2023/03/weekly-issue-244.html)
 - [[轉載]黃油月報————二月刊6](https://gmgard.com/gm121660)
 
-## # 工具迷思
+## 工具迷思
 
 - [ ] 不知道為什麼，iOS Mastodon Web 分享到 TG 就會喪失掉文本內容，反而 Android 會好一些，導致我現在平日用 iOS 刷的時候無法快速分享，只能點擊複製再轉到 TG 上發出來；

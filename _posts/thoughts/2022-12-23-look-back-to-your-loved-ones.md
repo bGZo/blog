@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Look back to your loved ones
+title: "Look back to your loved ones"
 updated: 2022-12-23
 category: thoughts
 source: https://github.com/bGZo/blog/issues/10
