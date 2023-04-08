@@ -7,7 +7,9 @@ title: README
     <img id="avator" src="https://unpkg.com/bgzo/img/bGZo.png" style="margin:1.5rem 0 1.5rem;max-width: 50%;max-height: 50%;border-radius: 50%"/>
 </center>
 
-👋 I'm **bGZo**, look like privacy-first name, right?
+[🇨🇳 Chinese Version is Available](/readmecn.html).
+
+👋 I'm **bGZo**, look like a privacy-first name, right?
 
 My actual name is *Fenghua*, you could call me **_Hua_**🌸. I love *coffee, reading (philosophy, non-fiction most), music(Instrumental Episode), anime, pixel*.
 
