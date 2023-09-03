@@ -26,17 +26,19 @@ jobs:
           pip install -r utils/requirements.txt
         if: steps.pip-cache.outputs.cache-hit != 'true'
 
-      - name: Run Script
+      - name: Delete All Old Post
         run: |
           rm -rf _posts/
-          python3 utils/sync.py ${{ secrets.G_T }}
-          python3 utils/proof.py
-      
+
       - name: Sync issue to repository
         run: |
-          python3 utils/sync.py ${{ secrets.G_T }}
+          python3 utils/sync.py -t ${{ secrets.G_T }} -p bGZo/blog posts thoughts letters
 
-      - name: Convert to Traditional Chinese
+      - name: Proof article
+        run: |
+          python3 utils/proof.py
+
+      - name: Convert Text to Traditional Chinese
         run: |
           python3 utils/stconverter.py _posts -t
 
