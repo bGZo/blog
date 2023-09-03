@@ -1,5 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&display=swap');
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.thread{
+  @apply shadow-md rounded-2xl backdrop-blur-md;
+}
+.thread-profile{
+  @apply flex w-full;
+}
+
+.thread-avator{
+  @apply w-12 h-12 shadow-md rounded-xl m-3;
+  display: inline-block;
+  padding: initial;
+}
+.thread-profile-details{
+  
+  /* display: inline-block; */
+  /* vertical-align: middle; */
+}
+.thread-username{
+  @apply font-bold w-full mt-3 ;
+  display: inline-block;
+}
+.thread-date{
+  @apply text-xs w-full mb-3;
+  display: inline-block;
+}
+
+.thread-content{
+  @apply m-3;
+}
+
+.thread-content p > img {
+  @apply h-80 w-full;
+  object-fit: cover;
+}
+
+.thread-reaction{
+  @apply text-center;
+}
+
+
 :root {
   --base03: #002b36;
   --base02: #073642;
@@ -91,7 +135,7 @@ body {
 main img {
   border-radius: var(--border-radius);
   max-width: 100%;
-  padding: 6px;
+  /* padding: 6px; */
 
   display: block;
   margin-left: auto;
@@ -321,6 +365,7 @@ tr:nth-child(n):hover td {
 }
 
 .contents {
+  display: inline-block;
   font-size: 0.9rem;
   float: right;
   max-height: 400px;

@@ -3,7 +3,7 @@ layout: default
 title: Thoughts
 ---
 
-## Thoughts
+## 『 所思 』
 
 <ul class="posts">
   {% for thought in site.categories.thoughts %}

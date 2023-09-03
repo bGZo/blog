@@ -18,19 +18,27 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v1
         with:
-          python-version: 3.8
+          python-version: 3.11
 
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r assets/requirements.txt
+          pip install -r utils/requirements.txt
         if: steps.pip-cache.outputs.cache-hit != 'true'
 
       - name: Run Script
         run: |
           rm -rf _posts/
-          python3 assets/sync.py ${{ secrets.G_T }}
-          python3 assets/proof.py
+          python3 utils/sync.py ${{ secrets.G_T }}
+          python3 utils/proof.py
+      
+      - name: Sync issue to repository
+        run: |
+          python3 utils/sync.py ${{ secrets.G_T }}
+
+      - name: Convert to Traditional Chinese
+        run: |
+          python3 utils/stconverter.py _posts -t
 
       - name: Run Safe Dir
         run: |

@@ -3,7 +3,7 @@ layout: default
 title: Posts
 ---
 
-## Posts
+## 『 所爲 』
 
 <ul class="posts">
   {% for post in site.categories.posts %}
