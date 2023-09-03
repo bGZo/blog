@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Look back to your loved ones"
+title: Look back to your loved ones
 updated: 2023-04-08
 category: thoughts
 source: https://github.com/bGZo/blog/issues/10
@@ -29,9 +29,9 @@ I am not special, the dream of child maybe not come true. I cannot figure out, w
 I am living in a end period of growing fast society, whose economy increasing by the demographic dividend. The multinational companies are more willing to use cheap labor in China, which would bring the economy increasing is very fast. The More simple word is: exchange the technology using huge people labor force.
 
 > 天道酬勤
-> 越努力，越幸运
-> 熬一个春夏秋冬，享一生荣华富贵!
-> 不苦不累，高三无味。不拼不搏，高三白活!
+> 越努力，越幸運
+> 熬一個春夏秋冬，享一生榮華富貴!
+> 不苦不累，高三無味。不拼不搏，高三白活!
 
 Those words filled my life since I birthed. But wait, does it sounds like a pre-employment training? The boss do a speech how hard his half life and create a company. As long as you do like the boss, you would be successful. Being the top1 in some competition, going the top1 university, archiving the top1 project for company.
 
@@ -39,7 +39,7 @@ Those bullshit and lies sucks. They told us a certainty of our future, which eve
 
 In a tradition China, there is a proverb for a rural farmer:
 
-> 三十亩地一头牛，老婆孩子热炕头
+> 三十畝地一頭牛，老婆孩子熱炕頭
 
 It describe a common sense: you have 30 acres of land and one cow(productive forces) for living, you have a loved wife, children and a warm house. It is normal but compared the foreign countries, it's more difficult and complex in China nowadays.
 

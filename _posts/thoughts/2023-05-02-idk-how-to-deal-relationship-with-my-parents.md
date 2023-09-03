@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "I don't know how to deal relationship with my parents"
+title: IDK how to deal relationship with my parents
 updated: 2023-05-02
 category: thoughts
 source: https://github.com/bGZo/blog/issues/19
 number: 19
 ---
 
-
+<!--title: "I don't know how to deal relationship with my parents"-->
 
 To be honest, my parents' lives have been going downhill for some time I don't realize. Just think about it, I still could remember they're strong and powerful in my childhood. And then they took me to school, yet I could see them every night. But I really don't know when their illness shows, when they feel sick or even worse. I have no idea.
 

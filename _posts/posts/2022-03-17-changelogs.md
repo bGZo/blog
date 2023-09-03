@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Changelogs"
+title: Changelogs
 updated: 2023-04-08
 category: posts
 source: https://github.com/bGZo/blog/issues/1
@@ -105,11 +105,11 @@ You have to read old articles to find the mistakes one by one, even word alterna
 </p>
 
 [^1]: [Emojis as favicons](https://css-tricks.com/emojis-as-favicons);
-[^3]: Basically I agree with magasa's answer, via: [哪个或哪些网络用语最让人反感？ - 知乎](https://www.zhihu.com/question/20009911/answer/15802749); Wherever it was, native or foreign, cliché sucks, why not using a more concrete and clearer word to discuss? via: [Cliché - Wikipedia](https://en.wikipedia.org/wiki/Clich%c3%a9) or [Platitude - Wikipedia](https://en.wikipedia.org/wiki/Platitude). Since 20200501;
-[^4]: As laike9m said, "对抗死亡是人类文明的永恒主题，而我们已经实现了阶段性胜利。现在是文章、照片、视频，也许还有以个人习惯作为输入训练的模型。再往后呢？会不会有基因信息，乃至意识的完整复制呢？依托于稳定的存储，我们能做的事情实在太多了。". via: [People Die, but Long Live GitHub - laike9m's blog](https://laike9m.com/blog/people-die-but-long-live-github,122/);
+[^3]: Basically I agree with magasa's answer, via: [哪個或哪些網絡用語最讓人反感？ - 知乎](https://www.zhihu.com/question/20009911/answer/15802749); Wherever it was, native or foreign, cliché sucks, why not using a more concrete and clearer word to discuss? via: [Cliché - Wikipedia](https://en.wikipedia.org/wiki/Clich%c3%a9) or [Platitude - Wikipedia](https://en.wikipedia.org/wiki/Platitude). Since 20200501;
+[^4]: As laike9m said, "對抗死亡是人類文明的永恆主題，而我們已經實現了階段性勝利。現在是文章、照片、視頻，也許還有以個人習慣作爲輸入訓練的模型。再往後呢？會不會有基因信息，乃至意識的完整複製呢？依託於穩定的存儲，我們能做的事情實在太多了。". via: [People Die, but Long Live GitHub - laike9m's blog](https://laike9m.com/blog/people-die-but-long-live-github,122/);
 [^5]: [Heaven's Lost Property - Wikipedia](https://en.wikipedia.org/wiki/Heaven%27s_Lost_Property);
-[^6]: [全平台 Favicon 在线生成器 – RealFaviconGenerator.net – 镜态极研](https://kagamiz.com/real-favicon-generator/);
+[^6]: [全平臺 Favicon 在線生成器 – RealFaviconGenerator.net – 鏡態極研](https://kagamiz.com/real-favicon-generator/);
 [^7]: See sense via: [BoJack Learns How Hard It Is to Write - BoJack Horseman - YouTube](https://www.youtube.com/watch?v=tOxB_Dlb-rA). "I feel like we can beat this font. Ah, Copperplate, a font for the truly modern man. Ha. No. There you are, Verdana. Oh, Comic Sans, you drunk, go home. 3:10? I just spent six hours playing with fonts? Holy shit!" Generally, every decision is hard and diversity but not matters. Since 20210607;
-[^8]: "一个很自然的便捷度区分出现了：备案或白名单网站只需要点击一次就可以查看；非备案或非白名单网站（如很多国际网站）需要多点击一次。仅仅这一点，恐怕就可以让很多人放弃访问这个页面（因为便捷度弹性高）。何况这个跳转页面有意无意间说到了「风险」两个字，无疑又会阻止一部分人。", via: [软墙 - 郝海龍](https://haohailong.net/2021/soft-wall )
+[^8]: "一個很自然的便捷度區分出現了：備案或白名單網站只需要點擊一次就可以查看；非備案或非白名單網站（如很多國際網站）需要多點擊一次。僅僅這一點，恐怕就可以讓很多人放棄訪問這個頁面（因爲便捷度彈性高）。何況這個跳轉頁面有意無意間說到了「風險」兩個字，無疑又會阻止一部分人。", via: [軟牆 - 郝海龍](https://haohailong.net/2021/soft-wall )
 
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
