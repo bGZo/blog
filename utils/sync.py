@@ -16,7 +16,7 @@ PROPERTIES_TEMPLATE = (
     "---\n"
     "\n"
 )
-TITLE_PATTERN = r"\n<!--title:\s*\"([^\"]+)\"\s*-->"
+TITLE_PATTERN = r"<!--title:\s*\"([^\"]+)\"\s*-->"
 
 
 def get_issue_properties(issue, _label):
