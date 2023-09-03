@@ -1,13 +1,13 @@
 ---
 layout: post
-title: My soulmate
+title: 我的戀人
 updated: 2023-07-11
 category: thoughts
 source: https://github.com/bGZo/blog/issues/17
 number: 17
 ---
 
-<!--title: "我的戀人"-->
+
 ## 幾乎是幻想
 
 究竟是什麼時候，產生了一種能和你在一起的幻想呢？

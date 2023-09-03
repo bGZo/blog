@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Games never played until died 
+title: 「我都花了時間玩遊戲，爲什麼還要花錢買它？」
 updated: 2023-07-09
 category: thoughts
 source: https://github.com/bGZo/blog/issues/20
 number: 20
 ---
 
-<!--title: "「我都花了時間玩遊戲，爲什麼還要花錢買它？」"-->
+
 
 好的，我承認這不是一個好的標題，當然本文沒有爲「白嫖」正名的意思，單純玩梗兒罷了[^BUY_BUY_BUY]，只是後疫情時代，我建議你停下來再想一想，理性消費。
 

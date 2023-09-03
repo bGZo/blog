@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Existence is suffering
+title: 存在即痛苦
 updated: 2023-04-08
 category: thoughts
 source: https://github.com/bGZo/blog/issues/14
 number: 14
 ---
 
-<!--title: "存在即痛苦"-->
+
 
 Rick and Morty 衍生漫畫 20210303 的一期 *Rick and Morty Presents: Jerryboree*[^JERRYBOREE] 中講了傑瑞託管所的真相，我印象很深，在漫畫中, `X-198` 號傑瑞喫了 *GOD PILL*, 成爲 GOD 後做的第一件事，就是 *NO MORE JERRYS*, 結束了其他 Jerry 的一生。爲什麼呢?
 

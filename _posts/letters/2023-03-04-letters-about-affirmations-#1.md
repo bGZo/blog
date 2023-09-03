@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Letters about affirmations #1
+title: 誇誇月報 #1
 updated: 2023-07-09
 category: letters
 source: https://github.com/bGZo/blog/issues/16
 number: 16
 ---
 
-<!--title: "誇誇月報 #1"-->
+
 
 這裏是誇誇月報第一期，截至目前，我的人生趟過了 7878 天，第 1125 周也接近尾聲，二月的最後一週又陷入了一種自我懷疑的狀態，開始不斷地苛責自己，面對著很多人生中懸而未決的問題，發怵，顫抖，迷茫，如履薄冰；抱著簽約的態度去面 BYD，最後還是失敗了，就算我再怎麼安慰是環境的問題，就像面試官最後陶侃我的，問題我都知道，只是裝作視而不見，不願去面對罷了。
 

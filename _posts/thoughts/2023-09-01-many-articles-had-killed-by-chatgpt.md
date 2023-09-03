@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Many articles had killed by ChatGPT
+title: 被 ChatGPT 消解的文章
 updated: 2023-09-01
 category: thoughts
 source: https://github.com/bGZo/blog/issues/23
 number: 23
 ---
 
-<!--title: "被 ChatGPT 消解的文章"-->
+
 
 我的文章、思考，被大模型消解了。每次當我靈感閃過，我會興奮地把他們記錄在自己的 Inbox 裏，但我發現這對 ChatGPT 不值一提，當我把這些零碎的思考丟給它之後，往往我的思考、想象和分析也止步於此了。它好像爲我提供一個大而全的「標準答案」。而我自然順從過去二十多年學習的慣性，我認同這一答案。
 

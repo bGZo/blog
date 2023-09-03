@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sorry for cats in my first half of life
+title: 路過我前半生的貓
 updated: 2023-04-08
 category: thoughts
 source: https://github.com/bGZo/blog/issues/9
 number: 9
 ---
 
-<!--title: "路過我前半生的貓"-->
+
 
 ## 養貓這檔事
 
