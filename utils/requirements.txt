@@ -1,0 +1,2 @@
+PyGithub==1.55
+OpenCC==1.1.6
