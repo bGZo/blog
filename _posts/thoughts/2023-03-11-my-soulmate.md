@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 我的戀人
-updated: 2023-07-11
+title: 睡不着的夜和忘不掉的夢
+updated: 2023-09-08
 category: thoughts
 source: https://github.com/bGZo/blog/issues/17
 number: 17
