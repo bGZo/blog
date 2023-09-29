@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 你的下一臺電腦，不可能會是 iPad Pro
-updated: 2023-09-20
+updated: 2023-09-29
 category: thoughts
 source: https://github.com/bGZo/blog/issues/24
 number: 24
