@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 路過我前半生的貓
-updated: 2023-04-08
+title: 貓貓能有什麼壞心思呢？
+updated: 2023-10-01
 category: thoughts
 source: https://github.com/bGZo/blog/issues/9
 number: 9
