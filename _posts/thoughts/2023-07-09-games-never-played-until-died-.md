@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 「我都花了時間玩遊戲，爲什麼還要花錢買它？」
-updated: 2023-07-09
+updated: 2023-10-14
 category: thoughts
 source: https://github.com/bGZo/blog/issues/20
 number: 20

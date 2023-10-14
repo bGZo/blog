@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I don't know how to deal relationship with my parents
-updated: 2023-05-02
+updated: 2023-10-14
 category: thoughts
 source: https://github.com/bGZo/blog/issues/19
 number: 19

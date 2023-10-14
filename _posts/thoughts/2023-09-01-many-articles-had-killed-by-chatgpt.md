@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 被 ChatGPT 消解的文章
-updated: 2023-09-01
+updated: 2023-10-14
 category: thoughts
 source: https://github.com/bGZo/blog/issues/23
 number: 23
