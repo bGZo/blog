@@ -1,0 +1,355 @@
+/* Bullet Threading via: https://github.com/pengx17/logseq-plugin-bullet-threading
+ * @import url("https://cdn.jsdelivr.net/gh/pengx17/logseq-dev-theme@master/bullet_threading.css");
+ */
+:root {
+  --ls-block-bullet-active-color: var(
+    --ls-block-bullet-threading-active-color-overwrite,
+    var(--ls-link-text-color)
+  );
+  --ls-block-bullet-threading-width: var(
+    --ls-block-bullet-threading-width-overwrite,
+    2px
+  );
+}
+
+.block-control {
+  z-index: 1;
+}
+
+.block-children {
+  border-left-color: var(--ls-guideline-color);
+  border-left-width: var(--ls-block-bullet-threading-width) !important;
+}
+
+.block-children-container {
+  position: relative;
+}
+
+.block-children-left-border {
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  padding-right: 0px;
+  border-radius: 2px;
+  background-color: transparent;
+  left: -1px;
+  transition: background-color 0.2s;
+}
+
+.block-children-left-border:hover {
+  background-color: var(--ls-block-bullet-active-color);
+}
+
+.block-content-wrapper {
+  position: relative;
+  overflow-x: visible !important;
+  /* Fixme: overflow? */
+}
+
+.bullet-container {
+  height: 14px !important;
+  width: 14px !important;
+  position: relative;
+  transform: translate(1px, -1px);
+}
+
+/* Block bullet path should only show in a nested block */
+.ls-block {
+  /* Fix for headings like h1, h2 etc */
+  /* Basic "curve" */
+  /* Fix multi-line blocks with children */
+}
+.ls-block .bullet {
+  background-color: var(--ls-block-bullet-active-color);
+  box-shadow: 0 0 0 1px var(--ls-block-bullet-active-color);
+}
+.ls-block div.items-center {
+  position: relative;
+  height: 26px !important;
+}
+.ls-block > .items-baseline {
+  align-items: initial;
+}
+.ls-block:not(:focus-within) .bullet {
+  background-color: var(--ls-block-bullet-color);
+  transform: scale(1);
+  box-shadow: none;
+}
+.ls-block:not(:focus-within) > .items-baseline {
+  align-items: baseline;
+}
+.ls-block .ls-block > div > div.items-center::before {
+  pointer-events: none;
+  content: "";
+  left: calc(var(--ls-block-bullet-threading-width) * -1);
+  right: 6px;
+  top: calc(-50% + var(--ls-block-bullet-threading-width) * 0.5 - 1px);
+  bottom: 50%;
+  /* shift left 1px for border */
+  position: absolute;
+  border-left: var(--ls-block-bullet-threading-width) solid transparent;
+  border-bottom: var(--ls-block-bullet-threading-width) solid transparent;
+  border-bottom-left-radius: 10px;
+}
+.ls-block .ls-block:focus-within > div > div.items-center::before {
+  border-color: var(--ls-block-bullet-active-color);
+}
+.ls-block .block-children > .ls-block::before {
+  pointer-events: none;
+  content: "";
+  top: -1rem;
+  bottom: 0;
+  border-left: var(--ls-block-bullet-threading-width) solid transparent;
+  left: calc(var(--ls-block-bullet-threading-width) * -1);
+  position: absolute;
+}
+.ls-block .block-children:focus-within > .ls-block:not(:focus-within)::before {
+  border-color: var(--ls-block-bullet-active-color);
+}
+.ls-block .block-children:focus-within > .ls-block:focus-within ~ .ls-block::before {
+  border-color: transparent;
+}
+.ls-block[haschild] > div > .block-content-wrapper::before {
+  pointer-events: none;
+  content: "";
+  top: 12px;
+  bottom: 0;
+  left: -15px;
+  position: absolute;
+  border-left: var(--ls-block-bullet-threading-width) solid transparent;
+}
+.ls-block[haschild]:focus-within > div > .block-content-wrapper::before {
+  border-color: var(--ls-block-bullet-active-color);
+}
+
+:is(.embed-block > div, .embed-page) > div > div > div > div.ls-block > div > div.items-center::before {
+  border-color: transparent !important;
+}
+
+@media (max-width: 640px) {
+  .ls-block[haschild] > div > .block-content-wrapper::before {
+    left: -11px;
+  }
+}
+/* Disable for doc mode */
+.doc-mode div.items-center::before,
+.doc-mode div.items-center::after,
+.doc-mode .ls-block::before,
+.doc-mode .ls-block::after {
+  display: none;
+}
+
+.doc-mode .block-children {
+  border-left-width: 0px !important;
+}
+/* Bullet Threading End */
+
+
+/* Color Begin
+ via: [logseq/custom.css](https://gist.github.com/madawei2699/61cf9601a443df21a9fabb282723936c)
+ */
+:root{
+  --base03:    #002b36;
+  --base02:    #073642;
+  --base01:    #586e75;
+  --base00:    #657b83;
+  --base0:     #839496;
+  --base1:     #93a1a1;
+  --base2:     #eee8d5;
+  --base3:     #fdf6e3;
+  --yellow:    #b58900;
+  --orange:    #cb4b16;
+  --red:       #dc322f;
+  --magenta:   #d33682;
+  --violet:    #6c71c4;
+  --blue:      #268bd2;
+  --cyan:      #2aa198;
+  --green:     #859900;
+  /* via: [Solarized](https://ethanschoonover.com/solarized/)*/
+  --sakura:     #FEDFE1;
+  --ginnezumi:  #91989F;
+  --nae:        #A8D8B9;
+  --ouchi:      #9B90C2;
+  --shironeri:  #FCFAF2;
+  /* via: https://nipponcolors.com/#{name} */
+  --cache:      #DDD6C1;
+}
+.light-theme, html[data-theme="light"]{
+  --ls-primary-background-color: var(--base3);
+  --ls-secondary-background-color: var(--base2);
+  --ls-tertiary-background-color: var(--cache);
+  --ls-page-properties-background-color: var(--base2);
+  --ls-page-inline-code-bg-color: var(--base2);
+  --ls-block-properties-background-color: var(--base2);
+  --color-level-1: var(--base2);
+  --color-level-2: var(--cache);
+  --color-level-3: var(--base2);
+  --ls-page-checkbox-color: var(--nae);
+  --ls-page-blockquote-bg-color: var(--shironeri);
+  --ls-page-blockquote-border-color: var(--base0);
+  --ls-selection-background-color: var(--cache);
+  --ls-a-chosen-bg: var(--cache);
+  --ls-quaternary-background-color: var(--cache);
+  --ls-table-tr-even-background-color: var(--base2);
+  /* --ls-slide-background-color: var(--base3); */
+}
+.form-input{
+  background-color: var(--base2);
+}
+/* Color End */
+
+
+/* Font Begin 
+  via: https://discuss.logseq.com/t/specify-indentation-type-changing-the-default-font/2703/3
+  @font-face {
+    font-family: "JetBrains Mono Nerd";
+    font-weight: 200 900;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/JetBrainsMono/Ligatures/Regular/complete/JetBrains%20Mono%20Regular%20Nerd%20Font%20Complete.ttf");
+  } */
+:root {
+  font-size: 18px !important;
+  line-height: 1.6;
+  /* --ct-text-size: 18px; */
+  --ct-line-height: 1.6;
+  --ls-font-family: LXGW WenKai Light;
+  --ct-page-title-font-family: var(--ls-font-family);
+  --ct-code-font-family: LXGW WenKai Mono, JetBrains Mono, inconsolata, monospace;
+}
+/* Font End*/
+
+
+/* Code Begin
+  via: https://raw.githubusercontent.com/FarhadG/code-mirror-themes/master/themes/ir_black.css
+	More theme via: https://codemirror.net/5/theme/ 
+    pre, code {
+      white-space : pre-wrap !important;
+	}
+*/
+.cm-s-ir_black {
+	font-size: 1em;
+  	font-family: LXGW WenKai Mono, JetBrains Mono, inconsolata, monospace;
+  	line-height: 1.5em;
+	letter-spacing: 0.3px;
+	word-spacing: 1px;
+	background: #000000;
+	color: #EDEDED;
+}
+.cm-s-ir_black .CodeMirror-lines {
+	padding: 8px 0;
+}
+.cm-s-ir_black .CodeMirror-gutters {
+	box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.5);
+	background-color: #000000;
+	padding-right: 10px;
+	z-index: 3;
+	border: none;
+}
+.cm-s-ir_black div.CodeMirror-cursor {
+	border-left: 3px solid #EDEDED;
+}
+.cm-s-ir_black .CodeMirror-activeline-background {
+	background: #FFFFFF24;
+}
+.cm-s-ir_black .CodeMirror-selected {
+	background: #333333;
+}
+.cm-s-ir_black .cm-comment {
+	color: #7C7C7C;
+}
+.cm-s-ir_black .cm-keyword {
+	color: #96CBFE;
+}
+.cm-s-ir_black .cm-string {
+	color: #A8FF60;
+}
+.cm-s-ir_black .cm-number {
+	color: #DAD085;
+}
+.cm-s-ir_black .cm-property {
+	color: #DAD085;
+}
+.cm-s-ir_black .cm-atom {
+	color: #DAD085;
+}
+.cm-s-ir_black .cm-operator {
+	color: #96CBFE;
+}
+.cm-s-ir_black .CodeMirror-linenumber {
+	color: #7C7C7C;
+}
+/* Code End */
+
+
+/* Tag Begin
+	via: 
+  [Customize Tags Inside Roam Research With This Simple CSS — Red Gregory](https://www.redgregory.com/roam-content/2021/1/8/customize-tags-inside-roam-research-with-this-simple-css)
+	[🙏 How do I change some tag colours? - Questions & Help - Logseq](https://discuss.logseq.com/t/how-do-i-change-some-tag-colours/637/2)
+  [CSS for questions and answers - Look what I built - Logseq](https://discuss.logseq.com/t/css-for-questions-and-answers/8197)
+  [Custom tags rendering with Emojis - Look what I built - Logseq](https://discuss.logseq.com/t/custom-tags-rendering-with-emojis/709)
+  
+  */
+a.tag[data-ref] {
+  background-color: var(--sakura);
+  color: black;
+  display: inline-flex;
+  padding: 3px 7px;
+  line-height: 0.8rem;
+  border-radius: 1rem 0.4rem 0.4rem 1rem;
+  
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  
+  padding: 0.2rem 0.3rem 0.2rem 0.3rem;
+  transition: .3s;
+  white-space: nowrap;
+  /* text-transform: uppercase; */
+}
+
+a.tag[data-ref]:hover {
+  filter: grayscale(25%) !important;
+}
+
+a.tag[data-ref]::before {
+  background-color: var(--ls-primary-background-color);
+  border-radius: 50%;
+  content: '';
+  display: inline-block;
+  height: 0.6rem;
+  line-height: 0.8rem;
+  margin-right: 0.3rem;
+  width: 0.6rem;
+}
+
+[data-refs-self*='"closed"'] > *{
+  color: var(--ginnezumi);
+  /** Note: Attribute selector
+    * `.flex-row` only support for tagged line.
+    * TODO: Support css only work for first level element
+      * how to make by count level?
+      * [level*='"3"']
+      * .block-children-container
+    */
+}
+
+a.tag[data-ref="closed"] {
+  background-color: var(--ouchi) !important;
+}
+/* Tag End */
+
+
+/* Style Begin */
+.canceled,.cancelled,.done {
+  text-decoration: none !important;
+  opacity: .6
+}
+/* Style End */
+
+#app-container,
+#main-container{
+	background-image: url(http://unpkg.com/bgzo/img/texture.png);
+}
