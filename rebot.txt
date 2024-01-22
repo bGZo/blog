@@ -1,0 +1,11 @@
+#robots.txt for https://x.cn
+usr-agent: *
+Disallow: /*.jpg$
+Disallow: /*.jpeg$
+Disallow: /*.gif$
+Disallow: /*.png$
+Disallow: /*.bmp$
+Disallow: /*.webp$
+
+Sitemap: https://x.com/sitemap.xml
+Sitemap: https://x.cn/blog/sitemap.xml
