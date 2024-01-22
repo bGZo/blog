@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on @bGZoCg</title>
+    <link>http://x.com/zh/tags/</link>
+    <description>Recent content in Tags on @bGZoCg</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh_CN</language>
+    <lastBuildDate>Sun, 08 Aug 2021 22:43:00 +0800</lastBuildDate>
+    
+	<atom:link href="http://x.com/zh/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tools</title>
+      <link>http://x.com/zh/tags/tools/</link>
+      <pubDate>Sun, 08 Aug 2021 22:43:00 +0800</pubDate>
+      
+      <guid>http://x.com/zh/tags/tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Math</title>
+      <link>http://x.com/zh/tags/math/</link>
+      <pubDate>Thu, 10 Jun 2021 16:00:00 +0800</pubDate>
+      
+      <guid>http://x.com/zh/tags/math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sofeware-Engineer</title>
+      <link>http://x.com/zh/tags/sofeware-engineer/</link>
+      <pubDate>Thu, 10 Jun 2021 14:42:00 +0800</pubDate>
+      
+      <guid>http://x.com/zh/tags/sofeware-engineer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DB</title>
+      <link>http://x.com/zh/tags/db/</link>
+      <pubDate>Thu, 10 Jun 2021 00:12:00 +0800</pubDate>
+      
+      <guid>http://x.com/zh/tags/db/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ML</title>
+      <link>http://x.com/zh/tags/ml/</link>
+      <pubDate>Fri, 22 Jan 2021 19:52:50 +0800</pubDate>
+      
+      <guid>http://x.com/zh/tags/ml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cpp</title>
+      <link>http://x.com/zh/tags/cpp/</link>
+      <pubDate>Thu, 21 Jan 2021 14:31:44 +0800</pubDate>
+      
+      <guid>http://x.com/zh/tags/cpp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>http://x.com/zh/tags/linux/</link>
+      <pubDate>Tue, 19 Jan 2021 18:11:54 +0800</pubDate>
+      
+      <guid>http://x.com/zh/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VPS</title>
+      <link>http://x.com/zh/tags/vps/</link>
+      <pubDate>Wed, 26 Feb 2020 23:51:37 +0800</pubDate>
+      
+      <guid>http://x.com/zh/tags/vps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gossip</title>
+      <link>http://x.com/zh/tags/gossip/</link>
+      <pubDate>Thu, 30 Jan 2020 13:59:24 +0800</pubDate>
+      
+      <guid>http://x.com/zh/tags/gossip/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

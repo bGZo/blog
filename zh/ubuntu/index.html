@@ -1,0 +1,1369 @@
+<!doctype html>
+<html lang="zh_CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.68.3" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="关于 Ubuntu, 我所知道的一切 - @bGZoCg">
+    <meta name="twitter:description" content="[声明]: 本文实验环境为 UEFI&#43;GPT 的 Win10 笔记本电脑, 采用的分区格式为 Ext2. 本文仅供参考.
+200125开坑Ubuntu, 被其简单的系统占用所折服, 开始使用ubuntu, 一直到现在. 这个记录其实是一以贯之的, 但里面的教程不保证一直有效, 加上我也只能阶段性的记录一下, 更多即时的记录请看 Github - -nix
+~~多说一句: 在用完 Win10 后有感, 在没有深入了解意见科技产品前, 永远不要过分相信他带来的便利, 你的电脑, 在你真正摸清楚他的操作原理和操作逻辑之前, 不要过分依赖他, 在他面前, 你可能就是赤裸的, 而我所真正担心的是我没有足够的时间和精力去见证世间的一切, 害怕的是自己不能静下心来慢慢的学习起来, 对那些Fast Learner肃然起敬, 但同时我始终都不了解真正的自己, 永远在以伤害自己的方式来逼迫自己努力, 而不是全身心的投入到自己的学习生涯中, 这又是多么的可悲……~~
+INSTALL UBUNTU 下载官方的镜像 (国内有大量的开源镜像网站) , 然后用 Ultralso 烧录到一个8G (4G) 大小的U盘. 重启电脑到 BIOS 中将 BOOT 里的 BOOT Security 关掉 (HP: F10), 重启进入系统UEFI的U盘启动的模式 (HP: F11), 之后进入U盘的 Ubuntu里面体验一下.准备安装.
+不要直接安装. 需要换源, 去找系统的安装源list文件, 在/etc/apt/sources.list里, 用管理员的权限修改下载源地址 (提前查到自己对应版本的源地址) .">
+    <meta name="twitter:site" content="http://x.com/">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:image" content="https://dandelionfs.oss-cn-beijing.aliyuncs.com/author-heart.webp">
+    
+    
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="关于 Ubuntu, 我所知道的一切 - @bGZoCg">
+    <meta property="og:description" content="[声明]: 本文实验环境为 UEFI&#43;GPT 的 Win10 笔记本电脑, 采用的分区格式为 Ext2. 本文仅供参考.
+200125开坑Ubuntu, 被其简单的系统占用所折服, 开始使用ubuntu, 一直到现在. 这个记录其实是一以贯之的, 但里面的教程不保证一直有效, 加上我也只能阶段性的记录一下, 更多即时的记录请看 Github - -nix
+~~多说一句: 在用完 Win10 后有感, 在没有深入了解意见科技产品前, 永远不要过分相信他带来的便利, 你的电脑, 在你真正摸清楚他的操作原理和操作逻辑之前, 不要过分依赖他, 在他面前, 你可能就是赤裸的, 而我所真正担心的是我没有足够的时间和精力去见证世间的一切, 害怕的是自己不能静下心来慢慢的学习起来, 对那些Fast Learner肃然起敬, 但同时我始终都不了解真正的自己, 永远在以伤害自己的方式来逼迫自己努力, 而不是全身心的投入到自己的学习生涯中, 这又是多么的可悲……~~
+INSTALL UBUNTU 下载官方的镜像 (国内有大量的开源镜像网站) , 然后用 Ultralso 烧录到一个8G (4G) 大小的U盘. 重启电脑到 BIOS 中将 BOOT 里的 BOOT Security 关掉 (HP: F10), 重启进入系统UEFI的U盘启动的模式 (HP: F11), 之后进入U盘的 Ubuntu里面体验一下.准备安装.
+不要直接安装. 需要换源, 去找系统的安装源list文件, 在/etc/apt/sources.list里, 用管理员的权限修改下载源地址 (提前查到自己对应版本的源地址) .">
+    <meta property="og:url" content="http://x.com/zh/ubuntu/">
+    <meta property="og:site_name" content="@bGZoCg">
+    <meta property="og:image" content="https://dandelionfs.oss-cn-beijing.aliyuncs.com/author-heart.webp">
+    
+    <title>关于 Ubuntu, 我所知道的一切 - @bGZoCg</title>
+
+    <meta name="author" content="bGZoCg">
+    <meta name="description" content="[声明]: 本文实验环境为 UEFI&#43;GPT 的 Win10 笔记本电脑, 采用的分区格式为 Ext2. 本文仅供参考.
+200125开坑Ubuntu, 被其简单的系统占用所折服, 开始使用ubuntu, 一直到现在. 这个记录其实是一以贯之的, 但里面的教程不保证一直有效, 加上我也只能阶段性的记录一下, 更多即时的记录请看 Github - -nix
+~~多说一句: 在用完 Win10 后有感, 在没有深入了解意见科技产品前, 永远不要过分相信他带来的便利, 你的电脑, 在你真正摸清楚他的操作原理和操作逻辑之前, 不要过分依赖他, 在他面前, 你可能就是赤裸的, 而我所真正担心的是我没有足够的时间和精力去见证世间的一切, 害怕的是自己不能静下心来慢慢的学习起来, 对那些Fast Learner肃然起敬, 但同时我始终都不了解真正的自己, 永远在以伤害自己的方式来逼迫自己努力, 而不是全身心的投入到自己的学习生涯中, 这又是多么的可悲……~~
+INSTALL UBUNTU 下载官方的镜像 (国内有大量的开源镜像网站) , 然后用 Ultralso 烧录到一个8G (4G) 大小的U盘. 重启电脑到 BIOS 中将 BOOT 里的 BOOT Security 关掉 (HP: F10), 重启进入系统UEFI的U盘启动的模式 (HP: F11), 之后进入U盘的 Ubuntu里面体验一下.准备安装.
+不要直接安装. 需要换源, 去找系统的安装源list文件, 在/etc/apt/sources.list里, 用管理员的权限修改下载源地址 (提前查到自己对应版本的源地址) .">
+
+    
+    
+
+    
+    
+
+    
+    
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/chroma.dracula.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌈</text></svg>">
+</head>
+<body class="font-serif bg-gray-200 border-t-4 border-blue-500 antialiased">
+    <div class="w-full p-6 md:w-2/3 md:px-0 md:mx-auto xl:w-2/5">
+        <header class="mb-6">
+            
+            <div class="mb-6 md:flex md:items-center">
+                
+<div>
+    <div class="back-button"><a class="text-lg mb-8 inline-block" href="/zh">&larr; 返回</a></div>
+
+    
+    
+    <h1 class="text-4xl font-bold">关于 Ubuntu, 我所知道的一切</h1>
+    <time datetime="2021-01-19 18:11:54 CST">19 Jan 2021</time>
+    
+    
+    
+    <ol class="mt-4">
+        
+        <li class="inline-block">
+            <a class="border-none text-gray-800 text-xs bg-gray-400 hover:bg-gray-600 hover:text-white rounded-sm px-3 py-1" href="http://x.com/tags/linux">linux</a>
+        </li>
+        
+    </ol>
+    
+</div>
+
+            </div>
+
+            
+            
+        </header>
+
+        
+        
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#install-ubuntu">INSTALL UBUNTU</a></li>
+    <li><a href="#sys-update">SYS UPDATE</a></li>
+    <li><a href="#apt-manage">APT MANAGE</a>
+      <ul>
+        <li><a href="#uninstall">Uninstall</a></li>
+        <li><a href="#clean">Clean</a></li>
+        <li><a href="#run-appimage">Run AppImage</a></li>
+        <li><a href="#binary-file">BINARY FILE</a></li>
+        <li><a href="#knowledge-for-apt--apt-get">Knowledge For APT &amp; APT-GET</a></li>
+        <li><a href="#deb-manage">Deb Manage</a></li>
+      </ul>
+    </li>
+    <li><a href="#shortcut">SHORTCUT</a>
+      <ul>
+        <li><a href="#desktop-shortcut">Desktop Shortcut</a></li>
+        <li><a href="#terminal-shortcut">Terminal Shortcut</a></li>
+        <li><a href="#gedit-shortcut">Gedit Shortcut</a></li>
+      </ul>
+    </li>
+    <li><a href="#bugs">BUGS</a>
+      <ul>
+        <li><a href="#boot-无法进去系统花屏">Boot 无法进去系统(花屏)</a></li>
+        <li><a href="#n卡驱动">N卡驱动</a></li>
+        <li><a href="#touchpad">Touchpad</a></li>
+        <li><a href="#亮度异常">亮度异常</a></li>
+        <li><a href="#语言设置">语言设置</a></li>
+        <li><a href="#dpkg错误-另外一个进程已经为-dpkg-状态数据库-加锁">dpkg:错误: 另外一个进程已经为 dpkg 状态数据库 加锁</a></li>
+        <li><a href="#安装deb-包缺少以来关系-仍未被处理的时候">安装deb 包缺少以来关系, 仍未被处理的时候</a></li>
+        <li><a href="#ubuntu-1804无法从fwupd下载固件">ubuntu 18.04无法从fwupd下载固件</a></li>
+        <li><a href="#双系统的时间不统一">双系统的时间不统一</a></li>
+        <li><a href="#initramfs-tools报错">initramfs-tools报错</a></li>
+        <li><a href="#更换介质-请把标有">更换介质: 请把标有……</a></li>
+        <li><a href="#ubuntu支持exfat方法">ubuntu支持<code>exfat</code>方法</a></li>
+        <li><a href="#ubuntu的在线账户">Ubuntu的在线账户</a></li>
+        <li><a href="#snap错误has-install-snap-change-in-progress">snap错误has install-snap change in progress</a></li>
+        <li><a href="#ubuntu-永久挂载win10磁盘">Ubuntu 永久挂载Win10磁盘</a></li>
+        <li><a href="#grub-wifi">Grub Wifi</a></li>
+        <li><a href="#root模式-部分命令找不到">Root模式 部分命令找不到</a></li>
+        <li><a href="#没有批量操作的压缩命令">没有批量操作的压缩命令</a></li>
+        <li><a href="#ubuntu-utf-8-和-win-gbk-的转化">Ubuntu Utf-8 和 Win GBK 的转化</a></li>
+        <li><a href="#binshellm-bad-interpreter-no-such-file-or-directory">/bin/shell^M: bad interpreter: No such file or directory</a></li>
+        <li><a href="#hang-up-bug">Hang Up Bug</a></li>
+        <li><a href="#输出文件中带有-口3442m-口00m等乱码字符">输出文件中带有<code> 口[34;42m</code> <code>口[00m</code>等乱码字符</a></li>
+        <li><a href="#su提示认证失败">su提示认证失败</a></li>
+        <li><a href="#扩展触摸屏触控错位">扩展触摸屏触控错位</a></li>
+        <li><a href="#libinput">libinput</a></li>
+        <li><a href="#linux-下蓝牙鼠标连接几秒后自动断开">Linux 下蓝牙鼠标连接几秒后自动断开</a></li>
+        <li><a href="#gtk-warning-theme-directory">Gtk-WARNING theme directory</a></li>
+        <li><a href="#suspend-挂起唤醒后桌面卡死">Suspend 挂起唤醒后桌面卡死</a></li>
+      </ul>
+    </li>
+    <li><a href="#beautify">BEAUTIFY</a>
+      <ul>
+        <li><a href="#theme">Theme</a></li>
+        <li><a href="#fonts">Fonts</a></li>
+        <li><a href="#icons">Icons</a></li>
+      </ul>
+    </li>
+    <li><a href="#extensions">Extensions</a></li>
+    <li><a href="#desktop">DESKTOP</a></li>
+    <li><a href="#auto-run">AUTO RUN</a>
+      <ul>
+        <li><a href="#指定运行级别">指定运行级别</a></li>
+      </ul>
+    </li>
+    <li><a href="#fmfile-manage">FM(File Manage)</a></li>
+    <li><a href="#linux-file-tree">LINUX FILE TREE</a>
+      <ul>
+        <li><a href="#权限管理">权限管理</a></li>
+      </ul>
+    </li>
+    <li><a href="#uninstall-ubuntu">UNINSTALL UBUNTU</a></li>
+    <li><a href="#link">LINK</a>
+      <ul>
+        <li><a href="#nix-sites">*NIX SITES</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#guidences">Guidences</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+<article class="mb-12">
+    <p><strong>[声明]: 本文实验环境为 UEFI+GPT 的 Win10 笔记本电脑, 采用的分区格式为 Ext2. 本文仅供参考.</strong></p>
+<p>200125开坑Ubuntu, 被其简单的系统占用所折服, 开始使用ubuntu, 一直到现在. 这个记录其实是一以贯之的, 但里面的教程不保证一直有效, 加上我也只能阶段性的记录一下, 更多即时的记录请看 <a href="//github.com/dandelionfs/-nix">Github - -nix</a></p>
+<p><font size=1>~~多说一句: 在用完 Win10 后有感, <strong>在没有深入了解意见科技产品前, 永远不要过分相信他带来的便利</strong>, 你的电脑, 在你真正摸清楚他的操作原理和操作逻辑之前, 不要过分依赖他, 在他面前, 你可能就是赤裸的, 而我所真正担心的是我没有足够的时间和精力去见证世间的一切, 害怕的是自己不能静下心来慢慢的学习起来, 对那些Fast Learner肃然起敬, 但同时我始终都不了解真正的自己, 永远在以伤害自己的方式来逼迫自己努力, 而不是全身心的投入到自己的学习生涯中, 这又是多么的可悲……~~</font></p>
+<h2 id="install-ubuntu">INSTALL UBUNTU</h2>
+<p>下载官方的镜像 (国内有大量的开源镜像网站) , 然后用 <code>Ultralso</code> 烧录到一个<strong>8G</strong> (4G) 大小的U盘. 重启电脑到 <strong>BIOS</strong> 中将 BOOT 里的 <code>BOOT Security</code> 关掉 (HP: F10), 重启进入系统<strong>UEFI</strong>的U盘启动的模式 (HP: F11), 之后进入U盘的 Ubuntu里面体验一下.准备安装.</p>
+<p>不要直接安装. 需要<strong>换源</strong>, 去找系统的安装源list文件, 在<code>/etc/apt/sources.list</code>里, 用管理员的权限修改下载源地址 (提前查到自己对应版本的源地址) .</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo cp /etc/apt/sources.list /etc/apt/sources.list_backup <span class="c1">#backup your old sourse</span> 
+sudo gedit /etc/apt/sources.list <span class="c1"># open sources.list</span> 
+sudo apt update
+</code></pre></div><p><strong>国内换源</strong>:</p>
+<ul>
+<li>高校镜像源有:
+<ul>
+<li><a href="https://mirrors.tuna.tsinghua.edu.cn">Tinghua Mirror / 清华大学</a></li>
+<li><a href="https://mirrors.ustc.edu.cn">USTC  Mirror / 中国科学技术大学</a></li>
+<li><a href="https://ftp.sjtu.edu.cn">SJTU Mirror / 上海交通大学</a></li>
+<li><a href="https://mirrors.shu.edu.cn">SHU Mirror / 上海大学</a></li>
+</ul>
+</li>
+<li>企业镜像源:
+<ul>
+<li><a href="http://mirrors.aliyun.com">Alibaba Mirror / 阿里</a></li>
+<li><a href="http://mirrors.163.com">Netease Mirror / 网易</a></li>
+<li><a href="https://mirrors.huaweicloud.com">Huawei Mirrors / 华为</a></li>
+<li><a href="https://mirrors.cloud.tencent.com">Tencent Mirror / 腾讯</a></li>
+<li><a href="https://mirrors.yun-idc.com">Yun-Idc / 首都在线</a></li>
+</ul>
+</li>
+</ul>
+<p><strong>国外换源</strong>:<sup><a href="#j6">6</a></sup></p>
+<ul>
+<li>高校开源镜像站：
+<ul>
+<li><a href="https://ftp.cuhk.edu.hk">The Chinese University of Hong Kong</a></li>
+<li><a href="https://ftp.yzu.edu.tw">元智大學</a></li>
+<li><a href="https://mirrors.mit.edu">Massachusetts Institute of Technology</a></li>
+</ul>
+</li>
+<li>云服务商开源镜像站：
+<ul>
+<li><a href="https://mirrors.digitalocean.com">Digital Ocean</a></li>
+<li><a href="https://mirrors.linode.com">Linode</a></li>
+<li><a href="https://mirrors.cat.net">Cat Networks</a></li>
+</ul>
+</li>
+<li>公益开源镜像站：
+<ul>
+<li><a href="https://mirrors.kernel.org">Kernel ORG</a></li>
+<li><a href="https://mirror.yandex.ru">Yandex</a></li>
+</ul>
+</li>
+</ul>
+<p>分盘的时候还请参考最下面的地址, 但是值得注意一下<code>boot</code>不要太小气, 就我的话, 我给他2G有点多了, 1G刚刚好, 主分区32G, 交换空间8G( 貌似和Win10虚存类似, 太大也不必), 家目录 60G, 共100G, 分区也仅供参考.</p>
+<p>更详细的可以参考更详细的教程: <a href="https://zhuanlan.zhihu.com/p/27187622">Ubuntu 换源, 安装&amp;卸载软件</a>.</p>
+<h2 id="sys-update">SYS UPDATE</h2>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo update-manager -c -d
+</code></pre></div><h2 id="apt-manage">APT MANAGE</h2>
+<p>一般来说, 安装命令有<sup><a href="#j10">10</a></sup>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo apt install xxx
+sudo apt reinstall xxx
+sudo apt reinstall -d xxx  
+sudo apt install tree -y <span class="c1"># 使用apt安装软件,譬如安装tree,这里的 -y 参数是为了在安装的时候默认选择yes</span>
+sudo dpkg -i xxx.deb <span class="c1"># deb包安装</span>
+sudo apt install gdebi
+sudo gdebi netease-cloud-music_1.2.1_amd64_ubuntu_20190428.deb
+sudo apt install -f <span class="c1">#安装依赖 (如果提示需要的话)</span>
+sudo apt install ./xxxx.deb  <span class="c1">#另一种deb包安装方式</span>
+<span class="c1">#安装filename.tar.gz软件,然后在解压目录或者bin文件夹中执行setup.sh文件</span>
+</code></pre></div><p><strong>源码安装</strong>: 有些软件没有被收录进软件镜像源, 或者说开发者需要去使用他们最新的版本, 这时候就要自己去他们的官网或者是代码托管平台下载最新的Linux源码, 自己来build. 这种方式安装需要解决很多的依赖, 安装前多Google. 此处还是以tree为例:</p>
+<ul>
+<li>先下载最新的源码包</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">  tar zxf tree-1.7.0.tgz <span class="c1">#解压</span>
+  <span class="nb">cd</span>  tree-1.7.0/
+  
+  sudo make <span class="c1"># make and install</span>
+  sudo make instal l# 如果没有配置环境, 先用apt安装build-essential
+</code></pre></div><ul>
+<li><a href="https://qastack.cn/server/250224/how-do-i-get-apt-to-ignore-some-dependencies">忽略某些依赖安装(Wechat Failure)</a></li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># Check Depend</span>
+dpkg --info XXX.deb <span class="p">|</span> grep Depends
+<span class="c1"># Apt-get</span>
+sudo apt install XXX.deb-
+<span class="c1"># dpkg</span>
+sudo dpkg -i --ignore-depends<span class="o">=</span>&lt;---&gt;  XXX.deb
+</code></pre></div><h3 id="uninstall">Uninstall</h3>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo apt remove --purge XXX
+sudo apt autoremove --purge XXX
+
+dpkg --get-selections <span class="p">|</span> grep XXX
+sudo apt purge XXX  <span class="c1">#一个带core的package, 如果没有带core的package, 则是情况而定.</span> 
+</code></pre></div><h3 id="clean">Clean</h3>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo apt autoclean <span class="c1"># 只删除过时的软件包, 例如最近更新所取代的软件包, 就完全不需要它们.</span> 
+sudo apt autoremove
+
+dpkg -l <span class="p">|</span>grep ^rc<span class="p">|</span>awk <span class="s1">&#39;{print $2}&#39;</span> <span class="p">|</span>sudo xargs dpkg -P 
+
+<span class="c1"># 清理日志问题.</span>
+sudo <span class="nb">echo</span> &gt; /var/log/syslog
+sudo <span class="nb">echo</span> &gt; /var/log/kern.log
+</code></pre></div><p>如果出现zsh/shell权限不足的情况, 使用<code>sudo -i</code>临时切换到<code>Root</code>用户的模式下进行操作. 操作完<code>exit</code>退出即可.</p>
+<p><strong>清理SNAP</strong></p>
+<p>执行脚本:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="cp">#!/bin/shell
+</span><span class="cp"></span><span class="c1"># Removes old revisions of snaps</span>
+<span class="c1"># CLOSE ALL SNAPS BEFORE RUNNING THIS</span>
+<span class="nb">set</span> -eu
+snap list --all <span class="p">|</span> awk <span class="s1">&#39;/disabled/{print $1, $3}&#39;</span> <span class="p">|</span>
+    <span class="k">while</span> <span class="nb">read</span> snapname revision<span class="p">;</span> <span class="k">do</span>
+        snap remove <span class="s2">&#34;</span><span class="nv">$snapname</span><span class="s2">&#34;</span> --revision<span class="o">=</span><span class="s2">&#34;</span><span class="nv">$revision</span><span class="s2">&#34;</span>
+    <span class="k">done</span>
+</code></pre></div><h3 id="run-appimage">Run AppImage</h3>
+<blockquote>
+<p>AppImage 是一种把应用打包成单一文件的格式, 允许在各种不同的目标系统 (基础系统(Debian、RHEL等), 发行版(Ubuntu、Deepin等)) 上运行, 无需进一步修改.</p>
+</blockquote>
+<p>简而言之就是绿色通用版本.</p>
+<p>下载好程序的时候选择[属性]-&gt; 可执行文件. 点击即可, 一般我习惯放在 <code>/home/usrname/opt/</code>下, 也可以节省下根目录的空间内存&hellip;&hellip;</p>
+<pre><code>cd /usr/share/applications
+</code></pre><p>创建一个<code>.desktop</code>文件. 然后编辑以下内容即可创建图标, 值得注意的是程序运行的图标的是包自带的, 这里定义的只能是应用菜单的.[^14][^15]</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="o">[</span>Desktop Entry<span class="o">]</span>
+<span class="nv">Version</span><span class="o">=</span>1.0	
+<span class="nv">Encoding</span><span class="o">=</span>UTF-8			<span class="c1"># 字符编码</span>  
+<span class="nv">Name</span><span class="o">=</span> XXX 
+<span class="nv">Comment</span><span class="o">=</span> XXX			<span class="c1"># 鼠标经上提示名称 也可国际化</span>
+<span class="nv">Exec</span><span class="o">=</span>XXX 				<span class="c1"># 菜单执行的命令或程序路径</span>
+<span class="nv">Terminal</span><span class="o">=</span><span class="nb">false</span>
+<span class="nv">Icon</span><span class="o">=</span>XXX 				<span class="c1"># 图标路径</span>
+<span class="nv">Type</span><span class="o">=</span>Application
+<span class="nv">Categories</span><span class="o">=</span>Development
+<span class="nv">StartupNotify</span><span class="o">=</span>false<span class="p">;</span>	<span class="c1">#设置软件启动是不通知</span>
+<span class="nv">Hidden</span><span class="o">=</span><span class="nb">false</span>			<span class="c1">#菜单是否隐藏, 类似NoDisplay属性</span>
+</code></pre></div><h3 id="binary-file">BINARY FILE</h3>
+<p>直接编译好的包可以<code>./x</code>运行即可, 方便的话就打包一个<code>desktop</code>文件.</p>
+<h3 id="knowledge-for-apt--apt-get">Knowledge For APT &amp; APT-GET</h3>
+<p><strong>APT</strong>的其它命令选项可以实现与使用 apt-get 时相同的操作. 虽然 apt 与 apt-get 有一些类似的命令选项, 但它并不能完全向下兼容 apt-get 命令. 也就是说, 可以用 apt 替换部分 apt-get 系列命令, 但不是全部.</p>
+<table>
+<thead>
+<tr>
+<th align="center">apt 命令</th>
+<th align="center">取代的命令</th>
+<th align="center">命令的功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">apt install</td>
+<td align="center">apt-get install</td>
+<td align="center">安装软件包</td>
+</tr>
+<tr>
+<td align="center">apt remove</td>
+<td align="center">apt-get remove</td>
+<td align="center">移除软件包</td>
+</tr>
+<tr>
+<td align="center">apt purge</td>
+<td align="center">apt-get purge</td>
+<td align="center">移除软件包及配置文件</td>
+</tr>
+<tr>
+<td align="center">apt update</td>
+<td align="center">apt-get update</td>
+<td align="center">刷新存储库索引</td>
+</tr>
+<tr>
+<td align="center">apt upgrade</td>
+<td align="center">apt-get upgrade</td>
+<td align="center">升级所有可升级的软件包</td>
+</tr>
+<tr>
+<td align="center">apt autoremove</td>
+<td align="center">apt-get autoremove</td>
+<td align="center">自动删除不需要的包</td>
+</tr>
+<tr>
+<td align="center">apt full-upgrade</td>
+<td align="center">apt-get dist-upgrade</td>
+<td align="center">在升级软件包时自动处理依赖关系</td>
+</tr>
+<tr>
+<td align="center">apt search</td>
+<td align="center">apt-cache search</td>
+<td align="center">搜索应用程序</td>
+</tr>
+<tr>
+<td align="center">apt show</td>
+<td align="center">apt-cache show</td>
+<td align="center">显示装细节</td>
+</tr>
+</tbody>
+</table>
+<p>当然, apt 还有一些自己的命令:</p>
+<table>
+<thead>
+<tr>
+<th align="center">新的apt命令</th>
+<th align="center">命令的功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">apt list</td>
+<td align="center">列出包含条件的包 (已安装, 可升级等)</td>
+</tr>
+<tr>
+<td align="center">apt edit-sources</td>
+<td align="center">编辑源列表</td>
+</tr>
+</tbody>
+</table>
+<p><strong>APT-GET</strong></p>
+<p>对于低级操作, 仍然需要 apt-get.</p>
+<h3 id="deb-manage">Deb Manage</h3>
+<ul>
+<li>打包DEB实践参考<supf><a href="#j4">4</a><a href="#j5">5</a></supf></li>
+</ul>
+<h2 id="shortcut">SHORTCUT</h2>
+<h3 id="desktop-shortcut">Desktop Shortcut</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Operation</th>
+<th align="center">Effects</th>
+<th align="center">Operation</th>
+<th align="center">Effects</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Alt + F1</td>
+<td align="center">聚焦到桌面左侧任务导航栏, 可按上下键进行导航</td>
+<td align="center">Alt + F2</td>
+<td align="center">运行命令</td>
+</tr>
+<tr>
+<td align="center">Alt + F4</td>
+<td align="center">关闭当前窗口</td>
+<td align="center">Alt + Tab</td>
+<td align="center">切换程序窗口</td>
+</tr>
+<tr>
+<td align="center">Alt + 空格</td>
+<td align="center">打开窗口菜单</td>
+<td align="center">PrtSc</td>
+<td align="center">桌面截图</td>
+</tr>
+<tr>
+<td align="center">Win + A</td>
+<td align="center">搜索/浏览程序</td>
+<td align="center">Win</td>
+<td align="center">搜索/浏览程序、文件、音乐文件等</td>
+</tr>
+<tr>
+<td align="center">Win + F</td>
+<td align="center">搜索/浏览文件</td>
+<td align="center">Win + M</td>
+<td align="center">搜索/浏览音乐文件</td>
+</tr>
+</tbody>
+</table>
+<h3 id="terminal-shortcut">Terminal Shortcut</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Operation</th>
+<th align="center">Effects</th>
+<th align="center">Operation</th>
+<th align="center">Effects</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Ctrl + Alt + T</td>
+<td align="center">打开终端</td>
+<td align="center">Tab</td>
+<td align="center">命令或文件名自动补全</td>
+</tr>
+<tr>
+<td align="center">Ctrl + Shift + C</td>
+<td align="center">复制</td>
+<td align="center">Ctrl + Shift + V</td>
+<td align="center">粘贴</td>
+</tr>
+<tr>
+<td align="center">Ctrl + Shift + T</td>
+<td align="center">在同一个窗口新建终端标签页</td>
+<td align="center">Ctrl + Shift + W</td>
+<td align="center">关闭标签页</td>
+</tr>
+<tr>
+<td align="center">Ctrl + Shift + N</td>
+<td align="center">新建终端窗口</td>
+<td align="center">Ctrl + Shift + Q</td>
+<td align="center">关闭终端窗口</td>
+</tr>
+<tr>
+<td align="center">Ctrl + Shift + PageUp</td>
+<td align="center">标签页左移</td>
+<td align="center">Ctrl + Shift + PageDown</td>
+<td align="center">标签页右移</td>
+</tr>
+<tr>
+<td align="center">Ctrl + D</td>
+<td align="center">关闭标签页</td>
+<td align="center">Ctrl + C</td>
+<td align="center">终止当前任务</td>
+</tr>
+<tr>
+<td align="center">Ctrl + L</td>
+<td align="center">清除屏幕</td>
+<td align="center">Ctrl + P</td>
+<td align="center">显示上一条历史命令</td>
+</tr>
+<tr>
+<td align="center">Ctrl + N</td>
+<td align="center">显示下一条历史命令</td>
+<td align="center">Ctrl + R</td>
+<td align="center">反向搜索历史命令</td>
+</tr>
+<tr>
+<td align="center">Ctrl + J/M</td>
+<td align="center">回车 (同enter键功能)</td>
+<td align="center">Ctrl + A</td>
+<td align="center">光标移动到行首</td>
+</tr>
+<tr>
+<td align="center">Ctrl + E</td>
+<td align="center">光标移动到行尾</td>
+<td align="center">Ctrl + B</td>
+<td align="center">关闭想后移动一个位置 (backward)</td>
+</tr>
+<tr>
+<td align="center">Ctrl + Z</td>
+<td align="center">把当前任务放到后台运行</td>
+<td align="center">Ctrl + PageUp</td>
+<td align="center">前一个终端标签页</td>
+</tr>
+<tr>
+<td align="center">Ctrl + PageDown</td>
+<td align="center">下一个终端标签页</td>
+<td align="center">F1</td>
+<td align="center">打开帮助指南</td>
+</tr>
+<tr>
+<td align="center">Win + W</td>
+<td align="center">展示所有窗口</td>
+<td align="center">Win + T</td>
+<td align="center">打开回收站</td>
+</tr>
+<tr>
+<td align="center">Ctrl + Win + ↓</td>
+<td align="center">还原/最小化当前窗口</td>
+<td align="center">Ctrl + Win + D</td>
+<td align="center">最小化所有窗口</td>
+</tr>
+<tr>
+<td align="center">Ctrl + &amp;</td>
+<td align="center">恢复Ctrl + H/D/W删除的内容</td>
+<td align="center">Ctrl + Win + ↑</td>
+<td align="center">最大化当前窗口</td>
+</tr>
+<tr>
+<td align="center">Ctrl + D</td>
+<td align="center">删除光标位置的一个字符 (delete键功能)</td>
+<td align="center">Ctrl + W</td>
+<td align="center">删除光标位置的前一个单词 (Alt + Backspace组合键功能)</td>
+</tr>
+<tr>
+<td align="center">Ctrl + K</td>
+<td align="center">剪切从光标位置到行末的所有字符</td>
+<td align="center">Ctrl + Y</td>
+<td align="center">粘贴Ctrl + U/Ctrl + K剪切的内容</td>
+</tr>
+<tr>
+<td align="center">Ctrl + U</td>
+<td align="center">剪切从行的开头到光标前一个位置的所有字符</td>
+<td align="center">Ctrl + H/*</td>
+<td align="center">删除光标位置的前一个字符 (backspace键功能)</td>
+</tr>
+<tr>
+<td align="center">Ctrl + ←</td>
+<td align="center">光标移动到下一个单词的词尾</td>
+<td align="center">Ctrl + →</td>
+<td align="center">光标移动到上一个单词的词首</td>
+</tr>
+<tr>
+<td align="center">Alt + H</td>
+<td align="center">打开“帮助”菜单 (help)</td>
+<td align="center">Ctrl + T</td>
+<td align="center">将光标位置的字符和前一个字符进行位置交换</td>
+</tr>
+<tr>
+<td align="center">Alt + V</td>
+<td align="center">打开“查看“菜单 (view)</td>
+<td align="center">Alt + T</td>
+<td align="center">打开“终端”菜单 (terminal)</td>
+</tr>
+<tr>
+<td align="center">Alt + E</td>
+<td align="center">打开“编辑”菜单 (edit)</td>
+<td align="center">Alt + S</td>
+<td align="center">打开“搜索”菜单 (search)</td>
+</tr>
+<tr>
+<td align="center">F11</td>
+<td align="center">全屏切换</td>
+<td align="center">Alt + F</td>
+<td align="center">打开“文件”菜单 (file)</td>
+</tr>
+</tbody>
+</table>
+<p>补充:</p>
+<p>2次连续Tab/4次连续Esc/2次连续Ctrl + I|将显示所有命令和工具名称</p>
+<h3 id="gedit-shortcut">Gedit Shortcut</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Operation</th>
+<th align="center">Effects</th>
+<th align="center">Operation</th>
+<th align="center">Effects</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Ctrl + N</td>
+<td align="center">新建文档</td>
+<td align="center">Ctrl + W</td>
+<td align="center">关闭文档</td>
+</tr>
+<tr>
+<td align="center">Ctrl + S</td>
+<td align="center">保存文档</td>
+<td align="center">Ctrl + Shift + S</td>
+<td align="center">另存为</td>
+</tr>
+<tr>
+<td align="center">Ctrl + F</td>
+<td align="center">搜索</td>
+<td align="center">Ctrl + H</td>
+<td align="center">搜索并替换</td>
+</tr>
+<tr>
+<td align="center">Ctrl + I</td>
+<td align="center">跳到某一行</td>
+<td align="center">Ctrl + C</td>
+<td align="center">复制</td>
+</tr>
+<tr>
+<td align="center">Ctrl + V</td>
+<td align="center">粘贴</td>
+<td align="center">Ctrl + X</td>
+<td align="center">剪切</td>
+</tr>
+<tr>
+<td align="center">Ctrl + Q</td>
+<td align="center">退出</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p>使用 <code>ctrl + ;</code> (此为 fcitx 自带剪贴板插件)  : 查看粘贴板的内容, 此时显示的就不只有一条内容, 一般而言是最近的五次复制的内容. 使用数字键进行选择.</p>
+<h2 id="bugs">BUGS</h2>
+<p><img src="https://dandelionfs.oss-cn-beijing.aliyuncs.com/fix-ubuntu-bug-tieba.webp" alt=""></p>
+<h3 id="boot-无法进去系统花屏">Boot 无法进去系统(花屏)</h3>
+<p>由于 Ubuntu(Linux) 并不是内置N卡驱动, 所以如果有 N卡独显 笔记本会发生在 Ufi模式 下启动U盘进入系统的时候卡死. 应该先用 <code>e</code> 进去 Boot 设置, 在末尾 quiet splash 的后面先空一格再加上<code>acpi_osi=linux nomodeset</code>, F10保存退出,</p>
+<p>[Tip] : 如果quiet splash后面发现有- - -这串符号, 直接删了就是, 只要保证上述添加的参数在splash后面即可</p>
+<h3 id="n卡驱动">N卡驱动</h3>
+<p>进去之后要换aliyun的源, 进去发现分辨率是锁死的(反正不是1080P), <del>是Ubuntu自带的显卡驱动背的锅</del>(好像Ubuntu20.04LTS 已经自带 N卡 驱动了&hellip;&hellip;), 更新N卡驱动:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo ubuntu-drivers autoinstall <span class="c1"># 自动安装</span>
+
+sudo gedit /etc/modprobe.d/blacklist.conf <span class="c1"># 黑名单</span>
+blacklist vga16fb <span class="c1"># for nvidia display device install</span>
+blacklist nouveau
+blacklist rivafb
+blacklist rivatv
+blacklist nvidiafb
+
+sudo update-initramfs -u <span class="o">&amp;&amp;</span>  reboot <span class="c1"># 刷新重启</span>
+</code></pre></div><h3 id="touchpad">Touchpad</h3>
+<p>下面是一段脚本<sup><a href="#j1">1</a></sup>, 保存<code>sh</code>文件后运行.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="cp">#!/bin/shell
+</span><span class="cp"></span>#
+<span class="c1"># Gestures install</span> 
+<span class="c1"># version 1.3</span>
+# 
+<span class="c1"># by The Fan Club 2020</span>
+#
+<span class="c1"># NOTE: run as sudo</span>
+#
+#
+<span class="c1"># Remove if selected</span> 
+<span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span> <span class="o">=</span> <span class="s2">&#34;--remove&#34;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span> 
+	<span class="nb">echo</span> <span class="s2">&#34;[Gestures] Gestures uninstall started...&#34;</span>
+	python3 -m pip uninstall gestures
+	rm /usr/local/bin/gestures
+	rm /usr/share/applications/org.cunidev.gestures.desktop
+	rm /usr/share/metainfo/org.cunidev.gestures.appdata.xml
+	rm /usr/share/icons/hicolor/scalable/apps/org.cunidev.gestures.svg
+	<span class="c1"># remove libinput-gestures</span>
+	su <span class="nv">$SUDO_USER</span> libinput-gestures-setup stop
+	su <span class="nv">$SUDO_USER</span> libinput-gestures-setup autostop
+	libinput-gestures-setup uninstall	
+	<span class="nb">echo</span> <span class="s2">&#34;[Gestures] Gestures removal complete.&#34;</span>
+	<span class="nb">exit</span> 
+<span class="k">fi</span>
+#
+<span class="c1"># Install libinput-gestures - https://github.com/bulletmark/libinput-gestures</span>
+<span class="nb">echo</span> <span class="s2">&#34;[Gestures] Gestures install started...&#34;</span>
+#
+<span class="c1"># Add user to input group</span>
+gpasswd -a <span class="nv">$SUDO_USER</span> input
+<span class="nb">echo</span> <span class="s2">&#34;[Gestures] </span><span class="nv">$SUDO_USER</span><span class="s2"> added to input user group&#34;</span>
+<span class="c1"># Install prerequisites</span>
+<span class="nb">echo</span> <span class="s2">&#34;[Gestures] Install all depedencies&#34;</span>
+apt-get install xdotool wmctrl libinput-tools python3 python3-setuptools python3-gi python-gobject python3-pip build-essential git 
+<span class="c1"># Install/Update</span>
+<span class="k">if</span> <span class="o">[</span> -d libinput-gestures <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+	rm -r libinput-gestures 
+<span class="k">fi</span>
+<span class="nb">echo</span> <span class="s2">&#34;[Gestures] Downloading libinput-gestures from GitHub...&#34;</span>
+git clone https://github.com/bulletmark/libinput-gestures.git
+<span class="nb">cd</span> libinput-gestures
+make install
+<span class="nb">cd</span> ..
+<span class="nb">echo</span> <span class="s2">&#34;[Gestures] libinput-gestures installed&#34;</span>
+#
+<span class="c1"># Install Gestures - https://gitlab.com/cunidev/gestures</span>
+#
+<span class="c1"># Install</span> 
+<span class="k">if</span> <span class="o">[</span> -d gestures <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+	rm -r gestures 
+<span class="k">fi</span>
+<span class="nb">echo</span> <span class="s2">&#34;[Gestures] Downloading Gestures from GitLab...&#34;</span>
+git clone https://gitlab.com/cunidev/gestures
+<span class="nb">cd</span> gestures
+python3 setup.py install
+<span class="c1"># Cleanup</span>
+<span class="nb">cd</span> ..
+rm -r gestures 
+rm -r libinput-gestures 
+<span class="nb">echo</span> <span class="s2">&#34;[Gestures] Gestures installation complete&#34;</span>
+<span class="c1"># Autostart libinput-gestures at boot and start now for current user</span>
+su <span class="nv">$SUDO_USER</span> libinput-gestures-setup stop
+su <span class="nv">$SUDO_USER</span> libinput-gestures-setup autostart
+su <span class="nv">$SUDO_USER</span> libinput-gestures-setup start
+<span class="nb">echo</span> <span class="s2">&#34;[Gestures] libinput-gestures started for </span><span class="nv">$SUDO_USER</span><span class="s2">&#34;</span>
+<span class="c1"># Autostart Gestures</span> 
+cp /usr/share/applications/org.cunidev.gestures.desktop /home/<span class="nv">$SUDO_USER</span>/.config/autostart/
+sed -i <span class="s1">&#39;s/=gestures/=gestures\&amp;/g&#39;</span> /home/<span class="nv">$SUDO_USER</span>/.config/autostart/org.cunidev.gestures.desktop
+chown <span class="nv">$SUDO_USER</span>:<span class="nv">$SUDO_USER</span> /home/<span class="nv">$SUDO_USER</span>/.config/autostart/org.cunidev.gestures.desktop
+<span class="nb">echo</span>
+<span class="nb">echo</span> <span class="s2">&#34;[Gestures] Reboot to complete the installation&#34;</span>
+</code></pre></div><p>解决无法支持三指和四指的遗憾.</p>
+<h3 id="亮度异常">亮度异常</h3>
+<p>安装完成之后发现亮度是不可以调节 :</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># edit by nano, choose one between vim and nano.</span> 
+<span class="c1"># 按 Ctrl+O 保存、按 Ctrl+X 退出编辑</span>
+sudo nano /etc/default/grub
+
+<span class="c1"># edit by vim/vi</span>
+sudo apt
+sudo vim /etc/default/grub
+</code></pre></div><p>将<code> GRUB_CMDLINE_LINEX_DEFAULT</code>那一行改成:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="nv">GRUB_CMDLINE_LINUX_DEFAULT</span><span class="o">=</span><span class="s2">&#34;quiet splash acpi_backlight=vendor acpi_osi=Linux&#34;</span>
+<span class="c1"># 更新后重启 (重启可能时间比较长)</span>
+sudo update-grub <span class="o">&amp;&amp;</span> reboot
+</code></pre></div><h3 id="语言设置">语言设置</h3>
+<p>一个小小的建议: 语言设置这是用拖动的 [笑] .</p>
+<h3 id="dpkg错误-另外一个进程已经为-dpkg-状态数据库-加锁">dpkg:错误: 另外一个进程已经为 dpkg 状态数据库 加锁</h3>
+<p>可能是开机自动更新会占用一会儿这个进程, 要么PS kill 他, 要么等一会就可以.</p>
+<h3 id="安装deb-包缺少以来关系-仍未被处理的时候">安装deb 包缺少以来关系, 仍未被处理的时候</h3>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo apt install -f
+</code></pre></div><h3 id="ubuntu-1804无法从fwupd下载固件">ubuntu 18.04无法从fwupd下载固件</h3>
+<blockquote>
+<p>通常是更新BIOS、更新网卡之类的需要fwupd. Android手机的bootloader就相当于电脑BIOS, 所以Android更容易刷成砖. 电脑重装系统是不会碰BIOS的, 所以特殊情况才会成砖.</p>
+</blockquote>
+<h3 id="双系统的时间不统一">双系统的时间不统一</h3>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1">#这个是Bios里面的 Boot Secury 的问题, 但是关闭之后在进入Ubuntu后又会出现一系列问题.</span>
+sudo hwclock -w --localtime
+</code></pre></div><h3 id="initramfs-tools报错">initramfs-tools报错</h3>
+<p>当初分盘的时候太小气, 看见别人<code>/boot</code>分区给了200M, 但是太小了, 以后给大点就不会有这问题了. 解决方法是删掉多余的内核. dpkg命令是Debian Linux系统用来安装、创建和管理软件包的实用工具. 查看自己的linux内核和正使用的内核, 然后选择性删除.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo dpkg --get-selections <span class="p">|</span>grep linux-image
+sudo uname -a
+sudo apt purge 内核名称
+</code></pre></div><p>然后清理/usr/src目录,删除你已经卸载的内核目录</p>
+<p>内核版本显示为**install, 表示系统已经安装了相应的内核, 使用purge命令删除相应的内核. **</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo apt purge linux-image-4.4.0-130-generic
+</code></pre></div><p><strong>deinstall</strong>, 表示系统没有安装此内核, 但是在配置文件中还残留它的信息, 也有可能是以前卸载的时候不彻底.  正常情况下, 就已经清理完成辣. 输入<code>df</code>查看/boot的已用百分比.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"> sudo dpkg -P linux-image-extra-4.4.0-128-generic
+</code></pre></div><h3 id="更换介质-请把标有">更换介质: 请把标有……</h3>
+<blockquote>
+<p>“更换介质: 请把标有…… DVD 的盘片插入驱动器“/media/cdrom/”再按回车键,</p>
+</blockquote>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 修改`/etc/apt/sources.list`文件, 注释掉`deb cdrom:`开头的一行 (第一行)</span> 
+<span class="nb">cd</span> ~
+vim /etc/apt/sources.list
+apt update
+</code></pre></div><h3 id="ubuntu支持exfat方法">ubuntu支持<code>exfat</code>方法</h3>
+<blockquote>
+<p>推荐u盘使用exfat格式, 为什么呢？两个原因:
+1、三大主流操作系统 (Linux、Mac、Windows) 都支持exfat格式.
+2、exfat支持大于4G的文件.</p>
+</blockquote>
+<p>在ubuntu下, 由于版权的原因 (据说) , 默认不支持exfat格式的u盘, 对于ubuntu 14.04以上版本, 直接运行下面的命令就可以了:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo apt install exfat-utils
+</code></pre></div><h3 id="ubuntu的在线账户">Ubuntu的在线账户</h3>
+<p>及时获取Ubuntu社区的更新.</p>
+<h3 id="snap错误has-install-snap-change-in-progress">snap错误has install-snap change in progress</h3>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">snap changes <span class="c1"># 获取任务Id</span>
+sudo snap abort <span class="m">14</span>
+</code></pre></div><h3 id="ubuntu-永久挂载win10磁盘">Ubuntu 永久挂载Win10磁盘</h3>
+<p>实际挂载前, D盘为 <code>/dev/XX</code>, E盘为 <code>/dev/XXX</code> (<strong>注意！这里 sd 后面的不一定和 Windows 一样, 图里 Windows 和 Ubuntu 同处于 SSD 上, 而 D 和 E 盘均位于 HDD 上, 所以从 <code>a</code> 变成了 <code>b</code></strong>)</p>
+<blockquote>
+<p>**接下来, 我们假设你要挂载的分区地址为 <code>/dev/XX</code> (原 Windows 中的非系统文件目录, 即通常意义上的 Windows 分区) , 要挂载到地址为 <code>/mnt/windows/d</code> (Ubuntu 中的非系统文件目录, 即 Linux 中的一个目录) **
+你当然可以 (而且必须) 根据你的实际情况修改分区地址</p>
+</blockquote>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo mkdir /mnt/windows/d# 然后关闭 WIndows 的**快速启动**, 临时挂载, 重启失效, 适用于偶尔需要一次的: 
+sudo mount /dev/XX  /mnt/windows/d
+</code></pre></div><p>在执行完成后, 访问你的 <code>/mnt/windows/d</code> 应该就能看到原盘符中的文件了, 没有文件显示请重启电脑查看</p>
+<p>第二种方式——永久挂载.</p>
+<p>我们需要修改系统文件 <code>/etc/fstab</code>, 在此之前, 我们需要先获得 <code>/dev/XX</code> 的 <code>UUID</code>, 执行指令:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo blkid /dev/XX  
+sudo apt install vim
+sudo vim /etc/fstab
+<span class="c1">#插入形如 UUID=XXXXXXXXXX   /mnt/windows/d   ntfs  defaults   0   2的字段; 其中第一列为UUID, 第二列为挂载目录 (该目录必须为空目录) , 第三列为文件系统类型, 第四列为参数, 第五列0表示不备份, 最后一列必须为２或0(除非引导分区为1), 如果你是grub引导的话, 你会注意到boot分区是1.</span>
+sudo mount -a#检查一下, 发现还是报错, The disk contains an unclean file system, 执行下面: 
+sudo apt install ntfs-3g
+sudo ntfsfix /dev/XX
+sudo mount -a#再检查一下, 发现全是OK, 哈哈
+</code></pre></div><p>上面流程走一遍发现该目录下没有文件, 可以右键属性检查一下, 如果确实存在, 那么重启电脑就OK了, 我只挂载了我win的数据盘, 系统盘还是不要动的好……</p>
+<h3 id="grub-wifi">Grub Wifi</h3>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">909778<span class="o">]</span> iwlwifi 0000: 00: 14.3: BIOS contains HGDS but no HRDS
+</code></pre></div><p>暂时无解, 不影响使用&hellip;</p>
+<h3 id="root模式-部分命令找不到">Root模式 部分命令找不到</h3>
+<p>因为系统变量和用户变量不一样, 所以需要将用户变量配置到系统变量里.</p>
+<h3 id="没有批量操作的压缩命令">没有批量操作的压缩命令</h3>
+<ul>
+<li>写 Shell/Python 脚本</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">    <span class="k">for</span> i in <span class="o">(</span>fileName<span class="o">)</span>
+    <span class="k">do</span>
+    xxx -x <span class="nv">$i</span>
+    <span class="k">done</span>
+</code></pre></div><ul>
+<li>使用gnome的右键压缩指令.</li>
+<li>Other</li>
+</ul>
+<h3 id="ubuntu-utf-8-和-win-gbk-的转化">Ubuntu Utf-8 和 Win GBK 的转化</h3>
+<ul>
+<li>使用<code>unar</code>命令: <code>unar (-o (GBK)) xx.zip</code></li>
+<li>Other</li>
+</ul>
+<h3 id="binshellm-bad-interpreter-no-such-file-or-directory">/bin/shell^M: bad interpreter: No such file or directory</h3>
+<p>[Cause] : 脚本文件是DOS格式的, 即每一行的行尾以\r\n来标识</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">:set ff? <span class="c1"># 如果显示是DOS/UNIX</span>
+<span class="nb">set</span> <span class="nv">ff</span><span class="o">=</span>unix
+</code></pre></div><h3 id="hang-up-bug">Hang Up Bug</h3>
+<p>长时间挂起会导致显示出现问题, 我自己遇到的是 GUI页面崩溃. 可以进入tty2 输入 r 来重启 GUI页面, 但是声卡出现问题[输出显示伪输出]暂时没有什么有效的解决方法,</p>
+<h4 id="挂起后花屏">挂起后花屏？</h4>
+<p>挂起时间和导致的问题相关, 短时间内挂机不会产生什么作用, 但是长时间就会导致 Preface 里面的问题.</p>
+<p>挂起:Suspend To RAM(STR)</p>
+<p>休眠: Suspend To Disk(STD)</p>
+<p>一种可能是设备的驱动问题不支持挂起, 但是短时间却可以这是什么鬼???</p>
+<h4 id="伪输出undo">伪输出[Undo]</h4>
+<ul>
+<li>把你当前的用户加入audio组</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo usermod -a -G audio <span class="nv">$USER</span>
+</code></pre></div><p>更加详细的可以参考<a href="https://zhuanlan.zhihu.com/p/122887848">这个</a></p>
+<ul>
+<li>可能是内核的问题</li>
+</ul>
+<p>暂无解决方法, TO BE CONTINUED&hellip;</p>
+<h3 id="输出文件中带有-口3442m-口00m等乱码字符">输出文件中带有<code> 口[34;42m</code> <code>口[00m</code>等乱码字符</h3>
+<p>这个是因为输入的文件带有颜色转义符号引起的, 所以想办法临时禁用颜色即可.</p>
+<h3 id="su提示认证失败">su提示认证失败</h3>
+<p>Ubuntu安装后, root用户默认是被锁定了的, 不允许登录, 也不允许 su 到 root , 对于桌面用户来说这个可能是为了增强安全性</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo passwd <span class="c1"># 输入安装时那个用户的密码 , 新的Root用户密码</span>
+</code></pre></div><h3 id="扩展触摸屏触控错位">扩展触摸屏触控错位</h3>
+<p>造成的原因是 触控的驱动进程的端口是自己的主显示器/旋转自己的显示器但是触控没有跟着旋转, 所以需要用命令让进程的端口开放给显示器 <code>HDMI接口</code> 上. 具体如下:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">xrandr <span class="c1"># primitive command line interface to RandR extension</span>
+xinput <span class="c1"># utility to configure and test X input devices</span>
+xinput map-to-output XXX<span class="o">(</span>ID<span class="o">)</span> HDMI-0
+<span class="c1"># Restricts the movements of the absolute device to  the  RandR  crtc.  The output  name  must match a currently connected output (see xrandr(1)). If the NVIDIA binary driver is detected or RandR 1.2 or later is not  avail‐able,  a  Xinerama  output may be specified as &#34;HEAD-N&#34;, with N being the Xinerama screen number. This option has no effect on relative devices.</span>
+</code></pre></div><p>但是关于显示器用来画画那种需要频繁切换的用户, 建议走:</p>
+<ul>
+<li><a href="https://all2h.com/post/2011/01/08/%E8%BF%99%E5%A4%A9%E6%9D%80%E7%9A%84web-qq-2-0-6">Ubuntu下触摸屏校准及自动旋转屏幕</a></li>
+<li><a href="https://blog.csdn.net/u013491946/article/details/79895853">树莓派(Linux 系统)触摸屏翻转显示以及触摸翻转</a></li>
+</ul>
+<h3 id="libinput">libinput</h3>
+<p>一个触控屏驱动, 更多参考:</p>
+<ul>
+<li><a href="https://wayland.freedesktop.org/libinput/doc/latest/what-is-libinput.html">What is libinput</a></li>
+</ul>
+<h3 id="linux-下蓝牙鼠标连接几秒后自动断开">Linux 下蓝牙鼠标连接几秒后自动断开</h3>
+<ul>
+<li><a href="https://www.v2ex.com/t/399966">https://www.v2ex.com/t/399966</a></li>
+<li><a href="https://unix.stackexchange.com/questions/91027/how-to-disable-usb-autosuspend-on-kernel-3-7-10-or-above%E3%80%82">https://unix.stackexchange.com/questions/91027/how-to-disable-usb-autosuspend-on-kernel-3-7-10-or-above%E3%80%82</a></li>
+<li><a href="https://www.it-swarm.asia/zh/usb/%e5%a6%82%e4%bd%95%e7%a6%81%e7%94%a8%e7%89%b9%e5%ae%9a%e8%ae%be%e5%a4%87%e7%9a%84usbautosuspend%ef%bc%9f/959819442/">https://www.it-swarm.asia/zh/usb/%e5%a6%82%e4%bd%95%e7%a6%81%e7%94%a8%e7%89%b9%e5%ae%9a%e8%ae%be%e5%a4%87%e7%9a%84usbautosuspend%ef%bc%9f/959819442/</a></li>
+</ul>
+<h3 id="gtk-warning-theme-directory">Gtk-WARNING theme directory</h3>
+<p>之前为了移除系统以及自己折腾留下的冗余主题包, 尝试了一些 <code>/usr/share/icons</code> 的删改工作, 但是</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo rm -rf hicolor
+<span class="c1"># then</span>
+<span class="o">(</span>firefox:3133<span class="o">)</span>: Gtk-WARNING **: 14:37:30.455: Theme file <span class="k">for</span> Bibata-Original-Ice has no directories
+<span class="c1"># reinstall the software</span>
+gtk-update-icon-cache: No theme index file. WARNING: icon cache generation failed
+</code></pre></div><p><code>/usr/share/icons/hicolor/*</code> or <code>~/.local/share/icons/hicolor</code> 是图标缓存的目录, 并且在编辑 <code>.desktop</code> 文件中可以直接忽略路径引用名字来调用图片, 如果你希望 <code>software menu</code> 图表得到刷新, 你可以尝试执行<sup><a href="#j8">8</a></sup>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo touch /usr/share/icons/hicolor ~/.local/share/icons/hicolor
+sudo gtk-update-icon-cache
+</code></pre></div><h3 id="suspend-挂起唤醒后桌面卡死">Suspend 挂起唤醒后桌面卡死</h3>
+<p>在平时挂起时间久了之后, 再次唤醒界面就会变得模糊/黑块, 目前探索到的唯一一个解决方案就是切换到 <code>tty4</code>, <code>top</code> 然后杀掉 <code>Xorg</code> 应用, GDM 返回登录框以另外一个用户重新系统, 据查到的相关资料<sup><a href="#j9">9</a></sup>, 之前 <code>xfree86(tinyx一种) + gdm</code> 搭配，在杀死 <code>xfree86</code> 进程后，<code>GDM</code> 不会重启到登录框</p>
+<h2 id="beautify">BEAUTIFY</h2>
+<h3 id="theme">Theme</h3>
+<p><code>Ubuntu GNOME</code> 最简单的美化依赖 <code>gnome-tweaks</code>, 包含显示秒数, 动画, 插件安装, 主题选择等. 命令行直接安装即可.</p>
+<p>如果需要主题美化的话, 这里只推荐一个 vinceliuice 的 <a href="https://github.com/vinceliuice/WhiteSur-gtk-theme">WhiteSur-gtk-theme</a>, 里面包含了在 <code>GDM</code> 环境下安装 <code>Theme</code>, <code>Dash to Dock</code> 的主题修改, <code>Firefox</code> 布局的重排. 更多的可以去看<a href="https://www.gnome-look.org/">Gnome-look</a>.</p>
+<p>其中, <code>GDM(GNOME Display Manager)</code> 环境下安装主题意味着, 它可以带来使用命令行即可切换 <code>dark mode</code> 和 <code>light mode</code>的效果, 弥补了 <code>Ubuntu Gnome Tweaks</code> 切换的繁琐. <code>Firefox</code> 可以通过 <code>Dark Reader</code> 弥补网页, <code>VsCode</code> 可以通过 <code>Atom Dark/Light Theme</code> 以及 <code>Window:auto detect color scheme</code> 来进行选择.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">gsettings <span class="nb">set</span> org.gnome.desktop.interface gtk-theme <span class="s2">&#34;XXX&#34;</span> <span class="c1"># theme</span>
+gsettings <span class="nb">set</span> org.gnome.desktop.wm.preferences theme <span class="s2">&#34;XXX&#34;</span> <span class="c1"># shell</span>
+</code></pre></div><h3 id="fonts">Fonts</h3>
+<p><sup><a href="#j2">2</a></sup></p>
+<ul>
+<li>通用方法粘到 <code>/usr/share/fonts</code> 后 <code>fc-cache</code> 生成字体缓存 fontconfig.</li>
+<li>双系统可以在挂载系统盘后链接到该路径, <code>ln -s /XXX(Windowsdrive)/Windows/Fonts /usr/share/fonts/WindowsFonts</code> 将字体位置链接到 Linux 系统的字体文件夹后再生成字体缓存.</li>
+</ul>
+<h3 id="icons">Icons</h3>
+<p>Freedesktop.org 致力于Linux和其他类Unix上的X窗口系统的桌面环境之间的互操作性和基础技术共享的项目. 目前托管在 GitLab.</p>
+<ul>
+<li>图标目录: <code>/usr/share/icons/</code></li>
+</ul>
+<h2 id="extensions">Extensions</h2>
+<ul>
+<li><strong>Caffeine</strong></li>
+<li><strong>Dash to Dock</strong>
+<ul>
+<li><a href="https://zhuanlan.zhihu.com/p/48078003">禁用 Ubuntu Dock 的方法</a></li>
+<li><a href="https://qastack.cn/ubuntu/975387/why-do-i-have-two-docks-in-ubuntu-17-10-desktop">为什么会有两个 Dock 的贴</a></li>
+<li><code>sudo apt remove gnome-shell-extension-ubuntu-dock</code></li>
+</ul>
+</li>
+<li><strong>Desktop Icons</strong></li>
+<li>Desktop Scroller (Left and Overview version)</li>
+<li><strong>Dynamic Panel Transparency</strong></li>
+<li>Extensions</li>
+<li><strong>Files Menu</strong></li>
+<li><strong>Gnomesome</strong>-<a href="https://github.com/ChWick/gnomesome">Github</a>
+<ul>
+<li>拓展天然与 <code>Dash to Dock</code> 的 <code>Super+num</code> 冲突, <code>Super + a</code>/<code>Super + Up/Down/Left/Rifht (maximize/restore/left/right)</code> 可能失效, 需要重新设置一下.</li>
+<li>Shortcuts-快捷键:
+<ul>
+<li><code>Mod4+e</code>: Select the next layout on the current monitor and workspace</li>
+<li><code>Mod4+j</code>: Select the next window on the current monitor and workspace</li>
+<li><code>Mod4+k</code>: Select the previous window on the current monitor and workspace</li>
+<li><code>Mod4+Ctrl+j</code>: Select the next monitor</li>
+<li><code>Mod4+Ctrl+k</code>: Select the previous monitor</li>
+<li><code>Mod4+o</code>: Move the active window to the next monitor</li>
+<li><code>Mod4+Ctrl+Shift+j</code>: Move the active window to the next monitor</li>
+<li><code>Mod4+Ctrl+Shift+k</code>: Move the active window to the previous monitor</li>
+<li><code>Mod4+(1-5)</code>: Select the workspace with id (1-5)</li>
+<li><code>Mod4+Ctrl+(1-5)</code>: Move the current window to the workspace with id (1-5)</li>
+<li><code>Mod4+return</code>: Launch a gnome terminal</li>
+</ul>
+</li>
+<li><a href="https://zhuanlan.zhihu.com/p/350535415">使用 Material Shell 扩展将你的 GNOME 桌面打造成平铺式风格-Linux 中国</a>
+<ul>
+<li>拓展很高效, 但会修改桌面的一些参数, 比如 <code>Titlebar</code> 的布局会右移.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>gTile</li>
+<li><strong>Material Shell</strong></li>
+<li>NoAnnoyance</li>
+<li><strong>OpenWeather</strong></li>
+<li>Places Status Indicator</li>
+<li>Removable Drive Menu</li>
+<li><strong>Simple net speed</strong></li>
+<li>Sound Input &amp; Output Device Chooser</li>
+<li><strong>system- monitor</strong></li>
+<li>TopIcons Plus</li>
+<li><strong>Unite</strong></li>
+<li><strong>User Themes</strong></li>
+</ul>
+<h2 id="desktop">DESKTOP</h2>
+<p>编辑 <code>.desktop</code> 文件可以参考下面模板<sup><a href="#j3">3</a></sup>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ sudo vim /usr/share/applications/Clash.desktop
+$ vim Clash.desktop
+＃<span class="o">[</span>Desktop Entry<span class="o">]</span> 文件头
+＃Version    版本
+＃Name    应用名称
+＃Name<span class="o">[</span>xx<span class="o">]</span>    不同语言的应用名称
+＃Comment 注释
+＃Exec    执行文件路径
+＃Icon    图标路径
+＃Terminal    是否使用终端
+＃Type    启动器类型
+＃Categories  应用的类型 <span class="o">(</span>内容相关<span class="o">)</span> 
+</code></pre></div><h2 id="auto-run">AUTO RUN</h2>
+<h3 id="指定运行级别">指定运行级别</h3>
+<p><code>/etc/inittab</code></p>
+<ul>
+<li>0: 关机</li>
+<li>1: 单用户【找回丢失密码】</li>
+<li>2: 多用户状态没有网络服务</li>
+<li><strong>3</strong>: 多用户状态有网络服务</li>
+<li>4: 系统未使用保留给用户</li>
+<li><strong>5</strong>: 图形界面</li>
+<li>6: 系统重启</li>
+</ul>
+<p>如何找回 root 密码, 如果我们不小心, 忘记 root  密码, 怎么找回.</p>
+<ul>
+<li>思路:  进入到 单用户模式, 然后修改 root 密码. 因为进入单用户模式, root 不需要密码就可以登录.</li>
+</ul>
+<h2 id="fmfile-manage">FM(File Manage)</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>可分享的（shareable）</th>
+<th>不可分享的（unshareable）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>不变的（static）</td>
+<td>/usr （软件放置处）</td>
+<td>/etc （配置文件）</td>
+</tr>
+<tr>
+<td></td>
+<td>/opt （第三方协力软件）</td>
+<td>/boot （开机与核心档）</td>
+</tr>
+<tr>
+<td>可变动的（variable）</td>
+<td>/var/mail （使用者邮件信箱）</td>
+<td>/var/run （程序相关）</td>
+</tr>
+<tr>
+<td></td>
+<td>/var/spool/news （新闻群组）</td>
+<td>/var/lock （程序相关）</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>可分享的：可以分享给其他系统挂载使用的目录，所以包括可执行文件与使用者的邮件等数据， 是能够分享给网络上其他主机挂载用的目录；</li>
+<li>不可分享的：自己机器上面运行的设备文件或者是与程序有关的socket文件等， 由于仅与自身机器有关，所以当然就不适合分享给其他主机了。</li>
+<li>不变的：有些数据是不会经常变动的，跟随着distribution而不变动。 例如函数库、文件说明文档、系统管理员所管理的主机服务配置文件等等；</li>
+<li>可变动的：经常改变的数据，例如登录文件、一般用户可自行收受的新闻群组等。</li>
+</ul>
+<h2 id="linux-file-tree">LINUX FILE TREE</h2>
+<ul>
+<li>
+<p>FHS: Filesystem Hierarchy Standard. 重点在于规范每个特定的目录下应该要放置什么样子的数据, Linux操作系统就能够在既有的面貌下（目录架构不变）发展出开发者想要的独特风格。</p>
+<ul>
+<li><code>/lost+found</code>: 当文件系统发生错误时， 将一些遗失的片段放置到这个目录下
+<ul>
+<li>标准的ext2/ext3/ext4文件系统格式才会产生的一个目录, xfs 文件系统的话，就不会存在这个目录</li>
+</ul>
+</li>
+<li><code>/proc</code>: virtual file system, 虚拟文件系统, 他放置的数据都是在内存当中(不占任何硬盘空间)，例如系统核心、行程信息（process）、周边设备的状态及网络状态等等。比较重要的文件
+<ul>
+<li><code>/proc/cpuinfo</code>, <code>/proc/dma</code>, <code>/proc/interrupts</code>, <code>/proc/ioports</code>, <code>/proc/net/*</code>&hellip;&hellip;</li>
+</ul>
+</li>
+<li><code>/sys</code>: 这个目录其实跟/proc非常类似，也是一个虚拟的文件系统，主要也是记录核心与系统硬件信息较相关的信息。 包括目前已载入的核心模块与核心侦测到的硬件设备信息等等。这个目录同样不占硬盘容量喔！</li>
+<li>/ （root, 根目录）：与开机系统有关；因为根目录很重要，所以根目录不要放在非常大的分区内，因为越多的数据可能有较多发生错误的机会</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>目录</th>
+<th>应放置文件内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第一部份</td>
+<td>FHS 要求必须要存在的目录</td>
+</tr>
+<tr>
+<td>/bin</td>
+<td>系统有很多放置可执行文件的目录，但/bin比较特殊。因为/bin放置的是在单人维护模式下还能够被操作的指令。 在/bin下面的指令可以被root与一般帐号所使用，主要有：cat, chmod, chown, date, mv, mkdir, cp, shell等等常用的指令。</td>
+</tr>
+<tr>
+<td>/boot</td>
+<td>这个目录主要在放置开机会使用到的文件，包括Linux核心文件以及开机菜单与开机所需配置文件等等。 Linux kernel常用的文件名为：vmlinuz，如果使用的是grub2这个开机管理程序， 则还会存在/boot/grub2/这个目录喔！</td>
+</tr>
+<tr>
+<td>/dev</td>
+<td>在Linux系统上，任何设备与周边设备都是以文件的型态存在于这个目录当中的。 你只要通过存取这个目录下面的某个文件，就等于存取某个设备啰～ 比要重要的文件有/dev/null, /dev/zero, /dev/tty, /dev/loop*, /dev/sd*等等</td>
+</tr>
+<tr>
+<td>/etc</td>
+<td>系统主要的配置文件几乎都放置在这个目录内，例如人员的帐号密码档、 各种服务的启始档等等。一般来说，这个目录下的各文件属性是可以让一般使用者查阅的， 但是只有root有权力修改。FHS建议不要放置可可执行文件（binary）在这个目录中喔。比较重要的文件有： /etc/modprobe.d/, /etc/passwd, /etc/fstab, /etc/issue 等等。另外 FHS 还规范几个重要的目录最好要存在 /etc/ 目录下喔：<br />/etc/opt（必要）：这个目录在放置第三方协力软件 <br />/opt 的相关配置文件<br />/etc/X11/（建议）：与 X Window 有关的各种配置文件都在这里，尤其是 xorg.conf 这个 X Server 的配置文件。<br />/etc/sgml/（建议）：与 SGML 格式有关的各项配置文件<br />/etc/xml/（建议）：与 XML 格式有关的各项配置文件</td>
+</tr>
+<tr>
+<td>/lib</td>
+<td>系统的函数库非常的多，而/lib放置的则是在开机时会用到的函数库， 以及在/bin或/sbin下面的指令会调用的函数库而已。 什么是函数库呢？你可以将他想成是“外挂”，某些指令必须要有这些“外挂”才能够顺利完成程序的执行之意。 另外 FSH 还要求下面的目录必须要存在：/lib/modules/：这个目录主要放置可抽换式的核心相关模块（驱动程序）喔！</td>
+</tr>
+<tr>
+<td>/media</td>
+<td>media是“媒体”的英文，顾名思义，这个/media下面放置的就是可移除的设备啦！ 包括软盘、光盘、DVD等等设备都暂时挂载于此。常见的文件名有：/media/floppy, /media/cdrom等等。</td>
+</tr>
+<tr>
+<td>/mnt</td>
+<td>如果你想要暂时挂载某些额外的设备，一般建议你可以放置到这个目录中。 在古早时候，这个目录的用途与/media相同啦！只是有了/media之后，这个目录就用来暂时挂载用了。</td>
+</tr>
+<tr>
+<td>/opt</td>
+<td>这个是给第三方协力软件放置的目录。什么是第三方协力软件啊？ 举例来说，KDE这个桌面管理系统是一个独立的计划，不过他可以安装到Linux系统中，因此KDE的软件就建议放置到此目录下了。 另外，如果你想要自行安装额外的软件（非原本的distribution提供的），那么也能够将你的软件安装到这里来。 不过，以前的Linux系统中，我们还是习惯放置在/usr/local目录下呢！</td>
+</tr>
+<tr>
+<td>/run</td>
+<td>早期的 FHS 规定系统开机后所产生的各项信息应该要放置到 /var/run 目录下，新版的 FHS 则规范到 /run 下面。 由于 /run 可以使用内存来仿真，因此性能上会好很多！</td>
+</tr>
+<tr>
+<td>/sbin</td>
+<td>Linux有非常多指令是用来设置系统环境的，这些指令只有root才能够利用来“设置”系统，其他使用者最多只能用来“查询”而已。 放在/sbin下面的为开机过程中所需要的，里面包括了开机、修复、还原系统所需要的指令。 至于某些服务器软件程序，一般则放置到/usr/sbin/当中。至于本机自行安装的软件所产生的系统可执行文件（system binary）， 则放置到/usr/local/sbin/当中了。常见的指令包括：fdisk, fsck, ifconfig, mkfs等等。</td>
+</tr>
+<tr>
+<td>/srv</td>
+<td>srv可以视为“service”的缩写，是一些网络服务启动之后，这些服务所需要取用的数据目录。 常见的服务例如WWW, FTP等等。举例来说，WWW服务器需要的网页数据就可以放置在/srv/www/里面。 不过，系统的服务数据如果尚未要提供给网际网络任何人浏览的话，默认还是建议放置到 /var/lib 下面即可。</td>
+</tr>
+<tr>
+<td>/tmp</td>
+<td>这是让一般使用者或者是正在执行的程序暂时放置文件的地方。 这个目录是任何人都能够存取的，所以你需要定期的清理一下。当然，重要数据不可放置在此目录啊！ 因为FHS甚至建议在开机时，应该要将/tmp下的数据都删除唷！</td>
+</tr>
+<tr>
+<td>/usr</td>
+<td>第二层 FHS 设置，后续介绍</td>
+</tr>
+<tr>
+<td>/var</td>
+<td>第二曾 FHS 设置，主要为放置变动性的数据，后续介绍</td>
+</tr>
+<tr>
+<td>第二部份</td>
+<td>FHS 建议可以存在的目录</td>
+</tr>
+<tr>
+<td>/home</td>
+<td>这是系统默认的使用者主文件夹（home directory）。在你新增一个一般使用者帐号时， 默认的使用者主文件夹都会规范到这里来。比较重要的是，主文件夹有两种代号喔：~：代表目前这个使用者的主文件夹~dmtsai ：则代表 dmtsai 的主文件夹！</td>
+</tr>
+<tr>
+<td>/lib<qual></td>
+<td>用来存放与 /lib 不同的格式的二进制函数库，例如支持 64 位的 /lib64 函数库等</td>
+</tr>
+<tr>
+<td>/root</td>
+<td>系统管理员（root）的主文件夹。之所以放在这里，是因为如果进入单人维护模式而仅挂载根目录时， 该目录就能够拥有root的主文件夹，所以我们会希望root的主文件夹与根目录放置在同一个分区中。</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>/usr: unix software resource, Unix操作系统软件资源, 与软件安装/执行有关；/usr里面放置的数据属于可分享的与不可变动的（shareable, static）， 如果你知道如何通过网络进行分区的挂载（例如在服务器篇会谈到的NFS服务器），那么/usr确实可以分享给区域网络内的其他主机来使用喔 因为是所有系统默认的软件（distribution发布者提供的软件）都会放置到/usr下面，因此这个目录有点类似Windows 系统的“C:\Windows\ （当中的一部份） + C:\Program files\”这两个目录的综合体，系统刚安装完毕时，这个目录会占用最多的硬盘容量。一般来说，/usr的次目录建议有下面这些：</li>
+</ul>
+<blockquote>
+<p>早期 Linux 在设计的时候，若发生问题时，救援模式通常仅挂载根目录而已，因此有五个重要的目录被要求一定要与根目录放置在一起， 那就是 /etc, /bin, /dev, /lib, /sbin 这五个重要目录。现在许多的 Linux distributions 由于已经将许多非必要的文件移出 /usr 之外了， 所以 /usr 也是越来越精简，同时因为 /usr 被建议为“即使挂载成为只读，系统还是可以正常运行”的模样，所以救援模式也能同时挂载 /usr 喔！ 例如我们的这个 CentOS 7.x 版本在救援模式的情况下就是这样。因此那个五大目录的限制已经被打破了呦！例如 CentOS 7.x 就已经将 /sbin, /bin, /lib 通通移动到 /usr 下面了哩！</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>目录</th>
+<th>应放置文件内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第一部份：</td>
+<td>FHS 要求必须要存在的目录</td>
+</tr>
+<tr>
+<td>/usr/bin/</td>
+<td>所有一般用户能够使用的指令都放在这里！目前新的 CentOS 7 已经将全部的使用者指令放置于此，而使用链接文件的方式将 /bin 链接至此！ 也就是说， /usr/bin 与 /bin 是一模一样了！另外，FHS 要求在此目录下不应该有子目录！</td>
+</tr>
+<tr>
+<td>/usr/lib/</td>
+<td>基本上，与 /lib 功能相同，所以 /lib 就是链接到此目录中的！</td>
+</tr>
+<tr>
+<td>/usr/local/</td>
+<td>系统管理员在本机自行安装自己下载的软件（非distribution默认提供者），建议安装到此目录， 这样会比较便于管理。举例来说，你的distribution提供的软件较旧，你想安装较新的软件但又不想移除旧版， 此时你可以将新版软件安装于/usr/local/目录下，可与原先的旧版软件有分别啦！ 你可以自行到/usr/local去看看，该目录下也是具有bin, etc, include, lib&hellip;的次目录喔！</td>
+</tr>
+<tr>
+<td>/usr/sbin/</td>
+<td>非系统正常运行所需要的系统指令。最常见的就是某些网络服务器软件的服务指令（daemon）啰！不过基本功能与 /sbin 也差不多， 因此目前 /sbin 就是链接到此目录中的。</td>
+</tr>
+<tr>
+<td>/usr/share/</td>
+<td>主要放置只读架构的数据文件，当然也包括共享文件。在这个目录下放置的数据几乎是不分硬件架构均可读取的数据， 因为几乎都是文字文件嘛！在此目录下常见的还有这些次目录：/usr/share/man：线上说明文档/usr/share/doc：软件杂项的文件说明/usr/share/zoneinfo：与时区有关的时区文件</td>
+</tr>
+<tr>
+<td>第二部份：</td>
+<td>FHS 建议可以存在的目录</td>
+</tr>
+<tr>
+<td>/usr/games/</td>
+<td>与游戏比较相关的数据放置处</td>
+</tr>
+<tr>
+<td>/usr/include/</td>
+<td>c/c++等程序语言的文件开始（header）与包含档（include）放置处，当我们以tarball方式 （*.tar.gz 的方式安装软件）安装某些数据时，会使用到里头的许多包含档喔！</td>
+</tr>
+<tr>
+<td>/usr/libexec/</td>
+<td>某些不被一般使用者惯用的可执行文件或脚本（script）等等，都会放置在此目录中。例如大部分的 X 窗口下面的操作指令， 很多都是放在此目录下的。</td>
+</tr>
+<tr>
+<td>/usr/lib<qual>/</td>
+<td>与 /lib<qual>/功能相同，因此目前 /lib<qual> 就是链接到此目录中</td>
+</tr>
+<tr>
+<td>/usr/src/</td>
+<td>一般源代码建议放置到这里，src有source的意思。至于核心源代码则建议放置到/usr/src/linux/目录下。</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>/var （variable）：与系统运行过程有关。/var就是在系统运行后才会渐渐占用硬盘容量的目录。 因为/var目录主要针对常态性变动的文件，包括高速缓存（cache）、登录文件（log file）以及某些软件运行所产生的文件， 包括程序文件（lock file, run file），或者例如MySQL数据库的文件等等</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>目录</th>
+<th>应放置文件内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第一部份</td>
+<td>FHS 要求必须要存在的目录</td>
+</tr>
+<tr>
+<td>/var/cache/</td>
+<td>应用程序本身运行过程中会产生的一些暂存盘；</td>
+</tr>
+<tr>
+<td>/var/lib/</td>
+<td>程序本身执行的过程中，需要使用到的数据文件放置的目录。在此目录下各自的软件应该要有各自的目录。 举例来说，MySQL的数据库放置到/var/lib/mysql/而rpm的数据库则放到/var/lib/rpm去！</td>
+</tr>
+<tr>
+<td>/var/lock/</td>
+<td>某些设备或者是文件资源一次只能被一个应用程序所使用，如果同时有两个程序使用该设备时， 就可能产生一些错误的状况，因此就得要将该设备上锁（lock），以确保该设备只会给单一软件所使用。 举例来说，烧录机正在烧录一块光盘，你想一下，会不会有两个人同时在使用一个烧录机烧片？ 如果两个人同时烧录，那片子写入的是谁的数据？所以当第一个人在烧录时该烧录机就会被上锁， 第二个人就得要该设备被解除锁定（就是前一个人用完了）才能够继续使用啰。目前此目录也已经挪到 /run/lock 中！</td>
+</tr>
+<tr>
+<td>/var/log/</td>
+<td>重要到不行！这是登录文件放置的目录！里面比较重要的文件如/var/log/messages, /var/log/wtmp（记录登陆者的信息）等。</td>
+</tr>
+<tr>
+<td>/var/mail/</td>
+<td>放置个人电子邮件信箱的目录，不过这个目录也被放置到/var/spool/mail/目录中！ 通常这两个目录是互为链接文件啦！</td>
+</tr>
+<tr>
+<td>/var/run/</td>
+<td>某些程序或者是服务启动后，会将他们的PID放置在这个目录下喔！至于PID的意义我们会在后续章节提到的。 与 /run 相同，这个目录链接到 /run 去了！</td>
+</tr>
+<tr>
+<td>/var/spool/</td>
+<td>这个目录通常放置一些伫列数据，所谓的“伫列”就是排队等待其他程序使用的数据啦！ 这些数据被使用后通常都会被删除。举例来说，系统收到新信会放置到/var/spool/mail/中， 但使用者收下该信件后该封信原则上就会被删除。信件如果暂时寄不出去会被放到/var/spool/mqueue/中， 等到被送出后就被删除。如果是工作调度数据（crontab），就会被放置到/var/spool/cron/目录中！</td>
+</tr>
+</tbody>
+</table>
+<h3 id="权限管理">权限管理</h3>
+<ul>
+<li>速记:
+<ul>
+<li>755: 拥有者具备全部权限, 群组和其他人没有写的权限.</li>
+<li>625: 拥有者只有读写的权利, 没有执行的权利, 群组只有覆盖的权利, 无法读取和运行, 而其他人没有写的权利, 可以读取执行.</li>
+</ul>
+</li>
+<li>命令: <code>chown [-R] owner :group filename</code></li>
+<li>权限设定<sup><a href="#j7">7</a></sup>
+<ul>
+<li><code>abc</code>
+<ul>
+<li>a: 拥有者</li>
+<li>b: 所属群组</li>
+<li>c: 其他人</li>
+</ul>
+</li>
+<li>表示方法:
+<ul>
+<li>数字法: 用权限值表示.
+<ul>
+<li>r权限＋4</li>
+<li>w权限＋2</li>
+<li>x权限＋1</li>
+</ul>
+</li>
+<li>符号法: <code>人＋动作（+加入-除去=设定）＋权限符号（rwx）</code>; 不同动作间用“,”分隔
+<ul>
+<li>u拥有者</li>
+<li>g群组</li>
+<li>o其他人</li>
+<li>a所有人</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>意义
+<ul>
+<li>文件：
+<ul>
+<li>r：读内容</li>
+<li>w：写内容 (无法删除), 若无r权限, 新写入的内容将覆盖原来的内容</li>
+<li>x：被系统执行，蕴含r权限。</li>
+</ul>
+</li>
+<li>目录：
+<ul>
+<li>r：读取目录结构清单的权限，也就是查询该目录下的文件名</li>
+<li>w：修改该目录结构清单的权限</li>
+<li>x：进入该目录，访问目录下的文件</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="uninstall-ubuntu">UNINSTALL UBUNTU</h2>
+<p>用的不习惯当然要卸载了, 卸载比较简单, 如果安装无误的话, 启动引导用的是Ubuntu自带的的 <code>GUN GRUB</code>, 如果你分盘的时候没有选择下面的启动引导设置, 那么你第一次启动的时候一定不会进入Ubuntu的系统. 所以要卸载Ubuntu, 我们可以直接用 <code>EasyUEFI</code> 把 <code>GUN GRUB</code> 干掉, 然后选择磁盘分区的删除卷即可. , 软件的话, 用, 官网下载的话需要梯子, 然后我这里如果有时间会给出下载链接, 去网上随便下载一个就好了</p>
+<h2 id="link">LINK</h2>
+<ul>
+<li><a href="http://www.debian.org/">Debain</a></li>
+<li><a href="http://www.ubuntu.com/">Ubuntu</a></li>
+<li><a href="http://wiki.ubuntu.com/">Wiki_Ubuntu_En</a></li>
+<li><a href="https://juejin.cn/post/6844904149822210056">写给工程师的 Ubuntu 20.04 最佳配置指南</a></li>
+</ul>
+<h3 id="nix-sites">*NIX SITES</h3>
+<ul>
+<li><a href="https://launchpad.net/ubuntu">ubutntu_launchpad</a></li>
+<li><a href="https://linustechtips.com">linux_forum</a></li>
+<li><a href="https://wiki.ubuntu.org.cn/%E9%A6%96%E9%A1%B5">cn-wiki ubuntu</a></li>
+<li><a href="//linux.zone/">lulinux</a></li>
+<li><a href="https://linux.cn/">linux_cn</a></li>
+<li><a href="https://www.linuxidc.com/">linux dir</a></li>
+<li><a href="https://ywnz.com/">linux ywnz</a></li>
+<li><a href="https://linuxhint.com/">linux_hint</a></li>
+<li><a href="https://www.linuxprobe.com">linux_probe</a></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li><a href="https://wangchujiang.com/linux-command/">Linux Command Search</a></li>
+<li><a href="http://mirrors.kernel.org/">Mirrors Linux</a></li>
+</ul>
+<h3 id="guidences">Guidences</h3>
+<ul>
+<li><a href="https://forum.ubuntu.org.cn/viewtopic.php?f=120&amp;t=35100&amp;sid=dedd568ab12c1f6937889c57562b7476">ubuntu常见问题指南 新手发问前必看</a></li>
+<li><a href="https://forum.ubuntu.org.cn/viewtopic.php?t=105237#p628762">ubuntu安装好之后, 怎样再重新分区？</a></li>
+<li><a href="https://blog.csdn.net/code_segment/article/details/79237500">ubuntu系统重新分区、根目录扩容</a></li>
+</ul>
+<p><img src="https://z3.ax1x.com/2021/06/28/RNt0kn.png" alt=""></p>
+<div id="j1">[1]. https://www.thefanclub.co.za/how-to/ubuntu-touchpad-gestures-install</div>
+<div id="j2">[2]. https://zhuanlan.zhihu.com/p/40434062</div>
+<div id="j3">[3]. https://www.jianshu.com/p/99d3eebcf17f</div>
+<div id="j4">[4]. https://blog.csdn.net/gatieme/article/details/52829907</div>
+<div id="j5">[5]. https://blog.csdn.net/u010648555/article/details/88542150</div>
+<div id="j6">[6]. https://i-meto.com/linux-mirrors/</div>
+<div id="j7">[7]. https://blog.csdn.net/dangpu/article/details/41597749</div>
+<div id="j8">[8]. https://askubuntu.com/questions/722708/how-do-i-refresh-the-icon-cache</div>
+<div id="j9">[9]. http://bbs.chinaunix.net/thread-1979347-1-1.html</div>
+<div id="j10">[10]. https://bbs.huaweicloud.com/forum/thread-62703-1-1.html</div>
+
+    
+</article>
+
+
+        <footer>
+            <p>
+            <a href=./index.xml style=" border-bottom-width: 0px"><svg t="1623645011149" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5933" width=".9em" height=".9em" fill=#8a8a8a><path d="M239.8 672.2c-61.6 0-111.8 50.2-111.8 111.6 0 61.6 50.2 111.2 111.8 111.2 61.8 0 111.8-49.8 111.8-111.2C351.6 722.4 301.6 672.2 239.8 672.2zM239.8 863c-44 0-79.8-35.6-79.8-79.2 0-43.8 35.8-79.6 79.8-79.6 44 0 79.8 35.8 79.8 79.6C319.6 827.4 283.8 863 239.8 863z" p-id="5934"></path><path d="M128 384l0 159.8c96 0 188.2 28.4 256 96.2 67.8 67.8 96 159.8 96 256l160 0C640 616.2 408 384 128 384zM607 864l-96 0c-6.2-99.4-42-184.2-104.4-246.6C344.2 554.8 260 519 160 512.8l0-95.6c52 3.6 104.2 16 153.4 37 57 24.4 108.4 59.2 152.8 103.6 44.4 44.4 79.2 95.8 103.6 152.8C591 759.8 603.4 811.2 607 864z" p-id="5935"></path><path d="M128 128l0 159.8c342 0 607.8 266 607.8 608.2L896 896C896 472.6 552 128 128 128zM582.8 441C470.8 328.8 322 264 160 256.4L160 160.6C540 177 847 483.6 863.4 864l-96.4 0C759.4 702.2 694.6 553 582.8 441z" p-id="5936"></path></svg></a>
+            &nbsp;
+            <a href="//github.com/bgzocg" style=" border-bottom-width: 0px"><svg t="1623645573680" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7467" width=".9em" height=".9em" fill=#8a8a8a><path d="M427.392 853.504a61.44 61.44 0 0 1-1.450667 15.530667 92.586667 92.586667 0 0 1-10.965333 27.605333c-15.061333 25.301333-40.661333 42.154667-73.642667 42.154667-77.653333 0-108.117333-38.101333-146.261333-133.504C169.216 740.693333 157.013333 725.461333 128 725.461333v-85.333333c77.653333 0 108.117333 38.101333 146.261333 133.504 25.856 64.597333 38.058667 79.786667 67.072 79.786667 0-12.373333-0.170667-23.296-0.512-38.144-0.853333-34.816-0.938667-41.941333 0.554667-51.2 0.64-20.352 5.888-34.773333 16.384-49.066667-95.232-20.736-159.445333-63.573333-196.309333-132.992l-13.824-32.426667C134.186667 510.848 128 467.072 128 416.426667c0-58.24 17.749333-110.336 50.944-153.856-10.368-41.386667-8.96-91.989333 13.909333-149.077334l7.466667-18.688 19.2-6.101333c2.56-0.853333 5.632-1.578667 9.301333-2.133333 37.290667-5.888 90.325333 8.106667 159.701334 52.48a565.930667 565.930667 0 0 1 127.274666-14.208c38.741333 0 77.226667 3.882667 114.048 11.605333 67.456-42.24 119.04-55.509333 155.306667-49.92 3.626667 0.597333 6.741333 1.322667 9.258667 2.133333l19.285333 6.101334 7.466667 18.773333c20.010667 50.218667 23.424 96.469333 16.128 136.96C875.434667 296.32 896 352.597333 896 416.512c0 53.888-3.84 94.378667-14.933333 133.802667l-11.733334 32.170666c-30.677333 69.333333-98.304 112.64-202.538666 133.248 10.837333 15.018667 15.872 30.250667 15.872 52.394667v42.666667l-0.042667 42.666666a13.013333 13.013333 0 0 0 0.341333 2.730667L682.666667 938.794667c-36.352 0-63.36-17.706667-76.672-45.653334a88.277333 88.277333 0 0 1-8.661334-40.277333v-84.736c0-3.584-0.128-3.797333-8.832-12.501333-23.296-23.296-33.834667-40.874667-33.834666-72.832v-38.613334l38.4-3.84c114.346667-11.52 176.512-43.221333 197.12-89.6l9.6-26.325333c7.68-27.562667 10.88-61.098667 10.88-107.946667 0-49.706667-17.365333-90.837333-50.218667-123.648L742.4 274.773333l7.381333-24.448c6.528-21.717333 8.106667-47.402667 1.152-76.714666a158.634667 158.634667 0 0 0-3.584 0.938666c-22.826667 6.4-51.370667 20.053333-85.76 43.008l-15.658666 10.453334-18.304-4.522667a467.754667 467.754667 0 0 0-111.829334-13.269333c-42.709333 0-84.906667 5.418667-123.946666 16.042666l-19.029334 5.205334-16.256-11.136c-35.541333-24.32-65.109333-38.826667-88.746666-45.568a158.293333 158.293333 0 0 0-4.864-1.28c-8.234667 33.92-4.992 61.781333 3.413333 82.688l9.984 25.088-18.346667 19.797333C228.693333 332.629333 213.333333 370.986667 213.333333 416.512c0 41.685333 4.864 76.202667 13.824 102.229333l11.178667 26.453334c27.904 52.352 87.168 83.84 192.853333 95.146666l38.144 4.096v38.357334c0 32-10.538667 49.536-33.834666 72.832-8.704 8.704-8.832 8.96-8.832 12.501333l-0.725334 7.893333c-0.512 2.56-0.512 9.258667 0.170667 37.205334 0.298667 12.8 0.469333 22.997333 0.554667 33.621333a33.962667 33.962667 0 0 1 0.725333 6.656z" p-id="7468"></path></svg></a>
+            &nbsp;
+            <a href="mailto:x@outlook.com" style=" border-bottom-width: 0px"><svg t="1623645825851" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="9475"width=".9em" height=".9em" fill=#8a8a8a><path d="M426.666667 955.733333H170.666667c-64.034133 0-100.386133-34.048-102.4-95.880533V511.146667c0-33.1264 9.233067-58.794667 27.409066-76.305067L153.6 376.9344V256a17.066667 17.066667 0 0 1 17.066667-17.066667h164.4544l165.666133-165.666133a17.0496 17.0496 0 0 1 24.132267 0L690.5856 238.933333H853.333333a17.066667 17.066667 0 0 1 17.066667 17.066667v120.081067l59.8528 59.8528c16.913067 16.913067 25.480533 42.222933 25.480533 75.2128v348.16c-1.9968 61.713067-38.007467 95.761067-101.358933 96.426666H426.666667z m41.198933-34.133333H854.186667c45.175467-0.4608 66.030933-19.848533 67.4304-62.856533L921.6 511.146667c0-14.660267-2.013867-26.845867-5.9904-36.437334l-50.210133 50.210134-0.0512 0.0512-340.445867 339.592533-0.034133 0.034133-57.002667 57.002667zM109.550933 473.326933C104.789333 483.345067 102.4 495.9744 102.4 511.146667v348.16C103.799467 902.212267 124.842667 921.6 170.666667 921.6h248.9344l69.12-69.12L109.550933 473.326933zM187.733333 503.227733l325.137067 325.137067L836.266667 505.770667V273.066667H187.733333v230.161066z m682.666667-78.882133v47.291733l23.6544-23.6544L870.4 424.3456zM131.652267 447.146667L153.6 469.0944v-43.895467L131.652267 447.146667zM383.3856 238.933333h258.935467L512.853333 109.4656 383.3856 238.933333zM597.333333 614.4H426.666667a17.066667 17.066667 0 1 1 0-34.133333h170.666666a17.066667 17.066667 0 1 1 0 34.133333z m85.333334-85.333333H341.333333a17.066667 17.066667 0 1 1 0-34.133334h341.333334a17.066667 17.066667 0 1 1 0 34.133334z m0-85.333334H341.333333a17.066667 17.066667 0 0 1 0-34.133333h341.333334a17.066667 17.066667 0 1 1 0 34.133333z" p-id="9476"></path></svg></a>
+            &nbsp;
+            <a href="//x.com/xxxcg" style=" border-bottom-width: 0px"> <svg t="1623645867604" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="10970"width=".9em" height=".9em" fill=#8a8a8a><path d="M854.613333 187.221333a39.338667 39.338667 0 0 0 13.226667-7.552 42.581333 42.581333 0 0 1 60.16 4.053334c15.530667 17.792 13.696 44.8-4.053333 60.330666a124.330667 124.330667 0 0 1-41.344 23.936c-25.6 8.917333-51.456 9.685333-75.434667 5.888a121.770667 121.770667 0 0 1-12.117333-2.474666 42.666667 42.666667 0 0 1-22.186667-14.464c-35.242667-43.776-76.928-54.186667-135.253333-32.725334-54.741333 20.181333-76.586667 65.450667-66.261334 149.248 3.157333 25.6-16.853333 48.128-42.581333 48-137.173333-0.853333-262.912-61.610667-375.594667-180.053333a42.837333 42.837333 0 0 1 1.408-60.501333 42.581333 42.581333 0 0 1 60.330667 1.450666c84.224 88.576 173.525333 138.24 268.8 150.528 1.408-93.184 43.050667-158.890667 124.416-188.928 86.186667-31.786667 162.346667-16 219.946667 46.293334 9.088 0.64 18.432-0.213333 26.538666-3.029334zM360.192 810.496c157.866667 0 298.112-67.328 389.973333-220.714667 33.706667-56.192 52.565333-121.386667 56.576-196.266666a42.666667 42.666667 0 1 1 85.205334 4.565333c-4.736 88.405333-27.562667 167.210667-68.608 235.733333C714.794667 815.061333 546.090667 896 360.192 896c-97.834667 0-184.106667-26.922667-257.408-80.810667-34.944-25.6-13.909333-81.066667 29.184-77.056 62.421333 5.888 134.442667-15.104 216.192-64.682666a42.624 42.624 0 0 1 58.581333 14.464c12.202667 20.224 5.76 46.506667-14.421333 58.709333-39.424 23.893333-77.738667 42.410667-114.901333 55.381333a390.613333 390.613333 0 0 0 82.773333 8.490667zM136.405333 371.541333A42.624 42.624 0 1 1 215.04 338.346667c9.301333 22.186667 24.234667 38.229333 46.08 49.408 20.992 10.709333 29.312 36.48 18.645333 57.514666a42.624 42.624 0 0 1-57.386666 18.645334 179.626667 179.626667 0 0 1-85.973334-92.416z m39.253334 170.026667a42.794667 42.794667 0 0 1 15.018666-58.581333 42.624 42.624 0 0 1 58.453334 15.018666c16.768 28.373333 33.664 42.922667 50.261333 46.805334a42.752 42.752 0 0 1-19.2 83.285333c-42.069333-9.728-76.8-39.594667-104.533333-86.528z" p-id="10971"></path></svg></a>
+            &nbsp;
+            <a href="//bangumi.tv/user/xxx" style=" border-bottom-width: 0px"><svg t="1611399107225" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2100" width=".9em" height=".9em" fill=#8a8a8a><path d="M228.115268 615.399298a12.300795 12.300795 0 0 0 11.35458 7.569719 12.471113 12.471113 0 0 0 4.749999-0.965139l147.609537-61.882459a12.300795 12.300795 0 0 0 0.26494-22.557765l-147.609537-66.235049a12.300795 12.300795 0 1 0-10.067727 22.444219l121.740019 54.634453-121.456155 50.906366a12.300795 12.300795 0 0 0-6.585656 16.085655zM399.020617 627.965033H239.469848a12.300795 12.300795 0 0 0 0 24.601589h159.550769a12.300795 12.300795 0 0 0 0-24.601589zM399.020617 667.460046H239.469848a12.300795 12.300795 0 0 0 0 24.601589h159.550769a12.300795 12.300795 0 0 0 0-24.601589zM872.941851 476.892349l-133.283841 58.381464a12.300795 12.300795 0 0 0-0.397411 22.349598l133.302766 64.058754a12.073703 12.073703 0 0 0 5.317729 1.23008 12.300795 12.300795 0 0 0 5.336652-23.390435l-109.15536-52.42031L882.896033 499.469038a12.300795 12.300795 0 1 0-9.954182-22.576689zM877.881094 627.965033h-148.101569a12.300795 12.300795 0 0 0 0 24.601589h148.101569a12.300795 12.300795 0 0 0 0-24.601589zM877.881094 667.460046h-148.101569a12.300795 12.300795 0 0 0 0 24.601589h148.101569a12.300795 12.300795 0 0 0 0-24.601589zM644.866193 537.128395h-162.919295a12.28187 12.28187 0 0 0-10.711153 18.318722l81.374488 145.130453a12.300795 12.300795 0 0 0 21.460155 0l81.374489-145.130453a12.300795 12.300795 0 0 0-10.730078-18.318722z m-81.374488 132.299778l-60.444213-107.698189h120.888426z" p-id="2101"></path><path d="M891.411968 334.960102H648.405037c-6.812748-15.13944-19.813742-28.386449-36.864535-38.018917L803.092262 19.283861a12.300795 12.300795 0 0 0-20.249001-13.966133L588.566402 286.873457a147.723082 147.723082 0 0 0-45.418319-7.001991 151.507942 151.507942 0 0 0-31.887445 3.368526L239.980804 4.712151A12.300795 12.300795 0 0 0 222.437978 21.87649l262.726051 269.803739c-22.14143 9.821711-39.116527 25.112546-47.310749 43.242025H132.547555A91.763929 91.763929 0 0 0 40.764702 426.705107v414.44216A91.763929 91.763929 0 0 0 132.547555 932.967969h268.024855l-19.908363 46.989036c-12.641432 29.881469 22.614538 57.094612 48.294812 37.299794L538.473781 932.967969h352.938187a91.763929 91.763929 0 0 0 91.782853-91.782853v-414.442161a91.763929 91.763929 0 0 0-91.782853-91.782853z m34.839635 463.815658a60.709153 60.709153 0 0 1-60.709153 60.709153H585.670984L487.870204 932.967969l-77.002975 57.851583 24.412346-57.851583 31.016927-73.483056H198.082405A60.728077 60.728077 0 0 1 137.27863 798.737912V440.330602a60.728077 60.728077 0 0 1 60.728077-60.728077h667.460046a60.709153 60.709153 0 0 1 60.709153 60.728077z" p-id="2102"></path></svg></a>
+            &nbsp;
+            <a href="//xxx" style=" border-bottom-width: 0px"><svg t="1623645993260" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="14230" width=".9em" height=".9em" fill=#8a8a8a><path d="M834.24 127.872a95.168 95.168 0 0 0-29.856 7.136h-0.128c-9.12 3.616-52.48 21.856-118.4 49.504l-236.224 99.488c-169.504 71.36-336.128 141.632-336.128 141.632l1.984-0.768s-11.488 3.776-23.488 12a64.96 64.96 0 0 0-18.752 18.144c-5.888 8.64-10.624 21.856-8.864 35.52 2.88 23.104 17.856 36.96 28.608 44.608 10.88 7.744 21.248 11.36 21.248 11.36h0.256l156.256 52.64c7.008 22.496 47.616 156 57.376 186.752 5.76 18.368 11.36 29.856 18.368 38.624 3.392 4.48 7.36 8.224 12.128 11.232a35.808 35.808 0 0 0 7.872 3.392l-1.6-0.384c0.48 0.128 0.864 0.512 1.216 0.64 1.28 0.352 2.144 0.48 3.776 0.736 24.736 7.488 44.608-7.872 44.608-7.872l1.12-0.896 92.256-84 154.624 118.624 3.52 1.504c32.224 14.144 64.864 6.272 82.112-7.616 17.376-13.984 24.128-31.872 24.128-31.872l1.12-2.88 119.488-612.128c3.392-15.104 4.256-29.248 0.512-42.976a57.824 57.824 0 0 0-24.992-33.504 59.904 59.904 0 0 0-34.144-8.64z m-3.232 65.6c-0.128 2.016 0.256 1.792-0.64 5.664v0.352l-118.368 605.76c-0.512 0.864-1.376 2.752-3.744 4.64-2.496 1.984-4.48 3.232-14.88-0.896l-189.12-144.992-114.24 104.128 24-153.28 308.992-288c12.736-11.84 8.48-14.336 8.48-14.336 0.896-14.528-19.232-4.256-19.232-4.256l-389.632 241.376-0.128-0.64-186.752-62.88v-0.128l-0.48-0.096a8.64 8.64 0 0 0 0.96-0.384l1.024-0.512 0.992-0.352s166.752-70.272 336.256-141.632c84.864-35.744 170.368-71.744 236.128-99.52 65.76-27.616 114.368-47.872 117.12-48.96 2.624-1.024 1.376-1.024 3.264-1.024z" p-id="14231"></path></svg></a><br/>
+            Copyright &copy; 2019 - 2021 &nbsp;<span><a href="x.com">bGZoCg</a></span>&nbsp;. All rights reserved. Articles and comments are copyright their respective authors, submission implies license to publish on this web site. The whole blog runs with <span><a href="https://pages.github.com/">Github Page</a></span>, <span><a href="jsdelivr">Jsdelivr CDN</a></span> and <span><a href="https://aliyun.com">Aliyun</a></span> Oss, which build by <span><a href="https://gohugo.io/">Hugo</a></span>, <span><a href="https://github.com/ianrodrigues/hugo-tailwind-journal/">hugo-tailwind-journal</a></span> and font from <span><a href="https://3type.cn/fonts/dinkie_bitmap/">3type-DinkieBitmap</a></span>. The code is under<span><a rel="license" href="http://www.opensource.org/licenses/bsd-license.php">BSD licensed</a>, articles are licensed under a <span><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"> BY_NC Creative Commons Attribution 4.0 Generic License</a></span>.
+            </p>
+        </footer>
+    </div>
+    
+</body>
+</html>

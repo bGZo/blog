@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sofeware-Engineer on @bGZoCg</title>
+    <link>http://x.com/tags/sofeware-engineer/</link>
+    <description>Recent content in Sofeware-Engineer on @bGZoCg</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Jun 2021 14:42:00 +0800</lastBuildDate>
+    
+	<atom:link href="http://x.com/tags/sofeware-engineer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introduction To Software Engineer</title>
+      <link>http://x.com/introduction-to-software-engineering/</link>
+      <pubDate>Thu, 10 Jun 2021 14:42:00 +0800</pubDate>
+      
+      <guid>http://x.com/introduction-to-software-engineering/</guid>
+      <description>Introduction to Software Engineering talked about the main steps of Agile Development-Agile Development that I learned on TG a few months ago in the course, which I came into contact with in my spare time. Fragmented knowledge turned out to be embedded in such theories. I was sitting in the last row and looking forward. Although there were no seats, basically no one listened to this part of the content, let alone internalized thoughts.</description>
+    </item>
+    
+  </channel>
+</rss>

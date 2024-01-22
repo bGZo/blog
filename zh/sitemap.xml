@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://x.com/zh/</loc>
+    <lastmod>2021-08-08T22:43:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://x.com/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://x.com/zh/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://x.com/zh/tags/</loc>
+    <lastmod>2021-08-08T22:43:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://x.com/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://x.com/zh/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://x.com/zh/tags/tools/</loc>
+    <lastmod>2021-08-08T22:43:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://x.com/tags/tools/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://x.com/zh/tags/tools/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://x.com/zh/210808-build-a-chm-file/</loc>
+    <lastmod>2021-08-08T22:43:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://x.com/210808-build-a-chm-file/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://x.com/zh/210808-build-a-chm-file/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://x.com/zh/tags/math/</loc>
+    <lastmod>2021-06-10T16:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://x.com/tags/math/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://x.com/zh/tags/math/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://x.com/zh/probablity-theory/</loc>
+    <lastmod>2021-06-10T16:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://x.com/probablity-theory/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://x.com/zh/probablity-theory/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://x.com/zh/tags/sofeware-engineer/</loc>
+    <lastmod>2021-06-10T14:42:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://x.com/tags/sofeware-engineer/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://x.com/zh/tags/sofeware-engineer/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://x.com/zh/introduction-to-software-engineering/</loc>
+    <lastmod>2021-06-10T14:42:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://x.com/introduction-to-software-engineering/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://x.com/zh/introduction-to-software-engineering/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://x.com/zh/tags/db/</loc>
+    <lastmod>2021-06-10T00:12:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://x.com/tags/db/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://x.com/zh/tags/db/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://x.com/zh/database/</loc>
+    <lastmod>2021-06-10T00:12:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://x.com/database/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://x.com/zh/database/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://x.com/zh/tags/ml/</loc>
+    <lastmod>2021-01-22T19:52:50+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://x.com/zh/210123-machine-learning-notes/</loc>
+    <lastmod>2021-01-22T19:52:50+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://x.com/zh/tags/cpp/</loc>
+    <lastmod>2021-01-21T14:31:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://x.com/zh/210121-stackover-top-notes/</loc>
+    <lastmod>2021-01-21T14:31:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://x.com/zh/tags/linux/</loc>
+    <lastmod>2021-01-19T18:11:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://x.com/zh/ubuntu/</loc>
+    <lastmod>2021-01-19T18:11:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://x.com/zh/200901-imu-short-term-develop/</loc>
+    <lastmod>2020-09-01T22:21:38+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://x.com/zh/tags/vps/</loc>
+    <lastmod>2020-02-26T23:51:37+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://x.com/tags/vps/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://x.com/zh/tags/vps/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://x.com/zh/overhead-gfw/</loc>
+    <lastmod>2020-02-26T23:51:37+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://x.com/overhead-gfw/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://x.com/zh/overhead-gfw/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://x.com/zh/tags/gossip/</loc>
+    <lastmod>2020-01-30T13:59:24+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://x.com/tags/gossip/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://x.com/zh/tags/gossip/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://x.com/zh/404/</loc>
+    <lastmod>2020-01-30T13:59:24+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://x.com/404/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://x.com/zh/404/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://x.com/zh/about/</loc>
+    <lastmod>2019-12-31T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://x.com/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://x.com/zh/about/"
+                />
+  </url>
+  
+</urlset>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Networks on @bGZoCg</title>
+    <link>http://x.com/tags/networks/</link>
+    <description>Recent content in Networks on @bGZoCg</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Jan 2021 14:44:52 +0800</lastBuildDate>
+    
+	<atom:link href="http://x.com/tags/networks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Why home address is prefixed with 192.168?</title>
+      <link>http://x.com/210117-whats-192-168/</link>
+      <pubDate>Sun, 17 Jan 2021 14:44:52 +0800</pubDate>
+      
+      <guid>http://x.com/210117-whats-192-168/</guid>
+      <description>&lt;p&gt;A Internet spec called  &lt;a href=&#34;http://www.ietf.org/rfc/rfc1918.txt&#34;&gt;RFC 1918&lt;/a&gt; (Request For Comments) reserved a few blocks of addressnss for &amp;ldquo;private&amp;rdquo; network. 192.168/16 was one of those blocks.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

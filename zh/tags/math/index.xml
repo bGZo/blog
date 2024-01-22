@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Math on @bGZoCg</title>
+    <link>http://x.com/zh/tags/math/</link>
+    <description>Recent content in Math on @bGZoCg</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh_CN</language>
+    <lastBuildDate>Thu, 10 Jun 2021 16:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="http://x.com/zh/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>概率论</title>
+      <link>http://x.com/zh/probablity-theory/</link>
+      <pubDate>Thu, 10 Jun 2021 16:00:00 +0800</pubDate>
+      
+      <guid>http://x.com/zh/probablity-theory/</guid>
+      <description>总的来说. 今天概率论考完了, 总还是对受到的教育有很多遗憾的, 因为自己确实什么都没有学到, 总是在期末前做几套同同学要来的卷子, 然后直接上去考, 没有什么自己的思考和联系, 总还是别扭.
+  &amp;ldquo;生日问题&amp;rdquo; / &amp;ldquo;生日悖论&amp;rdquo;: 这学期最有意思, 也最有实践意义的就是第一节课 &amp;ndash; 引入概率论中提到的一个简单问题: &amp;ldquo;生日问题&amp;rdquo;.
+ 问题: 假设一年有 n 天(365/355), 要使两个人生日相等的概率的人数应该为多少? 思路: 问题转化为 1-P(两两各不相等) 的概率问题 得到: (假设一年365天) 1 - 365! / 365n * (365-n)! (推导过程详细见: https://zh.wikipedia.org/wiki/%E7%94%9F%E6%97%A5%E5%95%8F%E9%A1%8C), 或者  进一步统计计算:      n p（n）     10 12%   20 41%   30 70%   50 97%   100 99.</description>
+    </item>
+    
+  </channel>
+</rss>

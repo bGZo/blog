@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on @bGZoCg</title>
+    <link>http://x.com/tags/tools/</link>
+    <description>Recent content in Tools on @bGZoCg</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 08 Aug 2021 22:43:00 +0800</lastBuildDate>
+    
+	<atom:link href="http://x.com/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>BUILD A CHM FILE</title>
+      <link>http://x.com/210808-build-a-chm-file/</link>
+      <pubDate>Sun, 08 Aug 2021 22:43:00 +0800</pubDate>
+      
+      <guid>http://x.com/210808-build-a-chm-file/</guid>
+      <description>CHM? Yeah have a long history&amp;hellip;
+ In 2002, Microsoft announced some security risks associated with the .CHM format, as well as some security bulletins and patches. They have since announced their intentions not to develop the .CHM format further, and will be moving to a new generation of Windows Help called Microsoft Assistance Markup Language in the Windows Vista operating system.
+&amp;ndash;Wikipedia
+ I try to use command under ubuntu build chm file about python, without GUI software help, which sounds cool.</description>
+    </item>
+    
+  </channel>
+</rss>

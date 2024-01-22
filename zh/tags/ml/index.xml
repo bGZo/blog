@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ML on @bGZoCg</title>
+    <link>http://x.com/zh/tags/ml/</link>
+    <description>Recent content in ML on @bGZoCg</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh_CN</language>
+    <lastBuildDate>Fri, 22 Jan 2021 19:52:50 +0800</lastBuildDate>
+    
+	<atom:link href="http://x.com/zh/tags/ml/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>机器学习--感知器</title>
+      <link>http://x.com/zh/210123-machine-learning-notes/</link>
+      <pubDate>Fri, 22 Jan 2021 19:52:50 +0800</pubDate>
+      
+      <guid>http://x.com/zh/210123-machine-learning-notes/</guid>
+      <description>&lt;p&gt;机器学习最重要的是“预测”，因此“机器学习”包含两个部分:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;训练&lt;/strong&gt;：比如提供大量的汽车图片给机器“学习”，教会机器什么是车，这就是训练&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;预测&lt;/strong&gt;：训练结束后，我们需要机器可以对没有见过的图片进行判断，并且要保证一定的正确率，这就是预测&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;机器学习适用于：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;要解决的问题中存在&lt;strong&gt;某种模式&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;这种模式&lt;strong&gt;不容易直接定义&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;有&lt;strong&gt;足够的数据&lt;/strong&gt;可以帮助我们找出该模式&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

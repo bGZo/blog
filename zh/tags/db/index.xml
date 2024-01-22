@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DB on @bGZoCg</title>
+    <link>http://x.com/zh/tags/db/</link>
+    <description>Recent content in DB on @bGZoCg</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh_CN</language>
+    <lastBuildDate>Thu, 10 Jun 2021 00:12:00 +0800</lastBuildDate>
+    
+	<atom:link href="http://x.com/zh/tags/db/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>数据库</title>
+      <link>http://x.com/zh/database/</link>
+      <pubDate>Thu, 10 Jun 2021 00:12:00 +0800</pubDate>
+      
+      <guid>http://x.com/zh/database/</guid>
+      <description>最后靠着 B站 视频复习, 巩固了一遍闭包, 最小依赖集, 范式优化, 通过了期末考试. 推荐给大家应试技巧:
+ 大佬  1973年 Charles W. Bachman(1924-2017) 网状数据库技术 1981年 Edgar F. Codd (1923－2003 )数据库系统，尤其是关系型数据库 1998年 Jim Gray (1944-2007.1.28? )数据库与事务处理 2014年 Michael Stonebraker(1943-)现代数据库系统底层的概念与实践  数据库  国外  大型：  甲骨文 Oracle IBM DB2 Microsoft SQL Server Sybase   小型  ACCESS   开源  PostgresSQL MYSQL berkeley db(BDB)     国内  华中科技大学: DM 中国人民大学: kingbase  2018年，国家科技进步二等奖   东软: OpenBASE 阿里巴巴: OceanBase    杂志期刊    刊物简称 刊物全称 出版社 网址     TODS ACM Transactions on Database Systems ACM http://www.</description>
+    </item>
+    
+  </channel>
+</rss>

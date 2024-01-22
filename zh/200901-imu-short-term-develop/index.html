@@ -1,0 +1,1028 @@
+<!doctype html>
+<html lang="zh_CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.68.3" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="内大小学期开发--选课管理系统 - @bGZoCg">
+    <meta name="twitter:description" content="该怎么去面对自己在一个月的时间里没有好好写好 &amp;ldquo;学生选课系统&amp;rdquo; 这一个简单的 Cpp 程序, 这篇文章鸽了很久, 我多少希望自己逃避这个对我造成不小阴影的时间段, 我不知道那些跟着联盟导师团伙做项目的同学增长了多少知识, 但我在一个月的时间里缺乏真的效率很低, 多次心态接近低到零点爆炸, 甚至开始怀疑自己是不是真的适合这门学科. 说多了也只是为自己的低能找借口开脱, 我总结以下几个方面, 附带一些槽点, 诚恳总结如下:
+ 总结:  前期进度开发出现问题时, 一定要即时和其他成员进行反馈, 不可以拖延, 像现在的工作岗位一样, 工作时间拖延, 那就占用你的成长时间来弥补. 代码预处理太多造成冗余项过多, 难以维护, 以及整体逻辑结构必须在实施前去实现一下, 这样可以在码字的时候为以后做更多的打算. 实际开发中走一步看一步造成了不断地修改重复代码及标记变量, 而后再去维护更多的函数, 维护再度提升一个量级. 写代码的时候必须警惕过多的预处理, 一定有更好的方式. 尽量用更省力的库, 不要重复造不必要的轮子. 在实际开发中, 我曾避免使用可托容的 vector, 而用双数组来代替之, 复杂度提升一个量级, 何苦呢? 做好最坏的打算, 不要想着在一个染缸里摸鱼. 实际开发中因为太卷, 大家走一步看一步, 前期不必要的要求到后期都成为了必要项. 这样子强制让人一起绕着卷王加班的情景真是和现 996 如出一辙.   ">
+    <meta name="twitter:site" content="http://x.com/">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:image" content="https://dandelionfs.oss-cn-beijing.aliyuncs.com/author-heart.webp">
+    
+    
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="内大小学期开发--选课管理系统 - @bGZoCg">
+    <meta property="og:description" content="该怎么去面对自己在一个月的时间里没有好好写好 &amp;ldquo;学生选课系统&amp;rdquo; 这一个简单的 Cpp 程序, 这篇文章鸽了很久, 我多少希望自己逃避这个对我造成不小阴影的时间段, 我不知道那些跟着联盟导师团伙做项目的同学增长了多少知识, 但我在一个月的时间里缺乏真的效率很低, 多次心态接近低到零点爆炸, 甚至开始怀疑自己是不是真的适合这门学科. 说多了也只是为自己的低能找借口开脱, 我总结以下几个方面, 附带一些槽点, 诚恳总结如下:
+ 总结:  前期进度开发出现问题时, 一定要即时和其他成员进行反馈, 不可以拖延, 像现在的工作岗位一样, 工作时间拖延, 那就占用你的成长时间来弥补. 代码预处理太多造成冗余项过多, 难以维护, 以及整体逻辑结构必须在实施前去实现一下, 这样可以在码字的时候为以后做更多的打算. 实际开发中走一步看一步造成了不断地修改重复代码及标记变量, 而后再去维护更多的函数, 维护再度提升一个量级. 写代码的时候必须警惕过多的预处理, 一定有更好的方式. 尽量用更省力的库, 不要重复造不必要的轮子. 在实际开发中, 我曾避免使用可托容的 vector, 而用双数组来代替之, 复杂度提升一个量级, 何苦呢? 做好最坏的打算, 不要想着在一个染缸里摸鱼. 实际开发中因为太卷, 大家走一步看一步, 前期不必要的要求到后期都成为了必要项. 这样子强制让人一起绕着卷王加班的情景真是和现 996 如出一辙.   ">
+    <meta property="og:url" content="http://x.com/zh/200901-imu-short-term-develop/">
+    <meta property="og:site_name" content="@bGZoCg">
+    <meta property="og:image" content="https://dandelionfs.oss-cn-beijing.aliyuncs.com/author-heart.webp">
+    
+    <title>内大小学期开发--选课管理系统 - @bGZoCg</title>
+
+    <meta name="author" content="bGZoCg">
+    <meta name="description" content="该怎么去面对自己在一个月的时间里没有好好写好 &amp;ldquo;学生选课系统&amp;rdquo; 这一个简单的 Cpp 程序, 这篇文章鸽了很久, 我多少希望自己逃避这个对我造成不小阴影的时间段, 我不知道那些跟着联盟导师团伙做项目的同学增长了多少知识, 但我在一个月的时间里缺乏真的效率很低, 多次心态接近低到零点爆炸, 甚至开始怀疑自己是不是真的适合这门学科. 说多了也只是为自己的低能找借口开脱, 我总结以下几个方面, 附带一些槽点, 诚恳总结如下:
+ 总结:  前期进度开发出现问题时, 一定要即时和其他成员进行反馈, 不可以拖延, 像现在的工作岗位一样, 工作时间拖延, 那就占用你的成长时间来弥补. 代码预处理太多造成冗余项过多, 难以维护, 以及整体逻辑结构必须在实施前去实现一下, 这样可以在码字的时候为以后做更多的打算. 实际开发中走一步看一步造成了不断地修改重复代码及标记变量, 而后再去维护更多的函数, 维护再度提升一个量级. 写代码的时候必须警惕过多的预处理, 一定有更好的方式. 尽量用更省力的库, 不要重复造不必要的轮子. 在实际开发中, 我曾避免使用可托容的 vector, 而用双数组来代替之, 复杂度提升一个量级, 何苦呢? 做好最坏的打算, 不要想着在一个染缸里摸鱼. 实际开发中因为太卷, 大家走一步看一步, 前期不必要的要求到后期都成为了必要项. 这样子强制让人一起绕着卷王加班的情景真是和现 996 如出一辙.   ">
+
+    
+    
+
+    
+    
+
+    
+    
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/chroma.dracula.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌈</text></svg>">
+</head>
+<body class="font-serif bg-gray-200 border-t-4 border-blue-500 antialiased">
+    <div class="w-full p-6 md:w-2/3 md:px-0 md:mx-auto xl:w-2/5">
+        <header class="mb-6">
+            
+            <div class="mb-6 md:flex md:items-center">
+                
+<div>
+    <div class="back-button"><a class="text-lg mb-8 inline-block" href="/zh">&larr; 返回</a></div>
+
+    
+    
+    <h1 class="text-4xl font-bold">内大小学期开发--选课管理系统</h1>
+    <time datetime="2020-09-01 22:21:38 CST">01 Sep 2020</time>
+    
+    
+    
+    <ol class="mt-4">
+        
+        <li class="inline-block">
+            <a class="border-none text-gray-800 text-xs bg-gray-400 hover:bg-gray-600 hover:text-white rounded-sm px-3 py-1" href="http://x.com/tags/cpp">Cpp</a>
+        </li>
+        
+    </ol>
+    
+</div>
+
+            </div>
+
+            
+            
+        </header>
+
+        
+        
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-a-namea功能概述">1. <a name=''></a>功能概述</a>
+      <ul>
+        <li><a href="#11-a-name-1a信息存储">1.1. <a name='-1'></a>信息存储</a></li>
+        <li><a href="#12-a-name-1a登录注册-功能">1.2. <a name='-1'></a>登录/注册 功能</a></li>
+        <li><a href="#13-a-name-1a初始化学生信息">1.3. <a name='-1'></a>初始化学生信息</a></li>
+        <li><a href="#14-a-name-1a学生管理课程">1.4. <a name='-1'></a>学生管理课程</a></li>
+        <li><a href="#15-a-name-1a老师管理课程">1.5. <a name='-1'></a>老师管理课程</a></li>
+        <li><a href="#16-a-name-1a老师管理班级">1.6. <a name='-1'></a>老师管理班级</a></li>
+        <li><a href="#17-a-name-1a老师查看所有课程下的学生">1.7. <a name='-1'></a>老师查看所有课程下的学生</a></li>
+        <li><a href="#18-a-name-1a老师查看所有的学生的选课信息">1.8. <a name='-1'></a>老师查看所有的学生的选课信息</a></li>
+        <li><a href="#19-a-name-1a老师查询学生信息">1.9. <a name='-1'></a>老师查询学生信息</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-a-name-1a心得体会">2. <a name='-1'></a>心得体会</a>
+      <ul>
+        <li><a href="#21-a-name-1a预处理">2.1. <a name='-1'></a>预处理</a></li>
+        <li><a href="#22-a-name-1a功能切离">2.2. <a name='-1'></a>功能切离</a></li>
+        <li><a href="#23-a-name-1a数组利用位模式优化时间复杂度">2.3. <a name='-1'></a>数组利用位模式优化时间复杂度</a></li>
+        <li><a href="#24-a-name-1a类与对象的高效和易维护">2.4. <a name='-1'></a>类与对象的高效和易维护</a></li>
+        <li><a href="#25-a-name-1a链表对动态的适应性">2.5. <a name='-1'></a>链表对动态的适应性</a></li>
+        <li><a href="#26-a-name-1a输入检查">2.6. <a name='-1'></a>输入检查</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-a-name-1a更多参考">3. <a name='-1'></a>更多参考</a>
+      <ul>
+        <li><a href="#31-a-nameaskiisup1j1supaaskiisup1j1sup">3.1. <a name='ASKIIsup1j1sup'></a>ASKII<sup><a href="#j1">1</a></sup></a></li>
+        <li><a href="#32-a-namevktablesup2j2supavk-tablesup2j2sup">3.2. <a name='VKTablesup2j2sup'></a>VK Table<sup><a href="#j2">2</a></sup></a></li>
+        <li><a href="#33-a-namepausesup3j3supapausesup3j3sup">3.3. <a name='PAUSEsup3j3sup'></a>PAUSE<sup><a href="#j3">3</a></sup></a></li>
+        <li><a href="#34-a-namedefineadefine">3.4. <a name='Define'></a>Define</a></li>
+        <li><a href="#35-a-namestdios_baseastdios_base">3.5. <a name='std::ios_base'></a>std::ios_base</a></li>
+        <li><a href="#36-a-namefontafont">3.6. <a name='Font'></a>Font</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-a-nameafterwordsaafterwords">4. <a name='Afterwords'></a>Afterwords</a></li>
+  </ul>
+</nav>
+<article class="mb-12">
+    <p>该怎么去面对自己在一个月的时间里没有好好写好 &ldquo;学生选课系统&rdquo; 这一个简单的 <code>Cpp</code> 程序, 这篇文章鸽了很久, 我多少希望自己逃避这个对我造成不小阴影的时间段, 我不知道那些跟着联盟导师团伙做项目的同学增长了多少知识, 但我在一个月的时间里缺乏真的效率很低, 多次心态接近低到零点爆炸, 甚至开始怀疑自己是不是真的适合这门学科. 说多了也只是为自己的低能找借口开脱, 我总结以下几个方面, 附带一些槽点, 诚恳总结如下:</p>
+<ul>
+<li>总结:
+<ul>
+<li>前期进度开发出现问题时, 一定要即时和其他成员进行反馈, <strong>不可以拖延</strong>, 像现在的工作岗位一样, 工作时间拖延, 那就占用你的成长时间来弥补.</li>
+<li>代码<strong>预处理</strong>太多造成冗余项过多, 难以维护, 以及<strong>整体逻辑结构</strong>必须在实施前去实现一下, 这样可以在码字的时候为以后做更多的打算. 实际开发中走一步看一步造成了不断地修改重复代码及标记变量, 而后再去维护更多的函数, 维护再度提升一个量级. 写代码的时候必须<strong>警惕过多的预处理</strong>, 一定有更好的方式.</li>
+<li><strong>尽量用更省力的库</strong>, 不要重复造不必要的轮子. 在实际开发中, 我曾避免使用可托容的 <code>vector</code>, 而用双数组来代替之, 复杂度提升一个量级, 何苦呢?</li>
+<li>做好最坏的打算, 不要想着在一个染缸里摸鱼. 实际开发中因为太卷, 大家走一步看一步, 前期不必要的要求到后期都成为了必要项. 这样子强制让人一起绕着卷王加班的情景真是和现 996 如出一辙.</li>
+</ul>
+</li>
+</ul>
+<p>写代码, 后有些想法. 一为作业, 二来是为了记录.</p>
+<h2 id="1-a-namea功能概述">1. <a name=''></a>功能概述</h2>
+<h3 id="11-a-name-1a信息存储">1.1. <a name='-1'></a>信息存储</h3>
+<p><strong>[效果/方式] :</strong>  在系统开始时候, 进行信息的初始化, 包括学生信息, 老师信息, 班级信息, 课程信息的读入和写入. 而在退出系统的时候进行四个文件的全部写入.</p>
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="cp">#include</span><span class="cpf">&lt;fstream&gt;</span><span class="cp">
+</span><span class="cp"></span><span class="kt">int</span> <span class="nf">SystemInit</span><span class="p">(){</span>
+    <span class="n">ifstream</span> <span class="n">infile</span><span class="p">;</span>
+    <span class="n">infile</span><span class="p">.</span><span class="n">open</span><span class="p">(</span><span class="s">&#34;./data/CourseInfo.in&#34;</span><span class="p">);</span> <span class="c1">//初始化课程信息
+</span><span class="c1"></span>    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">Cnum</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span> 
+        <span class="n">infile</span><span class="o">&gt;&gt;</span><span class="n">course</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+    <span class="n">infile</span><span class="p">.</span><span class="n">close</span><span class="p">();</span>
+<span class="p">}</span>        
+</code></pre></div><h3 id="12-a-name-1a登录注册-功能">1.2. <a name='-1'></a>登录/注册 功能</h3>
+<p><strong>[效果] :</strong> 开头先进行注册或者登录, 注册成功后即可登录; 四部分代码全部具有初始密码, 具体为学生初始为&quot;1&rdquo;, 老师为&quot;2&rdquo;.如果是初次登录. 可以使用初始密码或者预设密码进行登录, 而再次登录则预设密码失效.</p>
+<p><strong>[方式]</strong> : 通过单个<code>int</code>变量计数器来判断该用户是不是初次登录.</p>
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="kt">void</span> <span class="nf">Judge</span><span class="p">(){</span>
+<span class="p">...</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">nowUsr</span><span class="o">==</span><span class="mi">1</span><span class="p">){</span><span class="c1">//学生
+</span><span class="c1"></span>		<span class="n">nowStu</span><span class="o">=</span><span class="n">SuSearchStID</span><span class="p">(</span><span class="n">account</span><span class="p">);</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">nowStu</span><span class="o">==-</span><span class="mi">1</span><span class="p">)</span>
+			<span class="n">nowStu</span><span class="o">=</span><span class="n">SuSearchStName</span><span class="p">(</span><span class="n">account</span><span class="p">);</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">nowStu</span><span class="o">==-</span><span class="mi">1</span><span class="p">){</span>
+			<span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&#34;[Error] 没有找到你输入的账户，请检查输入后再进行登录</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">;</span>
+			<span class="k">continue</span><span class="p">;</span> 
+		<span class="p">}</span>
+		<span class="n">StInitPassW</span><span class="o">=</span><span class="s">&#34;1&#34;</span><span class="p">;</span>
+		<span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">StuInit</span> <span class="o">&amp;&amp;</span> <span class="n">password</span><span class="o">==</span><span class="n">StInitPassW</span><span class="p">)</span><span class="n">flag</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">StuInit</span> <span class="o">&amp;&amp;</span> <span class="n">password</span><span class="o">==</span><span class="n">StuAcc</span><span class="p">[</span><span class="n">nowStu</span><span class="p">].</span><span class="n">PassW</span><span class="p">)</span><span class="n">flag</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">flag</span><span class="p">){</span>
+    	<span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&#34;恭喜你, 登录成功&#34;</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+    	<span class="n">PAUSE</span><span class="p">();</span>
+        <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+     <span class="p">}</span> 
+<span class="p">}</span>
+</code></pre></div><h3 id="13-a-name-1a初始化学生信息">1.3. <a name='-1'></a>初始化学生信息</h3>
+<p><strong>[效果]</strong> : 学生名字初始化为&quot;DFS100&rdquo;,&ldquo;DFS101&rdquo;,&ldquo;DFS102&rdquo;&hellip;&hellip;; 学号信息对应初始化为&quot;100&rdquo;, &ldquo;101&rdquo;, &ldquo;102&quot;等效果.</p>
+<p><strong>[方式]</strong> : 采用了 <code>sstring</code>里面的<code>stringstream</code>来进行学生信息(学号)的初始化, 相关代码如下:</p>
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="cp">#include</span><span class="cpf">&lt;sstream&gt;</span><span class="cp">
+</span><span class="cp"></span><span class="n">St</span><span class="o">::</span><span class="n">Student</span><span class="p">(){</span>
+    <span class="n">string</span> <span class="n">Temp</span><span class="p">;</span>
+    <span class="n">stringstream</span> <span class="n">ss</span><span class="p">;</span>
+    <span class="n">ss</span><span class="o">&lt;&lt;</span><span class="n">StInitTemp</span><span class="p">;</span>
+    <span class="n">Temp</span><span class="o">=</span><span class="n">ss</span><span class="p">.</span><span class="n">str</span><span class="p">();</span>
+    <span class="n">ID</span><span class="o">=</span><span class="n">Temp</span><span class="p">;</span>
+    <span class="n">StInitTemp</span><span class="o">++</span><span class="p">;</span>
+    <span class="n">Name</span><span class="o">=</span><span class="s">&#34;DFS&#34;</span><span class="o">+</span><span class="n">Temp</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div><h3 id="14-a-name-1a学生管理课程">1.4. <a name='-1'></a>学生管理课程</h3>
+<h4 id="141-a-name-1a选课">1.4.1. <a name='-1'></a>选课</h4>
+<p><strong>[效果]</strong> : 学生选择对应序号的课程.</p>
+<p><strong>[方式]</strong> : 在学生类中的 标记位数组 赋值为1, 表示这个位置的课程已经被学生选定. 如果之前没有选择这门课程, 选定课程的数量加1.</p>
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="kt">void</span> <span class="nf">ChooseCourse</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">){</span><span class="c1">//进行已有的课程的选择
+</span><span class="c1"></span>    <span class="kt">int</span> <span class="n">num</span><span class="p">,</span> <span class="n">flag</span><span class="p">;</span><span class="c1">//flag查询课程下的学生是否选了这个课程
+</span><span class="c1"></span>    <span class="kt">char</span> <span class="n">order</span><span class="p">;</span>
+    <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">num</span><span class="p">;</span>
+    <span class="p">...</span>
+    <span class="n">num</span><span class="o">=</span><span class="n">SearchRealCourseNum</span><span class="p">(</span><span class="n">num</span><span class="p">);</span><span class="c1">//对序号进行再处理获得正确的数组下标
+</span><span class="c1"></span>    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">StuAcc</span><span class="p">[</span><span class="n">a</span><span class="p">].</span><span class="n">course</span><span class="p">[</span><span class="n">num</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span><span class="n">StuAcc</span><span class="p">[</span><span class="n">a</span><span class="p">].</span><span class="n">CCourse</span><span class="o">++</span><span class="p">;</span>
+    <span class="n">StuAcc</span><span class="p">[</span><span class="n">a</span><span class="p">].</span><span class="n">course</span><span class="p">[</span><span class="n">num</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">++</span><span class="p">;</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">StuAcc</span><span class="p">[</span><span class="n">a</span><span class="p">].</span><span class="n">course</span><span class="p">[</span><span class="n">num</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">==</span><span class="mi">2</span><span class="p">)</span>
+        <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&#34;[Tip]: 你已经选择过该课程,请核对后再次选择!</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">;</span>
+	<span class="p">...</span>
+<span class="p">}</span>
+</code></pre></div><h4 id="142-a-name-1a退选更换-课程">1.4.2. <a name='-1'></a>退选/更换 课程</h4>
+<p><strong>[效果]</strong> : 学生按序号退掉或者更换自己的课程.</p>
+<p><strong>[方式]</strong> : 在学生类中的 标记位数组 赋值为0, 表示这个位置的课程已经被学生删除, 如果之前确实选择过这门课程, 选定课程数量减1.如果是更换课程, 需要再选择一门课程, 并且选定课程数不变.</p>
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="kt">void</span> <span class="nf">ChangeStCourse</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">){</span><span class="c1">//换课
+</span><span class="c1"></span>    <span class="kt">int</span> <span class="n">order</span><span class="p">,</span> <span class="n">insteadnum</span><span class="p">,</span> <span class="n">flag</span><span class="p">;</span>
+    <span class="kt">char</span> <span class="n">corder</span><span class="p">;</span>
+    <span class="n">SearchCourse</span><span class="p">(</span><span class="n">a</span><span class="p">);</span>
+    <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&#34;请输入你想换的课程序号:</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">;</span>
+    <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">order</span><span class="p">;</span>
+    <span class="p">...</span>
+    <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&#34;输入你要选择的课程(取消请按-1):</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">;</span> 
+    <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">insteadnum</span><span class="p">;</span>
+    <span class="p">...</span>
+    <span class="n">insteadnum</span><span class="o">--</span><span class="p">;</span>
+    <span class="n">insteadnum</span><span class="o">=</span><span class="n">SearchRealCourseNum</span><span class="p">(</span><span class="n">insteadnum</span><span class="p">);</span>
+    <span class="n">StuAcc</span><span class="p">[</span><span class="n">a</span><span class="p">].</span><span class="n">course</span><span class="p">[</span><span class="n">flag</span><span class="p">]</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+	<span class="n">StuAcc</span><span class="p">[</span><span class="n">a</span><span class="p">].</span><span class="n">course</span><span class="p">[</span><span class="n">insteadnum</span><span class="p">]</span><span class="o">++</span><span class="p">;</span>
+	<span class="p">...</span>
+    <span class="k">return</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">DeleteCCourse</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">){</span><span class="c1">//根据学生数组打印学生课程; 拿课程去查学生, 选课的时候存上编号.
+</span><span class="c1"></span>    <span class="kt">int</span> <span class="n">order</span><span class="p">,</span><span class="n">flag</span><span class="p">;</span>
+    <span class="kt">char</span> <span class="n">corder</span><span class="p">;</span>
+    <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">order</span><span class="p">;</span>
+    <span class="p">...</span>
+    <span class="n">order</span><span class="o">--</span><span class="p">;</span>
+    <span class="n">order</span><span class="o">=</span><span class="n">SearchRealCourseNum</span><span class="p">(</span><span class="n">order</span><span class="p">);</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">StuAcc</span><span class="p">[</span><span class="n">a</span><span class="p">].</span><span class="n">course</span><span class="p">[</span><span class="n">order</span><span class="p">])</span> <span class="n">StuAcc</span><span class="p">[</span><span class="n">a</span><span class="p">].</span><span class="n">CCourse</span><span class="o">--</span><span class="p">;</span>
+    <span class="n">StuAcc</span><span class="p">[</span><span class="n">a</span><span class="p">].</span><span class="n">course</span><span class="p">[</span><span class="n">order</span><span class="p">]</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+    <span class="n">ChangeCourseStu</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">order</span><span class="p">);</span>
+    <span class="p">...</span>
+<span class="p">}</span>
+</code></pre></div><h3 id="15-a-name-1a老师管理课程">1.5. <a name='-1'></a>老师管理课程</h3>
+<h4 id="151-a-name-1a加课">1.5.1. <a name='-1'></a>加课</h4>
+<p><strong>[效果]</strong> : 输入加入的课程, 如果已经存在就重新输入, 如果不存在就加入成功.</p>
+<p><strong>[方式]</strong> : 如果课程不存在在原来的数组中, 容错数组标记向后位移一位.存在则重新输入.</p>
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="kt">void</span> <span class="nf">SuAddGrade</span><span class="p">(){</span><span class="c1">//增加班级及选课情况
+</span><span class="c1"></span>    <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&#34;请输入想要增加的班级:</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">;</span>
+    <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">ErrGradecourse</span><span class="p">[</span><span class="n">AddGrade</span><span class="p">];</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">IsGradeEx</span><span class="p">(</span><span class="n">ErrGradecourse</span><span class="p">[</span><span class="n">AddGrade</span><span class="p">])</span><span class="o">==-</span><span class="mi">1</span><span class="p">){</span>
+        <span class="n">AddGrade</span><span class="o">++</span><span class="p">;</span>
+        <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&#34;增加班级成功!&#34;</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">else</span> <span class="p">{</span>
+        <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&#34;添加失败, 即将退出</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><h4 id="152-a-name-1a删课">1.5.2. <a name='-1'></a>删课</h4>
+<p><strong>[效果]</strong> :  输入删除课程的序号, 如果输入合法则删除, 否则重新输入.</p>
+<p><strong>[方式]</strong> : 在课程的标记数组中赋值对应位置的值为1, 表示课程已经被销毁.</p>
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="kt">void</span> <span class="nf">SuDelGrade</span><span class="p">(){</span><span class="c1">//删除班级
+</span><span class="c1"></span>    <span class="kt">int</span> <span class="n">step</span><span class="p">;</span>
+    <span class="n">SuShowGradeInfo</span><span class="p">();</span>
+    <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&#34;请输入想要删除班级的序号</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">;</span>
+    <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">step</span><span class="p">;</span>
+    <span class="n">step</span><span class="o">--</span><span class="p">;</span>
+    <span class="n">step</span><span class="o">=</span><span class="n">FoundRealGrade</span><span class="p">(</span><span class="n">step</span><span class="p">);</span>
+    <span class="p">...</span>
+    <span class="n">SuShowGradeInfo</span><span class="p">();</span>
+    <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">step</span><span class="p">;</span>
+    <span class="n">step</span><span class="o">--</span><span class="p">;</span>
+    <span class="n">step</span><span class="o">=</span><span class="n">FoundRealGrade</span><span class="p">(</span><span class="n">step</span><span class="p">);</span>
+    <span class="n">SuMoveStGrade</span><span class="p">(</span><span class="n">step</span><span class="p">);</span>
+    <span class="n">GradeErr</span><span class="p">[</span><span class="n">step</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="c1">//标记班级已经删除
+</span><span class="c1"></span>    <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&#34;删除班级成功</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div><h3 id="16-a-name-1a老师管理班级">1.6. <a name='-1'></a>老师管理班级</h3>
+<h4 id="161-a-name-1a增加班级">1.6.1. <a name='-1'></a>增加班级</h4>
+<p><strong>[效果]</strong> : 输入增加课程的序号, 如果输入合法则增加, 否则重新输入.</p>
+<p><strong>[方式]</strong> : 原数组标记结束位置后移一位, 写入课程, 不合法就继续</p>
+<h4 id="162-a-name-1a删除班级">1.6.2. <a name='-1'></a>删除班级</h4>
+<p><strong>[效果]</strong> : 输入删除班级的序号, 如果输入合法则删除, 否则重新输入.</p>
+<p><strong>[方式]</strong> :</p>
+<h3 id="17-a-name-1a老师查看所有课程下的学生">1.7. <a name='-1'></a>老师查看所有课程下的学生</h3>
+<p><strong>[效果]</strong> : 查看所有课程下选择该课程的学生</p>
+<p><strong>[方式]</strong> : 因为第一种方式耦合读较高, 代码维护量成倍上升, 所以采用第二种方式.</p>
+<ul>
+<li>通过预处理在学生选择的时候就将下标存入一个二维数组, 后期访问二维数组即可, <strong>复杂度O(n)</strong>(n表示学生的选课操作, 基本等同于学生的数量)</li>
+<li>通过遍历打印课程, 再在学生中遍历查找是否选择了该课程, <strong>遍历查找可以用位数组降低复杂度到O(1)</strong>, 所以整体的<strong>复杂度是O(n*n)=O(n^2^)</strong></li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="kt">void</span> <span class="nf">SuShowCourseAStudent</span><span class="p">(){</span><span class="c1">//课程列表以及学生的信息
+</span><span class="c1"></span>    <span class="kt">int</span> <span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">Cnum</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">SuDeleteCourse</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+            <span class="k">continue</span><span class="p">;</span><span class="c1">//课程已删除，返回主函数, 继续下一个
+</span><span class="c1"></span>        <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&#34;[&#34;</span><span class="o">&lt;&lt;</span><span class="n">step</span><span class="o">++&lt;&lt;</span><span class="s">&#34;]&#34;</span><span class="o">&lt;&lt;</span><span class="sc">&#39;\t&#39;</span><span class="o">&lt;&lt;</span><span class="n">course</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">&lt;&lt;</span><span class="sc">&#39;\t&#39;</span><span class="p">;</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;</span><span class="n">CourseStuSum</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">];</span><span class="n">j</span><span class="o">++</span><span class="p">){</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">CourseStuSum</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">!=-</span><span class="mi">1</span><span class="p">)</span> <span class="c1">//或者改成j&lt;=以及j=1
+</span><span class="c1"></span>                <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">StuAcc</span><span class="p">[</span><span class="n">CourseStuSum</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]].</span><span class="n">name</span><span class="o">&lt;&lt;</span><span class="sc">&#39; &#39;</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">Flag_ErrCourse</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;</span><span class="n">Flag_ErrCourse</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">){</span>
+        <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&#34;[&#34;</span><span class="o">&lt;&lt;</span><span class="n">step</span><span class="o">++&lt;&lt;</span><span class="s">&#34;]&#34;</span><span class="o">&lt;&lt;</span><span class="sc">&#39;\t&#39;</span><span class="o">&lt;&lt;</span><span class="n">ErrCourse</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">&lt;&lt;</span><span class="sc">&#39;\t&#39;</span><span class="p">;</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">k</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">k</span><span class="o">&lt;=</span><span class="n">CourseStuSum</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="n">Cnum</span><span class="p">][</span><span class="mi">0</span><span class="p">];</span><span class="n">k</span><span class="o">++</span><span class="p">){</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">CourseStuSum</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="n">Cnum</span><span class="p">][</span><span class="n">k</span><span class="p">]</span><span class="o">!=-</span><span class="mi">1</span><span class="p">)</span>
+                <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">StuAcc</span><span class="p">[</span><span class="n">CourseStuSum</span><span class="p">[</span><span class="n">Cnum</span><span class="o">+</span><span class="n">j</span><span class="p">][</span><span class="n">k</span><span class="p">]].</span><span class="n">name</span><span class="o">&lt;&lt;</span><span class="sc">&#39; &#39;</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><h3 id="18-a-name-1a老师查看所有的学生的选课信息">1.8. <a name='-1'></a>老师查看所有的学生的选课信息</h3>
+<p><strong>[效果]</strong> : 查看所有用户的个人资料和选课信息.</p>
+<p><strong>[方式]</strong> : 重用学生查询自己选课信息的函数.</p>
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="kt">void</span> <span class="nf">SuShowAllStINfo</span><span class="p">(){</span> <span class="c1">//展示所有学生的选课信息
+</span><span class="c1"></span>    <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&#34;名字</span><span class="se">\t</span><span class="s">&#34;</span><span class="o">&lt;&lt;</span><span class="s">&#34;学号</span><span class="se">\t</span><span class="s">&#34;</span><span class="o">&lt;&lt;</span><span class="s">&#34;班级</span><span class="se">\t</span><span class="s">&#34;</span><span class="o">&lt;&lt;</span><span class="s">&#34;选课数量</span><span class="se">\t</span><span class="s">&#34;</span><span class="o">&lt;&lt;</span><span class="s">&#34;选择的课程</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">Studentnum</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">StuAcc</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">name</span><span class="o">&lt;&lt;</span><span class="sc">&#39;\t&#39;</span><span class="o">&lt;&lt;</span><span class="n">StuAcc</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">ID</span><span class="o">&lt;&lt;</span><span class="sc">&#39;\t&#39;</span><span class="o">&lt;&lt;</span><span class="n">StuAcc</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">Grade</span><span class="o">&lt;&lt;</span><span class="sc">&#39;\t&#39;</span><span class="o">&lt;&lt;</span><span class="n">StuAcc</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">CCourse</span><span class="o">&lt;&lt;</span><span class="sc">&#39;\t&#39;</span><span class="o">&lt;&lt;</span><span class="sc">&#39;\t&#39;</span><span class="p">;</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">0</span> <span class="p">;</span><span class="n">j</span><span class="o">&lt;</span><span class="n">Cnum</span><span class="o">+</span><span class="n">Flag_ErrCourse</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">StuAcc</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">course</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">SuDeleteCourse</span><span class="p">[</span><span class="n">j</span><span class="p">]){</span>
+                <span class="k">if</span><span class="p">(</span><span class="n">j</span><span class="o">&lt;</span><span class="n">Cnum</span><span class="p">)</span>
+                    <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">course</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">&lt;&lt;</span><span class="sc">&#39;\t&#39;</span><span class="p">;</span>
+                <span class="k">if</span><span class="p">(</span><span class="n">j</span><span class="o">&gt;</span><span class="n">Cnum</span><span class="p">)</span>
+                    <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">ErrCourse</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="n">Cnum</span><span class="p">]</span><span class="o">&lt;&lt;</span><span class="sc">&#39;\t&#39;</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><h3 id="19-a-name-1a老师查询学生信息">1.9. <a name='-1'></a>老师查询学生信息</h3>
+<p><strong>[效果]</strong> : 根据学号或者姓名对学生进行查找, 因为学生有查重机制, 所以保证每一个学生的唯一性, 查找到后可以对学生进行学生本人的操作.</p>
+<p><strong>[方式]</strong> : 遍历学生的名字和学号, 直到找到该学生的位置为止, 然后可以和学生代码共用, 可以简化教师的封装复杂度, 高效利用重复代码.</p>
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="kt">void</span> <span class="nf">SuSearchManStCourse</span><span class="p">(){</span><span class="c1">//查询指定学生选课情况
+</span><span class="c1"></span>    <span class="p">...</span>
+    <span class="k">while</span><span class="p">(</span><span class="n">key</span><span class="p">){</span>
+        <span class="n">cout</span><span class="o">&lt;&lt;</span> <span class="s">&#34;查询到的学生是&#34;</span><span class="o">&lt;&lt;</span><span class="n">StuAcc</span><span class="p">[</span><span class="n">flag</span><span class="p">].</span><span class="n">name</span><span class="o">&lt;&lt;</span> <span class="s">&#34;他的选课情况如下:</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">;</span>
+        <span class="n">SearchCourse</span><span class="p">(</span><span class="n">flag</span><span class="p">);</span>
+        <span class="k">do</span><span class="p">{</span>
+            <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="o">&lt;&lt;</span><span class="s">&#34;请选择现在的操作:</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">;</span>
+            <span class="n">PrintManStu</span><span class="p">();</span>
+            <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">order</span><span class="p">;</span>
+            <span class="n">system</span><span class="p">(</span><span class="s">&#34;reset&#34;</span><span class="p">);</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">order</span><span class="o">&lt;-</span><span class="mi">1</span><span class="o">||</span><span class="n">order</span><span class="o">&gt;</span><span class="mi">5</span><span class="p">)</span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&#34;请输入有效的命令以进行下一步操作</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">;</span>
+        <span class="p">}</span><span class="k">while</span><span class="p">(</span><span class="n">order</span><span class="o">&lt;-</span><span class="mi">1</span><span class="o">||</span><span class="n">order</span><span class="o">&gt;</span><span class="mi">5</span><span class="p">);</span>
+        <span class="n">system</span><span class="p">(</span><span class="s">&#34;reset&#34;</span><span class="p">);</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">order</span><span class="o">==-</span><span class="mi">1</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">order</span><span class="o">==</span><span class="mi">1</span><span class="p">)</span> <span class="n">DeleteCCourse</span><span class="p">(</span><span class="n">flag</span><span class="p">);</span><span class="c1">//删除选课信息
+</span><span class="c1"></span>        <span class="k">if</span><span class="p">(</span><span class="n">order</span><span class="o">==</span><span class="mi">2</span><span class="p">)</span> <span class="n">SearchCourse</span><span class="p">(</span><span class="n">flag</span><span class="p">);</span><span class="c1">//展示选课信息
+</span><span class="c1"></span>        <span class="k">if</span><span class="p">(</span><span class="n">order</span><span class="o">==</span><span class="mi">3</span><span class="p">)</span> <span class="n">SwapCourse</span><span class="p">(</span><span class="n">flag</span><span class="p">);</span><span class="c1">//更换课程信息
+</span><span class="c1"></span>        <span class="k">if</span><span class="p">(</span><span class="n">order</span><span class="o">==</span><span class="mi">4</span><span class="p">)</span> <span class="n">ChangeSelfInfo</span><span class="p">(</span><span class="n">flag</span><span class="p">);</span><span class="c1">//改变自己的资料
+</span><span class="c1"></span>        <span class="k">if</span><span class="p">(</span><span class="n">order</span><span class="o">==</span><span class="mi">5</span><span class="p">)</span> <span class="n">SuChangeGradeInfo</span><span class="p">(</span><span class="n">flag</span><span class="p">);</span><span class="c1">//管理员改变学生资料
+</span><span class="c1"></span>    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><h2 id="2-a-name-1a心得体会">2. <a name='-1'></a>心得体会</h2>
+<h3 id="21-a-name-1a预处理">2.1. <a name='-1'></a>预处理</h3>
+<ul>
+<li>
+<p><strong>[弊端]</strong> : 受学习算法思维的影响, 在用数组设计代码的时候习惯引入了大量的预处理数组. 但是在后期维护功能时, 发现书写复杂度成倍增长, 在预处理数组在面对新需求整改的时候, 维护量基本上升到了整篇代码的量. 牵一发而动全身, 耦合度大, 维护起来笨重且容易忘记部分功能, 耗时久但效率极低. 所以在数组预处理上应该避重就轻.没有一劳永逸的预处理. 对于常用的预处理更是如此.</p>
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="kt">int</span> <span class="n">CourseStuSum</span><span class="p">[</span><span class="n">Cnum</span><span class="o">+</span><span class="n">ErrCnum</span><span class="p">][</span><span class="n">Nnum</span><span class="p">];</span><span class="c1">//记录课程下的学生序号
+</span><span class="c1"></span><span class="kt">int</span> <span class="n">SuDeleteCourse</span><span class="p">[</span><span class="n">Cnum</span><span class="o">+</span><span class="n">ErrCnum</span><span class="p">];</span><span class="c1">//老师要删除的课程序号
+</span><span class="c1"></span><span class="kt">int</span> <span class="n">Flag_ErrCourse</span><span class="p">;</span><span class="c1">//增加的课程
+</span><span class="c1"></span><span class="kt">char</span> <span class="n">ErrGradecourse</span><span class="p">[</span><span class="n">Gradenum</span><span class="p">][</span><span class="n">GNamenum</span><span class="p">];</span><span class="c1">//增加班级的信息
+</span></code></pre></div></li>
+</ul>
+<p>int GradeErr[Gradenum+Gradenum];//班级是否被删除
+int AddGrade;//增加班级的数量
+```</p>
+<ul>
+<li>
+<p><strong>[好处]</strong> : 简化查找对应课程下的学生的代码复杂度, 在查找量巨大的时候可以减少查找的量. 降低时间和空间复杂度.</p>
+</li>
+<li>
+<p>引入了宏定义来预处理输出化数组的大小, 如处理课程数量, 课名长度, 班级数量, 班级名字长度, 学生数量, 老师数量, 容错课程数量, 容错课名长度. 这些初始写代码不知道且需要快速确定的常量, 可以采用宏定义的方式快速确定下来, 在未来修改可以更容易修改.经过资料查找, 这个是C语言的典型处理方式, 而对于常量, 可以取而代之的C++做法是: <code>const int Cnum=5;</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="cp">#define Cnum 5 </span><span class="c1">//课程数量
+</span><span class="c1"></span><span class="cp">#define Nnum 20 </span><span class="c1">// 课名长度
+</span><span class="c1"></span><span class="cp">#define Gradenum 2 </span><span class="c1">//班级数量
+</span><span class="c1"></span><span class="cp">#define GNamenum 20 </span><span class="c1">//班级名字长度
+</span><span class="c1"></span><span class="cp">#define Studentnum 1 </span><span class="c1">//学生数量
+</span><span class="c1"></span><span class="cp">#define Teachernum 1 </span><span class="c1">//老师数量
+</span><span class="c1"></span><span class="cp">#define ErrCnum 5 </span><span class="c1">//容错课程数量
+</span><span class="c1"></span><span class="cp">#define ErrNnum 20 </span><span class="c1">//容错课名长度
+</span><span class="c1"></span><span class="cp">#define PAUSE() system(&#34;read -p &#39;--&gt;按任意键结束&lt;--&#39; var&#34;)</span><span class="c1">//暂停函数
+</span></code></pre></div></li>
+</ul>
+<h3 id="22-a-name-1a功能切离">2.2. <a name='-1'></a>功能切离</h3>
+<p>虽然在写代码的初期进行了一部分的功能切离, 但是在区分必要打印信息和不必要打印信息上还存在差距.</p>
+<p>自己总结出来的一些规律是:</p>
+<ul>
+<li>
+<p>把核心逻辑代码变为函数放在外部; 其中重要的是, 对于被管理(权限比较低) 的用户, 应该尽量把权限变为 Public , 即放在全局环境中. 好处是可以供管理员(权限高) 重复调用, 提高代码的可重读性, 如:</p>
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="cp"># 面向过程中
+</span><span class="cp"># 此函数常常显示课程信息, 所以经常被调用, 写成核心代码的形式可以重复调用.
+</span><span class="cp"></span><span class="kt">void</span> <span class="nf">ShowCourse</span><span class="p">(){</span> <span class="c1">// 展示现在存有的课程
+</span><span class="c1"></span>    <span class="kt">int</span> <span class="n">jnum</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="n">jnum</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">jnum</span><span class="o">&lt;</span><span class="n">Cnum</span><span class="p">;</span> <span class="n">jnum</span><span class="o">++</span><span class="p">){</span>
+        <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">SuDeleteCourse</span><span class="p">[</span><span class="n">jnum</span><span class="p">])</span>
+            <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&#34;[&#34;</span><span class="o">&lt;&lt;</span><span class="n">step</span><span class="o">++&lt;&lt;</span><span class="s">&#34;]</span><span class="se">\t</span><span class="s">&#34;</span><span class="o">&lt;&lt;</span><span class="n">course</span><span class="p">[</span><span class="n">jnum</span><span class="p">]</span><span class="o">&lt;&lt;</span><span class="sc">&#39;\n&#39;</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">Flag_ErrCourse</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">Flag_ErrCourse</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">SuDeleteCourse</span><span class="p">[</span><span class="n">jnum</span><span class="o">+</span><span class="n">i</span><span class="p">])</span>
+            <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&#34;[&#34;</span><span class="o">&lt;&lt;</span><span class="n">step</span><span class="o">++&lt;&lt;</span><span class="s">&#34;]</span><span class="se">\t</span><span class="s">&#34;</span><span class="o">&lt;&lt;</span><span class="n">ErrCourse</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+        <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="sc">&#39;\n&#39;</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+  
+<span class="cp"># 类与对象中
+</span><span class="cp"># 简单的打印课程函数, 检查标记数组封装在类中, 所以显得更加简洁干净.
+</span><span class="cp"># 检查当course[i].GetCheckSelect()为1, 代表选中; 检查当::course[i].GetSuDelete()为0,表示没有被删除
+</span><span class="cp"></span><span class="kt">void</span> <span class="n">St</span><span class="o">::</span><span class="n">SimpleSCourse</span><span class="p">(){</span>
+    <span class="n">string</span> <span class="n">temp</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span> <span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">Cnum</span><span class="o">+</span><span class="n">Flag_ErrCourse</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span> 
+        <span class="k">if</span><span class="p">(</span><span class="n">course</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">GetCheckSelect</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="o">::</span><span class="n">course</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">GetSuDelete</span><span class="p">())))</span>
+            <span class="n">cout</span><span class="o">&lt;&lt;</span> <span class="p">(</span><span class="o">::</span><span class="n">course</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">GetName</span><span class="p">())</span> <span class="o">&lt;&lt;</span><span class="sc">&#39;\t&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></li>
+</ul>
+<h3 id="23-a-name-1a数组利用位模式优化时间复杂度">2.3. <a name='-1'></a>数组利用位模式优化时间复杂度</h3>
+<p><strong>[方法]</strong> : 在写 [选课, 课程预处理] 以及 [删除课程或者班级] 的时候使用同 [存储数组] 大小的标记数组 来标记课程的被选和删除情况, 如果对应位置的标记不为0 的时候就表示该位置的课程被选或者删除, 利用<strong>数组下标的特殊性</strong>可以进行<strong>对应课程/班级/情况的记录</strong>. 如:</p>
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="kt">char</span> <span class="n">course</span><span class="p">[</span><span class="n">Cnum</span><span class="p">][</span><span class="n">Nnum</span><span class="p">];</span><span class="c1">//记录课程的名字和数量
+</span><span class="c1"></span><span class="kt">char</span> <span class="n">ErrCourse</span><span class="p">[</span><span class="n">ErrCnum</span><span class="p">][</span><span class="n">ErrNnum</span><span class="p">];</span><span class="c1">//可以增加的课程即数量
+</span><span class="c1"></span><span class="kt">int</span> <span class="n">SuDeleteCourse</span><span class="p">[</span><span class="n">Cnum</span><span class="o">+</span><span class="n">ErrCnum</span><span class="p">];</span><span class="c1">//老师要删除的课程序号
+</span></code></pre></div><h3 id="24-a-name-1a类与对象的高效和易维护">2.4. <a name='-1'></a>类与对象的高效和易维护</h3>
+<p>深刻体会了类与对象书写代码的方式处理了<strong>程序功能的分离和归属</strong>的特点. 尤其在增设了 班级(Grade) 和 课程(Course) 后, <strong>无论是从逻辑上而言, 还是代码书写上, 不需要再考虑担心是否遗漏某部分功能</strong>, 因为所有的功能全部封装在一个大类中, 结合注释的查找可以让书写的逻辑思路更加清晰, 而不是像结构体那样滑动半个屏幕找寻之前的定义而一头雾水的感觉. 以学生类型为例:</p>
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="cp">#面向过程, 查找函数与对应存储单元(数组)
+</span><span class="cp"></span><span class="c1">//Student Operation, Show, Search , Delete
+</span><span class="c1"></span><span class="kt">void</span> <span class="nf">ShowCourse</span><span class="p">();</span>
+<span class="kt">int</span> <span class="nf">SearchRealCourseNum</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>
+<span class="kt">void</span> <span class="nf">ChangeCourseStu</span><span class="p">(</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="p">);</span>
+<span class="kt">int</span> <span class="nf">TextStCourse</span><span class="p">(</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="p">);</span>
+<span class="kt">void</span> <span class="nf">ChooseCourse</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>
+<span class="p">...</span>
+<span class="kt">char</span> <span class="n">course</span><span class="p">[</span><span class="n">Cnum</span><span class="p">][</span><span class="n">Nnum</span><span class="p">];</span><span class="c1">//记录课程的名字和数量
+</span><span class="c1"></span><span class="kt">char</span> <span class="n">ErrCourse</span><span class="p">[</span><span class="n">ErrCnum</span><span class="p">][</span><span class="n">ErrNnum</span><span class="p">];</span><span class="c1">//可以增加的课程即数量
+</span><span class="c1"></span><span class="kt">int</span> <span class="n">CourseStuSum</span><span class="p">[</span><span class="n">Cnum</span><span class="o">+</span><span class="n">ErrCnum</span><span class="p">][</span><span class="n">Nnum</span><span class="p">];</span><span class="c1">//记录课程下的学生序号
+</span><span class="c1"></span><span class="kt">int</span> <span class="n">SuDeleteCourse</span><span class="p">[</span><span class="n">Cnum</span><span class="o">+</span><span class="n">ErrCnum</span><span class="p">];</span><span class="c1">//老师要删除的课程序号
+</span><span class="c1"></span><span class="kt">int</span> <span class="n">Flag_ErrCourse</span><span class="p">;</span><span class="c1">//增加的课
+</span><span class="c1"></span>
+<span class="cp"># 类与对象
+</span><span class="cp"></span><span class="k">typedef</span> <span class="k">class</span> <span class="nc">Student</span><span class="p">{</span><span class="c1">//选择的指针占位符号, 选择存储的位置
+</span><span class="c1"></span><span class="k">private</span><span class="o">:</span>
+    <span class="n">string</span> <span class="n">Name</span><span class="p">;</span><span class="c1">//名字
+</span><span class="c1"></span>    <span class="n">string</span> <span class="n">ID</span><span class="p">;</span><span class="c1">//学号
+</span><span class="c1"></span>    <span class="n">string</span> <span class="n">PassW</span><span class="p">;</span><span class="c1">//密码
+</span><span class="c1"></span>    <span class="kt">int</span> <span class="n">LoginNum</span><span class="p">;</span><span class="c1">//初次登录验证密码
+</span><span class="c1"></span>    <span class="kt">int</span> <span class="n">CCourse</span><span class="p">;</span><span class="c1">//学生已经选择的课程数量
+</span><span class="c1"></span><span class="k">public</span><span class="o">:</span>
+    <span class="n">SG</span> <span class="n">Grade</span><span class="p">;</span><span class="c1">//班级序号
+</span><span class="c1"></span>    <span class="n">SC</span> <span class="n">course</span><span class="p">[</span><span class="n">Cnum</span><span class="o">+</span><span class="n">ErrCnum</span><span class="p">];</span><span class="c1">//选择的课程编号(序号)最多的情况就是课程的数量选择的课程数 
+</span><span class="c1"></span>    <span class="n">Student</span><span class="p">();</span><span class="c1">//初始化学生名字为DFS1,DFS2...
+</span><span class="c1"></span>    <span class="o">~</span><span class="n">Student</span><span class="p">();</span>
+    <span class="kt">int</span> <span class="nf">GetStNum</span><span class="p">();</span><span class="c1">//搜索学生, 返回下标和名字.
+</span><span class="c1"></span>    <span class="n">string</span> <span class="nf">GetName</span><span class="p">(){</span><span class="k">return</span> <span class="n">Name</span><span class="p">;}</span>
+    <span class="n">string</span> <span class="nf">GetID</span><span class="p">(){</span><span class="k">return</span> <span class="n">ID</span><span class="p">;}</span>
+    <span class="n">string</span> <span class="nf">GetPassW</span><span class="p">(){</span><span class="k">return</span> <span class="n">PassW</span><span class="p">;}</span>
+    <span class="kt">int</span> <span class="nf">GetLoginNum</span><span class="p">(){</span><span class="k">return</span> <span class="n">LoginNum</span><span class="p">;}</span>
+    <span class="kt">int</span> <span class="nf">GetCCourse</span><span class="p">(){</span><span class="k">return</span> <span class="n">CCourse</span><span class="p">;}</span>
+    <span class="kt">void</span> <span class="nf">ChooseCourse</span><span class="p">();</span><span class="c1">//进行已有的课程的选择
+</span><span class="c1"></span>    <span class="kt">void</span> <span class="nf">SimpleChoose</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span><span class="c1">//根据参数选择客场
+</span><span class="c1"></span>    <span class="kt">void</span> <span class="nf">SearchCourse</span><span class="p">();</span><span class="c1">//学生查看自己的选课情况
+</span><span class="c1"></span>    <span class="kt">void</span> <span class="nf">SimpleSCourse</span><span class="p">();</span><span class="c1">//横向展示自己的的课程
+</span><span class="c1"></span>    <span class="kt">void</span> <span class="nf">SwapCourse</span><span class="p">();</span><span class="c1">//删除和更换学生选课
+</span><span class="c1"></span>    <span class="kt">void</span> <span class="nf">SimpleDelete</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span><span class="c1">//根据参数删除课程
+</span><span class="c1"></span>    <span class="kt">void</span> <span class="nf">ChangeStCourse</span><span class="p">();</span><span class="c1">//换课
+</span><span class="c1"></span>    <span class="kt">void</span> <span class="nf">DeleteCCourse</span><span class="p">();</span><span class="c1">//根据学生数组打印学生课程; 拿课程去查学生, 选课的时候存上编号.
+</span><span class="c1"></span>    <span class="kt">void</span> <span class="nf">ChangeSelfInfo</span><span class="p">();</span><span class="c1">//更改自己的名字, 密码以及ID
+</span><span class="c1"></span><span class="p">}</span><span class="n">St</span><span class="p">;</span>
+</code></pre></div><h3 id="25-a-name-1a链表对动态的适应性">2.5. <a name='-1'></a>链表对动态的适应性</h3>
+<p>在删除课程, 班级的过程中, 如果使用的是链表的结构, 到最后是真的删除这个节点, 无法找回, 而正是因为链表的纯粹性, 所以在用链表写注册和删除的时候可以非常简便, 思路自然也很清晰. 而反观数组就不一样了, 在空间复杂度上要比链表多一倍的空间, 带来的好处是调用方便, 不必遍历整个链表从头查找,  所以在开头注册登录使用链表, 在后面选课运用数组是一个高明的选择.</p>
+<h3 id="26-a-name-1a输入检查">2.6. <a name='-1'></a>输入检查</h3>
+<p><strong>[效果]</strong> : 对于不符合条件的情况, 重复输入.</p>
+<p><strong>[实现]</strong> : 对于<strong>需要容错的重复输入的情况</strong>, 一种简单处理的做法是写成循环; 而另外一中高明的做法就是<strong>写成模板, 或者函数</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="cp"># 第一种情况:
+</span><span class="cp"></span><span class="k">do</span><span class="p">{</span>
+	<span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">order</span><span class="p">;</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">order</span><span class="p">)</span> <span class="k">continue</span><span class="p">;</span>
+	<span class="k">if</span><span class="p">(</span><span class="n">order</span><span class="o">==-</span><span class="mi">1</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+	<span class="k">else</span> <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&#34;请重新输入!!!&#34;</span><span class="p">;</span>
+	<span class="n">system</span><span class="p">(</span><span class="s">&#34;reset&#34;</span><span class="p">);</span>
+<span class="p">}</span><span class="k">while</span><span class="p">(</span><span class="n">order</span><span class="o">&lt;-</span><span class="mi">1</span><span class="o">||</span><span class="n">order</span><span class="o">&gt;</span><span class="mi">3</span><span class="p">);</span>
+<span class="cp"># 第二种情况:
+</span><span class="cp"></span><span class="kt">int</span> <span class="nf">InputCheck</span><span class="p">(</span><span class="kt">int</span> <span class="n">DownLimit</span><span class="p">,</span> <span class="kt">int</span> <span class="n">Uplimit</span><span class="p">){</span>
+    <span class="kt">int</span> <span class="n">order</span><span class="o">=-</span><span class="mi">1</span><span class="p">;</span>
+    <span class="k">do</span><span class="p">{</span>
+        <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">order</span><span class="p">;</span>
+        <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">order</span><span class="p">)</span> <span class="k">continue</span><span class="p">;</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">order</span><span class="o">==-</span><span class="mi">1</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">order</span><span class="o">&lt;</span><span class="n">DownLimit</span><span class="o">||</span><span class="n">order</span><span class="o">&gt;</span><span class="n">Uplimit</span><span class="p">)</span>
+            <span class="n">cout</span><span class="o">&lt;&lt;</span> <span class="s">&#34;[Tip]: 输入有误,请重新输入</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">;</span>        
+    <span class="p">}</span><span class="k">while</span><span class="p">(</span><span class="n">order</span><span class="o">&lt;</span><span class="n">DownLimit</span> <span class="o">||</span> <span class="n">order</span><span class="o">&gt;</span><span class="n">Uplimit</span><span class="p">);</span> 
+    <span class="k">return</span> <span class="n">order</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div><h2 id="3-a-name-1a更多参考">3. <a name='-1'></a>更多参考</h2>
+<p>之前写程序的时候输错了一个特殊的键位, 导致程序进入死循环, 但是自己还是自己加了自检机制, 所以找来 ASKII 来记录自己的错误.</p>
+<h3 id="31-a-nameaskiisup1j1supaaskiisup1j1sup">3.1. <a name='ASKIIsup1j1sup'></a>ASKII<sup><a href="#j1">1</a></sup></h3>
+<p>控制字符（ Control Character）或者功能码（Function Code）。</p>
+<table>
+<thead>
+<tr>
+<th>二进制</th>
+<th>十进制</th>
+<th>十六进制</th>
+<th>缩写/字符</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>00000000</td>
+<td>0</td>
+<td>00</td>
+<td>NUL (NULL)</td>
+<td>空字符</td>
+</tr>
+<tr>
+<td>00000001</td>
+<td>1</td>
+<td>01</td>
+<td>SOH (Start Of Headling)</td>
+<td>标题开始</td>
+</tr>
+<tr>
+<td>00000010</td>
+<td>2</td>
+<td>02</td>
+<td>STX (Start Of Text)</td>
+<td>正文开始</td>
+</tr>
+<tr>
+<td>00000011</td>
+<td>3</td>
+<td>03</td>
+<td>ETX (End Of Text)</td>
+<td>正文结束</td>
+</tr>
+<tr>
+<td>00000100</td>
+<td>4</td>
+<td>04</td>
+<td>EOT (End Of Transmission)</td>
+<td>传输结束</td>
+</tr>
+<tr>
+<td>00000101</td>
+<td>5</td>
+<td>05</td>
+<td>ENQ (Enquiry)</td>
+<td>请求</td>
+</tr>
+<tr>
+<td>00000110</td>
+<td>6</td>
+<td>06</td>
+<td>ACK (Acknowledge)</td>
+<td>回应/响应/收到通知</td>
+</tr>
+<tr>
+<td>00000111</td>
+<td>7</td>
+<td>07</td>
+<td>BEL (Bell)</td>
+<td>响铃</td>
+</tr>
+<tr>
+<td>00001000</td>
+<td>8</td>
+<td>08</td>
+<td>BS (Backspace)</td>
+<td>退格</td>
+</tr>
+<tr>
+<td>00001001</td>
+<td>9</td>
+<td>09</td>
+<td>HT (Horizontal Tab)</td>
+<td>水平制表符</td>
+</tr>
+<tr>
+<td>00001010</td>
+<td>10</td>
+<td>0A</td>
+<td>LF/NL(Line Feed/New Line)</td>
+<td>换行键</td>
+</tr>
+<tr>
+<td>00001011</td>
+<td>11</td>
+<td>0B</td>
+<td>VT (Vertical Tab)</td>
+<td>垂直制表符</td>
+</tr>
+<tr>
+<td>00001100</td>
+<td>12</td>
+<td>0C</td>
+<td>FF/NP (Form Feed/New Page)</td>
+<td>换页键</td>
+</tr>
+<tr>
+<td>00001101</td>
+<td>13</td>
+<td>0D</td>
+<td>CR (Carriage Return)</td>
+<td>回车键</td>
+</tr>
+<tr>
+<td>00001110</td>
+<td>14</td>
+<td>0E</td>
+<td>SO (Shift Out)</td>
+<td>不用切换</td>
+</tr>
+<tr>
+<td>00001111</td>
+<td>15</td>
+<td>0F</td>
+<td>SI (Shift In)</td>
+<td>启用切换</td>
+</tr>
+<tr>
+<td>00010000</td>
+<td>16</td>
+<td>10</td>
+<td>DLE (Data Link Escape)</td>
+<td>数据链路转义</td>
+</tr>
+<tr>
+<td>00010001</td>
+<td>17</td>
+<td>11</td>
+<td>DC1/XON (Device Control 1/Transmission On)</td>
+<td>设备控制1/传输开始</td>
+</tr>
+<tr>
+<td>00010010</td>
+<td>18</td>
+<td>12</td>
+<td>DC2 (Device Control 2)</td>
+<td>设备控制2</td>
+</tr>
+<tr>
+<td>00010011</td>
+<td>19</td>
+<td>13</td>
+<td>DC3/XOFF (Device Control 3/Transmission Off)</td>
+<td>设备控制3/传输中断</td>
+</tr>
+<tr>
+<td>00010100</td>
+<td>20</td>
+<td>14</td>
+<td>DC4 (Device Control 4)</td>
+<td>设备控制4</td>
+</tr>
+<tr>
+<td>00010101</td>
+<td>21</td>
+<td>15</td>
+<td>NAK (Negative Acknowledge)</td>
+<td>无响应/非正常响应/拒绝接收</td>
+</tr>
+<tr>
+<td>00010110</td>
+<td>22</td>
+<td>16</td>
+<td>SYN (Synchronous Idle)</td>
+<td>同步空闲</td>
+</tr>
+<tr>
+<td>00010111</td>
+<td>23</td>
+<td>17</td>
+<td>ETB (End of Transmission Block)</td>
+<td>传输块结束/块传输终止</td>
+</tr>
+<tr>
+<td>00011000</td>
+<td>24</td>
+<td>18</td>
+<td>CAN (Cancel)</td>
+<td>取消</td>
+</tr>
+<tr>
+<td>00011001</td>
+<td>25</td>
+<td>19</td>
+<td>EM (End of Medium)</td>
+<td>已到介质末端/介质存储已满/介质中断</td>
+</tr>
+<tr>
+<td>00011010</td>
+<td>26</td>
+<td>1A</td>
+<td>SUB (Substitute)</td>
+<td>替补/替换</td>
+</tr>
+<tr>
+<td>00011011</td>
+<td>27</td>
+<td>1B</td>
+<td>ESC (Escape)</td>
+<td>逃离/取消</td>
+</tr>
+<tr>
+<td>00011100</td>
+<td>28</td>
+<td>1C</td>
+<td>FS (File Separator)</td>
+<td>文件分割符</td>
+</tr>
+<tr>
+<td>00011101</td>
+<td>29</td>
+<td>1D</td>
+<td>GS (Group Separator)</td>
+<td>组分隔符/分组符</td>
+</tr>
+<tr>
+<td>00011110</td>
+<td>30</td>
+<td>1E</td>
+<td>RS (Record Separator)</td>
+<td>记录分离符</td>
+</tr>
+<tr>
+<td>00011111</td>
+<td>31</td>
+<td>1F</td>
+<td>US (Unit Separator)</td>
+<td>单元分隔符</td>
+</tr>
+<tr>
+<td>00100000</td>
+<td>32</td>
+<td>20</td>
+<td>(Space)</td>
+<td>空格</td>
+</tr>
+<tr>
+<td>01111111</td>
+<td>127</td>
+<td>7F</td>
+<td>DEL (Delete)</td>
+<td>删除</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong>NUL (0)</strong>: NULL，空字符。本意为 <strong>NOP</strong>（中文意为空操作），此位置可以忽略一个字符。起源于<strong>计算机早期的记录信息的纸带</strong>，此处留个 NUL 字符，意思是先占位，以待后用。<strong>后来NUL 被用于C语言中，表示字符串的结束</strong>，当一个字符串中间出现 NUL 时，就意味着这个是一个字符串的结尾了。</p>
+</li>
+<li>
+<p><strong>SOH (1)</strong>: Start Of Heading，标题开始。如果信息沟通交流主要以命令和消息的形式的话，SOH 就可以用于标记每个消息的开始。1963年，最开始 ASCII 标准中，把此字符定义为 Start of Message，后来又改为现在的 Start Of Heading。现在，<strong>这个 SOH 常见于主从（master-slave）模式的 RS232 的通信中</strong>，一个主设备，以 SOH 开头，和从设备进行通信。这样方便从设备在数据传输出现错误的时候，<strong>在下一次通信之前，去实现重新同步（resynchronize）</strong>。如果没有一个清晰的类似于 SOH 这样的标记，去标记每个命令的起始或开头的话，那么重新同步，就很难实现了。</p>
+</li>
+<li>
+<p><strong>STX (2) 和 ETX (3)</strong>: STX 表示 Start Of Text，意思是“文本开始”；ETX 表示 End Of Text，意思是“文本结束”。<strong>通过某种通讯协议去传输的一个数据（包），称为一帧的话，常会包含一个帧头，包含了寻址信息，即你是要发给谁，要发送到目的地是哪里，其后跟着真正要发送的数据内容</strong>。而 STX，就用于标记这个数据内容的开始。接下来是要传输的数据，最后是 ETX，表明数据的结束。而中间具体传输的数据内容，ASCII 并没有去定义，它和你所用的传输协议有关。</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>帧头</th>
+<th>数据或文本内容</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SOH（表明帧头开始）</td>
+<td>&hellip;&hellip;（帧头信息，比如包含了目的地址，表明你发送给谁等等）</td>
+<td>STX（表明数据开始）</td>
+<td>&hellip;&hellip;（真正要传输的数据）</td>
+<td>ETX（表明数据结束</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong>BEL (7)</strong>: BELl，响铃。在 ASCII 编码中，BEL 是个比较有意思的东西。BEL 用一个可以听得见的声音来<strong>吸引人们的注意</strong>，既可以用于计算机，也可以用于周边设备（比如打印机）。注意，BEL 不是声卡或者喇叭发出的声音，而是蜂鸣器发出的声音，主要用于报警，比如硬件出现故障时就会听到这个声音，有的计算机操作系统正常启动也会听到这个声音。<strong>蜂鸣器没有直接安装到主板上，而是需要连接到主板上的一种外设，现代很多计算机都不安装蜂鸣器了</strong>，<strong>即使输出 BEL 也听不到声音，这个时候 BEL 就没有任何作用了</strong>。</p>
+</li>
+<li>
+<p><strong>BS (8)</strong>: BackSpace，退格键。退格键<strong>起初</strong>的意思是在<strong>打印机和电传打字机</strong>上，往回移动一格光标，以起到<strong>强调该字符</strong>的作用。比如你想要打印一个 a，然后加上退格键后，就成了 aBS^。在机械类打字机上，此方法能够起到实际的强调字符的作用，但<strong>对于后来的 CTR</strong> 下时期来说，就<strong>无法起到对应效果</strong>了。而现代所用的退格键，不仅仅表示光标往回移动了一格，同时也删除了移动后该位置的字符。</p>
+</li>
+<li>
+<p><strong>HT (9)</strong>: Horizontal Tab，水平制表符，相当于 Table/Tab 键。<strong>水平制表符的作用是用于布局</strong>，它控制输出设备前进到下一个表格去处理。而制表符 Table/Tab 的宽度也是灵活不固定的，只不过在多数设备上制表符 Tab 都预定义为 4 个空格的宽度。<strong>水平制表符 HT 不仅能减少数据输入者的工作量，对于格式化好的文字来说，还能够减少存储空间，因为一个Tab键，就代替了 4 个空格</strong>。</p>
+</li>
+<li>
+<p><strong>LF (10)</strong>: Line Feed，直译为“给打印机等喂一行”，也就是“换行”的意思。<strong>LF 是 ASCII 编码中常被误用的字符之一</strong>。<strong>LF 的最原始的含义是，移动打印机的头到下一行。而另外一个 ASCII 字符，CR（Carriage Return）才是将打印机的头移到最左边，即一行的开始（行首）</strong>。很多串口协议和 MS-DOS 及 Windows 操作系统，也都是这么实现的。而<strong>C语言和 Unix 操作系统将 LF 的含义重新定义为“新行”，即 LF 和 CR 的组合效果，也就是回车且换行的意思。从程序的角度出发，C语言和 Unix 对 LF 的定义显得更加自然，而 MS-DOS 的实现更接近于 LF 的本意。现在人们常将 LF 用做“新行（newline）”的功能，大多数文本编辑软件也都可以处理单个 LF 或者 CR/LF 的组合了</strong>。</p>
+</li>
+<li>
+<p><strong>VT (11)</strong>: Vertical Tab，垂直制表符。它类似于水平制表符 Tab，目的是为了减少布局中的工作，同时也减少了格式化字符时所需要存储字符的空间。VT 控制符用于跳到下一个标记行。说实话，还真没看到有些地方需要用 VT，因为一般在换行的时候都是用 LF 代替 VT 了。</p>
+</li>
+<li>
+<p><strong>FF (12)</strong>: Form Feed，换页。设计换页键，是用来控制打印机行为的。当打印机收到此键码的时候，打印机移动到下一页。不同的设备的终端对此控制符所表现的行为各不同，有些会清除屏幕，有些只是显示<code>^L</code>字符，有些只是新换一行而已。例如，Unix/Linux 下的 Bash Shell 和 Tcsh 就把 FF 看做是一个清空屏幕的命令。</p>
+</li>
+<li>
+<p><strong>CR (13)</strong>: Carriage return，回车，表示机器的滑动部分（或者底座）返回。CR 回车的原意是让打印头回到左边界，并没有移动到下一行的意思。随着时间的流逝，后来人们把 CR 的意思弄成了 Enter 键，用于示意输入完毕。在数据以屏幕显示的情况下，人们按下 Enter 的同时，也希望把光标移动到下一行，因此<strong>C语言和 Unix 重新定义了 CR 的含义，将其表示为移动到下一行。当输入 CR 时，系统也常常隐式地将其转换为LF。</strong></p>
+</li>
+<li>
+<p><strong>SO (14) 和 SI (15)</strong>: SO，Shift Out，不用切换；SI，Shift In，启用切换。早在 1960s 年代，设计 ASCII 编码的美国人就已经想到了，ASCII 编码不仅仅能用于英文，也要能用于外文字符集，这很重要，定义 Shift In 和 Shift Out 正是考虑到了这点。最开始，其意为在西里尔语和拉丁语之间切换。西里尔语 ASCII（也即 KOI-7 编码）将 Shift 作为一个普通字符，而拉丁语 ASCII（也就是我们通常所说的 ASCII）用 Shift 去改变打印机的字体，它们完全是两种含义。在拉丁语 ASCII 中，SO 用于产生双倍宽度的字符（类似于全角），而用 SI 打印压缩的字体（类似于半角）。</p>
+</li>
+<li>
+<p><strong>DLE (16)</strong>: Data Link Escape，数据链路转义。有时候我们需要在通信过程中发送一些控制字符，但是总有一些情况下，这些控制字符被看成了普通的数据流，而没有起到对应的控制效果，ASCII 编码引入 DLE 来解决这类问题。如果数据流中检测到了 DLE，数据接收端会对数据流中接下来的字符另作处理。但是具体如何处理，ASCII 规范中并没有定义，只是弄了个 DLE 去打断正常的数据流，告诉接下来的数据要特殊对待。</p>
+</li>
+<li>
+<p><strong>DC1 (17)</strong>: Device Control 1，或者 XON – Transmission on。这个 ASCII 控制符尽管原先定义为 DC1， 但是现在常表示为 XON，用于串行通信中的软件流控制。其主要作用为，在通信被控制符 XOFF 中断之后，重新开始信息传输。用过串行终端的人应该还记得，当有时候数据出错了，按 Ctrl+Q（等价于XON）有时候可以起到重新传输的效果。这是因为，此 Ctrl+Q 键盘序列实际上就是产生 XON 控制符，它可以将那些由于终端或者主机方面，由于偶尔出现的错误的 XOFF 控制符而中断的通信解锁，使其正常通信。</p>
+</li>
+<li>
+<p><strong>DC3 (19)</strong>: Device Control 3，或者 XOFF（Transmission off，传输中断）。</p>
+</li>
+<li>
+<p><strong>EM (25)</strong>: End of Medium，已到介质末端，介质存储已满。EM 用于，当数据存储到达串行存储介质末尾的时候，就像磁带或磁头滚动到介质末尾一样。其用于表述数据的逻辑终点，即不必非要是物理上的达到数据载体的末尾。</p>
+</li>
+<li>
+<p>**FS(28) : **File Separator，文件分隔符。FS 是个很有意思的控制字符，它可以让我们看到 1960s 年代的计算机是如何组织的。我们现在习惯于随机访问一些存储介质，比如 RAM、磁盘等，但是在设计 ASCII 编码的那个年代，大部分数据还是顺序的、串行的，而不是随机访问的。此处所说的串行，不仅仅指的是串行通信，还指的是顺序存储介质，比如穿孔卡片、纸带、磁带等。</p>
+<p>在串行通信的时代，设计这么一个用于表示文件分隔的控制字符，用于分割两个单独的文件，是一件很明智的事情。</p>
+</li>
+<li>
+<p><strong>GS(29)</strong>: Group Separator，分组符。ASCII 定义控制字符的原因之一就是考虑到了数据存储。大部分情况下，数据库的建立都和表有关，表包含了多条记录。同一个表中的所有记录属于同一类型，不同的表中的记录属于不同的类型。而分组符 GS 就是用来分隔串行数据存储系统中的不同的组。值得注意的是，当时还没有使用 Excel 表格，ASCII 时代的人把它叫做组。</p>
+</li>
+<li>
+<p><strong>RS(30):</strong> Record Separator，记录分隔符，用于分隔一个组或表中的多条记录。</p>
+</li>
+<li>
+<p><strong>US(31):</strong> Unit Separator，单元分隔符。在 ASCII 定义中，数据库中所存储的最小的数据项叫做单元（Unit）。而现在我们称其字段（Field）。单元分隔符 US 用于分割串行数据存储环境下的不同单元。现在的数据库实现都要求大部分类型都拥有固定的长度，尽管有时候可能用不到，但是对于每一个字段，却都要分配足够大的空间，用于存放最大可能的数据。这种做法的弊端就是占用了大量的存储空间，而 US 控制符允许字段具有可变的长度。在 1960s 年代，数据存储空间很有限，用 US 将不同单元分隔开，能节省很多空间。</p>
+</li>
+<li>
+<p><strong>DEL (127):</strong> Delete，删除。有人也许会问，为何 ASCII 编码中其它控制字符的值都很小（即 0~31），而 DEL 的值却很大呢（为 127）？这是由于这个特殊的字符是为纸带而定义的。在那个年代，绝大多数的纸带都是用7个孔洞去编码数据的。而 127 这个值所对应的二进制值为111 1111（所有 7 个比特位都是1），将 DEL 用在现存的纸带上时，所有的洞就都被穿孔了，就把已经存在的数据都擦除掉了，就起到了删除的作用。</p>
+</li>
+</ul>
+<h3 id="32-a-namevktablesup2j2supavk-tablesup2j2sup">3.2. <a name='VKTablesup2j2sup'></a>VK Table<sup><a href="#j2">2</a></sup></h3>
+<p>以下摘录 Window 系统 API 中VK_系列的常量的值.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">Const <span class="nv">VK_LBUTTON</span> <span class="o">=</span> <span class="p">&amp;</span>H1
+Const <span class="nv">VK_RBUTTON</span> <span class="o">=</span> <span class="p">&amp;</span>H2
+Const <span class="nv">VK_CANCEL</span> <span class="o">=</span> <span class="p">&amp;</span>H3
+Const <span class="nv">VK_MBUTTON</span> <span class="o">=</span> <span class="p">&amp;</span>H4       <span class="s1">&#39; NOT contiguous with L RBUTTON
+</span><span class="s1">Const VK_BACK = &amp;H8
+</span><span class="s1">Const VK_TAB = &amp;H9
+</span><span class="s1">Const VK_CLEAR = &amp;HC
+</span><span class="s1">Const VK_RETURN = &amp;HD
+</span><span class="s1">Const VK_SHIFT = &amp;H10
+</span><span class="s1">Const VK_CONTROL = &amp;H11
+</span><span class="s1">Const VK_MENU = &amp;H12
+</span><span class="s1">Const VK_PAUSE = &amp;H13
+</span><span class="s1">Const VK_CAPITAL = &amp;H14
+</span><span class="s1">Const VK_ESCAPE = &amp;H1B
+</span><span class="s1">Const VK_SPACE = &amp;H20
+</span><span class="s1">Const VK_PRIOR = &amp;H21
+</span><span class="s1">Const VK_NEXT = &amp;H22
+</span><span class="s1">Const VK_END = &amp;H23
+</span><span class="s1">Const VK_HOME = &amp;H24
+</span><span class="s1">Const VK_LEFT = &amp;H25
+</span><span class="s1">Const VK_UP = &amp;H26
+</span><span class="s1">Const VK_RIGHT = &amp;H27
+</span><span class="s1">Const VK_DOWN = &amp;H28
+</span><span class="s1">Const VK_SELECT = &amp;H29
+</span><span class="s1">Const VK_PRINT = &amp;H2A
+</span><span class="s1">Const VK_EXECUTE = &amp;H2B
+</span><span class="s1">Const VK_SNAPSHOT = &amp;H2C
+</span><span class="s1">Const VK_INSERT = &amp;H2D
+</span><span class="s1">Const VK_DELETE = &amp;H2E
+</span><span class="s1">Const VK_HELP = &amp;H2F
+</span><span class="s1">&#39;</span> VK_A thru VK_Z are the same as their ASCII equivalents: <span class="s1">&#39;A&#39;</span> thru <span class="s1">&#39;Z&#39;</span>
+<span class="s1">&#39; VK_0 thru VK_9 are the same as their ASCII equivalents: &#39;</span>0<span class="s1">&#39; thru &#39;</span>9<span class="s1">&#39;
+</span><span class="s1">Const VK_NUMPAD0 = &amp;H60
+</span><span class="s1">Const VK_NUMPAD1 = &amp;H61
+</span><span class="s1">Const VK_NUMPAD2 = &amp;H62
+</span><span class="s1">Const VK_NUMPAD3 = &amp;H63
+</span><span class="s1">Const VK_NUMPAD4 = &amp;H64
+</span><span class="s1">Const VK_NUMPAD5 = &amp;H65
+</span><span class="s1">Const VK_NUMPAD6 = &amp;H66
+</span><span class="s1">Const VK_NUMPAD7 = &amp;H67
+</span><span class="s1">Const VK_NUMPAD8 = &amp;H68
+</span><span class="s1">Const VK_NUMPAD9 = &amp;H69
+</span><span class="s1">Const VK_MULTIPLY = &amp;H6A
+</span><span class="s1">Const VK_ADD = &amp;H6B
+</span><span class="s1">Const VK_SEPARATOR = &amp;H6C
+</span><span class="s1">Const VK_SUBTRACT = &amp;H6D
+</span><span class="s1">Const VK_DECIMAL = &amp;H6E
+</span><span class="s1">Const VK_DIVIDE = &amp;H6F
+</span><span class="s1">Const VK_F1 = &amp;H70
+</span><span class="s1">Const VK_F2 = &amp;H71
+</span><span class="s1">Const VK_F3 = &amp;H72
+</span><span class="s1">Const VK_F4 = &amp;H73
+</span><span class="s1">Const VK_F5 = &amp;H74
+</span><span class="s1">Const VK_F6 = &amp;H75
+</span><span class="s1">Const VK_F7 = &amp;H76
+</span><span class="s1">Const VK_F8 = &amp;H77
+</span><span class="s1">Const VK_F9 = &amp;H78
+</span><span class="s1">Const VK_F10 = &amp;H79
+</span><span class="s1">Const VK_F11 = &amp;H7A
+</span><span class="s1">Const VK_F12 = &amp;H7B
+</span><span class="s1">Const VK_F13 = &amp;H7C
+</span><span class="s1">Const VK_F14 = &amp;H7D
+</span><span class="s1">Const VK_F15 = &amp;H7E
+</span><span class="s1">Const VK_F16 = &amp;H7F
+</span><span class="s1">Const VK_F17 = &amp;H80
+</span><span class="s1">Const VK_F18 = &amp;H81
+</span><span class="s1">Const VK_F19 = &amp;H82
+</span><span class="s1">Const VK_F20 = &amp;H83
+</span><span class="s1">Const VK_F21 = &amp;H84
+</span><span class="s1">Const VK_F22 = &amp;H85
+</span><span class="s1">Const VK_F23 = &amp;H86
+</span><span class="s1">Const VK_F24 = &amp;H87
+</span><span class="s1">Const VK_NUMLOCK = &amp;H90
+</span><span class="s1">Const VK_SCROLL = &amp;H91
+</span><span class="s1">&#39;</span>  VK_L VK_R - left and right Alt, Ctrl and Shift virtual keys.
+<span class="s1">&#39;  Used only as parameters to GetAsyncKeyState() and GetKeyState().
+</span><span class="s1">&#39;</span>  No other API or message will distinguish left and right keys in this way.
+Const <span class="nv">VK_LSHIFT</span> <span class="o">=</span> <span class="p">&amp;</span>HA0
+Const <span class="nv">VK_RSHIFT</span> <span class="o">=</span> <span class="p">&amp;</span>HA1
+Const <span class="nv">VK_LCONTROL</span> <span class="o">=</span> <span class="p">&amp;</span>HA2
+Const <span class="nv">VK_RCONTROL</span> <span class="o">=</span> <span class="p">&amp;</span>HA3
+Const <span class="nv">VK_LMENU</span> <span class="o">=</span> <span class="p">&amp;</span>HA4
+Const <span class="nv">VK_RMENU</span> <span class="o">=</span> <span class="p">&amp;</span>HA5
+Const <span class="nv">VK_ATTN</span> <span class="o">=</span> <span class="p">&amp;</span>HF6
+Const <span class="nv">VK_CRSEL</span> <span class="o">=</span> <span class="p">&amp;</span>HF7
+Const <span class="nv">VK_EXSEL</span> <span class="o">=</span> <span class="p">&amp;</span>HF8
+Const <span class="nv">VK_EREOF</span> <span class="o">=</span> <span class="p">&amp;</span>HF9
+Const <span class="nv">VK_PLAY</span> <span class="o">=</span> <span class="p">&amp;</span>HFA
+Const <span class="nv">VK_ZOOM</span> <span class="o">=</span> <span class="p">&amp;</span>HFB
+Const <span class="nv">VK_NONAME</span> <span class="o">=</span> <span class="p">&amp;</span>HFC
+Const <span class="nv">VK_PA1</span> <span class="o">=</span> <span class="p">&amp;</span>HFD
+Const <span class="nv">VK_OEM_CLEAR</span> <span class="o">=</span> <span class="p">&amp;</span>HFE
+</code></pre></div><h3 id="33-a-namepausesup3j3supapausesup3j3sup">3.3. <a name='PAUSEsup3j3sup'></a>PAUSE<sup><a href="#j3">3</a></sup></h3>
+<ol>
+<li>
+<blockquote>
+<p>Using <code>system(&quot;pause&quot;);</code> is Ungood Practice™ because</p>
+<ul>
+<li>It&rsquo;s completely <strong>unnecessary</strong>.
+To keep the program&rsquo;s console window open at the end when you run it from Visual Studio, use Ctrl+F5 to run it without debugging, or else place a breakpoint at the last right brace <code>}</code> of <code>main</code>. So, no problem in Visual Studio. And of course no problem at all when you run it from the command line.</li>
+<li>It&rsquo;s problematic &amp; annoying
+when you run the program from the command line. For interactive execution you have to press a key at the end to no purpose whatsoever. And for use in automation of some task that <code>pause</code> is very much undesired!</li>
+<li>It&rsquo;s not portable.
+Unix-land has no standard <code>pause</code> command.</li>
+</ul>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>It&rsquo;s frowned upon because it&rsquo;s a platform-specific hack that has nothing to do with actually learning programming, but instead to get around a feature of the IDE/OS - the console window launched from Visual Studio closes when the program has finished execution, and so the new user doesn&rsquo;t get to see the output of his new program.</p>
+<p>Bodging in System(&ldquo;pause&rdquo;) runs the Windows command-line &ldquo;pause&rdquo; program and waits for that to terminate before it continues execution of the program - the console window stays open so you can read the output.</p>
+<p>A better idea would be to put a breakpoint at the end and debug it, but that again has problems.</p>
+</blockquote>
+</li>
+</ol>
+<p>综上来说,</p>
+<ol>
+<li>Window 的系统调用开销是比较大的, 所以运行的速度是有些慢的.</li>
+<li>黑客程序常用此函数容易造成安全漏洞</li>
+<li>书写的简洁程度</li>
+<li>程序的可移植性</li>
+</ol>
+<p>取而代之, 在 Linux 系统可以用</p>
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="n">system</span><span class="p">(</span><span class="s">&#34;read -p &#39;Press Enter to continue...&#39; var&#34;</span><span class="p">);</span>
+</code></pre></div><p>因为这个暂停操作是涉及到系统读取一个字符的操作, 所以常常和<code>read</code>, <code>echo</code>等命令有关. 自然实现的方法是多种多样的. 以后可以单独写一篇博客. 哈哈, 其他的功能操作.参考<sup><a href="#j4">4</a></sup><sup><a href="#j5">5</a></sup><sup><a href="#j6">6</a></sup>; Pause函数使用<sup><a href="#j7">7</a></sup>.</p>
+<p>这里罗列一下看到的 Window 的等效函数,对于Linux 下的C程序一般是通过终端（Terminal）来运行，程序关闭后会留下输出结果，所以不需要暂停功能<sup><a href="#j8">8</a></sup>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="cp">#include</span><span class="cpf">&lt;conio.h&gt;</span><span class="cp">
+</span><span class="cp"></span><span class="n">getchar</span><span class="p">();</span><span class="n">getchar</span><span class="p">();</span>
+<span class="n">getch</span><span class="p">();</span>
+</code></pre></div><h3 id="34-a-namedefineadefine">3.4. <a name='Define'></a>Define</h3>
+<p>参考:</p>
+<ol>
+<li><a href="https://www.cnblogs.com/alantu2018/p/8465911.html">https://www.cnblogs.com/alantu2018/p/8465911.html</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/93753907">https://zhuanlan.zhihu.com/p/93753907</a></li>
+</ol>
+<h3 id="35-a-namestdios_baseastdios_base">3.5. <a name='std::ios_base'></a>std::ios_base</h3>
+<p>The class <code>ios_base</code> is a multipurpose class that serves as the base class for all I/O stream classes. It maintains several kinds of data:</p>
+<ol>
+<li>
+<p>state information: stream status flags</p>
+</li>
+<li>
+<p>control information: flags that control formatting of both input and output sequences and the imbued locale</p>
+</li>
+<li>
+<p>private storage: indexed extensible data structure that allows both long and void* members, which may be implemented as two arbitrary-length arrays or a single array of two-element structs or another container.</p>
+</li>
+<li>
+<p>callbacks: arbitrary number of user-defined functions to be called from imbue(), copyfmt(), and ~ios_base()</p>
+</li>
+</ol>
+<p>Typical implementation holds member constants corresponding to all values of fmtflags, iostate, openmode, and seekdir shown below, member variables to maintain current precision, width, and formatting flags, the exception mask, the buffer error state, a resizeable container holding the callbacks, the currently imbued locale, the private storage, and a static integer variable for xalloc().</p>
+<p><a href="https://blog.csdn.net/yangbomoto/article/details/80782633?utm_source=blogxgwz4">https://blog.csdn.net/yangbomoto/article/details/80782633?utm_source=blogxgwz4</a></p>
+<ol>
+<li>
+<p>badbit表示发生系统级的错误，如不可恢复的读写错误。通常情况下一旦badbit被置位，流就无法再使用了。</p>
+</li>
+<li>
+<p>failbit 表示发生可恢复的错误，如期望读取一个数值，却读出一个字符等错误。这种问题通常是可以修改的，流还可以继续使用。</p>
+</li>
+<li>
+<p>当到达文件的结束位置时，eofbit 和 failbit 都会被置位。</p>
+</li>
+<li>
+<p>goodbit 被置位表示流未发生错误。如果badbit failbit 和eofbit 任何一个被置位，则检查流状态的条件会失败。</p>
+</li>
+</ol>
+<p>对应的bad(), fail(), eof(), good()能检查对应位是否被置位，返回1表示被置位。但是，badbit被置位时，fail()也会返回1。所以使用good()和fail()是确定流能否使用的正确方法。。实际上，流当做条件使用的代码就等价于！fail()。而且eof() 和bad() 操作只能表示特定的错误。</p>
+<p>ios::bad: <a href="http://www.cplusplus.com/reference/ios/ios/bad/">http://www.cplusplus.com/reference/ios/ios/bad/</a></p>
+<h3 id="36-a-namefontafont">3.6. <a name='Font'></a>Font</h3>
+<p>可以找到适合自己的字体, 可以参考这个网站<sup><a href="#j9">9</a></sup>: <a href="https://www.programmingfonts.org/#cascadia-code">https://www.programmingfonts.org/#cascadia-code</a></p>
+<h2 id="4-a-nameafterwordsaafterwords">4. <a name='Afterwords'></a>Afterwords</h2>
+<p>最后, 可能是疫情隔离我与世界太久的缘故, 我已经忘记了如何和世界相处.所以造成这一切的后果之后我不能过分消极, 困难的到来不是为了停留, 而是过去, 我始终羡慕那些 逢山开路，遇水架桥 的人, 而这条心路是我不得不修炼的地方, 关于如何和这个世界相处, 如何约法三章&hellip;&hellip;</p>
+<hr>
+<p>后加: 这篇文章的主体部分, 本以为是要提交的代码迭代文档, 但是其实不是, 真正交上去的知识一个Word文件, 里面的示意图我花了有一个晚上, 但坦白的说是屁用没有&hellip;&hellip;我真的越来越恶心于这里的教学方式, 相对比的是我更加羡慕那一直拿Git交作业的学生, 但这应该是未来的工作模式, 不是吗? 更多关于写文档的正确理论基础, 我会在后续学习软件工程导论这门课后释出.</p>
+<div id="j1">1. C语言中文网.</div>
+<div id="j2">2. https://tieba.baidu.com/p/829777521</div>
+<div id="j3">3. https://stackoverflow.com/questions/1107705/systempause-why-is-it-wrong</div>
+<div id="j4">4. https://askubuntu.com/questions/108258/what-is-the-bash-equivalent-of-doss-pause-command</div>
+<div id="j5">5. https://stackoverflow.com/questions/92802/what-is-the-linux-equivalent-to-dos-pause</div>
+<div id="j6">6. https://stackoverflow.com/questions/92802/what-is-the-linux-equivalent-to-dos-pause</div>
+<div id="j7">7. https://blog.csdn.net/m0_46198325/article/details/104331838</div>
+<div id="j8">8. http://c.biancheng.net/cpp/html/3103.html</div>
+<div id="j9">9. https://www.zhihu.com/question/20299865</div>
+    
+</article>
+
+
+        <footer>
+            <p>
+            <a href=./index.xml style=" border-bottom-width: 0px"><svg t="1623645011149" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5933" width=".9em" height=".9em" fill=#8a8a8a><path d="M239.8 672.2c-61.6 0-111.8 50.2-111.8 111.6 0 61.6 50.2 111.2 111.8 111.2 61.8 0 111.8-49.8 111.8-111.2C351.6 722.4 301.6 672.2 239.8 672.2zM239.8 863c-44 0-79.8-35.6-79.8-79.2 0-43.8 35.8-79.6 79.8-79.6 44 0 79.8 35.8 79.8 79.6C319.6 827.4 283.8 863 239.8 863z" p-id="5934"></path><path d="M128 384l0 159.8c96 0 188.2 28.4 256 96.2 67.8 67.8 96 159.8 96 256l160 0C640 616.2 408 384 128 384zM607 864l-96 0c-6.2-99.4-42-184.2-104.4-246.6C344.2 554.8 260 519 160 512.8l0-95.6c52 3.6 104.2 16 153.4 37 57 24.4 108.4 59.2 152.8 103.6 44.4 44.4 79.2 95.8 103.6 152.8C591 759.8 603.4 811.2 607 864z" p-id="5935"></path><path d="M128 128l0 159.8c342 0 607.8 266 607.8 608.2L896 896C896 472.6 552 128 128 128zM582.8 441C470.8 328.8 322 264 160 256.4L160 160.6C540 177 847 483.6 863.4 864l-96.4 0C759.4 702.2 694.6 553 582.8 441z" p-id="5936"></path></svg></a>
+            &nbsp;
+            <a href="//github.com/bgzocg" style=" border-bottom-width: 0px"><svg t="1623645573680" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7467" width=".9em" height=".9em" fill=#8a8a8a><path d="M427.392 853.504a61.44 61.44 0 0 1-1.450667 15.530667 92.586667 92.586667 0 0 1-10.965333 27.605333c-15.061333 25.301333-40.661333 42.154667-73.642667 42.154667-77.653333 0-108.117333-38.101333-146.261333-133.504C169.216 740.693333 157.013333 725.461333 128 725.461333v-85.333333c77.653333 0 108.117333 38.101333 146.261333 133.504 25.856 64.597333 38.058667 79.786667 67.072 79.786667 0-12.373333-0.170667-23.296-0.512-38.144-0.853333-34.816-0.938667-41.941333 0.554667-51.2 0.64-20.352 5.888-34.773333 16.384-49.066667-95.232-20.736-159.445333-63.573333-196.309333-132.992l-13.824-32.426667C134.186667 510.848 128 467.072 128 416.426667c0-58.24 17.749333-110.336 50.944-153.856-10.368-41.386667-8.96-91.989333 13.909333-149.077334l7.466667-18.688 19.2-6.101333c2.56-0.853333 5.632-1.578667 9.301333-2.133333 37.290667-5.888 90.325333 8.106667 159.701334 52.48a565.930667 565.930667 0 0 1 127.274666-14.208c38.741333 0 77.226667 3.882667 114.048 11.605333 67.456-42.24 119.04-55.509333 155.306667-49.92 3.626667 0.597333 6.741333 1.322667 9.258667 2.133333l19.285333 6.101334 7.466667 18.773333c20.010667 50.218667 23.424 96.469333 16.128 136.96C875.434667 296.32 896 352.597333 896 416.512c0 53.888-3.84 94.378667-14.933333 133.802667l-11.733334 32.170666c-30.677333 69.333333-98.304 112.64-202.538666 133.248 10.837333 15.018667 15.872 30.250667 15.872 52.394667v42.666667l-0.042667 42.666666a13.013333 13.013333 0 0 0 0.341333 2.730667L682.666667 938.794667c-36.352 0-63.36-17.706667-76.672-45.653334a88.277333 88.277333 0 0 1-8.661334-40.277333v-84.736c0-3.584-0.128-3.797333-8.832-12.501333-23.296-23.296-33.834667-40.874667-33.834666-72.832v-38.613334l38.4-3.84c114.346667-11.52 176.512-43.221333 197.12-89.6l9.6-26.325333c7.68-27.562667 10.88-61.098667 10.88-107.946667 0-49.706667-17.365333-90.837333-50.218667-123.648L742.4 274.773333l7.381333-24.448c6.528-21.717333 8.106667-47.402667 1.152-76.714666a158.634667 158.634667 0 0 0-3.584 0.938666c-22.826667 6.4-51.370667 20.053333-85.76 43.008l-15.658666 10.453334-18.304-4.522667a467.754667 467.754667 0 0 0-111.829334-13.269333c-42.709333 0-84.906667 5.418667-123.946666 16.042666l-19.029334 5.205334-16.256-11.136c-35.541333-24.32-65.109333-38.826667-88.746666-45.568a158.293333 158.293333 0 0 0-4.864-1.28c-8.234667 33.92-4.992 61.781333 3.413333 82.688l9.984 25.088-18.346667 19.797333C228.693333 332.629333 213.333333 370.986667 213.333333 416.512c0 41.685333 4.864 76.202667 13.824 102.229333l11.178667 26.453334c27.904 52.352 87.168 83.84 192.853333 95.146666l38.144 4.096v38.357334c0 32-10.538667 49.536-33.834666 72.832-8.704 8.704-8.832 8.96-8.832 12.501333l-0.725334 7.893333c-0.512 2.56-0.512 9.258667 0.170667 37.205334 0.298667 12.8 0.469333 22.997333 0.554667 33.621333a33.962667 33.962667 0 0 1 0.725333 6.656z" p-id="7468"></path></svg></a>
+            &nbsp;
+            <a href="mailto:x@outlook.com" style=" border-bottom-width: 0px"><svg t="1623645825851" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="9475"width=".9em" height=".9em" fill=#8a8a8a><path d="M426.666667 955.733333H170.666667c-64.034133 0-100.386133-34.048-102.4-95.880533V511.146667c0-33.1264 9.233067-58.794667 27.409066-76.305067L153.6 376.9344V256a17.066667 17.066667 0 0 1 17.066667-17.066667h164.4544l165.666133-165.666133a17.0496 17.0496 0 0 1 24.132267 0L690.5856 238.933333H853.333333a17.066667 17.066667 0 0 1 17.066667 17.066667v120.081067l59.8528 59.8528c16.913067 16.913067 25.480533 42.222933 25.480533 75.2128v348.16c-1.9968 61.713067-38.007467 95.761067-101.358933 96.426666H426.666667z m41.198933-34.133333H854.186667c45.175467-0.4608 66.030933-19.848533 67.4304-62.856533L921.6 511.146667c0-14.660267-2.013867-26.845867-5.9904-36.437334l-50.210133 50.210134-0.0512 0.0512-340.445867 339.592533-0.034133 0.034133-57.002667 57.002667zM109.550933 473.326933C104.789333 483.345067 102.4 495.9744 102.4 511.146667v348.16C103.799467 902.212267 124.842667 921.6 170.666667 921.6h248.9344l69.12-69.12L109.550933 473.326933zM187.733333 503.227733l325.137067 325.137067L836.266667 505.770667V273.066667H187.733333v230.161066z m682.666667-78.882133v47.291733l23.6544-23.6544L870.4 424.3456zM131.652267 447.146667L153.6 469.0944v-43.895467L131.652267 447.146667zM383.3856 238.933333h258.935467L512.853333 109.4656 383.3856 238.933333zM597.333333 614.4H426.666667a17.066667 17.066667 0 1 1 0-34.133333h170.666666a17.066667 17.066667 0 1 1 0 34.133333z m85.333334-85.333333H341.333333a17.066667 17.066667 0 1 1 0-34.133334h341.333334a17.066667 17.066667 0 1 1 0 34.133334z m0-85.333334H341.333333a17.066667 17.066667 0 0 1 0-34.133333h341.333334a17.066667 17.066667 0 1 1 0 34.133333z" p-id="9476"></path></svg></a>
+            &nbsp;
+            <a href="//x.com/xxxcg" style=" border-bottom-width: 0px"> <svg t="1623645867604" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="10970"width=".9em" height=".9em" fill=#8a8a8a><path d="M854.613333 187.221333a39.338667 39.338667 0 0 0 13.226667-7.552 42.581333 42.581333 0 0 1 60.16 4.053334c15.530667 17.792 13.696 44.8-4.053333 60.330666a124.330667 124.330667 0 0 1-41.344 23.936c-25.6 8.917333-51.456 9.685333-75.434667 5.888a121.770667 121.770667 0 0 1-12.117333-2.474666 42.666667 42.666667 0 0 1-22.186667-14.464c-35.242667-43.776-76.928-54.186667-135.253333-32.725334-54.741333 20.181333-76.586667 65.450667-66.261334 149.248 3.157333 25.6-16.853333 48.128-42.581333 48-137.173333-0.853333-262.912-61.610667-375.594667-180.053333a42.837333 42.837333 0 0 1 1.408-60.501333 42.581333 42.581333 0 0 1 60.330667 1.450666c84.224 88.576 173.525333 138.24 268.8 150.528 1.408-93.184 43.050667-158.890667 124.416-188.928 86.186667-31.786667 162.346667-16 219.946667 46.293334 9.088 0.64 18.432-0.213333 26.538666-3.029334zM360.192 810.496c157.866667 0 298.112-67.328 389.973333-220.714667 33.706667-56.192 52.565333-121.386667 56.576-196.266666a42.666667 42.666667 0 1 1 85.205334 4.565333c-4.736 88.405333-27.562667 167.210667-68.608 235.733333C714.794667 815.061333 546.090667 896 360.192 896c-97.834667 0-184.106667-26.922667-257.408-80.810667-34.944-25.6-13.909333-81.066667 29.184-77.056 62.421333 5.888 134.442667-15.104 216.192-64.682666a42.624 42.624 0 0 1 58.581333 14.464c12.202667 20.224 5.76 46.506667-14.421333 58.709333-39.424 23.893333-77.738667 42.410667-114.901333 55.381333a390.613333 390.613333 0 0 0 82.773333 8.490667zM136.405333 371.541333A42.624 42.624 0 1 1 215.04 338.346667c9.301333 22.186667 24.234667 38.229333 46.08 49.408 20.992 10.709333 29.312 36.48 18.645333 57.514666a42.624 42.624 0 0 1-57.386666 18.645334 179.626667 179.626667 0 0 1-85.973334-92.416z m39.253334 170.026667a42.794667 42.794667 0 0 1 15.018666-58.581333 42.624 42.624 0 0 1 58.453334 15.018666c16.768 28.373333 33.664 42.922667 50.261333 46.805334a42.752 42.752 0 0 1-19.2 83.285333c-42.069333-9.728-76.8-39.594667-104.533333-86.528z" p-id="10971"></path></svg></a>
+            &nbsp;
+            <a href="//bangumi.tv/user/xxx" style=" border-bottom-width: 0px"><svg t="1611399107225" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2100" width=".9em" height=".9em" fill=#8a8a8a><path d="M228.115268 615.399298a12.300795 12.300795 0 0 0 11.35458 7.569719 12.471113 12.471113 0 0 0 4.749999-0.965139l147.609537-61.882459a12.300795 12.300795 0 0 0 0.26494-22.557765l-147.609537-66.235049a12.300795 12.300795 0 1 0-10.067727 22.444219l121.740019 54.634453-121.456155 50.906366a12.300795 12.300795 0 0 0-6.585656 16.085655zM399.020617 627.965033H239.469848a12.300795 12.300795 0 0 0 0 24.601589h159.550769a12.300795 12.300795 0 0 0 0-24.601589zM399.020617 667.460046H239.469848a12.300795 12.300795 0 0 0 0 24.601589h159.550769a12.300795 12.300795 0 0 0 0-24.601589zM872.941851 476.892349l-133.283841 58.381464a12.300795 12.300795 0 0 0-0.397411 22.349598l133.302766 64.058754a12.073703 12.073703 0 0 0 5.317729 1.23008 12.300795 12.300795 0 0 0 5.336652-23.390435l-109.15536-52.42031L882.896033 499.469038a12.300795 12.300795 0 1 0-9.954182-22.576689zM877.881094 627.965033h-148.101569a12.300795 12.300795 0 0 0 0 24.601589h148.101569a12.300795 12.300795 0 0 0 0-24.601589zM877.881094 667.460046h-148.101569a12.300795 12.300795 0 0 0 0 24.601589h148.101569a12.300795 12.300795 0 0 0 0-24.601589zM644.866193 537.128395h-162.919295a12.28187 12.28187 0 0 0-10.711153 18.318722l81.374488 145.130453a12.300795 12.300795 0 0 0 21.460155 0l81.374489-145.130453a12.300795 12.300795 0 0 0-10.730078-18.318722z m-81.374488 132.299778l-60.444213-107.698189h120.888426z" p-id="2101"></path><path d="M891.411968 334.960102H648.405037c-6.812748-15.13944-19.813742-28.386449-36.864535-38.018917L803.092262 19.283861a12.300795 12.300795 0 0 0-20.249001-13.966133L588.566402 286.873457a147.723082 147.723082 0 0 0-45.418319-7.001991 151.507942 151.507942 0 0 0-31.887445 3.368526L239.980804 4.712151A12.300795 12.300795 0 0 0 222.437978 21.87649l262.726051 269.803739c-22.14143 9.821711-39.116527 25.112546-47.310749 43.242025H132.547555A91.763929 91.763929 0 0 0 40.764702 426.705107v414.44216A91.763929 91.763929 0 0 0 132.547555 932.967969h268.024855l-19.908363 46.989036c-12.641432 29.881469 22.614538 57.094612 48.294812 37.299794L538.473781 932.967969h352.938187a91.763929 91.763929 0 0 0 91.782853-91.782853v-414.442161a91.763929 91.763929 0 0 0-91.782853-91.782853z m34.839635 463.815658a60.709153 60.709153 0 0 1-60.709153 60.709153H585.670984L487.870204 932.967969l-77.002975 57.851583 24.412346-57.851583 31.016927-73.483056H198.082405A60.728077 60.728077 0 0 1 137.27863 798.737912V440.330602a60.728077 60.728077 0 0 1 60.728077-60.728077h667.460046a60.709153 60.709153 0 0 1 60.709153 60.728077z" p-id="2102"></path></svg></a>
+            &nbsp;
+            <a href="//xxx" style=" border-bottom-width: 0px"><svg t="1623645993260" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="14230" width=".9em" height=".9em" fill=#8a8a8a><path d="M834.24 127.872a95.168 95.168 0 0 0-29.856 7.136h-0.128c-9.12 3.616-52.48 21.856-118.4 49.504l-236.224 99.488c-169.504 71.36-336.128 141.632-336.128 141.632l1.984-0.768s-11.488 3.776-23.488 12a64.96 64.96 0 0 0-18.752 18.144c-5.888 8.64-10.624 21.856-8.864 35.52 2.88 23.104 17.856 36.96 28.608 44.608 10.88 7.744 21.248 11.36 21.248 11.36h0.256l156.256 52.64c7.008 22.496 47.616 156 57.376 186.752 5.76 18.368 11.36 29.856 18.368 38.624 3.392 4.48 7.36 8.224 12.128 11.232a35.808 35.808 0 0 0 7.872 3.392l-1.6-0.384c0.48 0.128 0.864 0.512 1.216 0.64 1.28 0.352 2.144 0.48 3.776 0.736 24.736 7.488 44.608-7.872 44.608-7.872l1.12-0.896 92.256-84 154.624 118.624 3.52 1.504c32.224 14.144 64.864 6.272 82.112-7.616 17.376-13.984 24.128-31.872 24.128-31.872l1.12-2.88 119.488-612.128c3.392-15.104 4.256-29.248 0.512-42.976a57.824 57.824 0 0 0-24.992-33.504 59.904 59.904 0 0 0-34.144-8.64z m-3.232 65.6c-0.128 2.016 0.256 1.792-0.64 5.664v0.352l-118.368 605.76c-0.512 0.864-1.376 2.752-3.744 4.64-2.496 1.984-4.48 3.232-14.88-0.896l-189.12-144.992-114.24 104.128 24-153.28 308.992-288c12.736-11.84 8.48-14.336 8.48-14.336 0.896-14.528-19.232-4.256-19.232-4.256l-389.632 241.376-0.128-0.64-186.752-62.88v-0.128l-0.48-0.096a8.64 8.64 0 0 0 0.96-0.384l1.024-0.512 0.992-0.352s166.752-70.272 336.256-141.632c84.864-35.744 170.368-71.744 236.128-99.52 65.76-27.616 114.368-47.872 117.12-48.96 2.624-1.024 1.376-1.024 3.264-1.024z" p-id="14231"></path></svg></a><br/>
+            Copyright &copy; 2019 - 2021 &nbsp;<span><a href="x.com">bGZoCg</a></span>&nbsp;. All rights reserved. Articles and comments are copyright their respective authors, submission implies license to publish on this web site. The whole blog runs with <span><a href="https://pages.github.com/">Github Page</a></span>, <span><a href="jsdelivr">Jsdelivr CDN</a></span> and <span><a href="https://aliyun.com">Aliyun</a></span> Oss, which build by <span><a href="https://gohugo.io/">Hugo</a></span>, <span><a href="https://github.com/ianrodrigues/hugo-tailwind-journal/">hugo-tailwind-journal</a></span> and font from <span><a href="https://3type.cn/fonts/dinkie_bitmap/">3type-DinkieBitmap</a></span>. The code is under<span><a rel="license" href="http://www.opensource.org/licenses/bsd-license.php">BSD licensed</a>, articles are licensed under a <span><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"> BY_NC Creative Commons Attribution 4.0 Generic License</a></span>.
+            </p>
+        </footer>
+    </div>
+    
+</body>
+</html>

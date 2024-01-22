@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on @bGZoCg</title>
+    <link>http://x.com/zh/tags/linux/</link>
+    <description>Recent content in linux on @bGZoCg</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh_CN</language>
+    <lastBuildDate>Tue, 19 Jan 2021 18:11:54 +0800</lastBuildDate>
+    
+	<atom:link href="http://x.com/zh/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>关于 Ubuntu, 我所知道的一切</title>
+      <link>http://x.com/zh/ubuntu/</link>
+      <pubDate>Tue, 19 Jan 2021 18:11:54 +0800</pubDate>
+      
+      <guid>http://x.com/zh/ubuntu/</guid>
+      <description>[声明]: 本文实验环境为 UEFI+GPT 的 Win10 笔记本电脑, 采用的分区格式为 Ext2. 本文仅供参考.
+200125开坑Ubuntu, 被其简单的系统占用所折服, 开始使用ubuntu, 一直到现在. 这个记录其实是一以贯之的, 但里面的教程不保证一直有效, 加上我也只能阶段性的记录一下, 更多即时的记录请看 Github - -nix
+~~多说一句: 在用完 Win10 后有感, 在没有深入了解意见科技产品前, 永远不要过分相信他带来的便利, 你的电脑, 在你真正摸清楚他的操作原理和操作逻辑之前, 不要过分依赖他, 在他面前, 你可能就是赤裸的, 而我所真正担心的是我没有足够的时间和精力去见证世间的一切, 害怕的是自己不能静下心来慢慢的学习起来, 对那些Fast Learner肃然起敬, 但同时我始终都不了解真正的自己, 永远在以伤害自己的方式来逼迫自己努力, 而不是全身心的投入到自己的学习生涯中, 这又是多么的可悲……~~
+INSTALL UBUNTU 下载官方的镜像 (国内有大量的开源镜像网站) , 然后用 Ultralso 烧录到一个8G (4G) 大小的U盘. 重启电脑到 BIOS 中将 BOOT 里的 BOOT Security 关掉 (HP: F10), 重启进入系统UEFI的U盘启动的模式 (HP: F11), 之后进入U盘的 Ubuntu里面体验一下.准备安装.
+不要直接安装. 需要换源, 去找系统的安装源list文件, 在/etc/apt/sources.list里, 用管理员的权限修改下载源地址 (提前查到自己对应版本的源地址) .</description>
+    </item>
+    
+  </channel>
+</rss>

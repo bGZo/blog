@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DB on @bGZoCg</title>
+    <link>http://x.com/tags/db/</link>
+    <description>Recent content in DB on @bGZoCg</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Jun 2021 00:12:00 +0800</lastBuildDate>
+    
+	<atom:link href="http://x.com/tags/db/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Database</title>
+      <link>http://x.com/database/</link>
+      <pubDate>Thu, 10 Jun 2021 00:12:00 +0800</pubDate>
+      
+      <guid>http://x.com/database/</guid>
+      <description>Finally, review the knowledge of closure, minimum dependency set, paradigm optimization and pass the exam, looking the video of Bilibili following:
+ Peoples  1973: Charles W.Bachman (1924-2017) Mesh database technology 1981: Edgar F.Codd (1923-2003) database system, especially relational database 1998: Jim Gray (1944-2007.1.28?) Database and transaction processing 2014: Michael Stonebraker (1943-) The concept and practice of the underlying modern database system  DBs  Foreign  Large：  Oracle IBM DB2 Microsoft SQL Server Sybase   Small  ACCESS   Open Source  PostgresSQL MYSQL berkeley db(BDB)     China  Huazhong University of Science and Technology: DM Renmin University of China: kingbase  In 2018, the second prize of National Science and Technology Progress Award   Neusoft: OpenBASE Alibaba: OceanBase    Book    Publication abbreviation Full publication name Publisher Website     TODS ACM Transactions on Database Systems ACM http://www.</description>
+    </item>
+    
+  </channel>
+</rss>

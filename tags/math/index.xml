@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Math on @bGZoCg</title>
+    <link>http://x.com/tags/math/</link>
+    <description>Recent content in Math on @bGZoCg</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Jun 2021 16:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="http://x.com/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Probablity Theory</title>
+      <link>http://x.com/probablity-theory/</link>
+      <pubDate>Thu, 10 Jun 2021 16:00:00 +0800</pubDate>
+      
+      <guid>http://x.com/probablity-theory/</guid>
+      <description>In general. I have finished the test of probability theory today. I still have a lot of regrets about the education I received, because I really didn&amp;rsquo;t learn anything. I always do a few sets of papers that my classmates want before the end of the semester, and then go directly to the test. , Without any own thinking and connection, I am always awkward.
+  &amp;ldquo;Birthday Problem&amp;rdquo; / &amp;ldquo;Birthday Paradox&amp;rdquo;: The most interesting and practical part of this semester is the first class-introducing a simple problem mentioned in probability theory: &amp;ldquo;Birthday Problem&amp;rdquo;.</description>
+    </item>
+    
+  </channel>
+</rss>

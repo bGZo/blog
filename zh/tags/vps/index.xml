@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VPS on @bGZoCg</title>
+    <link>http://x.com/zh/tags/vps/</link>
+    <description>Recent content in VPS on @bGZoCg</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh_CN</language>
+    <lastBuildDate>Wed, 26 Feb 2020 23:51:37 +0800</lastBuildDate>
+    
+	<atom:link href="http://x.com/zh/tags/vps/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>翻越长城</title>
+      <link>http://x.com/zh/overhead-gfw/</link>
+      <pubDate>Wed, 26 Feb 2020 23:51:37 +0800</pubDate>
+      
+      <guid>http://x.com/zh/overhead-gfw/</guid>
+      <description>警告: 本文不适合任何人阅读, 请提前退出本页面结束阅读, 本文创作为个人臆想, 不具有任何实际意义, 针对当事人做出的任何违反当地法律和法规的行为, 本作者一概不负责.
+ 在陆内的学习 CS 总是变得异常艰难, 一般用三个小时电脑, 前两个小时都在修网, 跑代理, 好不容易网络了能开个 google 了, 进度总是拉下同学一大截, 倒逼自己的课余时间不说, 时常陷入自我怀疑的骗局. 一天下来什么都没干不说, 还略有些自闭.
+&amp;hellip;&amp;hellip;
+Windows 下开代理十分方便, 因为有 GUI 的 CFW; 相对地, 在 *nix 就不一样了: 在关闭系统代理端口后打开网站 clash.razord.top/#/settings. 执行 Clash, 发现此页面会自动刷新. 表示 Clash 的外部映射端口以及机场的配置没有问题. 选择节点, 开启代理, 进行测试. 常见问题有:
+ 系统代理 &amp;amp;&amp;amp; Clash 全部开启 配置文件格式  变量的大小写 变量的端口 映射端口   ./clash -d . &amp;amp; ./clash 的效果不一致. 套餐过期/场主跑路 &amp;hellip;&amp;hellip;  别嫌 Clash 在 *nix 上拉, CFW 在我的电脑上总是在 10G 的时候崩溃, 原因应该是受不住多过多应用和进程的并发代理, 总之如果有时候上不去 Google 的时候开关下代理软件就又可以了.</description>
+    </item>
+    
+  </channel>
+</rss>

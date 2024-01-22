@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>@bGZoCg</title>
+    <link>http://x.com/</link>
+    <description>Recent content on @bGZoCg</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 08 Aug 2021 22:43:00 +0800</lastBuildDate>
+    
+	<atom:link href="http://x.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>BUILD A CHM FILE</title>
+      <link>http://x.com/210808-build-a-chm-file/</link>
+      <pubDate>Sun, 08 Aug 2021 22:43:00 +0800</pubDate>
+      
+      <guid>http://x.com/210808-build-a-chm-file/</guid>
+      <description>CHM? Yeah have a long history&amp;hellip;
+ In 2002, Microsoft announced some security risks associated with the .CHM format, as well as some security bulletins and patches. They have since announced their intentions not to develop the .CHM format further, and will be moving to a new generation of Windows Help called Microsoft Assistance Markup Language in the Windows Vista operating system.
+&amp;ndash;Wikipedia
+ I try to use command under ubuntu build chm file about python, without GUI software help, which sounds cool.</description>
+    </item>
+    
+    <item>
+      <title>Probablity Theory</title>
+      <link>http://x.com/probablity-theory/</link>
+      <pubDate>Thu, 10 Jun 2021 16:00:00 +0800</pubDate>
+      
+      <guid>http://x.com/probablity-theory/</guid>
+      <description>In general. I have finished the test of probability theory today. I still have a lot of regrets about the education I received, because I really didn&amp;rsquo;t learn anything. I always do a few sets of papers that my classmates want before the end of the semester, and then go directly to the test. , Without any own thinking and connection, I am always awkward.
+  &amp;ldquo;Birthday Problem&amp;rdquo; / &amp;ldquo;Birthday Paradox&amp;rdquo;: The most interesting and practical part of this semester is the first class-introducing a simple problem mentioned in probability theory: &amp;ldquo;Birthday Problem&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Introduction To Software Engineer</title>
+      <link>http://x.com/introduction-to-software-engineering/</link>
+      <pubDate>Thu, 10 Jun 2021 14:42:00 +0800</pubDate>
+      
+      <guid>http://x.com/introduction-to-software-engineering/</guid>
+      <description>Introduction to Software Engineering talked about the main steps of Agile Development-Agile Development that I learned on TG a few months ago in the course, which I came into contact with in my spare time. Fragmented knowledge turned out to be embedded in such theories. I was sitting in the last row and looking forward. Although there were no seats, basically no one listened to this part of the content, let alone internalized thoughts.</description>
+    </item>
+    
+    <item>
+      <title>Database</title>
+      <link>http://x.com/database/</link>
+      <pubDate>Thu, 10 Jun 2021 00:12:00 +0800</pubDate>
+      
+      <guid>http://x.com/database/</guid>
+      <description>Finally, review the knowledge of closure, minimum dependency set, paradigm optimization and pass the exam, looking the video of Bilibili following:
+ Peoples  1973: Charles W.Bachman (1924-2017) Mesh database technology 1981: Edgar F.Codd (1923-2003) database system, especially relational database 1998: Jim Gray (1944-2007.1.28?) Database and transaction processing 2014: Michael Stonebraker (1943-) The concept and practice of the underlying modern database system  DBs  Foreign  Large：  Oracle IBM DB2 Microsoft SQL Server Sybase   Small  ACCESS   Open Source  PostgresSQL MYSQL berkeley db(BDB)     China  Huazhong University of Science and Technology: DM Renmin University of China: kingbase  In 2018, the second prize of National Science and Technology Progress Award   Neusoft: OpenBASE Alibaba: OceanBase    Book    Publication abbreviation Full publication name Publisher Website     TODS ACM Transactions on Database Systems ACM http://www.</description>
+    </item>
+    
+    <item>
+      <title>Why home address is prefixed with 192.168?</title>
+      <link>http://x.com/210117-whats-192-168/</link>
+      <pubDate>Sun, 17 Jan 2021 14:44:52 +0800</pubDate>
+      
+      <guid>http://x.com/210117-whats-192-168/</guid>
+      <description>&lt;p&gt;A Internet spec called  &lt;a href=&#34;http://www.ietf.org/rfc/rfc1918.txt&#34;&gt;RFC 1918&lt;/a&gt; (Request For Comments) reserved a few blocks of addressnss for &amp;ldquo;private&amp;rdquo; network. 192.168/16 was one of those blocks.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Overhead GFW</title>
+      <link>http://x.com/overhead-gfw/</link>
+      <pubDate>Wed, 26 Feb 2020 23:51:37 +0800</pubDate>
+      
+      <guid>http://x.com/overhead-gfw/</guid>
+      <description>Warning: This article is not suitable for anyone to read. Please exit this page in advance to end reading. The creation of this article is a personal imagination and does not have any practical significance. The author is not responsible for any violations of local laws and regulations by the parties.
+ Studying CS in the mainland has always become extremely difficult. Generally, I use the computer for three hours.</description>
+    </item>
+    
+    <item>
+      <title>404</title>
+      <link>http://x.com/404/</link>
+      <pubDate>Thu, 30 Jan 2020 13:59:24 +0800</pubDate>
+      
+      <guid>http://x.com/404/</guid>
+      <description>The app server is not available in your country.
+The video is not available in your location.
+The page is not available in your computer
+ So what the feel about above the sentence, while your friends or someone else could see that not existed page??? It&amp;rsquo;s a serious question???
+The reason why I wrote this article is that after Wikipedia was blocked, I deeply feel the domestic the threshold of access to knowledgeThe easy and flexible access to first-hand knowledge is high-CNKI, the libraries of various universities are not open to the outside world, and there are so few public resources.</description>
+    </item>
+    
+    <item>
+      <title>Hello bGZoCg!</title>
+      <link>http://x.com/about/</link>
+      <pubDate>Tue, 31 Dec 2019 00:00:00 +0800</pubDate>
+      
+      <guid>http://x.com/about/</guid>
+      <description>@font-face{font-weight:400;font-style:normal;font-family:Josefin Sans;src:url(//lib.baomitu.com/fonts/josefin-sans/josefin-sans-regular.eot);src:local(&#34;Josefin Sans&#34;),local(&#34;JosefinSans-Normal&#34;),url(//lib.baomitu.com/fonts/josefin-sans/josefin-sans-regular.eot#iefix) format(&#34;embedded-opentype&#34;),url(//lib.baomitu.com/fonts/josefin-sans/josefin-sans-regular.woff2) format(&#34;woff2&#34;),url(//lib.baomitu.com/fonts/josefin-sans/josefin-sans-regular.woff) format(&#34;woff&#34;),url(//lib.baomitu.com/fonts/josefin-sans/josefin-sans-regular.ttf) format(&#34;truetype&#34;),url(//lib.baomitu.com/fonts/josefin-sans/josefin-sans-regular.svg#JosefinSans) format(&#34;svg&#34;)}.color ul li  a{color: inherit; position: relative; text-decoration: none; white-space: nowrap; font-size:1.25em}.color ul li a::before{ content: &#34;&#34;; display: block;position: absolute;height: 0.5em;bottom: 2px;left: 4px;
+width: 100%; --bg-opacity: .75; background-color: #42b983;background-color: #9999ff;opacity: .3;}.color ulli  a:hover::before{background: #000000}
+
+@bgzocg
+
+About me? In addition to recording the valuable blogs, I perfer to writing/marking daily life on Notion, so following articles are what I written:</description>
+    </item>
+    
+  </channel>
+</rss>

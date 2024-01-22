@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>@bGZoCg</title>
+    <link>http://x.com/zh/</link>
+    <description>Recent content on @bGZoCg</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh_CN</language>
+    <lastBuildDate>Sun, 08 Aug 2021 22:43:00 +0800</lastBuildDate>
+    
+	<atom:link href="http://x.com/zh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>构建一个CHM文件</title>
+      <link>http://x.com/zh/210808-build-a-chm-file/</link>
+      <pubDate>Sun, 08 Aug 2021 22:43:00 +0800</pubDate>
+      
+      <guid>http://x.com/zh/210808-build-a-chm-file/</guid>
+      <description>建一个CHM？是的，说来话长&amp;hellip;
+ 2002 年，Microsoft 公布了一些与 .CHM 格式相关的安全风险，以及一些安全公告和补丁。此后，他们宣布不打算进一步开发 .CHM 格式，并将转向 Windows Vista 操作系统中称为 Microsoft 协助标记语言的新一代 Windows 帮助。
+&amp;ndash;维基百科
+ 我尝试在没有 GUI 软件帮助下使用 ubuntu 下的命令构建关于 python 的chm文件，听起来很酷。但是在微软和开源期间发生了一些事情，这使得解决方案变得陈旧而复杂，但幸运的是它并不困难。
+然后我在 StackoverFlow 中找到了方法，我发现他们似乎对这个支持跨平台并且对手机设备友好（文件管理和照片&amp;hellip;）的文件不感兴趣。我发现了寻找不存在命令很友好的 网站。 它提示我需要安装fpc, 其中有我们需要的chmcmd，但是内存需要占用675MB，，，我犹豫了，所以放弃了，啊哈哈&amp;hellip;..
+让我们回到 Windows 中去构建, 由strnghrs 制作的 HugeCHM, 大小居然控制在140kb 内！难以置信，他在博客中给了两个分享链接，比如 share1-4hie 和 share2。希望这能帮到你。但这也不是开源的。所以你只能从上面两个链接进入。没心情继续做下去&amp;hellip; 而且软件在构建内容和语言方面也显示了一些 BUG，例如没有目录，索引，书签并且无法搜索任何东西&amp;hellip;就像它的标题写的那样，它只适合需要的大文件的打包。
+我也看到了微软中的文档。但是好像什么都没说，就跟胡说八道一样……
+EasyCHM 是付费软件，家用许可协议 $259 商用许可协议$359, 好TM贵, 好在中文互联网上有破解版&amp;hellip;.
+也许用PDF代替chm会是更好的选择？而 chmlib 会在分离CHM文档上帮助你很多。</description>
+    </item>
+    
+    <item>
+      <title>概率论</title>
+      <link>http://x.com/zh/probablity-theory/</link>
+      <pubDate>Thu, 10 Jun 2021 16:00:00 +0800</pubDate>
+      
+      <guid>http://x.com/zh/probablity-theory/</guid>
+      <description>总的来说. 今天概率论考完了, 总还是对受到的教育有很多遗憾的, 因为自己确实什么都没有学到, 总是在期末前做几套同同学要来的卷子, 然后直接上去考, 没有什么自己的思考和联系, 总还是别扭.
+  &amp;ldquo;生日问题&amp;rdquo; / &amp;ldquo;生日悖论&amp;rdquo;: 这学期最有意思, 也最有实践意义的就是第一节课 &amp;ndash; 引入概率论中提到的一个简单问题: &amp;ldquo;生日问题&amp;rdquo;.
+ 问题: 假设一年有 n 天(365/355), 要使两个人生日相等的概率的人数应该为多少? 思路: 问题转化为 1-P(两两各不相等) 的概率问题 得到: (假设一年365天) 1 - 365! / 365n * (365-n)! (推导过程详细见: https://zh.wikipedia.org/wiki/%E7%94%9F%E6%97%A5%E5%95%8F%E9%A1%8C), 或者  进一步统计计算:      n p（n）     10 12%   20 41%   30 70%   50 97%   100 99.</description>
+    </item>
+    
+    <item>
+      <title>软件工程概论</title>
+      <link>http://x.com/zh/introduction-to-software-engineering/</link>
+      <pubDate>Thu, 10 Jun 2021 14:42:00 +0800</pubDate>
+      
+      <guid>http://x.com/zh/introduction-to-software-engineering/</guid>
+      <description>软件工程导论 在课程上讲了几个月前我在TG上学到的 Agile Development-敏捷开发的主要步骤, 当初我在业余时间接触到的碎片化的知识原来是这样嵌入到这样的理论中去的, 我坐落在最后一排, 举目向前望, 虽说座无虚席, 但基本没有人听这部分的内容, 更不要说内化思想了. 老师的PPT里面并没有提及敏捷开发组织为了宣发而建立的网站.
+为什么说提及这些额外的东西对我来说这样重要呢? 这些重要的内容能让我相信这样的信条是真实且存在的, 我不会认为这就是口中无用的言论, 这是开发人员的最根本的基础. 课后我对一直以来我对国内教学的偏见而汗颜, 这由原苏联教育家 伊·安·凯洛夫 发明的填鸭式教育依旧活跃在国内普遍的高校生活中, 伴随我度过十二年的教育方式往我嗤之以鼻, 我很享受网络上开源的循循善诱的教导方式, 新鲜是一方面, 门槛低是另一方面, 我总不会因为铺天盖地的理论而啧啧称赞, 相反, 睡觉是我唯一选择的方式, 我在课上睡觉, 课下预复习, 平时应付, 考前冲锋, 及格光荣. 悲夫&amp;hellip;
+无独有偶, 阮一峰 也在他的博客上谈了这门学科, 关于软件工程的最大难题.
+一些你需要掌握的概念  概论   软件: 软件是计算机系统中与硬件相互依存的另一部分，它是包括程序，数据及其相关文档的完整集合
+  软件危机？软件危机包含哪两点？软件危机产生的原因是什么？
+ 软件危机是指在计算机软件开发与维护过程中所遇到的一系列严重问题。包括两点  如何开发软件，以满足对软件日益增长的需求； 如何维护数量不断膨胀的已有软件。   软件开发和维护过程中存在的许多严重问题，一方面与软件本身的特点有关，另一方面也和软件开发与维护的方法不正确有关。具体表现如下：  软件是逻辑部件而不是物理部件。 软件的规模越来越大，复杂性越来越大。 轻视需求分析的重要性，轻视软件维护的错误观点和方法      什么叫软件工程？
+ 1968年在第一届NATO会议上的早期定义： &amp;ldquo;建立并使用完善的工程化原则，以较经济的手段获得能在实际机器上有效运行的可靠软件的一系列方法”。 1993年1EEE的定义： &amp;ldquo;1软件工程是：把系统的、规范的、可度量的途径应用于软件开发、运行和维护过程，也就是把工程应用于软件； ②进而研究⑦实现的途径&amp;rdquo;。 我们国家最近定义：软件工程是指导计算机软件开发和维护的工程学科。它采用工程的概念、原理、技术和方法来开发与维护软件，把经过时间考验而证明正确的管理技术和当前能够得到的最好的技术方法结合起来。    两种软件工程方法学开发软件时要建立哪些模型？</description>
+    </item>
+    
+    <item>
+      <title>数据库</title>
+      <link>http://x.com/zh/database/</link>
+      <pubDate>Thu, 10 Jun 2021 00:12:00 +0800</pubDate>
+      
+      <guid>http://x.com/zh/database/</guid>
+      <description>最后靠着 B站 视频复习, 巩固了一遍闭包, 最小依赖集, 范式优化, 通过了期末考试. 推荐给大家应试技巧:
+ 大佬  1973年 Charles W. Bachman(1924-2017) 网状数据库技术 1981年 Edgar F. Codd (1923－2003 )数据库系统，尤其是关系型数据库 1998年 Jim Gray (1944-2007.1.28? )数据库与事务处理 2014年 Michael Stonebraker(1943-)现代数据库系统底层的概念与实践  数据库  国外  大型：  甲骨文 Oracle IBM DB2 Microsoft SQL Server Sybase   小型  ACCESS   开源  PostgresSQL MYSQL berkeley db(BDB)     国内  华中科技大学: DM 中国人民大学: kingbase  2018年，国家科技进步二等奖   东软: OpenBASE 阿里巴巴: OceanBase    杂志期刊    刊物简称 刊物全称 出版社 网址     TODS ACM Transactions on Database Systems ACM http://www.</description>
+    </item>
+    
+    <item>
+      <title>机器学习--感知器</title>
+      <link>http://x.com/zh/210123-machine-learning-notes/</link>
+      <pubDate>Fri, 22 Jan 2021 19:52:50 +0800</pubDate>
+      
+      <guid>http://x.com/zh/210123-machine-learning-notes/</guid>
+      <description>&lt;p&gt;机器学习最重要的是“预测”，因此“机器学习”包含两个部分:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;训练&lt;/strong&gt;：比如提供大量的汽车图片给机器“学习”，教会机器什么是车，这就是训练&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;预测&lt;/strong&gt;：训练结束后，我们需要机器可以对没有见过的图片进行判断，并且要保证一定的正确率，这就是预测&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;机器学习适用于：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;要解决的问题中存在&lt;strong&gt;某种模式&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;这种模式&lt;strong&gt;不容易直接定义&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;有&lt;strong&gt;足够的数据&lt;/strong&gt;可以帮助我们找出该模式&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Stackover C&#43;&#43; 热门问题</title>
+      <link>http://x.com/zh/210121-stackover-top-notes/</link>
+      <pubDate>Thu, 21 Jan 2021 14:31:44 +0800</pubDate>
+      
+      <guid>http://x.com/zh/210121-stackover-top-notes/</guid>
+      <description>&lt;p&gt;问题皆来源于下面的两个链接&lt;sup&gt;&lt;a href=&#34;#j1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, 本文做了部分的摘录, 感谢翻译：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://stackoverflow.com/questions/tagged/c%2b%2b?tab=Votes&#34;&gt;https://stackoverflow.com/questions/tagged/c%2b%2b?tab=Votes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://stackoverflow.com/questions/tagged/c?tab=Votes&#34;&gt;https://stackoverflow.com/questions/tagged/c?tab=Votes&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于 Ubuntu, 我所知道的一切</title>
+      <link>http://x.com/zh/ubuntu/</link>
+      <pubDate>Tue, 19 Jan 2021 18:11:54 +0800</pubDate>
+      
+      <guid>http://x.com/zh/ubuntu/</guid>
+      <description>[声明]: 本文实验环境为 UEFI+GPT 的 Win10 笔记本电脑, 采用的分区格式为 Ext2. 本文仅供参考.
+200125开坑Ubuntu, 被其简单的系统占用所折服, 开始使用ubuntu, 一直到现在. 这个记录其实是一以贯之的, 但里面的教程不保证一直有效, 加上我也只能阶段性的记录一下, 更多即时的记录请看 Github - -nix
+~~多说一句: 在用完 Win10 后有感, 在没有深入了解意见科技产品前, 永远不要过分相信他带来的便利, 你的电脑, 在你真正摸清楚他的操作原理和操作逻辑之前, 不要过分依赖他, 在他面前, 你可能就是赤裸的, 而我所真正担心的是我没有足够的时间和精力去见证世间的一切, 害怕的是自己不能静下心来慢慢的学习起来, 对那些Fast Learner肃然起敬, 但同时我始终都不了解真正的自己, 永远在以伤害自己的方式来逼迫自己努力, 而不是全身心的投入到自己的学习生涯中, 这又是多么的可悲……~~
+INSTALL UBUNTU 下载官方的镜像 (国内有大量的开源镜像网站) , 然后用 Ultralso 烧录到一个8G (4G) 大小的U盘. 重启电脑到 BIOS 中将 BOOT 里的 BOOT Security 关掉 (HP: F10), 重启进入系统UEFI的U盘启动的模式 (HP: F11), 之后进入U盘的 Ubuntu里面体验一下.准备安装.
+不要直接安装. 需要换源, 去找系统的安装源list文件, 在/etc/apt/sources.list里, 用管理员的权限修改下载源地址 (提前查到自己对应版本的源地址) .</description>
+    </item>
+    
+    <item>
+      <title>内大小学期开发--选课管理系统</title>
+      <link>http://x.com/zh/200901-imu-short-term-develop/</link>
+      <pubDate>Tue, 01 Sep 2020 22:21:38 +0800</pubDate>
+      
+      <guid>http://x.com/zh/200901-imu-short-term-develop/</guid>
+      <description>&lt;p&gt;该怎么去面对自己在一个月的时间里没有好好写好 &amp;ldquo;学生选课系统&amp;rdquo; 这一个简单的 &lt;code&gt;Cpp&lt;/code&gt; 程序, 这篇文章鸽了很久, 我多少希望自己逃避这个对我造成不小阴影的时间段, 我不知道那些跟着联盟导师团伙做项目的同学增长了多少知识, 但我在一个月的时间里缺乏真的效率很低, 多次心态接近低到零点爆炸, 甚至开始怀疑自己是不是真的适合这门学科. 说多了也只是为自己的低能找借口开脱, 我总结以下几个方面, 附带一些槽点, 诚恳总结如下:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;总结:
+&lt;ul&gt;
+&lt;li&gt;前期进度开发出现问题时, 一定要即时和其他成员进行反馈, &lt;strong&gt;不可以拖延&lt;/strong&gt;, 像现在的工作岗位一样, 工作时间拖延, 那就占用你的成长时间来弥补.&lt;/li&gt;
+&lt;li&gt;代码&lt;strong&gt;预处理&lt;/strong&gt;太多造成冗余项过多, 难以维护, 以及&lt;strong&gt;整体逻辑结构&lt;/strong&gt;必须在实施前去实现一下, 这样可以在码字的时候为以后做更多的打算. 实际开发中走一步看一步造成了不断地修改重复代码及标记变量, 而后再去维护更多的函数, 维护再度提升一个量级. 写代码的时候必须&lt;strong&gt;警惕过多的预处理&lt;/strong&gt;, 一定有更好的方式.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;尽量用更省力的库&lt;/strong&gt;, 不要重复造不必要的轮子. 在实际开发中, 我曾避免使用可托容的 &lt;code&gt;vector&lt;/code&gt;, 而用双数组来代替之, 复杂度提升一个量级, 何苦呢?&lt;/li&gt;
+&lt;li&gt;做好最坏的打算, 不要想着在一个染缸里摸鱼. 实际开发中因为太卷, 大家走一步看一步, 前期不必要的要求到后期都成为了必要项. 这样子强制让人一起绕着卷王加班的情景真是和现 996 如出一辙.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>翻越长城</title>
+      <link>http://x.com/zh/overhead-gfw/</link>
+      <pubDate>Wed, 26 Feb 2020 23:51:37 +0800</pubDate>
+      
+      <guid>http://x.com/zh/overhead-gfw/</guid>
+      <description>警告: 本文不适合任何人阅读, 请提前退出本页面结束阅读, 本文创作为个人臆想, 不具有任何实际意义, 针对当事人做出的任何违反当地法律和法规的行为, 本作者一概不负责.
+ 在陆内的学习 CS 总是变得异常艰难, 一般用三个小时电脑, 前两个小时都在修网, 跑代理, 好不容易网络了能开个 google 了, 进度总是拉下同学一大截, 倒逼自己的课余时间不说, 时常陷入自我怀疑的骗局. 一天下来什么都没干不说, 还略有些自闭.
+&amp;hellip;&amp;hellip;
+Windows 下开代理十分方便, 因为有 GUI 的 CFW; 相对地, 在 *nix 就不一样了: 在关闭系统代理端口后打开网站 clash.razord.top/#/settings. 执行 Clash, 发现此页面会自动刷新. 表示 Clash 的外部映射端口以及机场的配置没有问题. 选择节点, 开启代理, 进行测试. 常见问题有:
+ 系统代理 &amp;amp;&amp;amp; Clash 全部开启 配置文件格式  变量的大小写 变量的端口 映射端口   ./clash -d . &amp;amp; ./clash 的效果不一致. 套餐过期/场主跑路 &amp;hellip;&amp;hellip;  别嫌 Clash 在 *nix 上拉, CFW 在我的电脑上总是在 10G 的时候崩溃, 原因应该是受不住多过多应用和进程的并发代理, 总之如果有时候上不去 Google 的时候开关下代理软件就又可以了.</description>
+    </item>
+    
+    <item>
+      <title>可导的不存在</title>
+      <link>http://x.com/zh/404/</link>
+      <pubDate>Thu, 30 Jan 2020 13:59:24 +0800</pubDate>
+      
+      <guid>http://x.com/zh/404/</guid>
+      <description>这篇文章只是个人针对 IPS 的一些片面的看法, 因内容被墙的无奈而有的情绪发泄, 自然带有强烈的主观情绪, 本文不适合任何人阅读, 请慎重浏览, 如果你觉得我错了, 我提前声明, &amp;ldquo;你说得对&amp;quot;.
+我写文的原因是 Wikipedia 被墙后, 深感国内 查阅知识的门槛 获取一手知识便捷度弹性之高&amp;ndash;知网, 各大学的图书馆不对外开放, 公共资源如此之少, 想看的东西大多是 404, 网络已经被重置, 网页经举报无法访问种种. 有时在优化网络的道路上越走越远, 越走越偏执, 因为想不通这凭空来的一道门槛的意义所在&amp;hellip;&amp;hellip;
+反观陆内现状, 冷门词条要么没有, 要么东西甚少+机器翻译; CSDN博客质量停留在 Ctrl C/V 之间, 甚至连脚本之家的文章也照抄不误; 博客园半死不活再弥补几年前审查的空缺; 那些媲美狗屁不同生成器的先刻意地立人设, 再集体收割的营销文章越来越多;
+像王垠说的那样, 大道至简, 一句话可以说清楚的事情哪里需要动辄上千字的文章? 偶尔能看到灵光一闪的产品, 但转眼就被捣毁. 知乎, 豆瓣, 百度贴吧. 这些都离不开一个词&amp;ndash;审查. 我们言之网络并非法外之地, 但当自己手机里的小黄油, 网站被掐掉的时候, 那些人又闭嘴了&amp;hellip;
+网络上的争论, 大多数是那些既得利益者和罗普大众之间的诡辩, 所以你站到哪一方都没有绝对的错误. 人生那么短, 没有必要没有意义揪住一件事情不放, 虽然无数前人为了德先生 (Democracy) 和赛先生 (Science) 而奋斗终生, 但是人生终须妥协, 朋友开心点吧, 人间不值得&amp;hellip;&amp;hellip;
+对于使用互联网产品的自己时常感到矛盾, 因为按照 虚无主义 来看, 豆瓣, 知乎, 微博和贴吧 这些承载着我们这一代人美好记忆的东西终将消散, 那么我们到底要不要使用这些产品呢?</description>
+    </item>
+    
+    <item>
+      <title>关于我</title>
+      <link>http://x.com/zh/about/</link>
+      <pubDate>Tue, 31 Dec 2019 00:00:00 +0800</pubDate>
+      
+      <guid>http://x.com/zh/about/</guid>
+      <description>@font-face{font-weight:400;font-style:normal;font-family:Josefin Sans;src:url(//lib.baomitu.com/fonts/josefin-sans/josefin-sans-regular.eot);src:local(&#34;Josefin Sans&#34;),local(&#34;JosefinSans-Normal&#34;),url(//lib.baomitu.com/fonts/josefin-sans/josefin-sans-regular.eot#iefix) format(&#34;embedded-opentype&#34;),url(//lib.baomitu.com/fonts/josefin-sans/josefin-sans-regular.woff2) format(&#34;woff2&#34;),url(//lib.baomitu.com/fonts/josefin-sans/josefin-sans-regular.woff) format(&#34;woff&#34;),url(//lib.baomitu.com/fonts/josefin-sans/josefin-sans-regular.ttf) format(&#34;truetype&#34;),url(//lib.baomitu.com/fonts/josefin-sans/josefin-sans-regular.svg#JosefinSans) format(&#34;svg&#34;)}.color ul li  a{color: inherit; position: relative; text-decoration: none; white-space: nowrap; font-size:1.25em}.color ul li a::before{ content: &#34;&#34;; display: block;position: absolute;height: 0.5em;bottom: 2px;left: 4px;
+width: 100%; --bg-opacity: .75; background-color: #42b983;background-color: #9999ff;opacity: .3;}.color ulli  a:hover::before{background: #000000}
+
+@bgzocg
+
+关于我? 除了记录有价值的博客，我更喜欢在Notion上标记些许日常生活，有以下这些文章:
+ [zh] 200608-210608  这个博客?  21年06月13日: 因写错 WSL 命令, 博客数据全丢, 抢救中&amp;hellip; 从 MemE 换为 hugo-tailwind-journal 21年05月08日: 听从伊藤谦一的回答 中文排版中有必要使用「首字下沉」吗？使用时需要注意什么问题？, 中文博客默认采取正常排版方式, 英文正式采用首字下沉的方案. 21年05月06日: 受 Emojis as Favicons 启发, rel-icon 换成了 emoji.</description>
+    </item>
+    
+  </channel>
+</rss>
