@@ -1,0 +1,12 @@
+#robots.txt for https://dfslfh.cn
+usr-agent: *
+Disallow: /*.jpg$
+Disallow: /*.jpeg$
+Disallow: /*.gif$
+Disallow: /*.png$
+Disallow: /*.bmp$
+Disallow: /*.webp$
+
+Sitemap: https://dfslfh.cn/sitemap.xml
+Sitemap: https://dfslfh.cn/blog/sitemap.xml
+
