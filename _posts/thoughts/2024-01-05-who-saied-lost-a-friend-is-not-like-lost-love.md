@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 誰說「失去朋友不如失戀」
-updated: 2024-01-05
+updated: 2024-01-24
 category: thoughts
 source: https://github.com/bGZo/blog/issues/25
 number: 25
