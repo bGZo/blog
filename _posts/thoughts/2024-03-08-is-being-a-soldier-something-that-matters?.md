@@ -1,12 +1,11 @@
 ---
 layout: post
-title: Is being a soldier matters
-updated: 2024-05-25
+title: Is being a soldier something that matters?
+updated: 2024-05-26
 category: thoughts
 source: https://github.com/bGZo/blog/issues/26
 number: 26
 ---
-
 
 我經常和家裏人說，想當一名軍人，我的一位朋友就是這樣，就算大四了也不必糾結就業還是考研，畢業後 gap三個月直接去服兵役。
 
@@ -44,6 +43,8 @@ number: 26
 中文中的一個死區壞塊自然地形成了。
 
 魯迅的那句「漢字不滅，中國必亡」，也許就是不久的將來。興許更遠。那些有話語權的年輕人可以拉上窗簾，搖晃身體，假裝列車還在行駛。
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wszg3BAOEV8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 一頭又一頭根正苗紅的大象正在瘋狂擠佔華語的剩餘空間，這裏已經快要容不下一點點紅色之外的血液了。
 
