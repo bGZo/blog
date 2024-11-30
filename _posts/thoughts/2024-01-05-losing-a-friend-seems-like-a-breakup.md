@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 失去朋友的滋味堪比失戀
-updated: 2024-03-18
+updated: 2024-11-30
 category: thoughts
 source: https://github.com/bGZo/blog/issues/25
 number: 25
