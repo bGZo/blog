@@ -2,3 +2,4 @@ _site/
 
 Pipfile
 Pipfile.lock
+Gemfile.lock
