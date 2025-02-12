@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Changelogs
-updated: 2023-04-08
+updated: 2025-02-12
 category: posts
 source: https://github.com/bGZo/blog/issues/1
 number: 1
@@ -26,8 +26,11 @@ You have to read old articles to find the mistakes one by one, even word alterna
 3. People die, but long live github.[^4] However github is the third free services as well, like [disqus](https://disqus.com), [vercel](https://vercel.com) or something else. I don't trust them, free forever? Don't lie, nothing is free, sometimes it paid more than given. Backup as schedule is more reliability, and find a more sensible platform. Alternative is, creating it.
 4. The function-added would be left to github, like action, comments, and more difficult problem in the future (;
 
-## Reversed Log
+## Logs Reversed 
 
+- 20250212 
+  - [Feat] Delete all thoughts and letters, move them to [quartz](https://github.com/bGZo/notes/) and Obsidian.
+  - [Feat] Microblog powered by TG added.
 - 20230109
   - [Feat] Update [mathjax - npm](https://www.npmjs.com/package/mathjax ) library from version 2 to 3.
   - [Docs] Archived old article and add in this one.
