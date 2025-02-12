@@ -4,7 +4,7 @@ title: Home
 ---
 
 <ul class="posts">
-  {% assign all_posts = site.categories.posts | concat: site.categories.thoughts %}
+  {% assign all_posts = site.categories.posts %}
   {% assign all_posts = all_posts | sort: "date" | reverse %}
   {% for post in all_posts %}
     <li class="post">
