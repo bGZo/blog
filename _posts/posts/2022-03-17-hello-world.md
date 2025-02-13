@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Changelogs
-updated: 2025-02-12
+title: Hello World
+updated: 2025-02-13
 category: posts
 source: https://github.com/bGZo/blog/issues/1
 number: 1
