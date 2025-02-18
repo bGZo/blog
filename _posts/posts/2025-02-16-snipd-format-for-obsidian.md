@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Snipd format for Obsidian
-updated: 2025-02-16
+updated: 2025-02-18
 category: posts
 source: https://github.com/bGZo/blog/issues/32
 number: 32
@@ -16,7 +16,7 @@ number: 32
 
 ![](https://img.shields.io/github/stars/bGZo/snipd-podcast-format-for-obsidian?style=for-the-badge&label=stars) ![](https://img.shields.io/github/repo-size/bGZo/snipd-podcast-format-for-obsidian?style=for-the-badge&label=size) ![](https://img.shields.io/github/created-at/bGZo/snipd-podcast-format-for-obsidian?style=for-the-badge&label=since)
 
-<iframe src="https://www.youtube.com/embed/bB-VWtidB5E" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen/>
+<iframe src="https://www.youtube.com/embed/bB-VWtidB5E" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Why
 
