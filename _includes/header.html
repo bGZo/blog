@@ -1,7 +1,17 @@
 <header>
-  <h1>bGZo<span>'s blog</span></h1>
+<!--  <img class="avator" src="https://unpkg.com/bgzo/img/bGZo.png"/>-->
+  <h1>
+    <span class="home-title">bGZo</span>
+    <span class="post-suffix">'s blog</span>
+  </h1>
   <div class="follow-btns">
     <a class="btn btn-threads" href="https://cast.bgzo.cc" rel="noopener noreferrer">Micro</a>
     <a class="btn btn-notes" href="https://bgzo.github.io/notes/weekly/" rel="noopener noreferrer">Notes/Weekly</a>
   </div>
 </header>
+
+<script>
+document.querySelector('.home-title').addEventListener('click', function() {
+  window.location.href = '/';
+});
+</script>
