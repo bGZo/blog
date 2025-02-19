@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello World
-updated: 2025-02-13
+updated: 2025-02-18
 category: posts
 source: https://github.com/bGZo/blog/issues/1
 number: 1
@@ -88,24 +88,6 @@ You have to read old articles to find the mistakes one by one, even word alterna
   - Register at MIIT (as ICP) in China;
 - 20191223
   - The first blog using [Hexo](https://hexo.io);
-
-## The style I used
-
-### Back tp top
-
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="gOjpJOo" data-user="bgzo" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/bgzo/pen/gOjpJOo">
-  Untitled</a> by bGZo (<a href="https://codepen.io/bgzo">@bgzo</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-
-### Hyperlink
-
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="KKBpLpE" data-user="bgzo" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/bgzo/pen/KKBpLpE">
-  Hyperlink</a> by bGZo (<a href="https://codepen.io/bgzo">@bgzo</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
 
 [^1]: [Emojis as favicons](https://css-tricks.com/emojis-as-favicons);
 [^3]: Basically I agree with magasa's answer, via: [哪個或哪些網絡用語最讓人反感？ - 知乎](https://www.zhihu.com/question/20009911/answer/15802749); Wherever it was, native or foreign, cliché sucks, why not using a more concrete and clearer word to discuss? via: [Cliché - Wikipedia](https://en.wikipedia.org/wiki/Clich%c3%a9) or [Platitude - Wikipedia](https://en.wikipedia.org/wiki/Platitude). Since 20200501;
