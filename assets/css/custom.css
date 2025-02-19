@@ -1,48 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&display=swap');*/
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.thread{
-  @apply shadow-md rounded-2xl backdrop-blur-md;
-}
-.thread-profile{
-  @apply flex w-full;
-}
-
-.thread-avator{
-  @apply w-12 h-12 shadow-md rounded-xl m-3;
-  display: inline-block;
-  padding: initial;
-}
-.thread-profile-details{
-  
-  /* display: inline-block; */
-  /* vertical-align: middle; */
-}
-.thread-username{
-  @apply font-bold w-full mt-3 ;
-  display: inline-block;
-}
-.thread-date{
-  @apply text-xs w-full mb-3;
-  display: inline-block;
-}
-
-.thread-content{
-  @apply m-3;
-}
-
-.thread-content p > img {
-  @apply h-80 w-full;
-  object-fit: cover;
-}
-
-.thread-reaction{
-  @apply text-center;
-}
-
 
 :root {
   --base03: #002b36;
@@ -73,7 +33,7 @@
   --ls-teryiary-font-color: var(--base0);
 
   --ls-color-font-color: var(--ls-primary-font-color);
-  --ls-font-family: 'Noto Serif SC', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+  --ls-font-family: 'PingFangTC','PingFangSC','Microsoft Yahei','Noto Serif SC', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
 }
 
   @media (prefers-color-scheme: dark) {
@@ -369,7 +329,7 @@ tr:nth-child(n):hover td {
   font-size: 0.9rem;
   float: right;
   /*max-height: 400px;*/
-  max-width: 300px;
+  max-width: 40%;
   padding: 0.1px;
   margin: 0.1rem 0.1rem 1rem 1rem;
   word-break: break-word;
