@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hentai Reader
-updated: 2025-02-16
+updated: 2025-02-19
 category: posts
 source: https://github.com/bGZo/blog/issues/31
 number: 31
@@ -29,9 +29,9 @@ number: 31
 
 ## How
 
-### Vercel host via https://hentai.bgzo.cc
+### Vercel host via <https://hentai.bgzo.cc>
 
-### Source via: https://github.com/bGZo/hentai
+### Source via: <https://github.com/bGZo/hentai>
 
 ## What
 
