@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hentai Reader
-updated: 2025-02-19
+updated: 2025-03-01
 category: posts
 source: https://github.com/bGZo/blog/issues/31
 number: 31
@@ -10,6 +10,13 @@ number: 31
 
 > [!warning]
 > ⚠️ NSFW 警告：本篇文章可能包含暴力，性描寫等僅供 18 歲以上閱覽的內容。
+
+## Repo Meta
+
+![](https://img.shields.io/github/stars/bGZo/hentai?style=for-the-badge&label=stars) ![](https://img.shields.io/github/repo-size/bGZo/hentai?style=for-the-badge&label=size) ![](https://img.shields.io/github/created-at/bGZo/hentai?style=for-the-badge&label=since)
+
+[![](https://github-readme-stats.vercel.app/api/pin/?username=bGZo&repo=hentai&bg_color=00000000)](https://github.com/bGZo/hentai)
+
 
 ## Why
 
