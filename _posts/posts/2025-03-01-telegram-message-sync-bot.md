@@ -48,7 +48,7 @@ chmod +x ./tg
 ### Optional: run in background using nohup
 
 ```shell
-nohup ./tg sync -t 5883330296:AAFCI0jtgH1iHU1zDaL2p3Hj5Z6fkqaRWaU > bot.log 2>&1 &
+nohup ./tg sync -t 58833029:AAFCI0jiHU1zDaL2p3HaRWaU > bot.log 2>&1 &
 
 # kill background
 pkill -f tg
