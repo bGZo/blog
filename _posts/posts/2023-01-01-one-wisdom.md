@@ -1,15 +1,23 @@
 ---
 layout: post
 title: One wisdom
-updated: 2025-02-13
+updated: 2025-03-01
 category: posts
 source: https://github.com/bGZo/blog/issues/11
 number: 11
 ---
 
+
 2023 新年伊始，整理 2022 的陳年筆記時發現有很多不知名，但是又捨不得丟棄的句子，想着乾脆把他們做成引用得了。連着建倉庫，設計頁面，寫腳本一套下來也沒花太多時間，一個簡單的靜態自動部署的網站就建好了: [One](https://one.bgzo.cc/)[^2].
 
 ![](https://unpkg.com/bgzo@23.1.1/img/one-preview.png)
+
+## Repo Meta
+
+![](https://img.shields.io/github/stars/bGZo/one?style=for-the-badge&label=stars) ![](https://img.shields.io/github/repo-size/bGZo/one?style=for-the-badge&label=size) ![](https://img.shields.io/github/created-at/bGZo/one?style=for-the-badge&label=since)
+
+[![](https://github-readme-stats.vercel.app/api/pin/?username=bGZo&repo=one&bg_color=00000000)](https://github.com/bGZo/one)
+
 
 ## Tech stack
 
